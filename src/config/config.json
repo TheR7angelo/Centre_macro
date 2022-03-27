@@ -1,0 +1,23 @@
+{
+    "infos": {
+        "nom": "Centre macro",
+        "description": "Centre regroupant plein de macro, et permattant la gestion de leurs mise \u00e0 jour.",
+        "version": "0.2",
+        "auteur": "ZP6177",
+        "compagnie": "ZP6177"
+    },
+    "config": {
+        "theme": "gunmetal",
+        "font": "Berlin Sans FB Demi",
+        "widht": 1200,
+        "height": 800,
+        "opacity": 0.96,
+        "cur": "test"
+    },
+    "var": {
+        "debug": true,
+        "resize": true,
+        "auto_close": true,
+        "toolbox_pin": true
+    }
+}
