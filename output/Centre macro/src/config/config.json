@@ -1,0 +1,23 @@
+{
+    "infos": {
+        "nom": "Centre macro",
+        "description": "Ce logiciel trie les dossiers cap ft et g\u00e9n\u00e9re un listing d'appuis \u00e0 remplace / implanter par \u00e9tude BT ou FT.",
+        "version": "0.1",
+        "auteur": "ZP6177",
+        "compagnie": "ZP6177"
+    },
+    "config": {
+        "theme": "gunmetal",
+        "font": "Berlin Sans FB Demi",
+        "widht": 1200,
+        "height": 800,
+        "opacity": 0.97,
+        "cur": "test"
+    },
+    "var": {
+        "debug": true,
+        "resize": true,
+        "auto_close": true,
+        "toolbox_pin": true
+    }
+}

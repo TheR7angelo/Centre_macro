@@ -1,0 +1,1116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="19.2" version="19.2" Modules="simple" RootPath="." Language="en" Id="{E810638D-4C0F-492A-9F1A-5590355CAB95}">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="AI_CURRENT_YEAR" Value="2022" ValueLocId="-"/>
+    <ROW Property="ALLUSERS" Value="1" MultiBuildValue="DefaultBuild:"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPPRODUCTICON" Value="Centremacro.exe" Type="8"/>
+    <ROW Property="Manufacturer" Value="ZP6177"/>
+    <ROW Property="ProductCode" Value="1033:{E83B39DA-6E2B-42F4-99A8-18C33A4959AE} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="Centre macro"/>
+    <ROW Property="ProductVersion" Value="0.01"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{AB3AA1D7-629D-4F27-B6E0-D3072CB6589F}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="Centremacro_Dir" Directory_Parent="APPDIR" DefaultDir="CENTRE~1|Centre macro"/>
+    <ROW Directory="CheckBox_Dir" Directory_Parent="widgets_Dir" DefaultDir="CheckBox"/>
+    <ROW Directory="ComboBox_Dir" Directory_Parent="widgets_Dir" DefaultDir="ComboBox"/>
+    <ROW Directory="DateEdit_Dir" Directory_Parent="widgets_Dir" DefaultDir="DateEdit"/>
+    <ROW Directory="DesktopFolder" Directory_Parent="TARGETDIR" DefaultDir="DESKTO~1|DesktopFolder" IsPseudoRoot="1"/>
+    <ROW Directory="Frame_Dir" Directory_Parent="widgets_Dir" DefaultDir="Frame"/>
+    <ROW Directory="InputBox_Dir" Directory_Parent="dlg_Dir" DefaultDir="InputBox"/>
+    <ROW Directory="LaM0uette_Dir" Directory_Parent="cursor_Dir" DefaultDir="LAM0UE~1|LaM0uette"/>
+    <ROW Directory="Label_Dir" Directory_Parent="widgets_Dir" DefaultDir="Label"/>
+    <ROW Directory="LineEdit_Dir" Directory_Parent="widgets_Dir" DefaultDir="LineEdit"/>
+    <ROW Directory="ListWidget_Dir" Directory_Parent="widgets_Dir" DefaultDir="LISTWI~1|ListWidget"/>
+    <ROW Directory="MsgBox_Dir" Directory_Parent="dlg_Dir" DefaultDir="MsgBox"/>
+    <ROW Directory="MyApp_Dir" Directory_Parent="cursor_Dir" DefaultDir="MyApp"/>
+    <ROW Directory="OptionBox_Dir" Directory_Parent="dlg_Dir" DefaultDir="OPTION~1|OptionBox"/>
+    <ROW Directory="PlainTextEdit_Dir" Directory_Parent="widgets_Dir" DefaultDir="PLAINT~1|PlainTextEdit"/>
+    <ROW Directory="ProgressBar_Dir" Directory_Parent="widgets_Dir" DefaultDir="PROGRE~1|ProgressBar"/>
+    <ROW Directory="PushButton_Dir" Directory_Parent="widgets_Dir" DefaultDir="PUSHBU~1|PushButton"/>
+    <ROW Directory="PySide6_Dir" Directory_Parent="Centremacro_Dir" DefaultDir="PySide6"/>
+    <ROW Directory="RadioButton_Dir" Directory_Parent="widgets_Dir" DefaultDir="RADIOB~1|RadioButton"/>
+    <ROW Directory="ResponseBox_Dir" Directory_Parent="dlg_Dir" DefaultDir="RESPON~1|ResponseBox"/>
+    <ROW Directory="RgbBox_Dir" Directory_Parent="dlg_Dir" DefaultDir="RgbBox"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="ScrollArea_Dir" Directory_Parent="widgets_Dir" DefaultDir="SCROLL~1|ScrollArea"/>
+    <ROW Directory="Slider_Dir" Directory_Parent="widgets_Dir" DefaultDir="Slider"/>
+    <ROW Directory="SpinBox_Dir" Directory_Parent="widgets_Dir" DefaultDir="SpinBox"/>
+    <ROW Directory="SplashScreen_Dir" Directory_Parent="dlg_Dir" DefaultDir="SPLASH~1|SplashScreen"/>
+    <ROW Directory="StartMenuFolder" Directory_Parent="TARGETDIR" DefaultDir="STARTM~1|StartMenuFolder" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="TableWidget_Dir" Directory_Parent="widgets_Dir" DefaultDir="TABLEW~1|TableWidget"/>
+    <ROW Directory="TextEdit_Dir" Directory_Parent="widgets_Dir" DefaultDir="TextEdit"/>
+    <ROW Directory="ToolBoxUi_Dir" Directory_Parent="dlg_Dir" DefaultDir="TOOLBO~1|ToolBoxUi"/>
+    <ROW Directory="ToolBox_Dir" Directory_Parent="widgets_Dir" DefaultDir="ToolBox"/>
+    <ROW Directory="TrayIcon_Dir" Directory_Parent="widgets_Dir" DefaultDir="TrayIcon"/>
+    <ROW Directory="TreeWidget_Dir" Directory_Parent="widgets_Dir" DefaultDir="TREEWI~1|TreeWidget"/>
+    <ROW Directory="__pycache___10_Dir" Directory_Parent="dlg_Dir" DefaultDir="__PYCA~1|__pycache__"/>
+    <ROW Directory="__pycache___11_Dir" Directory_Parent="events_Dir" DefaultDir="__PYCA~1|__pycache__"/>
+    <ROW Directory="__pycache___12_Dir" Directory_Parent="ui_1_Dir" DefaultDir="__PYCA~1|__pycache__"/>
+    <ROW Directory="__pycache___13_Dir" Directory_Parent="gui_Dir" DefaultDir="__PYCA~1|__pycache__"/>
+    <ROW Directory="__pycache___14_Dir" Directory_Parent="globals_Dir" DefaultDir="__PYCA~1|__pycache__"/>
+    <ROW Directory="__pycache___15_Dir" Directory_Parent="palettes_Dir" DefaultDir="__PYCA~1|__pycache__"/>
+    <ROW Directory="__pycache___16_Dir" Directory_Parent="lib_Dir" DefaultDir="__PYCA~1|__pycache__"/>
+    <ROW Directory="__pycache___17_Dir" Directory_Parent="CheckBox_Dir" DefaultDir="__PYCA~1|__pycache__"/>
+    <ROW Directory="__pycache___18_Dir" Directory_Parent="ComboBox_Dir" DefaultDir="__PYCA~1|__pycache__"/>
+    <ROW Directory="__pycache___19_Dir" Directory_Parent="DateEdit_Dir" DefaultDir="__PYCA~1|__pycache__"/>
+    <ROW Directory="__pycache___1_Dir" Directory_Parent="build_Dir" DefaultDir="__PYCA~1|__pycache__"/>
+    <ROW Directory="__pycache___20_Dir" Directory_Parent="Frame_Dir" DefaultDir="__PYCA~1|__pycache__"/>
+    <ROW Directory="__pycache___21_Dir" Directory_Parent="Label_Dir" DefaultDir="__PYCA~1|__pycache__"/>
+    <ROW Directory="__pycache___22_Dir" Directory_Parent="LineEdit_Dir" DefaultDir="__PYCA~1|__pycache__"/>
+    <ROW Directory="__pycache___23_Dir" Directory_Parent="ListWidget_Dir" DefaultDir="__PYCA~1|__pycache__"/>
+    <ROW Directory="__pycache___24_Dir" Directory_Parent="PlainTextEdit_Dir" DefaultDir="__PYCA~1|__pycache__"/>
+    <ROW Directory="__pycache___25_Dir" Directory_Parent="ProgressBar_Dir" DefaultDir="__PYCA~1|__pycache__"/>
+    <ROW Directory="__pycache___26_Dir" Directory_Parent="PushButton_Dir" DefaultDir="__PYCA~1|__pycache__"/>
+    <ROW Directory="__pycache___27_Dir" Directory_Parent="RadioButton_Dir" DefaultDir="__PYCA~1|__pycache__"/>
+    <ROW Directory="__pycache___28_Dir" Directory_Parent="ScrollArea_Dir" DefaultDir="__PYCA~1|__pycache__"/>
+    <ROW Directory="__pycache___29_Dir" Directory_Parent="Slider_Dir" DefaultDir="__PYCA~1|__pycache__"/>
+    <ROW Directory="__pycache___2_Dir" Directory_Parent="config_Dir" DefaultDir="__PYCA~1|__pycache__"/>
+    <ROW Directory="__pycache___30_Dir" Directory_Parent="SpinBox_Dir" DefaultDir="__PYCA~1|__pycache__"/>
+    <ROW Directory="__pycache___31_Dir" Directory_Parent="TableWidget_Dir" DefaultDir="__PYCA~1|__pycache__"/>
+    <ROW Directory="__pycache___32_Dir" Directory_Parent="TextEdit_Dir" DefaultDir="__PYCA~1|__pycache__"/>
+    <ROW Directory="__pycache___33_Dir" Directory_Parent="ToolBox_Dir" DefaultDir="__PYCA~1|__pycache__"/>
+    <ROW Directory="__pycache___34_Dir" Directory_Parent="TrayIcon_Dir" DefaultDir="__PYCA~1|__pycache__"/>
+    <ROW Directory="__pycache___35_Dir" Directory_Parent="TreeWidget_Dir" DefaultDir="__PYCA~1|__pycache__"/>
+    <ROW Directory="__pycache___36_Dir" Directory_Parent="widgets_Dir" DefaultDir="__PYCA~1|__pycache__"/>
+    <ROW Directory="__pycache___37_Dir" Directory_Parent="widget_custom_Dir" DefaultDir="__PYCA~1|__pycache__"/>
+    <ROW Directory="__pycache___38_Dir" Directory_Parent="src_Dir" DefaultDir="__PYCA~1|__pycache__"/>
+    <ROW Directory="__pycache___3_Dir" Directory_Parent="InputBox_Dir" DefaultDir="__PYCA~1|__pycache__"/>
+    <ROW Directory="__pycache___4_Dir" Directory_Parent="MsgBox_Dir" DefaultDir="__PYCA~1|__pycache__"/>
+    <ROW Directory="__pycache___5_Dir" Directory_Parent="OptionBox_Dir" DefaultDir="__PYCA~1|__pycache__"/>
+    <ROW Directory="__pycache___6_Dir" Directory_Parent="ResponseBox_Dir" DefaultDir="__PYCA~1|__pycache__"/>
+    <ROW Directory="__pycache___7_Dir" Directory_Parent="RgbBox_Dir" DefaultDir="__PYCA~1|__pycache__"/>
+    <ROW Directory="__pycache___8_Dir" Directory_Parent="SplashScreen_Dir" DefaultDir="__PYCA~1|__pycache__"/>
+    <ROW Directory="__pycache___9_Dir" Directory_Parent="ToolBoxUi_Dir" DefaultDir="__PYCA~1|__pycache__"/>
+    <ROW Directory="__pycache___Dir" Directory_Parent="mods_Dir" DefaultDir="__PYCA~1|__pycache__"/>
+    <ROW Directory="assets_Dir" Directory_Parent="src_Dir" DefaultDir="assets"/>
+    <ROW Directory="build_Dir" Directory_Parent="src_Dir" DefaultDir="build"/>
+    <ROW Directory="config_Dir" Directory_Parent="src_Dir" DefaultDir="config"/>
+    <ROW Directory="cursor_Dir" Directory_Parent="assets_Dir" DefaultDir="cursor"/>
+    <ROW Directory="divers_Dir" Directory_Parent="img_Dir" DefaultDir="divers"/>
+    <ROW Directory="dlg_Dir" Directory_Parent="gui_Dir" DefaultDir="dlg"/>
+    <ROW Directory="events_Dir" Directory_Parent="gui_Dir" DefaultDir="events"/>
+    <ROW Directory="globals_Dir" Directory_Parent="lib_Dir" DefaultDir="globals"/>
+    <ROW Directory="gui_Dir" Directory_Parent="src_Dir" DefaultDir="gui"/>
+    <ROW Directory="iconengines_Dir" Directory_Parent="plugins_Dir" DefaultDir="ICONEN~1|iconengines"/>
+    <ROW Directory="imageformats_Dir" Directory_Parent="plugins_Dir" DefaultDir="IMAGEF~1|imageformats"/>
+    <ROW Directory="img_Dir" Directory_Parent="assets_Dir" DefaultDir="img"/>
+    <ROW Directory="lib_Dir" Directory_Parent="src_Dir" DefaultDir="lib"/>
+    <ROW Directory="main_Dir" Directory_Parent="img_Dir" DefaultDir="main"/>
+    <ROW Directory="markupsafe_Dir" Directory_Parent="Centremacro_Dir" DefaultDir="MARKUP~1|markupsafe"/>
+    <ROW Directory="mods_Dir" Directory_Parent="build_Dir" DefaultDir="mods"/>
+    <ROW Directory="networkinformation_Dir" Directory_Parent="plugins_Dir" DefaultDir="NETWOR~1|networkinformation"/>
+    <ROW Directory="palettes_Dir" Directory_Parent="lib_Dir" DefaultDir="palettes"/>
+    <ROW Directory="platforminputcontexts_Dir" Directory_Parent="plugins_Dir" DefaultDir="PLATFO~1|platforminputcontexts"/>
+    <ROW Directory="platforms_Dir" Directory_Parent="plugins_Dir" DefaultDir="PLATFO~2|platforms"/>
+    <ROW Directory="plugins_Dir" Directory_Parent="PySide6_Dir" DefaultDir="plugins"/>
+    <ROW Directory="rgb_1_Dir" Directory_Parent="main_Dir" DefaultDir="rgb"/>
+    <ROW Directory="rgb_2_Dir" Directory_Parent="ui_Dir" DefaultDir="rgb"/>
+    <ROW Directory="rgb_Dir" Directory_Parent="divers_Dir" DefaultDir="rgb"/>
+    <ROW Directory="scripts_Dir" Directory_Parent="src_Dir" DefaultDir="scripts"/>
+    <ROW Directory="shiboken6_Dir" Directory_Parent="Centremacro_Dir" DefaultDir="SHIBOK~1|shiboken6"/>
+    <ROW Directory="src_Dir" Directory_Parent="Centremacro_Dir" DefaultDir="src"/>
+    <ROW Directory="styles_Dir" Directory_Parent="plugins_Dir" DefaultDir="styles"/>
+    <ROW Directory="test_Dir" Directory_Parent="cursor_Dir" DefaultDir="test"/>
+    <ROW Directory="theme_Dir" Directory_Parent="src_Dir" DefaultDir="theme"/>
+    <ROW Directory="tls_Dir" Directory_Parent="plugins_Dir" DefaultDir="tls"/>
+    <ROW Directory="translations_Dir" Directory_Parent="PySide6_Dir" DefaultDir="TRANSL~1|translations"/>
+    <ROW Directory="ui_1_Dir" Directory_Parent="gui_Dir" DefaultDir="ui"/>
+    <ROW Directory="ui_Dir" Directory_Parent="img_Dir" DefaultDir="ui"/>
+    <ROW Directory="widget_custom_Dir" Directory_Parent="src_Dir" DefaultDir="WIDGET~1|widget_custom"/>
+    <ROW Directory="widgets_Dir" Directory_Parent="src_Dir" DefaultDir="widgets"/>
+    <ROW Directory="yaml_Dir" Directory_Parent="Centremacro_Dir" DefaultDir="yaml"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="APPDIR" ComponentId="{84C42457-EB25-4CAF-A223-BD99E560D819}" Directory_="APPDIR" Attributes="0"/>
+    <ROW Component="Align.cpython39.pyc" ComponentId="{5F238666-BB1C-4307-A7AB-BC0684593224}" Directory_="__pycache___15_Dir" Attributes="0" KeyPath="Align.cpython39.pyc" Type="0"/>
+    <ROW Component="Align.py" ComponentId="{E513CA11-32F3-4AB3-86B1-B5157E988E2C}" Directory_="palettes_Dir" Attributes="0" KeyPath="Align.py" Type="0"/>
+    <ROW Component="Build.cpython39.pyc" ComponentId="{E3C3839B-EA5D-445B-BFAB-CFE4B9F4F608}" Directory_="__pycache___17_Dir" Attributes="0" KeyPath="Build.cpython39.pyc" Type="0"/>
+    <ROW Component="Build.cpython39.pyc_1" ComponentId="{210B3F25-000F-43A9-B70D-4FBC9E578ABB}" Directory_="__pycache___18_Dir" Attributes="0" KeyPath="Build.cpython39.pyc_1" Type="0"/>
+    <ROW Component="Build.cpython39.pyc_10" ComponentId="{31B591F3-8C92-4250-BC51-5F4A244C6146}" Directory_="__pycache___27_Dir" Attributes="0" KeyPath="Build.cpython39.pyc_10" Type="0"/>
+    <ROW Component="Build.cpython39.pyc_11" ComponentId="{C9269218-1EAA-4EF6-A199-3C86CBD38DA8}" Directory_="__pycache___28_Dir" Attributes="0" KeyPath="Build.cpython39.pyc_11" Type="0"/>
+    <ROW Component="Build.cpython39.pyc_12" ComponentId="{459ADABD-FDB2-41BA-BF55-034B36F7073F}" Directory_="__pycache___29_Dir" Attributes="0" KeyPath="Build.cpython39.pyc_12" Type="0"/>
+    <ROW Component="Build.cpython39.pyc_13" ComponentId="{1ADCFE11-AE3A-4366-B6F1-F166F047A125}" Directory_="__pycache___30_Dir" Attributes="0" KeyPath="Build.cpython39.pyc_13" Type="0"/>
+    <ROW Component="Build.cpython39.pyc_14" ComponentId="{18E033CA-9245-4D76-BA16-0E3224F9B6FC}" Directory_="__pycache___31_Dir" Attributes="0" KeyPath="Build.cpython39.pyc_14" Type="0"/>
+    <ROW Component="Build.cpython39.pyc_15" ComponentId="{52967768-C3F4-45A2-A878-5E2A5E388219}" Directory_="__pycache___32_Dir" Attributes="0" KeyPath="Build.cpython39.pyc_15" Type="0"/>
+    <ROW Component="Build.cpython39.pyc_16" ComponentId="{E31B1B0C-8122-4EF5-AAD9-3885E6194B01}" Directory_="__pycache___33_Dir" Attributes="0" KeyPath="Build.cpython39.pyc_16" Type="0"/>
+    <ROW Component="Build.cpython39.pyc_17" ComponentId="{739D82DE-D6CA-49DD-91C9-3E0E30C64E65}" Directory_="__pycache___34_Dir" Attributes="0" KeyPath="Build.cpython39.pyc_17" Type="0"/>
+    <ROW Component="Build.cpython39.pyc_18" ComponentId="{9D5D0D30-60E5-4785-9943-161C857A1CB6}" Directory_="__pycache___35_Dir" Attributes="0" KeyPath="Build.cpython39.pyc_18" Type="0"/>
+    <ROW Component="Build.cpython39.pyc_2" ComponentId="{0F3A7853-0A37-4219-BB59-9ECFC9BEEBE2}" Directory_="__pycache___19_Dir" Attributes="0" KeyPath="Build.cpython39.pyc_2" Type="0"/>
+    <ROW Component="Build.cpython39.pyc_3" ComponentId="{5DF62499-2F52-49F9-A8D5-D0B7593043AA}" Directory_="__pycache___20_Dir" Attributes="0" KeyPath="Build.cpython39.pyc_3" Type="0"/>
+    <ROW Component="Build.cpython39.pyc_4" ComponentId="{0F6FDCB1-07F0-4EB9-BACE-2147B1505021}" Directory_="__pycache___21_Dir" Attributes="0" KeyPath="Build.cpython39.pyc_4" Type="0"/>
+    <ROW Component="Build.cpython39.pyc_5" ComponentId="{2EEA1220-63D0-4D62-86B5-D2AF5EE728C8}" Directory_="__pycache___22_Dir" Attributes="0" KeyPath="Build.cpython39.pyc_5" Type="0"/>
+    <ROW Component="Build.cpython39.pyc_6" ComponentId="{A9331F0F-FFFF-4D44-BCFF-B32927F865D3}" Directory_="__pycache___23_Dir" Attributes="0" KeyPath="Build.cpython39.pyc_6" Type="0"/>
+    <ROW Component="Build.cpython39.pyc_7" ComponentId="{0DA72FDF-0B24-43A7-A4C7-147A55E23D5A}" Directory_="__pycache___24_Dir" Attributes="0" KeyPath="Build.cpython39.pyc_7" Type="0"/>
+    <ROW Component="Build.cpython39.pyc_8" ComponentId="{D1A36065-2FB6-4233-9736-354C95B58829}" Directory_="__pycache___25_Dir" Attributes="0" KeyPath="Build.cpython39.pyc_8" Type="0"/>
+    <ROW Component="Build.cpython39.pyc_9" ComponentId="{BE7CD08D-3695-431C-9400-8FF403416E25}" Directory_="__pycache___26_Dir" Attributes="0" KeyPath="Build.cpython39.pyc_9" Type="0"/>
+    <ROW Component="Build.py" ComponentId="{0C4AEDED-F17B-4980-B45F-B33FF02D10F6}" Directory_="CheckBox_Dir" Attributes="0" KeyPath="Build.py" Type="0"/>
+    <ROW Component="Build.py_1" ComponentId="{D1C5FC3F-B771-4264-AFC7-7AD693628D73}" Directory_="ComboBox_Dir" Attributes="0" KeyPath="Build.py_1" Type="0"/>
+    <ROW Component="Build.py_10" ComponentId="{109CEB05-335A-4353-B464-7BD4A33649C9}" Directory_="RadioButton_Dir" Attributes="0" KeyPath="Build.py_10" Type="0"/>
+    <ROW Component="Build.py_11" ComponentId="{C264BC6B-A0AF-4D81-B079-D4F6DF12F221}" Directory_="ScrollArea_Dir" Attributes="0" KeyPath="Build.py_11" Type="0"/>
+    <ROW Component="Build.py_12" ComponentId="{893A1B7A-5006-4E7A-8E13-7C40C6445552}" Directory_="Slider_Dir" Attributes="0" KeyPath="Build.py_12" Type="0"/>
+    <ROW Component="Build.py_13" ComponentId="{57833181-7F3E-4D90-B8E5-4489DB841932}" Directory_="SpinBox_Dir" Attributes="0" KeyPath="Build.py_13" Type="0"/>
+    <ROW Component="Build.py_14" ComponentId="{5BB4077D-8C38-4D38-914F-7A62B05B2BEC}" Directory_="TableWidget_Dir" Attributes="0" KeyPath="Build.py_14" Type="0"/>
+    <ROW Component="Build.py_15" ComponentId="{EE9A6762-F822-4370-AE70-765EF91971E7}" Directory_="TextEdit_Dir" Attributes="0" KeyPath="Build.py_15" Type="0"/>
+    <ROW Component="Build.py_16" ComponentId="{8372EF91-8C18-4F08-B5E5-60C11A039A70}" Directory_="ToolBox_Dir" Attributes="0" KeyPath="Build.py_16" Type="0"/>
+    <ROW Component="Build.py_17" ComponentId="{710015F0-F3F5-49FA-8AEE-C4683B0EBE08}" Directory_="TrayIcon_Dir" Attributes="0" KeyPath="Build.py_17" Type="0"/>
+    <ROW Component="Build.py_18" ComponentId="{FEF13B03-B4C6-4D57-8AA5-36C171224FC9}" Directory_="TreeWidget_Dir" Attributes="0" KeyPath="Build.py_18" Type="0"/>
+    <ROW Component="Build.py_2" ComponentId="{C83D472F-C561-4290-B9F5-C74D535960DA}" Directory_="DateEdit_Dir" Attributes="0" KeyPath="Build.py_2" Type="0"/>
+    <ROW Component="Build.py_3" ComponentId="{51B9B1C7-F404-42C6-8CD8-4D89772264FD}" Directory_="Frame_Dir" Attributes="0" KeyPath="Build.py_3" Type="0"/>
+    <ROW Component="Build.py_4" ComponentId="{DE94882C-E82C-4895-9043-527C40D35FB9}" Directory_="Label_Dir" Attributes="0" KeyPath="Build.py_4" Type="0"/>
+    <ROW Component="Build.py_5" ComponentId="{73B505D6-6B54-4AA4-AC9E-BC9B963C2C0C}" Directory_="LineEdit_Dir" Attributes="0" KeyPath="Build.py_5" Type="0"/>
+    <ROW Component="Build.py_6" ComponentId="{BBA977E3-399A-4C94-AD4F-4CB5983A4FB6}" Directory_="ListWidget_Dir" Attributes="0" KeyPath="Build.py_6" Type="0"/>
+    <ROW Component="Build.py_7" ComponentId="{1F4E4BDC-5A87-47CC-8466-C7124077612A}" Directory_="PlainTextEdit_Dir" Attributes="0" KeyPath="Build.py_7" Type="0"/>
+    <ROW Component="Build.py_8" ComponentId="{4403C90D-AC1A-4FD1-B4E1-7CD212265E9F}" Directory_="ProgressBar_Dir" Attributes="0" KeyPath="Build.py_8" Type="0"/>
+    <ROW Component="Build.py_9" ComponentId="{37A14F03-CA86-4530-8EA0-A8CDEA94188E}" Directory_="PushButton_Dir" Attributes="0" KeyPath="Build.py_9" Type="0"/>
+    <ROW Component="Centremacro.exe" ComponentId="{5E9CC268-1250-4D0B-8DC3-11B6DAC7BE91}" Directory_="Centremacro_Dir" Attributes="256" KeyPath="Centremacro.exe"/>
+    <ROW Component="Event.cpython39.pyc" ComponentId="{0B3F6298-FF6A-425B-AFAD-6AE95C4FC26F}" Directory_="__pycache___11_Dir" Attributes="0" KeyPath="Event.cpython39.pyc" Type="0"/>
+    <ROW Component="Event.py" ComponentId="{960A76F1-0BE5-4C40-A58C-B1FD50384AC5}" Directory_="events_Dir" Attributes="0" KeyPath="Event.py" Type="0"/>
+    <ROW Component="Frame_cust.cpython39.pyc" ComponentId="{376373F0-57C6-40D6-A5DF-93A082AFC617}" Directory_="__pycache___37_Dir" Attributes="0" KeyPath="Frame_cust.cpython39.pyc" Type="0"/>
+    <ROW Component="Frame_cust.py" ComponentId="{7657A6AD-9503-471D-99CA-6D31453DD5B5}" Directory_="widget_custom_Dir" Attributes="0" KeyPath="Frame_cust.py" Type="0"/>
+    <ROW Component="Functions.cpython39.pyc" ComponentId="{42ED16BD-63DA-426D-9184-FD28F255D00B}" Directory_="__pycache___Dir" Attributes="0" KeyPath="Functions.cpython39.pyc" Type="0"/>
+    <ROW Component="Functions.py" ComponentId="{BCFD1549-8808-45BE-A09C-6102DEE6F443}" Directory_="mods_Dir" Attributes="0" KeyPath="Functions.py" Type="0"/>
+    <ROW Component="InputBox.cpython39.pyc" ComponentId="{A3AA35A5-BB1E-41F8-AD9A-04CC6E1EC182}" Directory_="__pycache___3_Dir" Attributes="0" KeyPath="InputBox.cpython39.pyc" Type="0"/>
+    <ROW Component="InputBox.py" ComponentId="{4D9ABF53-E342-444B-8428-2BB56475125F}" Directory_="InputBox_Dir" Attributes="0" KeyPath="InputBox.py" Type="0"/>
+    <ROW Component="MSVCP140.dll" ComponentId="{E499D96B-87B2-458A-B796-06FA57A44B4D}" Directory_="Centremacro_Dir" Attributes="256" KeyPath="MSVCP140.dll"/>
+    <ROW Component="MSVCP140_1.dll" ComponentId="{ED761B90-F1B7-4964-B4CE-D8887D27DAF3}" Directory_="Centremacro_Dir" Attributes="256" KeyPath="MSVCP140_1.dll"/>
+    <ROW Component="MSVCP140_2.dll" ComponentId="{EFFE4CC8-E095-4549-A45F-6E2E82D2C835}" Directory_="Centremacro_Dir" Attributes="256" KeyPath="MSVCP140_2.dll"/>
+    <ROW Component="MsgBox.cpython39.pyc" ComponentId="{1985C3C5-BFBA-4FFC-90C7-6D460B2A509F}" Directory_="__pycache___4_Dir" Attributes="0" KeyPath="MsgBox.cpython39.pyc" Type="0"/>
+    <ROW Component="MsgBox.py" ComponentId="{246F3810-D899-4EEA-88D1-D0262263FB3C}" Directory_="MsgBox_Dir" Attributes="0" KeyPath="MsgBox.py" Type="0"/>
+    <ROW Component="OptionBox.cpython39.pyc" ComponentId="{07FDC0C9-E30D-4FDD-B7C1-52A5C0EBD9AB}" Directory_="__pycache___5_Dir" Attributes="0" KeyPath="OptionBox.cpython39.pyc" Type="0"/>
+    <ROW Component="OptionBox.py" ComponentId="{72C71FF0-0926-44F7-B3EE-799AFF69CEDA}" Directory_="OptionBox_Dir" Attributes="0" KeyPath="OptionBox.py" Type="0"/>
+    <ROW Component="ProductInformation" ComponentId="{5023E6E4-6BC5-4954-A40A-DFD000ED2033}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="Qt6Core.dll" ComponentId="{C993DB01-F701-4C42-922C-859E6C88557A}" Directory_="Centremacro_Dir" Attributes="256" KeyPath="Qt6Core.dll"/>
+    <ROW Component="Qt6Gui.dll" ComponentId="{D26A3356-F8C4-4D21-B3F3-F97BE8CC48B8}" Directory_="Centremacro_Dir" Attributes="256" KeyPath="Qt6Gui.dll"/>
+    <ROW Component="Qt6Network.dll" ComponentId="{B3EF5A64-8355-41B7-A38F-9718DB2ED4CD}" Directory_="Centremacro_Dir" Attributes="256" KeyPath="Qt6Network.dll"/>
+    <ROW Component="Qt6OpenGL.dll" ComponentId="{87112826-A739-4D1B-8506-02810C8E7BFD}" Directory_="Centremacro_Dir" Attributes="256" KeyPath="Qt6OpenGL.dll"/>
+    <ROW Component="Qt6Qml.dll" ComponentId="{A833182B-D635-4238-B89A-4DD4B626F5FF}" Directory_="Centremacro_Dir" Attributes="256" KeyPath="Qt6Qml.dll"/>
+    <ROW Component="Qt6QmlModels.dll" ComponentId="{84032C1D-8080-409B-B22C-B4186D46FED1}" Directory_="Centremacro_Dir" Attributes="256" KeyPath="Qt6QmlModels.dll"/>
+    <ROW Component="Qt6Quick.dll" ComponentId="{957E39C4-219D-445E-9AD1-7A69C6218522}" Directory_="Centremacro_Dir" Attributes="256" KeyPath="Qt6Quick.dll"/>
+    <ROW Component="Qt6Svg.dll" ComponentId="{6B32DCE9-23B6-48A4-B5E9-E833CD315E5E}" Directory_="Centremacro_Dir" Attributes="256" KeyPath="Qt6Svg.dll"/>
+    <ROW Component="Qt6VirtualKeyboard.dll" ComponentId="{51F1703A-A8C3-479F-A58C-3EC7104A7CF1}" Directory_="Centremacro_Dir" Attributes="256" KeyPath="Qt6VirtualKeyboard.dll"/>
+    <ROW Component="Qt6Widgets.dll" ComponentId="{BE1E4425-538D-471C-A343-F9FC19DC3690}" Directory_="Centremacro_Dir" Attributes="256" KeyPath="Qt6Widgets.dll"/>
+    <ROW Component="ResponseBox.cpython39.pyc" ComponentId="{0B4C0237-26BA-41F0-981B-9E04C2751CBA}" Directory_="__pycache___6_Dir" Attributes="0" KeyPath="ResponseBox.cpython39.pyc" Type="0"/>
+    <ROW Component="ResponseBox.py" ComponentId="{911AC77E-EDB5-4BD2-9DA8-E8C2718F9819}" Directory_="ResponseBox_Dir" Attributes="0" KeyPath="ResponseBox.py" Type="0"/>
+    <ROW Component="RgbBox.cpython39.pyc" ComponentId="{4092E7D5-726E-4AC1-9354-24CE0929F465}" Directory_="__pycache___7_Dir" Attributes="0" KeyPath="RgbBox.cpython39.pyc" Type="0"/>
+    <ROW Component="RgbBox.py" ComponentId="{F00B61B6-72C8-4165-AC80-142FD506205F}" Directory_="RgbBox_Dir" Attributes="0" KeyPath="RgbBox.py" Type="0"/>
+    <ROW Component="SHORTCUTDIR" ComponentId="{537B0C97-761B-4D82-8E0E-25CDF570E2B0}" Directory_="SHORTCUTDIR" Attributes="0"/>
+    <ROW Component="Shiboken.pyd" ComponentId="{F6C6A0BB-DEE7-42E2-96F5-EF2ED044A10B}" Directory_="shiboken6_Dir" Attributes="256" KeyPath="Shiboken.pyd" Type="0"/>
+    <ROW Component="SplashScreen.cpython39.pyc" ComponentId="{6658D6B8-722B-49B5-AB27-3FC87300D159}" Directory_="__pycache___8_Dir" Attributes="0" KeyPath="SplashScreen.cpython39.pyc" Type="0"/>
+    <ROW Component="SplashScreen.py" ComponentId="{6A9C4494-E3D2-4E7D-85D7-526E5AA09653}" Directory_="SplashScreen_Dir" Attributes="0" KeyPath="SplashScreen.py" Type="0"/>
+    <ROW Component="ToolBoxUi.cpython39.pyc" ComponentId="{6A480325-687A-4A40-B2F3-F35229B0C505}" Directory_="__pycache___9_Dir" Attributes="0" KeyPath="ToolBoxUi.cpython39.pyc" Type="0"/>
+    <ROW Component="ToolBoxUi.py" ComponentId="{F6A014D3-58C7-4723-896B-0B9FC759BCA9}" Directory_="ToolBoxUi_Dir" Attributes="0" KeyPath="ToolBoxUi.py" Type="0"/>
+    <ROW Component="VCRUNTIME140.dll" ComponentId="{A61D1291-84AD-41A4-8654-311BDCC4E268}" Directory_="Centremacro_Dir" Attributes="256" KeyPath="VCRUNTIME140.dll"/>
+    <ROW Component="VCRUNTIME140_1.dll" ComponentId="{F1A0FBF6-08A0-4BA6-8F51-99B0B8C550C1}" Directory_="Centremacro_Dir" Attributes="256" KeyPath="VCRUNTIME140_1.dll"/>
+    <ROW Component="__init__.cpython39.pyc" ComponentId="{5DEF6839-164D-4EEB-984B-657A97C47CFE}" Directory_="__pycache___1_Dir" Attributes="0" KeyPath="__init__.cpython39.pyc_1" Type="0"/>
+    <ROW Component="__init__.cpython39.pyc_1" ComponentId="{3487E228-5559-4A68-9AE8-3FA3C7249DAC}" Directory_="__pycache___10_Dir" Attributes="0" KeyPath="__init__.cpython39.pyc_3" Type="0"/>
+    <ROW Component="__init__.cpython39.pyc_2" ComponentId="{C3F881D0-47A7-43B2-9403-813F5CA832EB}" Directory_="__pycache___13_Dir" Attributes="0" KeyPath="__init__.cpython39.pyc_6" Type="0"/>
+    <ROW Component="__init__.cpython39.pyc_3" ComponentId="{19E6388A-2182-4726-A4A3-5129C6E8049C}" Directory_="__pycache___16_Dir" Attributes="0" KeyPath="__init__.cpython39.pyc_9" Type="0"/>
+    <ROW Component="__init__.cpython39.pyc_4" ComponentId="{0D7E9112-2ADF-4E91-AE34-546FA13F6FA9}" Directory_="__pycache___38_Dir" Attributes="0" KeyPath="__init__.cpython39.pyc_12" Type="0"/>
+    <ROW Component="__init__.py" ComponentId="{E8357811-F6EB-4AEB-88F8-8FC084E3519B}" Directory_="build_Dir" Attributes="0" KeyPath="__init__.py_1" Type="0"/>
+    <ROW Component="__init__.py_1" ComponentId="{7898AA36-0843-4D7A-B718-2BD418817AAC}" Directory_="dlg_Dir" Attributes="0" KeyPath="__init__.py_3" Type="0"/>
+    <ROW Component="__init__.py_2" ComponentId="{F8519C4F-4BDF-4FF5-B662-99D76B4464B0}" Directory_="gui_Dir" Attributes="0" KeyPath="__init__.py_6" Type="0"/>
+    <ROW Component="__init__.py_3" ComponentId="{EC1BDCE0-606A-465D-8C4F-0259CFC4290B}" Directory_="lib_Dir" Attributes="0" KeyPath="__init__.py_9" Type="0"/>
+    <ROW Component="__init__.py_4" ComponentId="{68E39A0C-2659-47BC-BC12-1F73CD91E7FE}" Directory_="src_Dir" Attributes="0" KeyPath="__init__.py_12" Type="0"/>
+    <ROW Component="_speedups.cp39win_amd64.pyd" ComponentId="{79F8C700-57DE-40CD-8E26-BA26E4C5E42D}" Directory_="markupsafe_Dir" Attributes="256" KeyPath="_speedups.cp39win_amd64.pyd" Type="0"/>
+    <ROW Component="_yaml.cp39win_amd64.pyd" ComponentId="{BB022A45-7117-4E2F-81DC-A157C93B5B11}" Directory_="yaml_Dir" Attributes="256" KeyPath="_yaml.cp39win_amd64.pyd" Type="0"/>
+    <ROW Component="agrandir.cur" ComponentId="{CF8AC444-CBA3-4E8C-8BFA-E5DD5C4DD45A}" Directory_="LaM0uette_Dir" Attributes="0" KeyPath="agrandir.cur" Type="0"/>
+    <ROW Component="agrandir.cur_1" ComponentId="{F4933A5B-FC0F-4121-9C4C-45DE024DCE6E}" Directory_="MyApp_Dir" Attributes="0" KeyPath="agrandir.cur_1" Type="0"/>
+    <ROW Component="agrandir.cur_2" ComponentId="{EF3EC77B-D99B-4393-AFFE-A4783331CED7}" Directory_="test_Dir" Attributes="0" KeyPath="agrandir.cur_2" Type="0"/>
+    <ROW Component="agrandir.svg" ComponentId="{40C96697-3255-49DA-9E9B-A0FE96350C9B}" Directory_="ui_Dir" Attributes="0" KeyPath="agrandir.svg" Type="0"/>
+    <ROW Component="agrandirbn1.svg" ComponentId="{0150242B-051A-4B3A-8019-1905A452DA48}" Directory_="rgb_2_Dir" Attributes="0" KeyPath="agrandirbn1.svg" Type="0"/>
+    <ROW Component="alice_blue.json" ComponentId="{C6C830F0-06E9-4093-8F63-C7C675B5C7A9}" Directory_="theme_Dir" Attributes="0" KeyPath="alice_blue.json" Type="0"/>
+    <ROW Component="base_library.zip" ComponentId="{19A1A241-F486-4923-9F79-4CA2C435A41A}" Directory_="Centremacro_Dir" Attributes="0" KeyPath="base_library.zip" Type="0"/>
+    <ROW Component="calendrier.svg" ComponentId="{2B1EDDAF-6ECA-4833-9858-F01D63F931A9}" Directory_="rgb_Dir" Attributes="0" KeyPath="calendrier.svg" Type="0"/>
+    <ROW Component="calendrier_thc.svg" ComponentId="{E7465154-FB98-43DD-B78C-C75944D7FDC1}" Directory_="divers_Dir" Attributes="0" KeyPath="calendrier_thc.svg" Type="0"/>
+    <ROW Component="config.cpython39.pyc" ComponentId="{B25144C7-3473-4FA3-8428-C82942B4F5AD}" Directory_="__pycache___2_Dir" Attributes="0" KeyPath="config.cpython39.pyc" Type="0"/>
+    <ROW Component="config.json" ComponentId="{C8F69ED0-FCD0-4372-926C-821014EE4C45}" Directory_="config_Dir" Attributes="0" KeyPath="config.json" Type="0"/>
+    <ROW Component="convert_ui.bat" ComponentId="{A1947854-40A1-48C4-9749-A364ABA65AC1}" Directory_="scripts_Dir" Attributes="0" KeyPath="convert_ui.bat" Type="0"/>
+    <ROW Component="inari.svg" ComponentId="{6CCFF362-35D0-413E-B9A3-031D5B22383C}" Directory_="rgb_1_Dir" Attributes="0" KeyPath="inari.svg" Type="0"/>
+    <ROW Component="inari_thc.svg" ComponentId="{57E691DD-D872-4138-BC38-2FA9964F8FA4}" Directory_="main_Dir" Attributes="0" KeyPath="inari_thc.svg" Type="0"/>
+    <ROW Component="input.ui" ComponentId="{33CC5E19-E1F7-47A8-BBBB-EA4EDBF96035}" Directory_="ui_1_Dir" Attributes="0" KeyPath="input.ui" Type="0"/>
+    <ROW Component="input_ui.cpython39.pyc" ComponentId="{BD4B6B50-A3F4-4B85-ACAF-2BD6B817CDAE}" Directory_="__pycache___12_Dir" Attributes="0" KeyPath="input_ui.cpython39.pyc" Type="0"/>
+    <ROW Component="libcrypto1_1.dll" ComponentId="{03F85189-FD25-41D8-9CC4-AA074DE14240}" Directory_="Centremacro_Dir" Attributes="256" KeyPath="libcrypto1_1.dll"/>
+    <ROW Component="libffi7.dll" ComponentId="{07602FA9-2E8F-48E6-868D-837EAE448524}" Directory_="Centremacro_Dir" Attributes="256" KeyPath="libffi7.dll"/>
+    <ROW Component="libssl1_1.dll" ComponentId="{431FEAB1-CBCE-4680-841F-B030A9969417}" Directory_="Centremacro_Dir" Attributes="256" KeyPath="libssl1_1.dll"/>
+    <ROW Component="opengl32sw.dll" ComponentId="{5D7EB2A2-AF13-4B12-8226-06CC7FB5FF79}" Directory_="Centremacro_Dir" Attributes="256" KeyPath="opengl32sw.dll"/>
+    <ROW Component="pyside6.abi3.dll" ComponentId="{02776D98-CAE2-4712-8139-A785E0A5DC06}" Directory_="Centremacro_Dir" Attributes="256" KeyPath="pyside6.abi3.dll"/>
+    <ROW Component="python3.dll" ComponentId="{5ACF6872-5990-4692-A51C-5E6EB69084D5}" Directory_="Centremacro_Dir" Attributes="256" KeyPath="python3.dll"/>
+    <ROW Component="python39.dll" ComponentId="{0A95D047-9E8D-4855-B79B-737583D84496}" Directory_="Centremacro_Dir" Attributes="256" KeyPath="python39.dll"/>
+    <ROW Component="qcertonlybackend.dll" ComponentId="{190F05E9-3C9F-472F-8A65-F517AEBA43DD}" Directory_="tls_Dir" Attributes="256" KeyPath="qcertonlybackend.dll"/>
+    <ROW Component="qdirect2d.dll" ComponentId="{A4F472CA-FC9E-489E-90A5-98E386B513C2}" Directory_="platforms_Dir" Attributes="256" KeyPath="qdirect2d.dll"/>
+    <ROW Component="qgif.dll" ComponentId="{324D954A-824B-4416-BAB8-766352E15844}" Directory_="imageformats_Dir" Attributes="256" KeyPath="qgif.dll"/>
+    <ROW Component="qicns.dll" ComponentId="{81CBDBAF-8F50-4F36-8950-18D1E4BC1E86}" Directory_="imageformats_Dir" Attributes="256" KeyPath="qicns.dll"/>
+    <ROW Component="qico.dll" ComponentId="{4F4F474A-8BC9-485E-AF52-F94F075572E8}" Directory_="imageformats_Dir" Attributes="256" KeyPath="qico.dll"/>
+    <ROW Component="qjpeg.dll" ComponentId="{DA04AB98-4447-4840-BB37-64C17BC8B605}" Directory_="imageformats_Dir" Attributes="256" KeyPath="qjpeg.dll"/>
+    <ROW Component="qminimal.dll" ComponentId="{B88C6A0F-3DC5-4297-9DDC-1316B425665E}" Directory_="platforms_Dir" Attributes="256" KeyPath="qminimal.dll"/>
+    <ROW Component="qnetworklistmanager.dll" ComponentId="{7D7E4C46-223E-4B86-9AFD-F88FAA561069}" Directory_="networkinformation_Dir" Attributes="256" KeyPath="qnetworklistmanager.dll"/>
+    <ROW Component="qoffscreen.dll" ComponentId="{8C6D7A1F-F0B5-4459-BE69-FD771B5BD04A}" Directory_="platforms_Dir" Attributes="256" KeyPath="qoffscreen.dll"/>
+    <ROW Component="qopensslbackend.dll" ComponentId="{1C930D32-3808-424E-914A-2147A1F24A01}" Directory_="tls_Dir" Attributes="256" KeyPath="qopensslbackend.dll"/>
+    <ROW Component="qschannelbackend.dll" ComponentId="{AED5BC1C-CE1A-4E04-B4F8-E8F93F8999B6}" Directory_="tls_Dir" Attributes="256" KeyPath="qschannelbackend.dll"/>
+    <ROW Component="qsvg.dll" ComponentId="{FD05FD8F-BE59-4455-95E0-D6AEACB7188A}" Directory_="imageformats_Dir" Attributes="256" KeyPath="qsvg.dll"/>
+    <ROW Component="qsvgicon.dll" ComponentId="{3585E75F-9891-4F32-BF0B-57E0DD003A3F}" Directory_="iconengines_Dir" Attributes="256" KeyPath="qsvgicon.dll"/>
+    <ROW Component="qt.conf" ComponentId="{5685BA7D-DEDC-4B28-BDFB-D154CEF243DF}" Directory_="PySide6_Dir" Attributes="0" KeyPath="qt.conf" Type="0"/>
+    <ROW Component="qtbase_ar.qm" ComponentId="{FCCD571F-E5F7-4A4C-B076-386F092ED4AD}" Directory_="translations_Dir" Attributes="0" KeyPath="qtbase_ar.qm" Type="0"/>
+    <ROW Component="qtga.dll" ComponentId="{33FAE2D6-7A76-4F61-84A6-6F4878D2C079}" Directory_="imageformats_Dir" Attributes="256" KeyPath="qtga.dll"/>
+    <ROW Component="qtiff.dll" ComponentId="{FA7262AB-8A2A-4353-94CB-DEDCB698669F}" Directory_="imageformats_Dir" Attributes="256" KeyPath="qtiff.dll"/>
+    <ROW Component="qtvirtualkeyboardplugin.dll" ComponentId="{FECD50DF-FB20-40CB-98E4-3739434B6001}" Directory_="platforminputcontexts_Dir" Attributes="256" KeyPath="qtvirtualkeyboardplugin.dll"/>
+    <ROW Component="qwbmp.dll" ComponentId="{A4515AAE-6D20-475C-B6EA-3F3DD477DED3}" Directory_="imageformats_Dir" Attributes="256" KeyPath="qwbmp.dll"/>
+    <ROW Component="qwebp.dll" ComponentId="{2490988A-B966-4DE7-9273-439048BF4CEE}" Directory_="imageformats_Dir" Attributes="256" KeyPath="qwebp.dll"/>
+    <ROW Component="qwindows.dll" ComponentId="{F0CE06D3-D8B5-41ED-AEF2-62EB2CF636EE}" Directory_="platforms_Dir" Attributes="256" KeyPath="qwindows.dll"/>
+    <ROW Component="qwindowsvistastyle.dll" ComponentId="{92A4A589-E83F-4B71-A072-C84B53AA2B9C}" Directory_="styles_Dir" Attributes="256" KeyPath="qwindowsvistastyle.dll"/>
+    <ROW Component="shiboken6.abi3.dll" ComponentId="{9FA2D800-FA10-41BE-90DE-E0081B4A9D3B}" Directory_="Centremacro_Dir" Attributes="256" KeyPath="shiboken6.abi3.dll"/>
+    <ROW Component="sqlite3.dll" ComponentId="{30FBE8C0-297C-4597-91F5-B82F92474A65}" Directory_="Centremacro_Dir" Attributes="256" KeyPath="sqlite3.dll"/>
+    <ROW Component="v_gb.cpython39.pyc" ComponentId="{2D4BF9AE-5EDE-4916-8346-BC3445BCFE88}" Directory_="__pycache___14_Dir" Attributes="0" KeyPath="v_gb.cpython39.pyc" Type="0"/>
+    <ROW Component="v_gb.py" ComponentId="{E032B94E-D152-4044-9E54-CD8E0577D67D}" Directory_="globals_Dir" Attributes="0" KeyPath="v_gb.py" Type="0"/>
+    <ROW Component="vb_app.cpython39.pyc" ComponentId="{101AD8E2-16A6-45B8-991D-D4333FDACC10}" Directory_="__pycache___36_Dir" Attributes="0" KeyPath="vb_app.cpython39.pyc" Type="0"/>
+    <ROW Component="vb_app.py" ComponentId="{1F5B1551-D416-4B29-9FAC-ABB49911CE00}" Directory_="widgets_Dir" Attributes="0" KeyPath="vb_app.py" Type="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="base_library.zip" Component_="base_library.zip" FileName="BASE_L~1.ZIP|base_library.zip" Attributes="0" SourcePath="Centre macro\base_library.zip" SelfReg="false"/>
+    <ROW File="Centremacro.exe" Component_="Centremacro.exe" FileName="CENTRE~1.EXE|Centre macro.exe" Attributes="0" SourcePath="Centre macro\Centre macro.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="libcrypto1_1.dll" Component_="libcrypto1_1.dll" FileName="LIBCRY~1.DLL|libcrypto-1_1.dll" Attributes="0" SourcePath="Centre macro\libcrypto-1_1.dll" SelfReg="false"/>
+    <ROW File="libffi7.dll" Component_="libffi7.dll" FileName="libffi-7.dll" Attributes="0" SourcePath="Centre macro\libffi-7.dll" SelfReg="false"/>
+    <ROW File="libssl1_1.dll" Component_="libssl1_1.dll" FileName="LIBSSL~1.DLL|libssl-1_1.dll" Attributes="0" SourcePath="Centre macro\libssl-1_1.dll" SelfReg="false"/>
+    <ROW File="_speedups.cp39win_amd64.pyd" Component_="_speedups.cp39win_amd64.pyd" FileName="_SPEED~1.PYD|_speedups.cp39-win_amd64.pyd" Attributes="0" SourcePath="Centre macro\markupsafe\_speedups.cp39-win_amd64.pyd" SelfReg="false"/>
+    <ROW File="MSVCP140.dll" Component_="MSVCP140.dll" FileName="MSVCP140.dll" Attributes="0" SourcePath="Centre macro\MSVCP140.dll" SelfReg="false"/>
+    <ROW File="MSVCP140_1.dll" Component_="MSVCP140_1.dll" FileName="MSVCP1~1.DLL|MSVCP140_1.dll" Attributes="0" SourcePath="Centre macro\MSVCP140_1.dll" SelfReg="false"/>
+    <ROW File="MSVCP140_2.dll" Component_="MSVCP140_2.dll" FileName="MSVCP1~2.DLL|MSVCP140_2.dll" Attributes="0" SourcePath="Centre macro\MSVCP140_2.dll" SelfReg="false"/>
+    <ROW File="opengl32sw.dll" Component_="opengl32sw.dll" FileName="OPENGL~1.DLL|opengl32sw.dll" Attributes="0" SourcePath="Centre macro\opengl32sw.dll" SelfReg="false"/>
+    <ROW File="pyexpat.pyd" Component_="base_library.zip" FileName="pyexpat.pyd" Attributes="0" SourcePath="Centre macro\pyexpat.pyd" SelfReg="false"/>
+    <ROW File="qsvgicon.dll" Component_="qsvgicon.dll" FileName="qsvgicon.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\iconengines\qsvgicon.dll" SelfReg="false"/>
+    <ROW File="qgif.dll" Component_="qgif.dll" FileName="qgif.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\imageformats\qgif.dll" SelfReg="false"/>
+    <ROW File="qicns.dll" Component_="qicns.dll" FileName="qicns.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\imageformats\qicns.dll" SelfReg="false"/>
+    <ROW File="qico.dll" Component_="qico.dll" FileName="qico.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\imageformats\qico.dll" SelfReg="false"/>
+    <ROW File="qjpeg.dll" Component_="qjpeg.dll" FileName="qjpeg.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\imageformats\qjpeg.dll" SelfReg="false"/>
+    <ROW File="qsvg.dll" Component_="qsvg.dll" FileName="qsvg.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\imageformats\qsvg.dll" SelfReg="false"/>
+    <ROW File="qtga.dll" Component_="qtga.dll" FileName="qtga.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\imageformats\qtga.dll" SelfReg="false"/>
+    <ROW File="qtiff.dll" Component_="qtiff.dll" FileName="qtiff.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\imageformats\qtiff.dll" SelfReg="false"/>
+    <ROW File="qwbmp.dll" Component_="qwbmp.dll" FileName="qwbmp.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\imageformats\qwbmp.dll" SelfReg="false"/>
+    <ROW File="qwebp.dll" Component_="qwebp.dll" FileName="qwebp.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\imageformats\qwebp.dll" SelfReg="false"/>
+    <ROW File="qnetworklistmanager.dll" Component_="qnetworklistmanager.dll" FileName="QNETWO~1.DLL|qnetworklistmanager.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\networkinformation\qnetworklistmanager.dll" SelfReg="false"/>
+    <ROW File="qtvirtualkeyboardplugin.dll" Component_="qtvirtualkeyboardplugin.dll" FileName="QTVIRT~1.DLL|qtvirtualkeyboardplugin.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\platforminputcontexts\qtvirtualkeyboardplugin.dll" SelfReg="false"/>
+    <ROW File="qdirect2d.dll" Component_="qdirect2d.dll" FileName="QDIREC~1.DLL|qdirect2d.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\platforms\qdirect2d.dll" SelfReg="false"/>
+    <ROW File="qminimal.dll" Component_="qminimal.dll" FileName="qminimal.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\platforms\qminimal.dll" SelfReg="false"/>
+    <ROW File="qoffscreen.dll" Component_="qoffscreen.dll" FileName="QOFFSC~1.DLL|qoffscreen.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\platforms\qoffscreen.dll" SelfReg="false"/>
+    <ROW File="qwindows.dll" Component_="qwindows.dll" FileName="qwindows.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\platforms\qwindows.dll" SelfReg="false"/>
+    <ROW File="qwindowsvistastyle.dll" Component_="qwindowsvistastyle.dll" FileName="QWINDO~1.DLL|qwindowsvistastyle.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\styles\qwindowsvistastyle.dll" SelfReg="false"/>
+    <ROW File="qcertonlybackend.dll" Component_="qcertonlybackend.dll" FileName="QCERTO~1.DLL|qcertonlybackend.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\tls\qcertonlybackend.dll" SelfReg="false"/>
+    <ROW File="qopensslbackend.dll" Component_="qopensslbackend.dll" FileName="QOPENS~1.DLL|qopensslbackend.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\tls\qopensslbackend.dll" SelfReg="false"/>
+    <ROW File="qschannelbackend.dll" Component_="qschannelbackend.dll" FileName="QSCHAN~1.DLL|qschannelbackend.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\tls\qschannelbackend.dll" SelfReg="false"/>
+    <ROW File="qt.conf" Component_="qt.conf" FileName="QT~1.CON|qt.conf" Attributes="0" SourcePath="Centre macro\PySide6\qt.conf" SelfReg="false"/>
+    <ROW File="QtCore.pyd" Component_="qt.conf" FileName="QtCore.pyd" Attributes="0" SourcePath="Centre macro\PySide6\QtCore.pyd" SelfReg="false"/>
+    <ROW File="QtGui.pyd" Component_="qt.conf" FileName="QtGui.pyd" Attributes="0" SourcePath="Centre macro\PySide6\QtGui.pyd" SelfReg="false"/>
+    <ROW File="QtNetwork.pyd" Component_="qt.conf" FileName="QTNETW~1.PYD|QtNetwork.pyd" Attributes="0" SourcePath="Centre macro\PySide6\QtNetwork.pyd" SelfReg="false"/>
+    <ROW File="QtWidgets.pyd" Component_="qt.conf" FileName="QTWIDG~1.PYD|QtWidgets.pyd" Attributes="0" SourcePath="Centre macro\PySide6\QtWidgets.pyd" SelfReg="false"/>
+    <ROW File="qtbase_ar.qm" Component_="qtbase_ar.qm" FileName="QTBASE~1.QM|qtbase_ar.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_ar.qm" SelfReg="false"/>
+    <ROW File="qtbase_bg.qm" Component_="qtbase_ar.qm" FileName="QTBASE~2.QM|qtbase_bg.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_bg.qm" SelfReg="false"/>
+    <ROW File="qtbase_ca.qm" Component_="qtbase_ar.qm" FileName="QTBASE~3.QM|qtbase_ca.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_ca.qm" SelfReg="false"/>
+    <ROW File="qtbase_cs.qm" Component_="qtbase_ar.qm" FileName="QTBASE~4.QM|qtbase_cs.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_cs.qm" SelfReg="false"/>
+    <ROW File="qtbase_da.qm" Component_="qtbase_ar.qm" FileName="QTBASE~5.QM|qtbase_da.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_da.qm" SelfReg="false"/>
+    <ROW File="qtbase_de.qm" Component_="qtbase_ar.qm" FileName="QTBASE~6.QM|qtbase_de.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_de.qm" SelfReg="false"/>
+    <ROW File="qtbase_en.qm" Component_="qtbase_ar.qm" FileName="QTBASE~7.QM|qtbase_en.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_en.qm" SelfReg="false"/>
+    <ROW File="qtbase_es.qm" Component_="qtbase_ar.qm" FileName="QTBASE~8.QM|qtbase_es.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_es.qm" SelfReg="false"/>
+    <ROW File="qtbase_fa.qm" Component_="qtbase_ar.qm" FileName="QTBASE~9.QM|qtbase_fa.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_fa.qm" SelfReg="false"/>
+    <ROW File="qtbase_fi.qm" Component_="qtbase_ar.qm" FileName="QTBAS~10.QM|qtbase_fi.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_fi.qm" SelfReg="false"/>
+    <ROW File="qtbase_fr.qm" Component_="qtbase_ar.qm" FileName="QTBAS~11.QM|qtbase_fr.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_fr.qm" SelfReg="false"/>
+    <ROW File="qtbase_gd.qm" Component_="qtbase_ar.qm" FileName="QTBAS~12.QM|qtbase_gd.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_gd.qm" SelfReg="false"/>
+    <ROW File="qtbase_he.qm" Component_="qtbase_ar.qm" FileName="QTBAS~13.QM|qtbase_he.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_he.qm" SelfReg="false"/>
+    <ROW File="qtbase_hr.qm" Component_="qtbase_ar.qm" FileName="QTBAS~14.QM|qtbase_hr.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_hr.qm" SelfReg="false"/>
+    <ROW File="qtbase_hu.qm" Component_="qtbase_ar.qm" FileName="QTBAS~15.QM|qtbase_hu.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_hu.qm" SelfReg="false"/>
+    <ROW File="qtbase_it.qm" Component_="qtbase_ar.qm" FileName="QTBAS~16.QM|qtbase_it.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_it.qm" SelfReg="false"/>
+    <ROW File="qtbase_ja.qm" Component_="qtbase_ar.qm" FileName="QTBAS~17.QM|qtbase_ja.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_ja.qm" SelfReg="false"/>
+    <ROW File="qtbase_ko.qm" Component_="qtbase_ar.qm" FileName="QTBAS~18.QM|qtbase_ko.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_ko.qm" SelfReg="false"/>
+    <ROW File="qtbase_lv.qm" Component_="qtbase_ar.qm" FileName="QTBAS~19.QM|qtbase_lv.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_lv.qm" SelfReg="false"/>
+    <ROW File="qtbase_nl.qm" Component_="qtbase_ar.qm" FileName="QTBAS~20.QM|qtbase_nl.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_nl.qm" SelfReg="false"/>
+    <ROW File="qtbase_nn.qm" Component_="qtbase_ar.qm" FileName="QTBAS~21.QM|qtbase_nn.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_nn.qm" SelfReg="false"/>
+    <ROW File="qtbase_pl.qm" Component_="qtbase_ar.qm" FileName="QTBAS~22.QM|qtbase_pl.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_pl.qm" SelfReg="false"/>
+    <ROW File="qtbase_pt_BR.qm" Component_="qtbase_ar.qm" FileName="QTBAS~23.QM|qtbase_pt_BR.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_pt_BR.qm" SelfReg="false"/>
+    <ROW File="qtbase_ru.qm" Component_="qtbase_ar.qm" FileName="QTBAS~24.QM|qtbase_ru.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_ru.qm" SelfReg="false"/>
+    <ROW File="qtbase_sk.qm" Component_="qtbase_ar.qm" FileName="QTBAS~25.QM|qtbase_sk.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_sk.qm" SelfReg="false"/>
+    <ROW File="qtbase_tr.qm" Component_="qtbase_ar.qm" FileName="QTBAS~26.QM|qtbase_tr.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_tr.qm" SelfReg="false"/>
+    <ROW File="qtbase_uk.qm" Component_="qtbase_ar.qm" FileName="QTBAS~27.QM|qtbase_uk.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_uk.qm" SelfReg="false"/>
+    <ROW File="qtbase_zh_CN.qm" Component_="qtbase_ar.qm" FileName="QTBAS~28.QM|qtbase_zh_CN.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_zh_CN.qm" SelfReg="false"/>
+    <ROW File="qtbase_zh_TW.qm" Component_="qtbase_ar.qm" FileName="QTBAS~29.QM|qtbase_zh_TW.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_zh_TW.qm" SelfReg="false"/>
+    <ROW File="pyside6.abi3.dll" Component_="pyside6.abi3.dll" FileName="PYSIDE~1.DLL|pyside6.abi3.dll" Attributes="0" SourcePath="Centre macro\pyside6.abi3.dll" SelfReg="false"/>
+    <ROW File="python3.dll" Component_="python3.dll" FileName="python3.dll" Attributes="0" SourcePath="Centre macro\python3.dll" SelfReg="false"/>
+    <ROW File="python39.dll" Component_="python39.dll" FileName="python39.dll" Attributes="0" SourcePath="Centre macro\python39.dll" SelfReg="false"/>
+    <ROW File="Qt6Core.dll" Component_="Qt6Core.dll" FileName="Qt6Core.dll" Attributes="0" SourcePath="Centre macro\Qt6Core.dll" SelfReg="false"/>
+    <ROW File="Qt6Gui.dll" Component_="Qt6Gui.dll" FileName="Qt6Gui.dll" Attributes="0" SourcePath="Centre macro\Qt6Gui.dll" SelfReg="false"/>
+    <ROW File="Qt6Network.dll" Component_="Qt6Network.dll" FileName="QT6NET~1.DLL|Qt6Network.dll" Attributes="0" SourcePath="Centre macro\Qt6Network.dll" SelfReg="false"/>
+    <ROW File="Qt6OpenGL.dll" Component_="Qt6OpenGL.dll" FileName="QT6OPE~1.DLL|Qt6OpenGL.dll" Attributes="0" SourcePath="Centre macro\Qt6OpenGL.dll" SelfReg="false"/>
+    <ROW File="Qt6Qml.dll" Component_="Qt6Qml.dll" FileName="Qt6Qml.dll" Attributes="0" SourcePath="Centre macro\Qt6Qml.dll" SelfReg="false"/>
+    <ROW File="Qt6QmlModels.dll" Component_="Qt6QmlModels.dll" FileName="QT6QML~1.DLL|Qt6QmlModels.dll" Attributes="0" SourcePath="Centre macro\Qt6QmlModels.dll" SelfReg="false"/>
+    <ROW File="Qt6Quick.dll" Component_="Qt6Quick.dll" FileName="Qt6Quick.dll" Attributes="0" SourcePath="Centre macro\Qt6Quick.dll" SelfReg="false"/>
+    <ROW File="Qt6Svg.dll" Component_="Qt6Svg.dll" FileName="Qt6Svg.dll" Attributes="0" SourcePath="Centre macro\Qt6Svg.dll" SelfReg="false"/>
+    <ROW File="Qt6VirtualKeyboard.dll" Component_="Qt6VirtualKeyboard.dll" FileName="QT6VIR~1.DLL|Qt6VirtualKeyboard.dll" Attributes="0" SourcePath="Centre macro\Qt6VirtualKeyboard.dll" SelfReg="false"/>
+    <ROW File="Qt6Widgets.dll" Component_="Qt6Widgets.dll" FileName="QT6WID~1.DLL|Qt6Widgets.dll" Attributes="0" SourcePath="Centre macro\Qt6Widgets.dll" SelfReg="false"/>
+    <ROW File="select.pyd" Component_="base_library.zip" FileName="select.pyd" Attributes="0" SourcePath="Centre macro\select.pyd" SelfReg="false"/>
+    <ROW File="Shiboken.pyd" Component_="Shiboken.pyd" FileName="Shiboken.pyd" Attributes="0" SourcePath="Centre macro\shiboken6\Shiboken.pyd" SelfReg="false"/>
+    <ROW File="shiboken6.abi3.dll" Component_="shiboken6.abi3.dll" FileName="SHIBOK~1.DLL|shiboken6.abi3.dll" Attributes="0" SourcePath="Centre macro\shiboken6.abi3.dll" SelfReg="false"/>
+    <ROW File="sqlite3.dll" Component_="sqlite3.dll" FileName="sqlite3.dll" Attributes="0" SourcePath="Centre macro\sqlite3.dll" SelfReg="false"/>
+    <ROW File="agrandir.cur" Component_="agrandir.cur" FileName="agrandir.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\LaM0uette\agrandir.cur" SelfReg="false"/>
+    <ROW File="copier.cur" Component_="agrandir.cur" FileName="copier.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\LaM0uette\copier.cur" SelfReg="false"/>
+    <ROW File="crayon.cur" Component_="agrandir.cur" FileName="crayon.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\LaM0uette\crayon.cur" SelfReg="false"/>
+    <ROW File="croix.cur" Component_="agrandir.cur" FileName="croix.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\LaM0uette\croix.cur" SelfReg="false"/>
+    <ROW File="distance_curseur.txt" Component_="agrandir.cur" FileName="DISTAN~1.TXT|distance_curseur.txt" Attributes="0" SourcePath="Centre macro\src\assets\cursor\LaM0uette\distance_curseur.txt" SelfReg="false"/>
+    <ROW File="flecheNESW.cur" Component_="agrandir.cur" FileName="FLECHE~1.CUR|flecheNESW.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\LaM0uette\flecheNESW.cur" SelfReg="false"/>
+    <ROW File="flecheNS.cur" Component_="agrandir.cur" FileName="flecheNS.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\LaM0uette\flecheNS.cur" SelfReg="false"/>
+    <ROW File="flecheNWSE.cur" Component_="agrandir.cur" FileName="FLECHE~2.CUR|flecheNWSE.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\LaM0uette\flecheNWSE.cur" SelfReg="false"/>
+    <ROW File="flecheTop.cur" Component_="agrandir.cur" FileName="FLECHE~3.CUR|flecheTop.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\LaM0uette\flecheTop.cur" SelfReg="false"/>
+    <ROW File="flecheTout.cur" Component_="agrandir.cur" FileName="FLECHE~4.CUR|flecheTout.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\LaM0uette\flecheTout.cur" SelfReg="false"/>
+    <ROW File="flecheWE.cur" Component_="agrandir.cur" FileName="flecheWE.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\LaM0uette\flecheWE.cur" SelfReg="false"/>
+    <ROW File="fleche_nesw.cur" Component_="agrandir.cur" FileName="FLECHE~5.CUR|fleche_nesw.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\LaM0uette\fleche_nesw.cur" SelfReg="false"/>
+    <ROW File="fleche_ns.cur" Component_="agrandir.cur" FileName="FLECHE~6.CUR|fleche_ns.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\LaM0uette\fleche_ns.cur" SelfReg="false"/>
+    <ROW File="fleche_nwse.cur" Component_="agrandir.cur" FileName="FLECHE~7.CUR|fleche_nwse.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\LaM0uette\fleche_nwse.cur" SelfReg="false"/>
+    <ROW File="fleche_top.cur" Component_="agrandir.cur" FileName="FLECHE~8.CUR|fleche_top.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\LaM0uette\fleche_top.cur" SelfReg="false"/>
+    <ROW File="fleche_tout.cur" Component_="agrandir.cur" FileName="FLECHE~9.CUR|fleche_tout.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\LaM0uette\fleche_tout.cur" SelfReg="false"/>
+    <ROW File="fleche_we.cur" Component_="agrandir.cur" FileName="FLECH~10.CUR|fleche_we.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\LaM0uette\fleche_we.cur" SelfReg="false"/>
+    <ROW File="IBeam.cur" Component_="agrandir.cur" FileName="IBeam.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\LaM0uette\IBeam.cur" SelfReg="false"/>
+    <ROW File="infos.cur" Component_="agrandir.cur" FileName="infos.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\LaM0uette\infos.cur" SelfReg="false"/>
+    <ROW File="main.cur" Component_="agrandir.cur" FileName="main.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\LaM0uette\main.cur" SelfReg="false"/>
+    <ROW File="NON.cur" Component_="agrandir.cur" FileName="NON.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\LaM0uette\NON.cur" SelfReg="false"/>
+    <ROW File="retour.cur" Component_="agrandir.cur" FileName="retour.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\LaM0uette\retour.cur" SelfReg="false"/>
+    <ROW File="souris.cur" Component_="agrandir.cur" FileName="souris.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\LaM0uette\souris.cur" SelfReg="false"/>
+    <ROW File="sourisMain.cur" Component_="agrandir.cur" FileName="SOURIS~1.CUR|sourisMain.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\LaM0uette\sourisMain.cur" SelfReg="false"/>
+    <ROW File="sourisNON.cur" Component_="agrandir.cur" FileName="SOURIS~2.CUR|sourisNON.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\LaM0uette\sourisNON.cur" SelfReg="false"/>
+    <ROW File="souris_main.cur" Component_="agrandir.cur" FileName="SOURIS~3.CUR|souris_main.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\LaM0uette\souris_main.cur" SelfReg="false"/>
+    <ROW File="souris_non.cur" Component_="agrandir.cur" FileName="SOURIS~4.CUR|souris_non.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\LaM0uette\souris_non.cur" SelfReg="false"/>
+    <ROW File="wait.ani" Component_="agrandir.cur" FileName="wait.ani" Attributes="0" SourcePath="Centre macro\src\assets\cursor\LaM0uette\wait.ani" SelfReg="false"/>
+    <ROW File="_data.json" Component_="agrandir.cur" FileName="_DATA~1.JSO|_data.json" Attributes="0" SourcePath="Centre macro\src\assets\cursor\LaM0uette\_data.json" SelfReg="false"/>
+    <ROW File="agrandir.cur_1" Component_="agrandir.cur_1" FileName="agrandir.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\MyApp\agrandir.cur" SelfReg="false"/>
+    <ROW File="copier.cur_1" Component_="agrandir.cur_1" FileName="copier.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\MyApp\copier.cur" SelfReg="false"/>
+    <ROW File="crayon.cur_1" Component_="agrandir.cur_1" FileName="crayon.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\MyApp\crayon.cur" SelfReg="false"/>
+    <ROW File="croix.cur_1" Component_="agrandir.cur_1" FileName="croix.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\MyApp\croix.cur" SelfReg="false"/>
+    <ROW File="fleche_nesw.cur_1" Component_="agrandir.cur_1" FileName="FLECHE~1.CUR|fleche_nesw.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\MyApp\fleche_nesw.cur" SelfReg="false"/>
+    <ROW File="fleche_ns.cur_1" Component_="agrandir.cur_1" FileName="FLECHE~2.CUR|fleche_ns.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\MyApp\fleche_ns.cur" SelfReg="false"/>
+    <ROW File="fleche_nwse.cur_1" Component_="agrandir.cur_1" FileName="FLECHE~3.CUR|fleche_nwse.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\MyApp\fleche_nwse.cur" SelfReg="false"/>
+    <ROW File="fleche_top.cur_1" Component_="agrandir.cur_1" FileName="FLECHE~4.CUR|fleche_top.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\MyApp\fleche_top.cur" SelfReg="false"/>
+    <ROW File="fleche_tout.cur_1" Component_="agrandir.cur_1" FileName="FLECHE~5.CUR|fleche_tout.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\MyApp\fleche_tout.cur" SelfReg="false"/>
+    <ROW File="fleche_we.cur_1" Component_="agrandir.cur_1" FileName="FLECHE~6.CUR|fleche_we.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\MyApp\fleche_we.cur" SelfReg="false"/>
+    <ROW File="ibeam.cur_1" Component_="agrandir.cur_1" FileName="ibeam.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\MyApp\ibeam.cur" SelfReg="false"/>
+    <ROW File="infos.cur_1" Component_="agrandir.cur_1" FileName="infos.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\MyApp\infos.cur" SelfReg="false"/>
+    <ROW File="main.cur_1" Component_="agrandir.cur_1" FileName="main.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\MyApp\main.cur" SelfReg="false"/>
+    <ROW File="non.cur_1" Component_="agrandir.cur_1" FileName="non.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\MyApp\non.cur" SelfReg="false"/>
+    <ROW File="retour.cur_1" Component_="agrandir.cur_1" FileName="retour.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\MyApp\retour.cur" SelfReg="false"/>
+    <ROW File="souris.cur_1" Component_="agrandir.cur_1" FileName="souris.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\MyApp\souris.cur" SelfReg="false"/>
+    <ROW File="souris_main.cur_1" Component_="agrandir.cur_1" FileName="SOURIS~1.CUR|souris_main.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\MyApp\souris_main.cur" SelfReg="false"/>
+    <ROW File="souris_non.cur_1" Component_="agrandir.cur_1" FileName="SOURIS~2.CUR|souris_non.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\MyApp\souris_non.cur" SelfReg="false"/>
+    <ROW File="souris_wait.ani" Component_="agrandir.cur_1" FileName="SOURIS~1.ANI|souris_wait.ani" Attributes="0" SourcePath="Centre macro\src\assets\cursor\MyApp\souris_wait.ani" SelfReg="false"/>
+    <ROW File="wait.ani_1" Component_="agrandir.cur_1" FileName="wait.ani" Attributes="0" SourcePath="Centre macro\src\assets\cursor\MyApp\wait.ani" SelfReg="false"/>
+    <ROW File="_data.json_1" Component_="agrandir.cur_1" FileName="_DATA~1.JSO|_data.json" Attributes="0" SourcePath="Centre macro\src\assets\cursor\MyApp\_data.json" SelfReg="false"/>
+    <ROW File="agrandir.cur_2" Component_="agrandir.cur_2" FileName="agrandir.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\test\agrandir.cur" SelfReg="false"/>
+    <ROW File="Arrow.cur" Component_="agrandir.cur_2" FileName="Arrow.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\test\Arrow.cur" SelfReg="false"/>
+    <ROW File="Busy.txt" Component_="agrandir.cur_2" FileName="Busy.txt" Attributes="0" SourcePath="Centre macro\src\assets\cursor\test\Busy.txt" SelfReg="false"/>
+    <ROW File="CloseHand.txt" Component_="agrandir.cur_2" FileName="CLOSEH~1.TXT|CloseHand.txt" Attributes="0" SourcePath="Centre macro\src\assets\cursor\test\CloseHand.txt" SelfReg="false"/>
+    <ROW File="crayon.cur_2" Component_="agrandir.cur_2" FileName="crayon.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\test\crayon.cur" SelfReg="false"/>
+    <ROW File="Cross.cur" Component_="agrandir.cur_2" FileName="Cross.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\test\Cross.cur" SelfReg="false"/>
+    <ROW File="distance_curseur.txt_1" Component_="agrandir.cur_2" FileName="DISTAN~1.TXT|distance_curseur.txt" Attributes="0" SourcePath="Centre macro\src\assets\cursor\test\distance_curseur.txt" SelfReg="false"/>
+    <ROW File="DragCopy.cur" Component_="agrandir.cur_2" FileName="DragCopy.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\test\DragCopy.cur" SelfReg="false"/>
+    <ROW File="DragLink.txt" Component_="agrandir.cur_2" FileName="DragLink.txt" Attributes="0" SourcePath="Centre macro\src\assets\cursor\test\DragLink.txt" SelfReg="false"/>
+    <ROW File="DragMove.txt" Component_="agrandir.cur_2" FileName="DragMove.txt" Attributes="0" SourcePath="Centre macro\src\assets\cursor\test\DragMove.txt" SelfReg="false"/>
+    <ROW File="flecheNESW.cur_1" Component_="agrandir.cur_2" FileName="FLECHE~1.CUR|flecheNESW.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\test\flecheNESW.cur" SelfReg="false"/>
+    <ROW File="flecheNS.cur_1" Component_="agrandir.cur_2" FileName="flecheNS.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\test\flecheNS.cur" SelfReg="false"/>
+    <ROW File="flecheNWSE.cur_1" Component_="agrandir.cur_2" FileName="FLECHE~2.CUR|flecheNWSE.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\test\flecheNWSE.cur" SelfReg="false"/>
+    <ROW File="flecheTop.cur_1" Component_="agrandir.cur_2" FileName="FLECHE~3.CUR|flecheTop.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\test\flecheTop.cur" SelfReg="false"/>
+    <ROW File="flecheTout.cur_1" Component_="agrandir.cur_2" FileName="FLECHE~4.CUR|flecheTout.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\test\flecheTout.cur" SelfReg="false"/>
+    <ROW File="flecheWE.cur_1" Component_="agrandir.cur_2" FileName="flecheWE.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\test\flecheWE.cur" SelfReg="false"/>
+    <ROW File="fleche_nesw.cur_2" Component_="agrandir.cur_2" FileName="FLECHE~5.CUR|fleche_nesw.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\test\fleche_nesw.cur" SelfReg="false"/>
+    <ROW File="fleche_ns.cur_2" Component_="agrandir.cur_2" FileName="FLECHE~6.CUR|fleche_ns.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\test\fleche_ns.cur" SelfReg="false"/>
+    <ROW File="fleche_nwse.cur_2" Component_="agrandir.cur_2" FileName="FLECHE~7.CUR|fleche_nwse.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\test\fleche_nwse.cur" SelfReg="false"/>
+    <ROW File="fleche_top.cur_2" Component_="agrandir.cur_2" FileName="FLECHE~8.CUR|fleche_top.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\test\fleche_top.cur" SelfReg="false"/>
+    <ROW File="fleche_tout.cur_2" Component_="agrandir.cur_2" FileName="FLECHE~9.CUR|fleche_tout.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\test\fleche_tout.cur" SelfReg="false"/>
+    <ROW File="fleche_we.cur_2" Component_="agrandir.cur_2" FileName="FLECH~10.CUR|fleche_we.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\test\fleche_we.cur" SelfReg="false"/>
+    <ROW File="Forbidden.cur" Component_="agrandir.cur_2" FileName="FORBID~1.CUR|Forbidden.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\test\Forbidden.cur" SelfReg="false"/>
+    <ROW File="IBeam.cur_2" Component_="agrandir.cur_2" FileName="IBeam.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\test\IBeam.cur" SelfReg="false"/>
+    <ROW File="infos.cur_2" Component_="agrandir.cur_2" FileName="infos.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\test\infos.cur" SelfReg="false"/>
+    <ROW File="main.cur_2" Component_="agrandir.cur_2" FileName="main.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\test\main.cur" SelfReg="false"/>
+    <ROW File="retour.cur_2" Component_="agrandir.cur_2" FileName="retour.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\test\retour.cur" SelfReg="false"/>
+    <ROW File="sourisMain.cur_1" Component_="agrandir.cur_2" FileName="SOURIS~1.CUR|sourisMain.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\test\sourisMain.cur" SelfReg="false"/>
+    <ROW File="sourisNON.cur_1" Component_="agrandir.cur_2" FileName="SOURIS~2.CUR|sourisNON.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\test\sourisNON.cur" SelfReg="false"/>
+    <ROW File="souris_main.cur_2" Component_="agrandir.cur_2" FileName="SOURIS~3.CUR|souris_main.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\test\souris_main.cur" SelfReg="false"/>
+    <ROW File="souris_non.cur_2" Component_="agrandir.cur_2" FileName="SOURIS~4.CUR|souris_non.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\test\souris_non.cur" SelfReg="false"/>
+    <ROW File="wait.ani_2" Component_="agrandir.cur_2" FileName="wait.ani" Attributes="0" SourcePath="Centre macro\src\assets\cursor\test\wait.ani" SelfReg="false"/>
+    <ROW File="_data.json_2" Component_="agrandir.cur_2" FileName="_DATA~1.JSO|_data.json" Attributes="0" SourcePath="Centre macro\src\assets\cursor\test\_data.json" SelfReg="false"/>
+    <ROW File="calendrier_thc.svg" Component_="calendrier_thc.svg" FileName="CALEND~1.SVG|calendrier_thc.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\divers\calendrier_thc.svg" SelfReg="false"/>
+    <ROW File="calendrier.svg" Component_="calendrier.svg" FileName="CALEND~1.SVG|calendrier.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\divers\rgb\calendrier.svg" SelfReg="false"/>
+    <ROW File="inari_thc.svg" Component_="inari_thc.svg" FileName="INARI_~1.SVG|inari_thc.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\main\inari_thc.svg" SelfReg="false"/>
+    <ROW File="main.ico" Component_="inari_thc.svg" FileName="main.ico" Attributes="0" SourcePath="Centre macro\src\assets\img\main\main.ico" SelfReg="false"/>
+    <ROW File="main.svg" Component_="inari_thc.svg" FileName="main.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\main\main.svg" SelfReg="false"/>
+    <ROW File="inari.svg" Component_="inari.svg" FileName="inari.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\main\rgb\inari.svg" SelfReg="false"/>
+    <ROW File="mainbn1.svg" Component_="inari.svg" FileName="mainbn1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\main\rgb\mainbn1.svg" SelfReg="false"/>
+    <ROW File="mainbn2.svg" Component_="inari.svg" FileName="mainbn2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\main\rgb\mainbn2.svg" SelfReg="false"/>
+    <ROW File="mainth1.svg" Component_="inari.svg" FileName="mainth1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\main\rgb\mainth1.svg" SelfReg="false"/>
+    <ROW File="mainth2.svg" Component_="inari.svg" FileName="mainth2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\main\rgb\mainth2.svg" SelfReg="false"/>
+    <ROW File="mainth3.svg" Component_="inari.svg" FileName="mainth3.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\main\rgb\mainth3.svg" SelfReg="false"/>
+    <ROW File="agrandir.svg" Component_="agrandir.svg" FileName="agrandir.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\agrandir.svg" SelfReg="false"/>
+    <ROW File="alerte.svg" Component_="agrandir.svg" FileName="alerte.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\alerte.svg" SelfReg="false"/>
+    <ROW File="check0.svg" Component_="agrandir.svg" FileName="check0.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\check0.svg" SelfReg="false"/>
+    <ROW File="check0_rond.svg" Component_="agrandir.svg" FileName="CHECK0~1.SVG|check0_rond.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\check0_rond.svg" SelfReg="false"/>
+    <ROW File="check1.svg" Component_="agrandir.svg" FileName="check1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\check1.svg" SelfReg="false"/>
+    <ROW File="check1_rond.svg" Component_="agrandir.svg" FileName="CHECK1~1.SVG|check1_rond.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\check1_rond.svg" SelfReg="false"/>
+    <ROW File="check2.svg" Component_="agrandir.svg" FileName="check2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\check2.svg" SelfReg="false"/>
+    <ROW File="check2_rond.svg" Component_="agrandir.svg" FileName="CHECK2~1.SVG|check2_rond.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\check2_rond.svg" SelfReg="false"/>
+    <ROW File="copier.svg" Component_="agrandir.svg" FileName="copier.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\copier.svg" SelfReg="false"/>
+    <ROW File="fleche_bottom.svg" Component_="agrandir.svg" FileName="FLECHE~1.SVG|fleche_bottom.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\fleche_bottom.svg" SelfReg="false"/>
+    <ROW File="fleche_droite.svg" Component_="agrandir.svg" FileName="FLECHE~2.SVG|fleche_droite.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\fleche_droite.svg" SelfReg="false"/>
+    <ROW File="fleche_gauche.svg" Component_="agrandir.svg" FileName="FLECHE~3.SVG|fleche_gauche.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\fleche_gauche.svg" SelfReg="false"/>
+    <ROW File="fleche_top.svg" Component_="agrandir.svg" FileName="FLECHE~4.SVG|fleche_top.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\fleche_top.svg" SelfReg="false"/>
+    <ROW File="img_vide.svg" Component_="agrandir.svg" FileName="img_vide.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\img_vide.svg" SelfReg="false"/>
+    <ROW File="info.svg" Component_="agrandir.svg" FileName="info.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\info.svg" SelfReg="false"/>
+    <ROW File="lock.svg" Component_="agrandir.svg" FileName="lock.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\lock.svg" SelfReg="false"/>
+    <ROW File="moins.svg" Component_="agrandir.svg" FileName="moins.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\moins.svg" SelfReg="false"/>
+    <ROW File="option.svg" Component_="agrandir.svg" FileName="option.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\option.svg" SelfReg="false"/>
+    <ROW File="plus.svg" Component_="agrandir.svg" FileName="plus.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\plus.svg" SelfReg="false"/>
+    <ROW File="quitter.svg" Component_="agrandir.svg" FileName="quitter.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\quitter.svg" SelfReg="false"/>
+    <ROW File="reduire.svg" Component_="agrandir.svg" FileName="reduire.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\reduire.svg" SelfReg="false"/>
+    <ROW File="resize.svg" Component_="agrandir.svg" FileName="resize.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\resize.svg" SelfReg="false"/>
+    <ROW File="agrandirbn1.svg" Component_="agrandirbn1.svg" FileName="AGRAND~1.SVG|agrandirbn1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\agrandirbn1.svg" SelfReg="false"/>
+    <ROW File="agrandirbn2.svg" Component_="agrandirbn1.svg" FileName="AGRAND~2.SVG|agrandirbn2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\agrandirbn2.svg" SelfReg="false"/>
+    <ROW File="agrandirth1.svg" Component_="agrandirbn1.svg" FileName="AGRAND~3.SVG|agrandirth1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\agrandirth1.svg" SelfReg="false"/>
+    <ROW File="agrandirth2.svg" Component_="agrandirbn1.svg" FileName="AGRAND~4.SVG|agrandirth2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\agrandirth2.svg" SelfReg="false"/>
+    <ROW File="agrandirth3.svg" Component_="agrandirbn1.svg" FileName="AGRAND~5.SVG|agrandirth3.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\agrandirth3.svg" SelfReg="false"/>
+    <ROW File="alertebn1.svg" Component_="agrandirbn1.svg" FileName="ALERTE~1.SVG|alertebn1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\alertebn1.svg" SelfReg="false"/>
+    <ROW File="alertebn2.svg" Component_="agrandirbn1.svg" FileName="ALERTE~2.SVG|alertebn2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\alertebn2.svg" SelfReg="false"/>
+    <ROW File="alerteth1.svg" Component_="agrandirbn1.svg" FileName="ALERTE~3.SVG|alerteth1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\alerteth1.svg" SelfReg="false"/>
+    <ROW File="alerteth2.svg" Component_="agrandirbn1.svg" FileName="ALERTE~4.SVG|alerteth2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\alerteth2.svg" SelfReg="false"/>
+    <ROW File="alerteth3.svg" Component_="agrandirbn1.svg" FileName="ALERTE~5.SVG|alerteth3.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\alerteth3.svg" SelfReg="false"/>
+    <ROW File="check0bn1.svg" Component_="agrandirbn1.svg" FileName="CHECK0~1.SVG|check0bn1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\check0bn1.svg" SelfReg="false"/>
+    <ROW File="check0bn2.svg" Component_="agrandirbn1.svg" FileName="CHECK0~2.SVG|check0bn2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\check0bn2.svg" SelfReg="false"/>
+    <ROW File="check0th1.svg" Component_="agrandirbn1.svg" FileName="CHECK0~3.SVG|check0th1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\check0th1.svg" SelfReg="false"/>
+    <ROW File="check0th2.svg" Component_="agrandirbn1.svg" FileName="CHECK0~4.SVG|check0th2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\check0th2.svg" SelfReg="false"/>
+    <ROW File="check0th3.svg" Component_="agrandirbn1.svg" FileName="CHECK0~5.SVG|check0th3.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\check0th3.svg" SelfReg="false"/>
+    <ROW File="check0_rondbn1.svg" Component_="agrandirbn1.svg" FileName="CHECK0~6.SVG|check0_rondbn1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\check0_rondbn1.svg" SelfReg="false"/>
+    <ROW File="check0_rondbn2.svg" Component_="agrandirbn1.svg" FileName="CHECK0~7.SVG|check0_rondbn2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\check0_rondbn2.svg" SelfReg="false"/>
+    <ROW File="check0_rondth1.svg" Component_="agrandirbn1.svg" FileName="CHECK0~8.SVG|check0_rondth1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\check0_rondth1.svg" SelfReg="false"/>
+    <ROW File="check0_rondth2.svg" Component_="agrandirbn1.svg" FileName="CHECK0~9.SVG|check0_rondth2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\check0_rondth2.svg" SelfReg="false"/>
+    <ROW File="check0_rondth3.svg" Component_="agrandirbn1.svg" FileName="CHECK~10.SVG|check0_rondth3.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\check0_rondth3.svg" SelfReg="false"/>
+    <ROW File="check1bn1.svg" Component_="agrandirbn1.svg" FileName="CHECK1~1.SVG|check1bn1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\check1bn1.svg" SelfReg="false"/>
+    <ROW File="check1bn2.svg" Component_="agrandirbn1.svg" FileName="CHECK1~2.SVG|check1bn2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\check1bn2.svg" SelfReg="false"/>
+    <ROW File="check1th1.svg" Component_="agrandirbn1.svg" FileName="CHECK1~3.SVG|check1th1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\check1th1.svg" SelfReg="false"/>
+    <ROW File="check1th2.svg" Component_="agrandirbn1.svg" FileName="CHECK1~4.SVG|check1th2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\check1th2.svg" SelfReg="false"/>
+    <ROW File="check1th3.svg" Component_="agrandirbn1.svg" FileName="CHECK1~5.SVG|check1th3.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\check1th3.svg" SelfReg="false"/>
+    <ROW File="check1_rondbn1.svg" Component_="agrandirbn1.svg" FileName="CHECK1~6.SVG|check1_rondbn1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\check1_rondbn1.svg" SelfReg="false"/>
+    <ROW File="check1_rondbn2.svg" Component_="agrandirbn1.svg" FileName="CHECK1~7.SVG|check1_rondbn2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\check1_rondbn2.svg" SelfReg="false"/>
+    <ROW File="check1_rondth1.svg" Component_="agrandirbn1.svg" FileName="CHECK1~8.SVG|check1_rondth1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\check1_rondth1.svg" SelfReg="false"/>
+    <ROW File="check1_rondth2.svg" Component_="agrandirbn1.svg" FileName="CHECK1~9.SVG|check1_rondth2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\check1_rondth2.svg" SelfReg="false"/>
+    <ROW File="check1_rondth3.svg" Component_="agrandirbn1.svg" FileName="CHECK~11.SVG|check1_rondth3.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\check1_rondth3.svg" SelfReg="false"/>
+    <ROW File="check2bn1.svg" Component_="agrandirbn1.svg" FileName="CHECK2~1.SVG|check2bn1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\check2bn1.svg" SelfReg="false"/>
+    <ROW File="check2bn2.svg" Component_="agrandirbn1.svg" FileName="CHECK2~2.SVG|check2bn2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\check2bn2.svg" SelfReg="false"/>
+    <ROW File="check2th1.svg" Component_="agrandirbn1.svg" FileName="CHECK2~3.SVG|check2th1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\check2th1.svg" SelfReg="false"/>
+    <ROW File="check2th2.svg" Component_="agrandirbn1.svg" FileName="CHECK2~4.SVG|check2th2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\check2th2.svg" SelfReg="false"/>
+    <ROW File="check2th3.svg" Component_="agrandirbn1.svg" FileName="CHECK2~5.SVG|check2th3.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\check2th3.svg" SelfReg="false"/>
+    <ROW File="check2_rondbn1.svg" Component_="agrandirbn1.svg" FileName="CHECK2~6.SVG|check2_rondbn1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\check2_rondbn1.svg" SelfReg="false"/>
+    <ROW File="check2_rondbn2.svg" Component_="agrandirbn1.svg" FileName="CHECK2~7.SVG|check2_rondbn2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\check2_rondbn2.svg" SelfReg="false"/>
+    <ROW File="check2_rondth1.svg" Component_="agrandirbn1.svg" FileName="CHECK2~8.SVG|check2_rondth1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\check2_rondth1.svg" SelfReg="false"/>
+    <ROW File="check2_rondth2.svg" Component_="agrandirbn1.svg" FileName="CHECK2~9.SVG|check2_rondth2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\check2_rondth2.svg" SelfReg="false"/>
+    <ROW File="check2_rondth3.svg" Component_="agrandirbn1.svg" FileName="CHECK~12.SVG|check2_rondth3.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\check2_rondth3.svg" SelfReg="false"/>
+    <ROW File="copierbn1.svg" Component_="agrandirbn1.svg" FileName="COPIER~1.SVG|copierbn1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\copierbn1.svg" SelfReg="false"/>
+    <ROW File="copierbn2.svg" Component_="agrandirbn1.svg" FileName="COPIER~2.SVG|copierbn2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\copierbn2.svg" SelfReg="false"/>
+    <ROW File="copierth1.svg" Component_="agrandirbn1.svg" FileName="COPIER~3.SVG|copierth1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\copierth1.svg" SelfReg="false"/>
+    <ROW File="copierth2.svg" Component_="agrandirbn1.svg" FileName="COPIER~4.SVG|copierth2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\copierth2.svg" SelfReg="false"/>
+    <ROW File="copierth3.svg" Component_="agrandirbn1.svg" FileName="COPIER~5.SVG|copierth3.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\copierth3.svg" SelfReg="false"/>
+    <ROW File="fleche_bottombn1.svg" Component_="agrandirbn1.svg" FileName="FLECHE~1.SVG|fleche_bottombn1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\fleche_bottombn1.svg" SelfReg="false"/>
+    <ROW File="fleche_bottombn2.svg" Component_="agrandirbn1.svg" FileName="FLECHE~2.SVG|fleche_bottombn2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\fleche_bottombn2.svg" SelfReg="false"/>
+    <ROW File="fleche_bottomth1.svg" Component_="agrandirbn1.svg" FileName="FLECHE~3.SVG|fleche_bottomth1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\fleche_bottomth1.svg" SelfReg="false"/>
+    <ROW File="fleche_bottomth2.svg" Component_="agrandirbn1.svg" FileName="FLECHE~4.SVG|fleche_bottomth2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\fleche_bottomth2.svg" SelfReg="false"/>
+    <ROW File="fleche_bottomth3.svg" Component_="agrandirbn1.svg" FileName="FLECHE~5.SVG|fleche_bottomth3.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\fleche_bottomth3.svg" SelfReg="false"/>
+    <ROW File="fleche_droitebn1.svg" Component_="agrandirbn1.svg" FileName="FLECHE~6.SVG|fleche_droitebn1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\fleche_droitebn1.svg" SelfReg="false"/>
+    <ROW File="fleche_droitebn2.svg" Component_="agrandirbn1.svg" FileName="FLECHE~7.SVG|fleche_droitebn2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\fleche_droitebn2.svg" SelfReg="false"/>
+    <ROW File="fleche_droiteth1.svg" Component_="agrandirbn1.svg" FileName="FLECHE~8.SVG|fleche_droiteth1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\fleche_droiteth1.svg" SelfReg="false"/>
+    <ROW File="fleche_droiteth2.svg" Component_="agrandirbn1.svg" FileName="FLECHE~9.SVG|fleche_droiteth2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\fleche_droiteth2.svg" SelfReg="false"/>
+    <ROW File="fleche_droiteth3.svg" Component_="agrandirbn1.svg" FileName="FLECH~10.SVG|fleche_droiteth3.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\fleche_droiteth3.svg" SelfReg="false"/>
+    <ROW File="fleche_gauchebn1.svg" Component_="agrandirbn1.svg" FileName="FLECH~11.SVG|fleche_gauchebn1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\fleche_gauchebn1.svg" SelfReg="false"/>
+    <ROW File="fleche_gauchebn2.svg" Component_="agrandirbn1.svg" FileName="FLECH~12.SVG|fleche_gauchebn2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\fleche_gauchebn2.svg" SelfReg="false"/>
+    <ROW File="fleche_gaucheth1.svg" Component_="agrandirbn1.svg" FileName="FLECH~13.SVG|fleche_gaucheth1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\fleche_gaucheth1.svg" SelfReg="false"/>
+    <ROW File="fleche_gaucheth2.svg" Component_="agrandirbn1.svg" FileName="FLECH~14.SVG|fleche_gaucheth2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\fleche_gaucheth2.svg" SelfReg="false"/>
+    <ROW File="fleche_gaucheth3.svg" Component_="agrandirbn1.svg" FileName="FLECH~15.SVG|fleche_gaucheth3.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\fleche_gaucheth3.svg" SelfReg="false"/>
+    <ROW File="fleche_topbn1.svg" Component_="agrandirbn1.svg" FileName="FLECH~16.SVG|fleche_topbn1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\fleche_topbn1.svg" SelfReg="false"/>
+    <ROW File="fleche_topbn2.svg" Component_="agrandirbn1.svg" FileName="FLECH~17.SVG|fleche_topbn2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\fleche_topbn2.svg" SelfReg="false"/>
+    <ROW File="fleche_topth1.svg" Component_="agrandirbn1.svg" FileName="FLECH~18.SVG|fleche_topth1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\fleche_topth1.svg" SelfReg="false"/>
+    <ROW File="fleche_topth2.svg" Component_="agrandirbn1.svg" FileName="FLECH~19.SVG|fleche_topth2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\fleche_topth2.svg" SelfReg="false"/>
+    <ROW File="fleche_topth3.svg" Component_="agrandirbn1.svg" FileName="FLECH~20.SVG|fleche_topth3.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\fleche_topth3.svg" SelfReg="false"/>
+    <ROW File="img_videbn1.svg" Component_="agrandirbn1.svg" FileName="IMG_VI~1.SVG|img_videbn1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\img_videbn1.svg" SelfReg="false"/>
+    <ROW File="img_videbn2.svg" Component_="agrandirbn1.svg" FileName="IMG_VI~2.SVG|img_videbn2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\img_videbn2.svg" SelfReg="false"/>
+    <ROW File="img_videth1.svg" Component_="agrandirbn1.svg" FileName="IMG_VI~3.SVG|img_videth1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\img_videth1.svg" SelfReg="false"/>
+    <ROW File="img_videth2.svg" Component_="agrandirbn1.svg" FileName="IMG_VI~4.SVG|img_videth2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\img_videth2.svg" SelfReg="false"/>
+    <ROW File="img_videth3.svg" Component_="agrandirbn1.svg" FileName="IMG_VI~5.SVG|img_videth3.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\img_videth3.svg" SelfReg="false"/>
+    <ROW File="infobn1.svg" Component_="agrandirbn1.svg" FileName="infobn1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\infobn1.svg" SelfReg="false"/>
+    <ROW File="infobn2.svg" Component_="agrandirbn1.svg" FileName="infobn2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\infobn2.svg" SelfReg="false"/>
+    <ROW File="infoth1.svg" Component_="agrandirbn1.svg" FileName="infoth1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\infoth1.svg" SelfReg="false"/>
+    <ROW File="infoth2.svg" Component_="agrandirbn1.svg" FileName="infoth2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\infoth2.svg" SelfReg="false"/>
+    <ROW File="infoth3.svg" Component_="agrandirbn1.svg" FileName="infoth3.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\infoth3.svg" SelfReg="false"/>
+    <ROW File="lockbn1.svg" Component_="agrandirbn1.svg" FileName="lockbn1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\lockbn1.svg" SelfReg="false"/>
+    <ROW File="lockbn2.svg" Component_="agrandirbn1.svg" FileName="lockbn2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\lockbn2.svg" SelfReg="false"/>
+    <ROW File="lockth1.svg" Component_="agrandirbn1.svg" FileName="lockth1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\lockth1.svg" SelfReg="false"/>
+    <ROW File="lockth2.svg" Component_="agrandirbn1.svg" FileName="lockth2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\lockth2.svg" SelfReg="false"/>
+    <ROW File="lockth3.svg" Component_="agrandirbn1.svg" FileName="lockth3.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\lockth3.svg" SelfReg="false"/>
+    <ROW File="moinsbn1.svg" Component_="agrandirbn1.svg" FileName="moinsbn1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\moinsbn1.svg" SelfReg="false"/>
+    <ROW File="moinsbn2.svg" Component_="agrandirbn1.svg" FileName="moinsbn2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\moinsbn2.svg" SelfReg="false"/>
+    <ROW File="moinsth1.svg" Component_="agrandirbn1.svg" FileName="moinsth1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\moinsth1.svg" SelfReg="false"/>
+    <ROW File="moinsth2.svg" Component_="agrandirbn1.svg" FileName="moinsth2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\moinsth2.svg" SelfReg="false"/>
+    <ROW File="moinsth3.svg" Component_="agrandirbn1.svg" FileName="moinsth3.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\moinsth3.svg" SelfReg="false"/>
+    <ROW File="optionbn1.svg" Component_="agrandirbn1.svg" FileName="OPTION~1.SVG|optionbn1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\optionbn1.svg" SelfReg="false"/>
+    <ROW File="optionbn2.svg" Component_="agrandirbn1.svg" FileName="OPTION~2.SVG|optionbn2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\optionbn2.svg" SelfReg="false"/>
+    <ROW File="optionth1.svg" Component_="agrandirbn1.svg" FileName="OPTION~3.SVG|optionth1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\optionth1.svg" SelfReg="false"/>
+    <ROW File="optionth2.svg" Component_="agrandirbn1.svg" FileName="OPTION~4.SVG|optionth2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\optionth2.svg" SelfReg="false"/>
+    <ROW File="optionth3.svg" Component_="agrandirbn1.svg" FileName="OPTION~5.SVG|optionth3.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\optionth3.svg" SelfReg="false"/>
+    <ROW File="plusbn1.svg" Component_="agrandirbn1.svg" FileName="plusbn1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\plusbn1.svg" SelfReg="false"/>
+    <ROW File="plusbn2.svg" Component_="agrandirbn1.svg" FileName="plusbn2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\plusbn2.svg" SelfReg="false"/>
+    <ROW File="plusth1.svg" Component_="agrandirbn1.svg" FileName="plusth1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\plusth1.svg" SelfReg="false"/>
+    <ROW File="plusth2.svg" Component_="agrandirbn1.svg" FileName="plusth2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\plusth2.svg" SelfReg="false"/>
+    <ROW File="plusth3.svg" Component_="agrandirbn1.svg" FileName="plusth3.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\plusth3.svg" SelfReg="false"/>
+    <ROW File="quitterbn1.svg" Component_="agrandirbn1.svg" FileName="QUITTE~1.SVG|quitterbn1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\quitterbn1.svg" SelfReg="false"/>
+    <ROW File="quitterbn2.svg" Component_="agrandirbn1.svg" FileName="QUITTE~2.SVG|quitterbn2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\quitterbn2.svg" SelfReg="false"/>
+    <ROW File="quitterth1.svg" Component_="agrandirbn1.svg" FileName="QUITTE~3.SVG|quitterth1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\quitterth1.svg" SelfReg="false"/>
+    <ROW File="quitterth2.svg" Component_="agrandirbn1.svg" FileName="QUITTE~4.SVG|quitterth2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\quitterth2.svg" SelfReg="false"/>
+    <ROW File="quitterth3.svg" Component_="agrandirbn1.svg" FileName="QUITTE~5.SVG|quitterth3.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\quitterth3.svg" SelfReg="false"/>
+    <ROW File="reduirebn1.svg" Component_="agrandirbn1.svg" FileName="REDUIR~1.SVG|reduirebn1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\reduirebn1.svg" SelfReg="false"/>
+    <ROW File="reduirebn2.svg" Component_="agrandirbn1.svg" FileName="REDUIR~2.SVG|reduirebn2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\reduirebn2.svg" SelfReg="false"/>
+    <ROW File="reduireth1.svg" Component_="agrandirbn1.svg" FileName="REDUIR~3.SVG|reduireth1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\reduireth1.svg" SelfReg="false"/>
+    <ROW File="reduireth2.svg" Component_="agrandirbn1.svg" FileName="REDUIR~4.SVG|reduireth2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\reduireth2.svg" SelfReg="false"/>
+    <ROW File="reduireth3.svg" Component_="agrandirbn1.svg" FileName="REDUIR~5.SVG|reduireth3.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\reduireth3.svg" SelfReg="false"/>
+    <ROW File="resizebn1.svg" Component_="agrandirbn1.svg" FileName="RESIZE~1.SVG|resizebn1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\resizebn1.svg" SelfReg="false"/>
+    <ROW File="resizebn2.svg" Component_="agrandirbn1.svg" FileName="RESIZE~2.SVG|resizebn2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\resizebn2.svg" SelfReg="false"/>
+    <ROW File="resizeth1.svg" Component_="agrandirbn1.svg" FileName="RESIZE~3.SVG|resizeth1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\resizeth1.svg" SelfReg="false"/>
+    <ROW File="resizeth2.svg" Component_="agrandirbn1.svg" FileName="RESIZE~4.SVG|resizeth2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\resizeth2.svg" SelfReg="false"/>
+    <ROW File="resizeth3.svg" Component_="agrandirbn1.svg" FileName="RESIZE~5.SVG|resizeth3.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\resizeth3.svg" SelfReg="false"/>
+    <ROW File="unlockbn1.svg" Component_="agrandirbn1.svg" FileName="UNLOCK~1.SVG|unlockbn1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\unlockbn1.svg" SelfReg="false"/>
+    <ROW File="unlockbn2.svg" Component_="agrandirbn1.svg" FileName="UNLOCK~2.SVG|unlockbn2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\unlockbn2.svg" SelfReg="false"/>
+    <ROW File="unlockth1.svg" Component_="agrandirbn1.svg" FileName="UNLOCK~3.SVG|unlockth1.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\unlockth1.svg" SelfReg="false"/>
+    <ROW File="unlockth2.svg" Component_="agrandirbn1.svg" FileName="UNLOCK~4.SVG|unlockth2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\unlockth2.svg" SelfReg="false"/>
+    <ROW File="unlockth3.svg" Component_="agrandirbn1.svg" FileName="UNLOCK~5.SVG|unlockth3.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\unlockth3.svg" SelfReg="false"/>
+    <ROW File="unlock.svg" Component_="agrandir.svg" FileName="unlock.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\unlock.svg" SelfReg="false"/>
+    <ROW File="Functions.py" Component_="Functions.py" FileName="FUNCTI~1.PY|Functions.py" Attributes="0" SourcePath="Centre macro\src\build\mods\Functions.py" SelfReg="false"/>
+    <ROW File="Json.py" Component_="Functions.py" FileName="Json.py" Attributes="0" SourcePath="Centre macro\src\build\mods\Json.py" SelfReg="false"/>
+    <ROW File="Maj.py" Component_="Functions.py" FileName="Maj.py" Attributes="0" SourcePath="Centre macro\src\build\mods\Maj.py" SelfReg="false"/>
+    <ROW File="worker.py" Component_="Functions.py" FileName="worker.py" Attributes="0" SourcePath="Centre macro\src\build\mods\worker.py" SelfReg="false"/>
+    <ROW File="__init__.py" Component_="Functions.py" FileName="__init__.py" Attributes="0" SourcePath="Centre macro\src\build\mods\__init__.py" SelfReg="false"/>
+    <ROW File="Functions.cpython39.pyc" Component_="Functions.cpython39.pyc" FileName="FUNCTI~1.PYC|Functions.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\build\mods\__pycache__\Functions.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="Json.cpython39.pyc" Component_="Functions.cpython39.pyc" FileName="JSONCP~1.PYC|Json.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\build\mods\__pycache__\Json.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="Maj.cpython39.pyc" Component_="Functions.cpython39.pyc" FileName="MAJCPY~1.PYC|Maj.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\build\mods\__pycache__\Maj.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="worker.cpython39.pyc" Component_="Functions.cpython39.pyc" FileName="WORKER~1.PYC|worker.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\build\mods\__pycache__\worker.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="__init__.cpython39.pyc" Component_="Functions.cpython39.pyc" FileName="__INIT~1.PYC|__init__.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\build\mods\__pycache__\__init__.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="__init__.py_1" Component_="__init__.py" FileName="__init__.py" Attributes="0" SourcePath="Centre macro\src\build\__init__.py" SelfReg="false"/>
+    <ROW File="__init__.cpython39.pyc_1" Component_="__init__.cpython39.pyc" FileName="__INIT~1.PYC|__init__.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\build\__pycache__\__init__.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="config.json" Component_="config.json" FileName="CONFIG~1.JSO|config.json" Attributes="0" SourcePath="Centre macro\src\config\config.json" SelfReg="false"/>
+    <ROW File="config.py" Component_="config.json" FileName="config.py" Attributes="0" SourcePath="Centre macro\src\config\config.py" SelfReg="false"/>
+    <ROW File="version_file.txt" Component_="config.json" FileName="VERSIO~1.TXT|version_file.txt" Attributes="0" SourcePath="Centre macro\src\config\version_file.txt" SelfReg="false"/>
+    <ROW File="__init__.py_2" Component_="config.json" FileName="__init__.py" Attributes="0" SourcePath="Centre macro\src\config\__init__.py" SelfReg="false"/>
+    <ROW File="config.cpython39.pyc" Component_="config.cpython39.pyc" FileName="CONFIG~1.PYC|config.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\config\__pycache__\config.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="__init__.cpython39.pyc_2" Component_="config.cpython39.pyc" FileName="__INIT~1.PYC|__init__.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\config\__pycache__\__init__.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="InputBox.py" Component_="InputBox.py" FileName="InputBox.py" Attributes="0" SourcePath="Centre macro\src\gui\dlg\InputBox\InputBox.py" SelfReg="false"/>
+    <ROW File="InputDlg.py" Component_="InputBox.py" FileName="InputDlg.py" Attributes="0" SourcePath="Centre macro\src\gui\dlg\InputBox\InputDlg.py" SelfReg="false"/>
+    <ROW File="InputBox.cpython39.pyc" Component_="InputBox.cpython39.pyc" FileName="INPUTB~1.PYC|InputBox.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\dlg\InputBox\__pycache__\InputBox.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="InputDlg.cpython39.pyc" Component_="InputBox.cpython39.pyc" FileName="INPUTD~1.PYC|InputDlg.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\dlg\InputBox\__pycache__\InputDlg.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="MsgBox.py" Component_="MsgBox.py" FileName="MsgBox.py" Attributes="0" SourcePath="Centre macro\src\gui\dlg\MsgBox\MsgBox.py" SelfReg="false"/>
+    <ROW File="MsgDlg.py" Component_="MsgBox.py" FileName="MsgDlg.py" Attributes="0" SourcePath="Centre macro\src\gui\dlg\MsgBox\MsgDlg.py" SelfReg="false"/>
+    <ROW File="MsgBox.cpython39.pyc" Component_="MsgBox.cpython39.pyc" FileName="MSGBOX~1.PYC|MsgBox.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\dlg\MsgBox\__pycache__\MsgBox.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="MsgDlg.cpython39.pyc" Component_="MsgBox.cpython39.pyc" FileName="MSGDLG~1.PYC|MsgDlg.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\dlg\MsgBox\__pycache__\MsgDlg.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="OptionBox.py" Component_="OptionBox.py" FileName="OPTION~1.PY|OptionBox.py" Attributes="0" SourcePath="Centre macro\src\gui\dlg\OptionBox\OptionBox.py" SelfReg="false"/>
+    <ROW File="OptionDlg.py" Component_="OptionBox.py" FileName="OPTION~2.PY|OptionDlg.py" Attributes="0" SourcePath="Centre macro\src\gui\dlg\OptionBox\OptionDlg.py" SelfReg="false"/>
+    <ROW File="OptionBox.cpython39.pyc" Component_="OptionBox.cpython39.pyc" FileName="OPTION~1.PYC|OptionBox.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\dlg\OptionBox\__pycache__\OptionBox.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="OptionDlg.cpython39.pyc" Component_="OptionBox.cpython39.pyc" FileName="OPTION~2.PYC|OptionDlg.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\dlg\OptionBox\__pycache__\OptionDlg.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="ResponseBox.py" Component_="ResponseBox.py" FileName="RESPON~1.PY|ResponseBox.py" Attributes="0" SourcePath="Centre macro\src\gui\dlg\ResponseBox\ResponseBox.py" SelfReg="false"/>
+    <ROW File="ResponseDlg.py" Component_="ResponseBox.py" FileName="RESPON~2.PY|ResponseDlg.py" Attributes="0" SourcePath="Centre macro\src\gui\dlg\ResponseBox\ResponseDlg.py" SelfReg="false"/>
+    <ROW File="ResponseBox.cpython39.pyc" Component_="ResponseBox.cpython39.pyc" FileName="RESPON~1.PYC|ResponseBox.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\dlg\ResponseBox\__pycache__\ResponseBox.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="ResponseDlg.cpython39.pyc" Component_="ResponseBox.cpython39.pyc" FileName="RESPON~2.PYC|ResponseDlg.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\dlg\ResponseBox\__pycache__\ResponseDlg.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="RgbBox.py" Component_="RgbBox.py" FileName="RgbBox.py" Attributes="0" SourcePath="Centre macro\src\gui\dlg\RgbBox\RgbBox.py" SelfReg="false"/>
+    <ROW File="RgbDlg.py" Component_="RgbBox.py" FileName="RgbDlg.py" Attributes="0" SourcePath="Centre macro\src\gui\dlg\RgbBox\RgbDlg.py" SelfReg="false"/>
+    <ROW File="RgbBox.cpython39.pyc" Component_="RgbBox.cpython39.pyc" FileName="RGBBOX~1.PYC|RgbBox.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\dlg\RgbBox\__pycache__\RgbBox.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="RgbDlg.cpython39.pyc" Component_="RgbBox.cpython39.pyc" FileName="RGBDLG~1.PYC|RgbDlg.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\dlg\RgbBox\__pycache__\RgbDlg.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="SplashScreen.py" Component_="SplashScreen.py" FileName="SPLASH~1.PY|SplashScreen.py" Attributes="0" SourcePath="Centre macro\src\gui\dlg\SplashScreen\SplashScreen.py" SelfReg="false"/>
+    <ROW File="SplashScreen.cpython39.pyc" Component_="SplashScreen.cpython39.pyc" FileName="SPLASH~1.PYC|SplashScreen.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\dlg\SplashScreen\__pycache__\SplashScreen.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="ToolBoxUi.py" Component_="ToolBoxUi.py" FileName="TOOLBO~1.PY|ToolBoxUi.py" Attributes="0" SourcePath="Centre macro\src\gui\dlg\ToolBoxUi\ToolBoxUi.py" SelfReg="false"/>
+    <ROW File="ToolBoxUi.cpython39.pyc" Component_="ToolBoxUi.cpython39.pyc" FileName="TOOLBO~1.PYC|ToolBoxUi.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\dlg\ToolBoxUi\__pycache__\ToolBoxUi.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="__init__.py_3" Component_="__init__.py_1" FileName="__init__.py" Attributes="0" SourcePath="Centre macro\src\gui\dlg\__init__.py" SelfReg="false"/>
+    <ROW File="__init__.cpython39.pyc_3" Component_="__init__.cpython39.pyc_1" FileName="__INIT~1.PYC|__init__.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\dlg\__pycache__\__init__.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="Event.py" Component_="Event.py" FileName="Event.py" Attributes="0" SourcePath="Centre macro\src\gui\events\Event.py" SelfReg="false"/>
+    <ROW File="__init__.py_4" Component_="Event.py" FileName="__init__.py" Attributes="0" SourcePath="Centre macro\src\gui\events\__init__.py" SelfReg="false"/>
+    <ROW File="Event.cpython39.pyc" Component_="Event.cpython39.pyc" FileName="EVENTC~1.PYC|Event.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\events\__pycache__\Event.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="__init__.cpython39.pyc_4" Component_="Event.cpython39.pyc" FileName="__INIT~1.PYC|__init__.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\events\__pycache__\__init__.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="input.ui" Component_="input.ui" FileName="input.ui" Attributes="0" SourcePath="Centre macro\src\gui\ui\input.ui" SelfReg="false"/>
+    <ROW File="input_ui.py" Component_="input.ui" FileName="input_ui.py" Attributes="0" SourcePath="Centre macro\src\gui\ui\input_ui.py" SelfReg="false"/>
+    <ROW File="main.ui" Component_="input.ui" FileName="main.ui" Attributes="0" SourcePath="Centre macro\src\gui\ui\main.ui" SelfReg="false"/>
+    <ROW File="main_ui.py" Component_="input.ui" FileName="main_ui.py" Attributes="0" SourcePath="Centre macro\src\gui\ui\main_ui.py" SelfReg="false"/>
+    <ROW File="msg.ui" Component_="input.ui" FileName="msg.ui" Attributes="0" SourcePath="Centre macro\src\gui\ui\msg.ui" SelfReg="false"/>
+    <ROW File="msg_ui.py" Component_="input.ui" FileName="msg_ui.py" Attributes="0" SourcePath="Centre macro\src\gui\ui\msg_ui.py" SelfReg="false"/>
+    <ROW File="option.ui" Component_="input.ui" FileName="option.ui" Attributes="0" SourcePath="Centre macro\src\gui\ui\option.ui" SelfReg="false"/>
+    <ROW File="option_ui.py" Component_="input.ui" FileName="OPTION~1.PY|option_ui.py" Attributes="0" SourcePath="Centre macro\src\gui\ui\option_ui.py" SelfReg="false"/>
+    <ROW File="rep.ui" Component_="input.ui" FileName="rep.ui" Attributes="0" SourcePath="Centre macro\src\gui\ui\rep.ui" SelfReg="false"/>
+    <ROW File="rep_ui.py" Component_="input.ui" FileName="rep_ui.py" Attributes="0" SourcePath="Centre macro\src\gui\ui\rep_ui.py" SelfReg="false"/>
+    <ROW File="rgb.ui" Component_="input.ui" FileName="rgb.ui" Attributes="0" SourcePath="Centre macro\src\gui\ui\rgb.ui" SelfReg="false"/>
+    <ROW File="rgb_ui.py" Component_="input.ui" FileName="rgb_ui.py" Attributes="0" SourcePath="Centre macro\src\gui\ui\rgb_ui.py" SelfReg="false"/>
+    <ROW File="splash_screen.ui" Component_="input.ui" FileName="SPLASH~1.UI|splash_screen.ui" Attributes="0" SourcePath="Centre macro\src\gui\ui\splash_screen.ui" SelfReg="false"/>
+    <ROW File="splash_screen_ui.py" Component_="input.ui" FileName="SPLASH~1.PY|splash_screen_ui.py" Attributes="0" SourcePath="Centre macro\src\gui\ui\splash_screen_ui.py" SelfReg="false"/>
+    <ROW File="toolbox.ui" Component_="input.ui" FileName="toolbox.ui" Attributes="0" SourcePath="Centre macro\src\gui\ui\toolbox.ui" SelfReg="false"/>
+    <ROW File="toolbox_ui.py" Component_="input.ui" FileName="TOOLBO~1.PY|toolbox_ui.py" Attributes="0" SourcePath="Centre macro\src\gui\ui\toolbox_ui.py" SelfReg="false"/>
+    <ROW File="__init__.py_5" Component_="input.ui" FileName="__init__.py" Attributes="0" SourcePath="Centre macro\src\gui\ui\__init__.py" SelfReg="false"/>
+    <ROW File="input_ui.cpython39.pyc" Component_="input_ui.cpython39.pyc" FileName="INPUT_~1.PYC|input_ui.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\ui\__pycache__\input_ui.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="main_ui.cpython39.pyc" Component_="input_ui.cpython39.pyc" FileName="MAIN_U~1.PYC|main_ui.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\ui\__pycache__\main_ui.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="msg_ui.cpython39.pyc" Component_="input_ui.cpython39.pyc" FileName="MSG_UI~1.PYC|msg_ui.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\ui\__pycache__\msg_ui.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="option_ui.cpython39.pyc" Component_="input_ui.cpython39.pyc" FileName="OPTION~1.PYC|option_ui.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\ui\__pycache__\option_ui.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="rep_ui.cpython39.pyc" Component_="input_ui.cpython39.pyc" FileName="REP_UI~1.PYC|rep_ui.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\ui\__pycache__\rep_ui.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="rgb_ui.cpython39.pyc" Component_="input_ui.cpython39.pyc" FileName="RGB_UI~1.PYC|rgb_ui.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\ui\__pycache__\rgb_ui.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="splash_screen_ui.cpython39.pyc" Component_="input_ui.cpython39.pyc" FileName="SPLASH~1.PYC|splash_screen_ui.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\ui\__pycache__\splash_screen_ui.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="toolbox_ui.cpython39.pyc" Component_="input_ui.cpython39.pyc" FileName="TOOLBO~1.PYC|toolbox_ui.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\ui\__pycache__\toolbox_ui.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="__init__.cpython39.pyc_5" Component_="input_ui.cpython39.pyc" FileName="__INIT~1.PYC|__init__.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\ui\__pycache__\__init__.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="__init__.py_6" Component_="__init__.py_2" FileName="__init__.py" Attributes="0" SourcePath="Centre macro\src\gui\__init__.py" SelfReg="false"/>
+    <ROW File="__init__.cpython39.pyc_6" Component_="__init__.cpython39.pyc_2" FileName="__INIT~1.PYC|__init__.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\__pycache__\__init__.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="v_gb.py" Component_="v_gb.py" FileName="v_gb.py" Attributes="0" SourcePath="Centre macro\src\lib\globals\v_gb.py" SelfReg="false"/>
+    <ROW File="__init__.py_7" Component_="v_gb.py" FileName="__init__.py" Attributes="0" SourcePath="Centre macro\src\lib\globals\__init__.py" SelfReg="false"/>
+    <ROW File="v_gb.cpython39.pyc" Component_="v_gb.cpython39.pyc" FileName="V_GBCP~1.PYC|v_gb.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\globals\__pycache__\v_gb.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="__init__.cpython39.pyc_7" Component_="v_gb.cpython39.pyc" FileName="__INIT~1.PYC|__init__.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\globals\__pycache__\__init__.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="Align.py" Component_="Align.py" FileName="Align.py" Attributes="0" SourcePath="Centre macro\src\lib\palettes\Align.py" SelfReg="false"/>
+    <ROW File="AutoFormating.py" Component_="Align.py" FileName="AUTOFO~1.PY|AutoFormating.py" Attributes="0" SourcePath="Centre macro\src\lib\palettes\AutoFormating.py" SelfReg="false"/>
+    <ROW File="ButtonSymbols.py" Component_="Align.py" FileName="BUTTON~1.PY|ButtonSymbols.py" Attributes="0" SourcePath="Centre macro\src\lib\palettes\ButtonSymbols.py" SelfReg="false"/>
+    <ROW File="Cur.py" Component_="Align.py" FileName="Cur.py" Attributes="0" SourcePath="Centre macro\src\lib\palettes\Cur.py" SelfReg="false"/>
+    <ROW File="Dim.py" Component_="Align.py" FileName="Dim.py" Attributes="0" SourcePath="Centre macro\src\lib\palettes\Dim.py" SelfReg="false"/>
+    <ROW File="DragDropMode.py" Component_="Align.py" FileName="DRAGDR~1.PY|DragDropMode.py" Attributes="0" SourcePath="Centre macro\src\lib\palettes\DragDropMode.py" SelfReg="false"/>
+    <ROW File="DropAction.py" Component_="Align.py" FileName="DROPAC~1.PY|DropAction.py" Attributes="0" SourcePath="Centre macro\src\lib\palettes\DropAction.py" SelfReg="false"/>
+    <ROW File="EchoMode.py" Component_="Align.py" FileName="EchoMode.py" Attributes="0" SourcePath="Centre macro\src\lib\palettes\EchoMode.py" SelfReg="false"/>
+    <ROW File="Flow.py" Component_="Align.py" FileName="Flow.py" Attributes="0" SourcePath="Centre macro\src\lib\palettes\Flow.py" SelfReg="false"/>
+    <ROW File="FocusPolicy.py" Component_="Align.py" FileName="FOCUSP~1.PY|FocusPolicy.py" Attributes="0" SourcePath="Centre macro\src\lib\palettes\FocusPolicy.py" SelfReg="false"/>
+    <ROW File="Font.py" Component_="Align.py" FileName="Font.py" Attributes="0" SourcePath="Centre macro\src\lib\palettes\Font.py" SelfReg="false"/>
+    <ROW File="FrameShadow.py" Component_="Align.py" FileName="FRAMES~1.PY|FrameShadow.py" Attributes="0" SourcePath="Centre macro\src\lib\palettes\FrameShadow.py" SelfReg="false"/>
+    <ROW File="FrameShape.py" Component_="Align.py" FileName="FRAMES~2.PY|FrameShape.py" Attributes="0" SourcePath="Centre macro\src\lib\palettes\FrameShape.py" SelfReg="false"/>
+    <ROW File="Img.py" Component_="Align.py" FileName="Img.py" Attributes="0" SourcePath="Centre macro\src\lib\palettes\Img.py" SelfReg="false"/>
+    <ROW File="InputMask.py" Component_="Align.py" FileName="INPUTM~1.PY|InputMask.py" Attributes="0" SourcePath="Centre macro\src\lib\palettes\InputMask.py" SelfReg="false"/>
+    <ROW File="InsertPolicy.py" Component_="Align.py" FileName="INSERT~1.PY|InsertPolicy.py" Attributes="0" SourcePath="Centre macro\src\lib\palettes\InsertPolicy.py" SelfReg="false"/>
+    <ROW File="Keys.py" Component_="Align.py" FileName="Keys.py" Attributes="0" SourcePath="Centre macro\src\lib\palettes\Keys.py" SelfReg="false"/>
+    <ROW File="ProgressFormat.py" Component_="Align.py" FileName="PROGRE~1.PY|ProgressFormat.py" Attributes="0" SourcePath="Centre macro\src\lib\palettes\ProgressFormat.py" SelfReg="false"/>
+    <ROW File="Rgb.py" Component_="Align.py" FileName="Rgb.py" Attributes="0" SourcePath="Centre macro\src\lib\palettes\Rgb.py" SelfReg="false"/>
+    <ROW File="Scroll.py" Component_="Align.py" FileName="Scroll.py" Attributes="0" SourcePath="Centre macro\src\lib\palettes\Scroll.py" SelfReg="false"/>
+    <ROW File="SelectionBehavior.py" Component_="Align.py" FileName="SELECT~1.PY|SelectionBehavior.py" Attributes="0" SourcePath="Centre macro\src\lib\palettes\SelectionBehavior.py" SelfReg="false"/>
+    <ROW File="SelectionMode.py" Component_="Align.py" FileName="SELECT~2.PY|SelectionMode.py" Attributes="0" SourcePath="Centre macro\src\lib\palettes\SelectionMode.py" SelfReg="false"/>
+    <ROW File="Shadow.py" Component_="Align.py" FileName="Shadow.py" Attributes="0" SourcePath="Centre macro\src\lib\palettes\Shadow.py" SelfReg="false"/>
+    <ROW File="StyleBase.py" Component_="Align.py" FileName="STYLEB~1.PY|StyleBase.py" Attributes="0" SourcePath="Centre macro\src\lib\palettes\StyleBase.py" SelfReg="false"/>
+    <ROW File="TextFormat.py" Component_="Align.py" FileName="TEXTFO~1.PY|TextFormat.py" Attributes="0" SourcePath="Centre macro\src\lib\palettes\TextFormat.py" SelfReg="false"/>
+    <ROW File="TickPosition.py" Component_="Align.py" FileName="TICKPO~1.PY|TickPosition.py" Attributes="0" SourcePath="Centre macro\src\lib\palettes\TickPosition.py" SelfReg="false"/>
+    <ROW File="__init__.py_8" Component_="Align.py" FileName="__init__.py" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__init__.py" SelfReg="false"/>
+    <ROW File="Align.cpython39.pyc" Component_="Align.cpython39.pyc" FileName="ALIGNC~1.PYC|Align.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\Align.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="AutoFormating.cpython39.pyc" Component_="Align.cpython39.pyc" FileName="AUTOFO~1.PYC|AutoFormating.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\AutoFormating.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="ButtonSymbols.cpython39.pyc" Component_="Align.cpython39.pyc" FileName="BUTTON~1.PYC|ButtonSymbols.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\ButtonSymbols.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="Cur.cpython39.pyc" Component_="Align.cpython39.pyc" FileName="CURCPY~1.PYC|Cur.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\Cur.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="Dim.cpython39.pyc" Component_="Align.cpython39.pyc" FileName="DIMCPY~1.PYC|Dim.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\Dim.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="DragDropMode.cpython39.pyc" Component_="Align.cpython39.pyc" FileName="DRAGDR~1.PYC|DragDropMode.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\DragDropMode.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="DropAction.cpython39.pyc" Component_="Align.cpython39.pyc" FileName="DROPAC~1.PYC|DropAction.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\DropAction.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="EchoMode.cpython39.pyc" Component_="Align.cpython39.pyc" FileName="ECHOMO~1.PYC|EchoMode.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\EchoMode.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="Flow.cpython39.pyc" Component_="Align.cpython39.pyc" FileName="FLOWCP~1.PYC|Flow.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\Flow.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="FocusPolicy.cpython39.pyc" Component_="Align.cpython39.pyc" FileName="FOCUSP~1.PYC|FocusPolicy.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\FocusPolicy.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="Font.cpython39.pyc" Component_="Align.cpython39.pyc" FileName="FONTCP~1.PYC|Font.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\Font.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="FrameShadow.cpython39.pyc" Component_="Align.cpython39.pyc" FileName="FRAMES~1.PYC|FrameShadow.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\FrameShadow.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="FrameShape.cpython39.pyc" Component_="Align.cpython39.pyc" FileName="FRAMES~2.PYC|FrameShape.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\FrameShape.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="Img.cpython39.pyc" Component_="Align.cpython39.pyc" FileName="IMGCPY~1.PYC|Img.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\Img.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="InputMask.cpython39.pyc" Component_="Align.cpython39.pyc" FileName="INPUTM~1.PYC|InputMask.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\InputMask.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="InsertPolicy.cpython39.pyc" Component_="Align.cpython39.pyc" FileName="INSERT~1.PYC|InsertPolicy.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\InsertPolicy.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="Keys.cpython39.pyc" Component_="Align.cpython39.pyc" FileName="KEYSCP~1.PYC|Keys.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\Keys.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="ProgressFormat.cpython39.pyc" Component_="Align.cpython39.pyc" FileName="PROGRE~1.PYC|ProgressFormat.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\ProgressFormat.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="Rgb.cpython39.pyc" Component_="Align.cpython39.pyc" FileName="RGBCPY~1.PYC|Rgb.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\Rgb.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="Scroll.cpython39.pyc" Component_="Align.cpython39.pyc" FileName="SCROLL~1.PYC|Scroll.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\Scroll.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="SelectionBehavior.cpython39.pyc" Component_="Align.cpython39.pyc" FileName="SELECT~1.PYC|SelectionBehavior.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\SelectionBehavior.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="SelectionMode.cpython39.pyc" Component_="Align.cpython39.pyc" FileName="SELECT~2.PYC|SelectionMode.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\SelectionMode.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="Shadow.cpython39.pyc" Component_="Align.cpython39.pyc" FileName="SHADOW~1.PYC|Shadow.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\Shadow.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="StyleBase.cpython39.pyc" Component_="Align.cpython39.pyc" FileName="STYLEB~1.PYC|StyleBase.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\StyleBase.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="TextFormat.cpython39.pyc" Component_="Align.cpython39.pyc" FileName="TEXTFO~1.PYC|TextFormat.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\TextFormat.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="TickPosition.cpython39.pyc" Component_="Align.cpython39.pyc" FileName="TICKPO~1.PYC|TickPosition.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\TickPosition.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="__init__.cpython39.pyc_8" Component_="Align.cpython39.pyc" FileName="__INIT~1.PYC|__init__.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\__init__.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="__init__.py_9" Component_="__init__.py_3" FileName="__init__.py" Attributes="0" SourcePath="Centre macro\src\lib\__init__.py" SelfReg="false"/>
+    <ROW File="__init__.cpython39.pyc_9" Component_="__init__.cpython39.pyc_3" FileName="__INIT~1.PYC|__init__.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\__pycache__\__init__.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="convert_ui.bat" Component_="convert_ui.bat" FileName="CONVER~1.BAT|convert_ui.bat" Attributes="0" SourcePath="Centre macro\src\scripts\convert_ui.bat" SelfReg="false"/>
+    <ROW File="alice_blue.json" Component_="alice_blue.json" FileName="ALICE_~1.JSO|alice_blue.json" Attributes="0" SourcePath="Centre macro\src\theme\alice_blue.json" SelfReg="false"/>
+    <ROW File="claire.json" Component_="alice_blue.json" FileName="CLAIRE~1.JSO|claire.json" Attributes="0" SourcePath="Centre macro\src\theme\claire.json" SelfReg="false"/>
+    <ROW File="columbia_blue.json" Component_="alice_blue.json" FileName="COLUMB~1.JSO|columbia_blue.json" Attributes="0" SourcePath="Centre macro\src\theme\columbia_blue.json" SelfReg="false"/>
+    <ROW File="eerie_black.json" Component_="alice_blue.json" FileName="EERIE_~1.JSO|eerie_black.json" Attributes="0" SourcePath="Centre macro\src\theme\eerie_black.json" SelfReg="false"/>
+    <ROW File="floral_white.json" Component_="alice_blue.json" FileName="FLORAL~1.JSO|floral_white.json" Attributes="0" SourcePath="Centre macro\src\theme\floral_white.json" SelfReg="false"/>
+    <ROW File="gunmetal.json" Component_="alice_blue.json" FileName="GUNMET~1.JSO|gunmetal.json" Attributes="0" SourcePath="Centre macro\src\theme\gunmetal.json" SelfReg="false"/>
+    <ROW File="rich_black.json" Component_="alice_blue.json" FileName="RICH_B~1.JSO|rich_black.json" Attributes="0" SourcePath="Centre macro\src\theme\rich_black.json" SelfReg="false"/>
+    <ROW File="rich_black_sombre.json" Component_="alice_blue.json" FileName="RICH_B~2.JSO|rich_black_sombre.json" Attributes="0" SourcePath="Centre macro\src\theme\rich_black_sombre.json" SelfReg="false"/>
+    <ROW File="sombre.json" Component_="alice_blue.json" FileName="SOMBRE~1.JSO|sombre.json" Attributes="0" SourcePath="Centre macro\src\theme\sombre.json" SelfReg="false"/>
+    <ROW File="space_cadet.json" Component_="alice_blue.json" FileName="SPACE_~1.JSO|space_cadet.json" Attributes="0" SourcePath="Centre macro\src\theme\space_cadet.json" SelfReg="false"/>
+    <ROW File="xanadu.json" Component_="alice_blue.json" FileName="XANADU~1.JSO|xanadu.json" Attributes="0" SourcePath="Centre macro\src\theme\xanadu.json" SelfReg="false"/>
+    <ROW File="Build.py" Component_="Build.py" FileName="Build.py" Attributes="0" SourcePath="Centre macro\src\widgets\CheckBox\Build.py" SelfReg="false"/>
+    <ROW File="CheckBox.py" Component_="Build.py" FileName="CheckBox.py" Attributes="0" SourcePath="Centre macro\src\widgets\CheckBox\CheckBox.py" SelfReg="false"/>
+    <ROW File="Build.cpython39.pyc" Component_="Build.cpython39.pyc" FileName="BUILDC~1.PYC|Build.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\CheckBox\__pycache__\Build.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="CheckBox.cpython39.pyc" Component_="Build.cpython39.pyc" FileName="CHECKB~1.PYC|CheckBox.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\CheckBox\__pycache__\CheckBox.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="Build.py_1" Component_="Build.py_1" FileName="Build.py" Attributes="0" SourcePath="Centre macro\src\widgets\ComboBox\Build.py" SelfReg="false"/>
+    <ROW File="ComboBox.py" Component_="Build.py_1" FileName="ComboBox.py" Attributes="0" SourcePath="Centre macro\src\widgets\ComboBox\ComboBox.py" SelfReg="false"/>
+    <ROW File="Build.cpython39.pyc_1" Component_="Build.cpython39.pyc_1" FileName="BUILDC~1.PYC|Build.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\ComboBox\__pycache__\Build.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="ComboBox.cpython39.pyc" Component_="Build.cpython39.pyc_1" FileName="COMBOB~1.PYC|ComboBox.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\ComboBox\__pycache__\ComboBox.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="Build.py_2" Component_="Build.py_2" FileName="Build.py" Attributes="0" SourcePath="Centre macro\src\widgets\DateEdit\Build.py" SelfReg="false"/>
+    <ROW File="DateEdit.py" Component_="Build.py_2" FileName="DateEdit.py" Attributes="0" SourcePath="Centre macro\src\widgets\DateEdit\DateEdit.py" SelfReg="false"/>
+    <ROW File="Build.cpython39.pyc_2" Component_="Build.cpython39.pyc_2" FileName="BUILDC~1.PYC|Build.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\DateEdit\__pycache__\Build.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="DateEdit.cpython39.pyc" Component_="Build.cpython39.pyc_2" FileName="DATEED~1.PYC|DateEdit.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\DateEdit\__pycache__\DateEdit.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="Build.py_3" Component_="Build.py_3" FileName="Build.py" Attributes="0" SourcePath="Centre macro\src\widgets\Frame\Build.py" SelfReg="false"/>
+    <ROW File="Frame.py" Component_="Build.py_3" FileName="Frame.py" Attributes="0" SourcePath="Centre macro\src\widgets\Frame\Frame.py" SelfReg="false"/>
+    <ROW File="Build.cpython39.pyc_3" Component_="Build.cpython39.pyc_3" FileName="BUILDC~1.PYC|Build.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\Frame\__pycache__\Build.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="Frame.cpython39.pyc" Component_="Build.cpython39.pyc_3" FileName="FRAMEC~1.PYC|Frame.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\Frame\__pycache__\Frame.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="Build.py_4" Component_="Build.py_4" FileName="Build.py" Attributes="0" SourcePath="Centre macro\src\widgets\Label\Build.py" SelfReg="false"/>
+    <ROW File="Label.py" Component_="Build.py_4" FileName="Label.py" Attributes="0" SourcePath="Centre macro\src\widgets\Label\Label.py" SelfReg="false"/>
+    <ROW File="Build.cpython39.pyc_4" Component_="Build.cpython39.pyc_4" FileName="BUILDC~1.PYC|Build.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\Label\__pycache__\Build.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="Label.cpython39.pyc" Component_="Build.cpython39.pyc_4" FileName="LABELC~1.PYC|Label.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\Label\__pycache__\Label.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="Build.py_5" Component_="Build.py_5" FileName="Build.py" Attributes="0" SourcePath="Centre macro\src\widgets\LineEdit\Build.py" SelfReg="false"/>
+    <ROW File="LineEdit.py" Component_="Build.py_5" FileName="LineEdit.py" Attributes="0" SourcePath="Centre macro\src\widgets\LineEdit\LineEdit.py" SelfReg="false"/>
+    <ROW File="Build.cpython39.pyc_5" Component_="Build.cpython39.pyc_5" FileName="BUILDC~1.PYC|Build.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\LineEdit\__pycache__\Build.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="LineEdit.cpython39.pyc" Component_="Build.cpython39.pyc_5" FileName="LINEED~1.PYC|LineEdit.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\LineEdit\__pycache__\LineEdit.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="Build.py_6" Component_="Build.py_6" FileName="Build.py" Attributes="0" SourcePath="Centre macro\src\widgets\ListWidget\Build.py" SelfReg="false"/>
+    <ROW File="ListWidget.py" Component_="Build.py_6" FileName="LISTWI~1.PY|ListWidget.py" Attributes="0" SourcePath="Centre macro\src\widgets\ListWidget\ListWidget.py" SelfReg="false"/>
+    <ROW File="Build.cpython39.pyc_6" Component_="Build.cpython39.pyc_6" FileName="BUILDC~1.PYC|Build.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\ListWidget\__pycache__\Build.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="ListWidget.cpython39.pyc" Component_="Build.cpython39.pyc_6" FileName="LISTWI~1.PYC|ListWidget.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\ListWidget\__pycache__\ListWidget.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="Build.py_7" Component_="Build.py_7" FileName="Build.py" Attributes="0" SourcePath="Centre macro\src\widgets\PlainTextEdit\Build.py" SelfReg="false"/>
+    <ROW File="PlainTextEdit.py" Component_="Build.py_7" FileName="PLAINT~1.PY|PlainTextEdit.py" Attributes="0" SourcePath="Centre macro\src\widgets\PlainTextEdit\PlainTextEdit.py" SelfReg="false"/>
+    <ROW File="Build.cpython39.pyc_7" Component_="Build.cpython39.pyc_7" FileName="BUILDC~1.PYC|Build.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\PlainTextEdit\__pycache__\Build.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="PlainTextEdit.cpython39.pyc" Component_="Build.cpython39.pyc_7" FileName="PLAINT~1.PYC|PlainTextEdit.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\PlainTextEdit\__pycache__\PlainTextEdit.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="Build.py_8" Component_="Build.py_8" FileName="Build.py" Attributes="0" SourcePath="Centre macro\src\widgets\ProgressBar\Build.py" SelfReg="false"/>
+    <ROW File="ProgressBar.py" Component_="Build.py_8" FileName="PROGRE~1.PY|ProgressBar.py" Attributes="0" SourcePath="Centre macro\src\widgets\ProgressBar\ProgressBar.py" SelfReg="false"/>
+    <ROW File="Build.cpython39.pyc_8" Component_="Build.cpython39.pyc_8" FileName="BUILDC~1.PYC|Build.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\ProgressBar\__pycache__\Build.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="ProgressBar.cpython39.pyc" Component_="Build.cpython39.pyc_8" FileName="PROGRE~1.PYC|ProgressBar.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\ProgressBar\__pycache__\ProgressBar.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="Build.py_9" Component_="Build.py_9" FileName="Build.py" Attributes="0" SourcePath="Centre macro\src\widgets\PushButton\Build.py" SelfReg="false"/>
+    <ROW File="ClassePb.py" Component_="Build.py_9" FileName="ClassePb.py" Attributes="0" SourcePath="Centre macro\src\widgets\PushButton\ClassePb.py" SelfReg="false"/>
+    <ROW File="PushButton.py" Component_="Build.py_9" FileName="PUSHBU~1.PY|PushButton.py" Attributes="0" SourcePath="Centre macro\src\widgets\PushButton\PushButton.py" SelfReg="false"/>
+    <ROW File="Build.cpython39.pyc_9" Component_="Build.cpython39.pyc_9" FileName="BUILDC~1.PYC|Build.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\PushButton\__pycache__\Build.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="ClassePb.cpython39.pyc" Component_="Build.cpython39.pyc_9" FileName="CLASSE~1.PYC|ClassePb.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\PushButton\__pycache__\ClassePb.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="PushButton.cpython39.pyc" Component_="Build.cpython39.pyc_9" FileName="PUSHBU~1.PYC|PushButton.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\PushButton\__pycache__\PushButton.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="Build.py_10" Component_="Build.py_10" FileName="Build.py" Attributes="0" SourcePath="Centre macro\src\widgets\RadioButton\Build.py" SelfReg="false"/>
+    <ROW File="RadioButton.py" Component_="Build.py_10" FileName="RADIOB~1.PY|RadioButton.py" Attributes="0" SourcePath="Centre macro\src\widgets\RadioButton\RadioButton.py" SelfReg="false"/>
+    <ROW File="Build.cpython39.pyc_10" Component_="Build.cpython39.pyc_10" FileName="BUILDC~1.PYC|Build.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\RadioButton\__pycache__\Build.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="RadioButton.cpython39.pyc" Component_="Build.cpython39.pyc_10" FileName="RADIOB~1.PYC|RadioButton.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\RadioButton\__pycache__\RadioButton.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="Build.py_11" Component_="Build.py_11" FileName="Build.py" Attributes="0" SourcePath="Centre macro\src\widgets\ScrollArea\Build.py" SelfReg="false"/>
+    <ROW File="ScrollArea.py" Component_="Build.py_11" FileName="SCROLL~1.PY|ScrollArea.py" Attributes="0" SourcePath="Centre macro\src\widgets\ScrollArea\ScrollArea.py" SelfReg="false"/>
+    <ROW File="Build.cpython39.pyc_11" Component_="Build.cpython39.pyc_11" FileName="BUILDC~1.PYC|Build.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\ScrollArea\__pycache__\Build.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="ScrollArea.cpython39.pyc" Component_="Build.cpython39.pyc_11" FileName="SCROLL~1.PYC|ScrollArea.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\ScrollArea\__pycache__\ScrollArea.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="Build.py_12" Component_="Build.py_12" FileName="Build.py" Attributes="0" SourcePath="Centre macro\src\widgets\Slider\Build.py" SelfReg="false"/>
+    <ROW File="Slider.py" Component_="Build.py_12" FileName="Slider.py" Attributes="0" SourcePath="Centre macro\src\widgets\Slider\Slider.py" SelfReg="false"/>
+    <ROW File="Build.cpython39.pyc_12" Component_="Build.cpython39.pyc_12" FileName="BUILDC~1.PYC|Build.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\Slider\__pycache__\Build.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="Slider.cpython39.pyc" Component_="Build.cpython39.pyc_12" FileName="SLIDER~1.PYC|Slider.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\Slider\__pycache__\Slider.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="Build.py_13" Component_="Build.py_13" FileName="Build.py" Attributes="0" SourcePath="Centre macro\src\widgets\SpinBox\Build.py" SelfReg="false"/>
+    <ROW File="SpinBox.py" Component_="Build.py_13" FileName="SpinBox.py" Attributes="0" SourcePath="Centre macro\src\widgets\SpinBox\SpinBox.py" SelfReg="false"/>
+    <ROW File="Build.cpython39.pyc_13" Component_="Build.cpython39.pyc_13" FileName="BUILDC~1.PYC|Build.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\SpinBox\__pycache__\Build.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="SpinBox.cpython39.pyc" Component_="Build.cpython39.pyc_13" FileName="SPINBO~1.PYC|SpinBox.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\SpinBox\__pycache__\SpinBox.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="Build.py_14" Component_="Build.py_14" FileName="Build.py" Attributes="0" SourcePath="Centre macro\src\widgets\TableWidget\Build.py" SelfReg="false"/>
+    <ROW File="TableWidget.py" Component_="Build.py_14" FileName="TABLEW~1.PY|TableWidget.py" Attributes="0" SourcePath="Centre macro\src\widgets\TableWidget\TableWidget.py" SelfReg="false"/>
+    <ROW File="Build.cpython39.pyc_14" Component_="Build.cpython39.pyc_14" FileName="BUILDC~1.PYC|Build.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\TableWidget\__pycache__\Build.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="TableWidget.cpython39.pyc" Component_="Build.cpython39.pyc_14" FileName="TABLEW~1.PYC|TableWidget.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\TableWidget\__pycache__\TableWidget.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="Build.py_15" Component_="Build.py_15" FileName="Build.py" Attributes="0" SourcePath="Centre macro\src\widgets\TextEdit\Build.py" SelfReg="false"/>
+    <ROW File="TextEdit.py" Component_="Build.py_15" FileName="TextEdit.py" Attributes="0" SourcePath="Centre macro\src\widgets\TextEdit\TextEdit.py" SelfReg="false"/>
+    <ROW File="Build.cpython39.pyc_15" Component_="Build.cpython39.pyc_15" FileName="BUILDC~1.PYC|Build.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\TextEdit\__pycache__\Build.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="TextEdit.cpython39.pyc" Component_="Build.cpython39.pyc_15" FileName="TEXTED~1.PYC|TextEdit.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\TextEdit\__pycache__\TextEdit.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="Build.py_16" Component_="Build.py_16" FileName="Build.py" Attributes="0" SourcePath="Centre macro\src\widgets\ToolBox\Build.py" SelfReg="false"/>
+    <ROW File="ToolBox.py" Component_="Build.py_16" FileName="ToolBox.py" Attributes="0" SourcePath="Centre macro\src\widgets\ToolBox\ToolBox.py" SelfReg="false"/>
+    <ROW File="Build.cpython39.pyc_16" Component_="Build.cpython39.pyc_16" FileName="BUILDC~1.PYC|Build.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\ToolBox\__pycache__\Build.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="ToolBox.cpython39.pyc" Component_="Build.cpython39.pyc_16" FileName="TOOLBO~1.PYC|ToolBox.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\ToolBox\__pycache__\ToolBox.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="Build.py_17" Component_="Build.py_17" FileName="Build.py" Attributes="0" SourcePath="Centre macro\src\widgets\TrayIcon\Build.py" SelfReg="false"/>
+    <ROW File="TrayIcon.py" Component_="Build.py_17" FileName="TrayIcon.py" Attributes="0" SourcePath="Centre macro\src\widgets\TrayIcon\TrayIcon.py" SelfReg="false"/>
+    <ROW File="Build.cpython39.pyc_17" Component_="Build.cpython39.pyc_17" FileName="BUILDC~1.PYC|Build.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\TrayIcon\__pycache__\Build.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="TrayIcon.cpython39.pyc" Component_="Build.cpython39.pyc_17" FileName="TRAYIC~1.PYC|TrayIcon.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\TrayIcon\__pycache__\TrayIcon.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="Build.py_18" Component_="Build.py_18" FileName="Build.py" Attributes="0" SourcePath="Centre macro\src\widgets\TreeWidget\Build.py" SelfReg="false"/>
+    <ROW File="TreeWidget.py" Component_="Build.py_18" FileName="TREEWI~1.PY|TreeWidget.py" Attributes="0" SourcePath="Centre macro\src\widgets\TreeWidget\TreeWidget.py" SelfReg="false"/>
+    <ROW File="Build.cpython39.pyc_18" Component_="Build.cpython39.pyc_18" FileName="BUILDC~1.PYC|Build.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\TreeWidget\__pycache__\Build.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="TreeWidget.cpython39.pyc" Component_="Build.cpython39.pyc_18" FileName="TREEWI~1.PYC|TreeWidget.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\TreeWidget\__pycache__\TreeWidget.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="vb_app.py" Component_="vb_app.py" FileName="vb_app.py" Attributes="0" SourcePath="Centre macro\src\widgets\vb_app.py" SelfReg="false"/>
+    <ROW File="vb_wg.py" Component_="vb_app.py" FileName="vb_wg.py" Attributes="0" SourcePath="Centre macro\src\widgets\vb_wg.py" SelfReg="false"/>
+    <ROW File="__init__.py_10" Component_="vb_app.py" FileName="__init__.py" Attributes="0" SourcePath="Centre macro\src\widgets\__init__.py" SelfReg="false"/>
+    <ROW File="vb_app.cpython39.pyc" Component_="vb_app.cpython39.pyc" FileName="VB_APP~1.PYC|vb_app.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\__pycache__\vb_app.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="vb_wg.cpython39.pyc" Component_="vb_app.cpython39.pyc" FileName="VB_WGC~1.PYC|vb_wg.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\__pycache__\vb_wg.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="__init__.cpython39.pyc_10" Component_="vb_app.cpython39.pyc" FileName="__INIT~1.PYC|__init__.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\__pycache__\__init__.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="Frame_cust.py" Component_="Frame_cust.py" FileName="FRAME_~1.PY|Frame_cust.py" Attributes="0" SourcePath="Centre macro\src\widget_custom\Frame_cust.py" SelfReg="false"/>
+    <ROW File="Label_cust.py" Component_="Frame_cust.py" FileName="LABEL_~1.PY|Label_cust.py" Attributes="0" SourcePath="Centre macro\src\widget_custom\Label_cust.py" SelfReg="false"/>
+    <ROW File="__init__.py_11" Component_="Frame_cust.py" FileName="__init__.py" Attributes="0" SourcePath="Centre macro\src\widget_custom\__init__.py" SelfReg="false"/>
+    <ROW File="Frame_cust.cpython39.pyc" Component_="Frame_cust.cpython39.pyc" FileName="FRAME_~1.PYC|Frame_cust.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widget_custom\__pycache__\Frame_cust.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="Label_cust.cpython39.pyc" Component_="Frame_cust.cpython39.pyc" FileName="LABEL_~1.PYC|Label_cust.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widget_custom\__pycache__\Label_cust.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="__init__.cpython39.pyc_11" Component_="Frame_cust.cpython39.pyc" FileName="__INIT~1.PYC|__init__.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widget_custom\__pycache__\__init__.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="__init__.py_12" Component_="__init__.py_4" FileName="__init__.py" Attributes="0" SourcePath="Centre macro\src\__init__.py" SelfReg="false"/>
+    <ROW File="__init__.cpython39.pyc_12" Component_="__init__.cpython39.pyc_4" FileName="__INIT~1.PYC|__init__.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\__pycache__\__init__.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="unicodedata.pyd" Component_="base_library.zip" FileName="UNICOD~1.PYD|unicodedata.pyd" Attributes="0" SourcePath="Centre macro\unicodedata.pyd" SelfReg="false"/>
+    <ROW File="VCRUNTIME140.dll" Component_="VCRUNTIME140.dll" FileName="VCRUNT~1.DLL|VCRUNTIME140.dll" Attributes="0" SourcePath="Centre macro\VCRUNTIME140.dll" SelfReg="false"/>
+    <ROW File="VCRUNTIME140_1.dll" Component_="VCRUNTIME140_1.dll" FileName="VCRUNT~2.DLL|VCRUNTIME140_1.dll" Attributes="0" SourcePath="Centre macro\VCRUNTIME140_1.dll" SelfReg="false"/>
+    <ROW File="_yaml.cp39win_amd64.pyd" Component_="_yaml.cp39win_amd64.pyd" FileName="_YAMLC~1.PYD|_yaml.cp39-win_amd64.pyd" Attributes="0" SourcePath="Centre macro\yaml\_yaml.cp39-win_amd64.pyd" SelfReg="false"/>
+    <ROW File="_asyncio.pyd" Component_="base_library.zip" FileName="_asyncio.pyd" Attributes="0" SourcePath="Centre macro\_asyncio.pyd" SelfReg="false"/>
+    <ROW File="_bz2.pyd" Component_="base_library.zip" FileName="_bz2.pyd" Attributes="0" SourcePath="Centre macro\_bz2.pyd" SelfReg="false"/>
+    <ROW File="_ctypes.pyd" Component_="base_library.zip" FileName="_ctypes.pyd" Attributes="0" SourcePath="Centre macro\_ctypes.pyd" SelfReg="false"/>
+    <ROW File="_decimal.pyd" Component_="base_library.zip" FileName="_decimal.pyd" Attributes="0" SourcePath="Centre macro\_decimal.pyd" SelfReg="false"/>
+    <ROW File="_hashlib.pyd" Component_="base_library.zip" FileName="_hashlib.pyd" Attributes="0" SourcePath="Centre macro\_hashlib.pyd" SelfReg="false"/>
+    <ROW File="_lzma.pyd" Component_="base_library.zip" FileName="_lzma.pyd" Attributes="0" SourcePath="Centre macro\_lzma.pyd" SelfReg="false"/>
+    <ROW File="_multiprocessing.pyd" Component_="base_library.zip" FileName="_MULTI~1.PYD|_multiprocessing.pyd" Attributes="0" SourcePath="Centre macro\_multiprocessing.pyd" SelfReg="false"/>
+    <ROW File="_overlapped.pyd" Component_="base_library.zip" FileName="_OVERL~1.PYD|_overlapped.pyd" Attributes="0" SourcePath="Centre macro\_overlapped.pyd" SelfReg="false"/>
+    <ROW File="_queue.pyd" Component_="base_library.zip" FileName="_queue.pyd" Attributes="0" SourcePath="Centre macro\_queue.pyd" SelfReg="false"/>
+    <ROW File="_socket.pyd" Component_="base_library.zip" FileName="_socket.pyd" Attributes="0" SourcePath="Centre macro\_socket.pyd" SelfReg="false"/>
+    <ROW File="_sqlite3.pyd" Component_="base_library.zip" FileName="_sqlite3.pyd" Attributes="0" SourcePath="Centre macro\_sqlite3.pyd" SelfReg="false"/>
+    <ROW File="_ssl.pyd" Component_="base_library.zip" FileName="_ssl.pyd" Attributes="0" SourcePath="Centre macro\_ssl.pyd" SelfReg="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
+    <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" PackageFolder="." Languages="en" InstallationType="4" UseLargeSchema="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="Themes.aip" Path="&lt;AI_FRAGS&gt;Themes.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="true"/>
+    <ROW Directory_="SHORTCUTDIR" Component_="SHORTCUTDIR" ManualDelete="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]" MultiBuildTarget="DefaultBuild:[AppDataFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
+    <ROW Feature_="MainFeature" Component_="APPDIR"/>
+    <ROW Feature_="MainFeature" Component_="ProductInformation"/>
+    <ROW Feature_="MainFeature" Component_="base_library.zip"/>
+    <ROW Feature_="MainFeature" Component_="Centremacro.exe"/>
+    <ROW Feature_="MainFeature" Component_="libcrypto1_1.dll"/>
+    <ROW Feature_="MainFeature" Component_="libffi7.dll"/>
+    <ROW Feature_="MainFeature" Component_="libssl1_1.dll"/>
+    <ROW Feature_="MainFeature" Component_="_speedups.cp39win_amd64.pyd"/>
+    <ROW Feature_="MainFeature" Component_="MSVCP140.dll"/>
+    <ROW Feature_="MainFeature" Component_="MSVCP140_1.dll"/>
+    <ROW Feature_="MainFeature" Component_="MSVCP140_2.dll"/>
+    <ROW Feature_="MainFeature" Component_="opengl32sw.dll"/>
+    <ROW Feature_="MainFeature" Component_="qsvgicon.dll"/>
+    <ROW Feature_="MainFeature" Component_="qgif.dll"/>
+    <ROW Feature_="MainFeature" Component_="qicns.dll"/>
+    <ROW Feature_="MainFeature" Component_="qico.dll"/>
+    <ROW Feature_="MainFeature" Component_="qjpeg.dll"/>
+    <ROW Feature_="MainFeature" Component_="qsvg.dll"/>
+    <ROW Feature_="MainFeature" Component_="qtga.dll"/>
+    <ROW Feature_="MainFeature" Component_="qtiff.dll"/>
+    <ROW Feature_="MainFeature" Component_="qwbmp.dll"/>
+    <ROW Feature_="MainFeature" Component_="qwebp.dll"/>
+    <ROW Feature_="MainFeature" Component_="qnetworklistmanager.dll"/>
+    <ROW Feature_="MainFeature" Component_="qtvirtualkeyboardplugin.dll"/>
+    <ROW Feature_="MainFeature" Component_="qdirect2d.dll"/>
+    <ROW Feature_="MainFeature" Component_="qminimal.dll"/>
+    <ROW Feature_="MainFeature" Component_="qoffscreen.dll"/>
+    <ROW Feature_="MainFeature" Component_="qwindows.dll"/>
+    <ROW Feature_="MainFeature" Component_="qwindowsvistastyle.dll"/>
+    <ROW Feature_="MainFeature" Component_="qcertonlybackend.dll"/>
+    <ROW Feature_="MainFeature" Component_="qopensslbackend.dll"/>
+    <ROW Feature_="MainFeature" Component_="qschannelbackend.dll"/>
+    <ROW Feature_="MainFeature" Component_="qt.conf"/>
+    <ROW Feature_="MainFeature" Component_="qtbase_ar.qm"/>
+    <ROW Feature_="MainFeature" Component_="pyside6.abi3.dll"/>
+    <ROW Feature_="MainFeature" Component_="python3.dll"/>
+    <ROW Feature_="MainFeature" Component_="python39.dll"/>
+    <ROW Feature_="MainFeature" Component_="Qt6Core.dll"/>
+    <ROW Feature_="MainFeature" Component_="Qt6Gui.dll"/>
+    <ROW Feature_="MainFeature" Component_="Qt6Network.dll"/>
+    <ROW Feature_="MainFeature" Component_="Qt6OpenGL.dll"/>
+    <ROW Feature_="MainFeature" Component_="Qt6Qml.dll"/>
+    <ROW Feature_="MainFeature" Component_="Qt6QmlModels.dll"/>
+    <ROW Feature_="MainFeature" Component_="Qt6Quick.dll"/>
+    <ROW Feature_="MainFeature" Component_="Qt6Svg.dll"/>
+    <ROW Feature_="MainFeature" Component_="Qt6VirtualKeyboard.dll"/>
+    <ROW Feature_="MainFeature" Component_="Qt6Widgets.dll"/>
+    <ROW Feature_="MainFeature" Component_="Shiboken.pyd"/>
+    <ROW Feature_="MainFeature" Component_="shiboken6.abi3.dll"/>
+    <ROW Feature_="MainFeature" Component_="sqlite3.dll"/>
+    <ROW Feature_="MainFeature" Component_="agrandir.cur"/>
+    <ROW Feature_="MainFeature" Component_="agrandir.cur_1"/>
+    <ROW Feature_="MainFeature" Component_="agrandir.cur_2"/>
+    <ROW Feature_="MainFeature" Component_="calendrier_thc.svg"/>
+    <ROW Feature_="MainFeature" Component_="calendrier.svg"/>
+    <ROW Feature_="MainFeature" Component_="inari_thc.svg"/>
+    <ROW Feature_="MainFeature" Component_="inari.svg"/>
+    <ROW Feature_="MainFeature" Component_="agrandir.svg"/>
+    <ROW Feature_="MainFeature" Component_="agrandirbn1.svg"/>
+    <ROW Feature_="MainFeature" Component_="Functions.py"/>
+    <ROW Feature_="MainFeature" Component_="Functions.cpython39.pyc"/>
+    <ROW Feature_="MainFeature" Component_="__init__.py"/>
+    <ROW Feature_="MainFeature" Component_="__init__.cpython39.pyc"/>
+    <ROW Feature_="MainFeature" Component_="config.json"/>
+    <ROW Feature_="MainFeature" Component_="config.cpython39.pyc"/>
+    <ROW Feature_="MainFeature" Component_="InputBox.py"/>
+    <ROW Feature_="MainFeature" Component_="InputBox.cpython39.pyc"/>
+    <ROW Feature_="MainFeature" Component_="MsgBox.py"/>
+    <ROW Feature_="MainFeature" Component_="MsgBox.cpython39.pyc"/>
+    <ROW Feature_="MainFeature" Component_="OptionBox.py"/>
+    <ROW Feature_="MainFeature" Component_="OptionBox.cpython39.pyc"/>
+    <ROW Feature_="MainFeature" Component_="ResponseBox.py"/>
+    <ROW Feature_="MainFeature" Component_="ResponseBox.cpython39.pyc"/>
+    <ROW Feature_="MainFeature" Component_="RgbBox.py"/>
+    <ROW Feature_="MainFeature" Component_="RgbBox.cpython39.pyc"/>
+    <ROW Feature_="MainFeature" Component_="SplashScreen.py"/>
+    <ROW Feature_="MainFeature" Component_="SplashScreen.cpython39.pyc"/>
+    <ROW Feature_="MainFeature" Component_="ToolBoxUi.py"/>
+    <ROW Feature_="MainFeature" Component_="ToolBoxUi.cpython39.pyc"/>
+    <ROW Feature_="MainFeature" Component_="__init__.py_1"/>
+    <ROW Feature_="MainFeature" Component_="__init__.cpython39.pyc_1"/>
+    <ROW Feature_="MainFeature" Component_="Event.py"/>
+    <ROW Feature_="MainFeature" Component_="Event.cpython39.pyc"/>
+    <ROW Feature_="MainFeature" Component_="input.ui"/>
+    <ROW Feature_="MainFeature" Component_="input_ui.cpython39.pyc"/>
+    <ROW Feature_="MainFeature" Component_="__init__.py_2"/>
+    <ROW Feature_="MainFeature" Component_="__init__.cpython39.pyc_2"/>
+    <ROW Feature_="MainFeature" Component_="v_gb.py"/>
+    <ROW Feature_="MainFeature" Component_="v_gb.cpython39.pyc"/>
+    <ROW Feature_="MainFeature" Component_="Align.py"/>
+    <ROW Feature_="MainFeature" Component_="Align.cpython39.pyc"/>
+    <ROW Feature_="MainFeature" Component_="__init__.py_3"/>
+    <ROW Feature_="MainFeature" Component_="__init__.cpython39.pyc_3"/>
+    <ROW Feature_="MainFeature" Component_="convert_ui.bat"/>
+    <ROW Feature_="MainFeature" Component_="alice_blue.json"/>
+    <ROW Feature_="MainFeature" Component_="Build.py"/>
+    <ROW Feature_="MainFeature" Component_="Build.cpython39.pyc"/>
+    <ROW Feature_="MainFeature" Component_="Build.py_1"/>
+    <ROW Feature_="MainFeature" Component_="Build.cpython39.pyc_1"/>
+    <ROW Feature_="MainFeature" Component_="Build.py_2"/>
+    <ROW Feature_="MainFeature" Component_="Build.cpython39.pyc_2"/>
+    <ROW Feature_="MainFeature" Component_="Build.py_3"/>
+    <ROW Feature_="MainFeature" Component_="Build.cpython39.pyc_3"/>
+    <ROW Feature_="MainFeature" Component_="Build.py_4"/>
+    <ROW Feature_="MainFeature" Component_="Build.cpython39.pyc_4"/>
+    <ROW Feature_="MainFeature" Component_="Build.py_5"/>
+    <ROW Feature_="MainFeature" Component_="Build.cpython39.pyc_5"/>
+    <ROW Feature_="MainFeature" Component_="Build.py_6"/>
+    <ROW Feature_="MainFeature" Component_="Build.cpython39.pyc_6"/>
+    <ROW Feature_="MainFeature" Component_="Build.py_7"/>
+    <ROW Feature_="MainFeature" Component_="Build.cpython39.pyc_7"/>
+    <ROW Feature_="MainFeature" Component_="Build.py_8"/>
+    <ROW Feature_="MainFeature" Component_="Build.cpython39.pyc_8"/>
+    <ROW Feature_="MainFeature" Component_="Build.py_9"/>
+    <ROW Feature_="MainFeature" Component_="Build.cpython39.pyc_9"/>
+    <ROW Feature_="MainFeature" Component_="Build.py_10"/>
+    <ROW Feature_="MainFeature" Component_="Build.cpython39.pyc_10"/>
+    <ROW Feature_="MainFeature" Component_="Build.py_11"/>
+    <ROW Feature_="MainFeature" Component_="Build.cpython39.pyc_11"/>
+    <ROW Feature_="MainFeature" Component_="Build.py_12"/>
+    <ROW Feature_="MainFeature" Component_="Build.cpython39.pyc_12"/>
+    <ROW Feature_="MainFeature" Component_="Build.py_13"/>
+    <ROW Feature_="MainFeature" Component_="Build.cpython39.pyc_13"/>
+    <ROW Feature_="MainFeature" Component_="Build.py_14"/>
+    <ROW Feature_="MainFeature" Component_="Build.cpython39.pyc_14"/>
+    <ROW Feature_="MainFeature" Component_="Build.py_15"/>
+    <ROW Feature_="MainFeature" Component_="Build.cpython39.pyc_15"/>
+    <ROW Feature_="MainFeature" Component_="Build.py_16"/>
+    <ROW Feature_="MainFeature" Component_="Build.cpython39.pyc_16"/>
+    <ROW Feature_="MainFeature" Component_="Build.py_17"/>
+    <ROW Feature_="MainFeature" Component_="Build.cpython39.pyc_17"/>
+    <ROW Feature_="MainFeature" Component_="Build.py_18"/>
+    <ROW Feature_="MainFeature" Component_="Build.cpython39.pyc_18"/>
+    <ROW Feature_="MainFeature" Component_="vb_app.py"/>
+    <ROW Feature_="MainFeature" Component_="vb_app.cpython39.pyc"/>
+    <ROW Feature_="MainFeature" Component_="Frame_cust.py"/>
+    <ROW Feature_="MainFeature" Component_="Frame_cust.cpython39.pyc"/>
+    <ROW Feature_="MainFeature" Component_="__init__.py_4"/>
+    <ROW Feature_="MainFeature" Component_="__init__.cpython39.pyc_4"/>
+    <ROW Feature_="MainFeature" Component_="VCRUNTIME140.dll"/>
+    <ROW Feature_="MainFeature" Component_="VCRUNTIME140_1.dll"/>
+    <ROW Feature_="MainFeature" Component_="_yaml.cp39win_amd64.pyd"/>
+    <ROW Feature_="MainFeature" Component_="SHORTCUTDIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="Centremacro.exe" SourcePath="Centre macro\Centre macro.exe" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="((VersionNT &lt;&gt; 501) AND (VersionNT &lt;&gt; 502))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="Manufacturer" Root="-1" Key="Software\[Manufacturer]" Name="\"/>
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="ProductName" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="\"/>
+    <ROW Registry="Software" Root="-1" Key="Software" Name="\"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="Centremacro" Directory_="SHORTCUTDIR" Name="CENTRE~1|Centre macro" Component_="Centremacro.exe" Target="[#Centremacro.exe]" Hotkey="0" Icon_="Centremacro.exe" IconIndex="0" ShowCmd="1" WkDir="Centremacro_Dir"/>
+    <ROW Shortcut="Centremacro_1" Directory_="StartMenuFolder" Name="CENTRE~1|Centre macro" Component_="Centremacro.exe" Target="[#Centremacro.exe]" Hotkey="0" Icon_="Centremacro.exe" IconIndex="0" ShowCmd="1" WkDir="Centremacro_Dir"/>
+    <ROW Shortcut="Centremacro_2" Directory_="DesktopFolder" Name="CENTRE~1|Centre macro" Component_="Centremacro.exe" Target="[#Centremacro.exe]" Hotkey="0" Icon_="Centremacro.exe" IconIndex="0" ShowCmd="1" WkDir="Centremacro_Dir"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+</DOCUMENT>
