@@ -120,6 +120,8 @@ class main(Ui_main, QtWidgets.QWidget):
 
         ### QLineEdit ###
         LineEdit.Base(self.line_ap, self.line_ap_nom, self.line_ap_ver).th()
+
+        LineEdit.Base(self.ln_auteur_name_add, self.ln_auteur_alias_add, self.ln_auteur_mail_add).th()
         ### /QLineEdit ###
 
         ### QFrame ###
@@ -141,6 +143,8 @@ class main(Ui_main, QtWidgets.QWidget):
         Label.Base(self.lb_nom_ap, self.lb_ver_ap, self.lb_auteur_ap, self.lb_stock, self.lb_desc_ap, self.lb_chang_ap,
                    self.lb_list_app, self.lb_old_ver, self.lb_change_old_ver, self.lb_correct_old,
                    self.lb_new_ver, self.lb_change_new_ver, self.lb_correct_new).th()
+
+        Label.Base(self.lb_auteur_titre, self.lb_auteur_name_add, self.lb_auteur_alias_add, self.lb_auteur_mail_add).th()
         ### /QLabel ###
 
         # ### QProgressBar ###
@@ -164,6 +168,8 @@ class main(Ui_main, QtWidgets.QWidget):
 
         PushButton.Base(self.pb_ico, self.pb_ap_selector, self.pb_ap_selector_ver).th()
         PushButton.Base(self.pb_new_ap_val, self.pb_new_ver_val).th2()
+
+        PushButton.Base(self.pb_auteur_add_valide).th2()
 
         ### Adding application ###
         for wid in [self.num_ver, self.num_old_ver, self.num_new_ver]:
@@ -287,6 +293,10 @@ class main(Ui_main, QtWidgets.QWidget):
         ### Version de l'app ###
         self.lb_mb_version.setText(f" Version : {self.cfg['infos']['version']}")
 
+        ### Centrage des titre ###
+        for widget in [self.lb_auteur_titre]:
+            widget.setAlignment(Align().center_horizontal())
+
         ### size_grip ###
         if self.cfg["var"]["resize"]:
             self.size_grip.setCursor(Functions().SET_CURSOR(Cur().fleche_nwse()))
@@ -402,7 +412,44 @@ class main(Ui_main, QtWidgets.QWidget):
         time.sleep(2)
 
     def add_auteur(self):
-        print("hey")
+
+        def isValid(email):
+            return bool(re.fullmatch(self.regex_mail, email))
+
+        gid = self.ln_auteur_name_add.text()
+        alias = self.ln_auteur_alias_add.text()
+        mail = self.ln_auteur_mail_add.text()
+
+        erreur = []
+        if gid == "":
+            erreur.append("le GID ne peut pas étre vide")
+        if not isValid(mail):
+            erreur.append("adresse mail incorect")
+
+        if len(erreur) == 0:
+            with sqlite3.connect(self.bdd) as conn:
+                cursor = conn.cursor()
+
+                cursor.execute(f"""
+                                SELECT at_nom
+                                FROM t_auteur
+                                WHERE at_nom='{gid}';
+                                """)
+                row = cursor.fetchone()
+                if row is None:
+                    cursor.execute(f"""
+                                    INSERT INTO t_auteur(at_nom, at_mail)
+                                    VALUES ('{gid}', '{mail}');
+                                    """)
+                    conn.commit()
+                else:
+                    MsgBox().INFO(msg=f"Auteur \"{gid}\" est déja present dans la base")
+        else:
+            MsgBox().ALERTE(msg=f"""
+            Une erreur à étais détecter :\n
+            {", ".join(erreur)}\n
+            Merci de corriger.""")
+
 
     def add_ver(self):
         app = self.line_ap_ver.text()

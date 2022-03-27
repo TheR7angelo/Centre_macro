@@ -469,10 +469,10 @@ class Ui_main(object):
         self.verticalLayout_10.setObjectName(u"verticalLayout_10")
         self.verticalLayout_9 = QVBoxLayout()
         self.verticalLayout_9.setObjectName(u"verticalLayout_9")
-        self.label = QLabel(self.page_ajout_auteur)
-        self.label.setObjectName(u"label")
+        self.lb_auteur_titre = QLabel(self.page_ajout_auteur)
+        self.lb_auteur_titre.setObjectName(u"lb_auteur_titre")
 
-        self.verticalLayout_9.addWidget(self.label)
+        self.verticalLayout_9.addWidget(self.lb_auteur_titre)
 
         self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
 
@@ -600,11 +600,11 @@ class Ui_main(object):
         self.lb_change_new_ver.setText(QCoreApplication.translate("main", u"Version", None))
         self.pb_ap_selector_ver.setText(QCoreApplication.translate("main", u"Application", None))
         self.pb_new_ver_val.setText(QCoreApplication.translate("main", u"Valider", None))
-        self.label.setText(QCoreApplication.translate("main", u"Ajout d'un auteur", None))
+        self.lb_auteur_titre.setText(QCoreApplication.translate("main", u"Ajout d'un auteur", None))
         self.lb_auteur_name_add.setText(QCoreApplication.translate("main", u"GID :", None))
         self.lb_auteur_alias_add.setText(QCoreApplication.translate("main", u"Alias :", None))
         self.lb_auteur_mail_add.setText(QCoreApplication.translate("main", u"Adresse mail :", None))
-        self.pb_auteur_add_valide.setText(QCoreApplication.translate("main", u"PushButton", None))
+        self.pb_auteur_add_valide.setText(QCoreApplication.translate("main", u"Ajouter", None))
         pass
     # retranslateUi
 

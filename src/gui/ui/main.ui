@@ -752,7 +752,7 @@ p, li { white-space: pre-wrap; }
                <item>
                 <layout class="QVBoxLayout" name="verticalLayout_9">
                  <item>
-                  <widget class="QLabel" name="label">
+                  <widget class="QLabel" name="lb_auteur_titre">
                    <property name="text">
                     <string>Ajout d'un auteur</string>
                    </property>
@@ -808,7 +808,7 @@ p, li { white-space: pre-wrap; }
                  <item>
                   <widget class="QPushButton" name="pb_auteur_add_valide">
                    <property name="text">
-                    <string>PushButton</string>
+                    <string>Ajouter</string>
                    </property>
                   </widget>
                  </item>
