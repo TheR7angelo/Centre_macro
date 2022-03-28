@@ -25,7 +25,6 @@ class main(Ui_main, QtWidgets.QWidget):
 
     import_ico_app = None
     grade = 4
-    regex_mail = re.compile(r'([A-Za-z0-9]+[.-_])*[A-Za-z0-9]+@[A-Za-z0-9-]+(\.[A-Z|a-z]{2,})+')
 
     def __init__(self):
         super(main, self).__init__()
@@ -158,11 +157,12 @@ class main(Ui_main, QtWidgets.QWidget):
 
         ### Ajout role
         Label.Base(self.lb_role_titre).th()
-        ComboBox.Base(self.cb_ajout_role).th()
-        LineEdit.Base(self.ln_role_name_add, self.ln_role_alias_add, self.ln_role_mail_add).th()
+        ComboBox.Base(self.cb_ajout_role, self.cb_role_nom_add).th()
+        LineEdit.Base(self.ln_role_alias_add, self.ln_role_mail_add).th()
         Label.Base(self.lb_role_name_add, self.lb_role_alias_add, self.lb_role_mail_add).th()
         PushButton.Base(self.pb_role_add_valide).th2()
-        ### /Ajoput auteur
+
+        self.affiche_parametre_role()
 
         ### Page logiciel
         ScrollArea.Base(self.scrollArea).th()
@@ -176,12 +176,19 @@ class main(Ui_main, QtWidgets.QWidget):
             cursor = conn.cursor()
 
             cursor.execute("""
+                            SELECT ad_nom
+                            FROM t_gr
+                            """)
+            rows = cursor.fetchall()
+            self.cb_role_nom_add.addItems([row[0] for row in rows])
+            self.cb_role_nom_add.setCurrentIndex(-1)
+
+            cursor.execute("""
                             SELECT at_nom
                             FROM t_auteur
                             """)
             rows = cursor.fetchall()
             for item in rows:
-
                 self.cb_auteur.addItem(item[0])
 
             cursor.execute("""
@@ -259,7 +266,8 @@ class main(Ui_main, QtWidgets.QWidget):
                        self.description, self.description_value).app_menu()
 
             self.formLayout = QtWidgets.QFormLayout(self.frame)
-            tmp = [[self.titre, self.titre_value], [self.version, self.version_value], [self.auteur, self.auteur_value], [self.description, self.description_value]]
+            tmp = [[self.titre, self.titre_value], [self.version, self.version_value], [self.auteur, self.auteur_value],
+                   [self.description, self.description_value]]
             for x in range(len(tmp)):
                 for i, role in enumerate([QtWidgets.QFormLayout.LabelRole, QtWidgets.QFormLayout.FieldRole]):
                     self.formLayout.setWidget(x, role, tmp[x][i])
@@ -267,7 +275,7 @@ class main(Ui_main, QtWidgets.QWidget):
             self.verticalLayout.addLayout(self.formLayout)
 
             self.gridLayout.addWidget(self.frame, x_frame, y_frame)
-            y_frame = y_frame+1
+            y_frame = y_frame + 1
             if y_frame == 3:
                 y_frame = 0
                 x_frame += 1
@@ -293,6 +301,8 @@ class main(Ui_main, QtWidgets.QWidget):
         for widget in [self.lb_logiciel_titre, self.lb_addApp_titre, self.lb_changeVer_titre, self.lb_role_titre]:
             widget.setAlignment(Align().center_horizontal())
 
+        # self.cb_role_nom_add.setEditable(True)
+
         ### size_grip ###
         if self.cfg["var"]["resize"]:
             self.size_grip.setCursor(Functions().SET_CURSOR(Cur().fleche_nwse()))
@@ -306,7 +316,6 @@ class main(Ui_main, QtWidgets.QWidget):
                 """
             )
             self.hlay_menu_bottom.addWidget(self.size_grip)
-
 
         self.lb_icon_new.setPixmap(QtGui.QPixmap(f"{Img().img_vide()}bn1.svg"))
         self.lb_icon_new.setScaledContents(True)
@@ -354,12 +363,12 @@ class main(Ui_main, QtWidgets.QWidget):
         ### Menu Editeur
         self.pb_addApp_edit.clicked.connect(lambda: self.change_menu("ajout_app"))
         self.pb_addVer_edit.clicked.connect(lambda: self.change_menu("change_ver"))
-        self.pb_addRole_edit.clicked.connect(lambda: self.change_menu("change_role"))
+        self.pb_addRole_edit.clicked.connect(lambda: self.change_menu("ajout_role"))
 
         ### Menu Admin
         self.pb_addApp_admin.clicked.connect(lambda: self.change_menu("ajout_app"))
         self.pb_addVer_admin.clicked.connect(lambda: self.change_menu("change_ver"))
-        self.pb_addRole_admin.clicked.connect(lambda: self.change_menu("change_role"))
+        self.pb_addRole_admin.clicked.connect(lambda: self.change_menu("ajout_role"))
 
         ### Menu crée appli
         self.lb_icon_new.new_ico.connect(self.import_app_img)
@@ -374,7 +383,10 @@ class main(Ui_main, QtWidgets.QWidget):
         self.pb_new_ver_val.clicked.connect(self.add_ver)
 
         ### Menu ajouté role
-        self.pb_role_add_valide.clicked.connect(self.add_role)
+        self.cb_ajout_role.currentTextChanged.connect(
+            lambda: self.affiche_parametre_role(self.cb_ajout_role.currentText()))
+
+        self.pb_role_add_valide.clicked.connect(lambda: self.add_role(self.cb_ajout_role.currentText()))
 
     def IN_ACT(self):
 
@@ -414,64 +426,92 @@ class main(Ui_main, QtWidgets.QWidget):
         splash_screen.pg_chargement.setValue(100)
         time.sleep(2)
 
-    def add_role(self):
+    def affiche_parametre_role(self, role=None):
+        self.cb_role_nom_add.setCurrentIndex(-1)
+        item = {
+            False: self.fr_role_add.findChildren(QtWidgets.QLabel) + \
+                   self.fr_role_add.findChildren(QtWidgets.QLineEdit) + \
+                   self.fr_role_add.findChildren(QtWidgets.QComboBox) + \
+                   self.fr_role_add.findChildren(QtWidgets.QPushButton),
+            True: []
+        }
+        if role == "Editeur":
+            visible = [self.lb_role_name_add, self.lb_role_alias_add, self.lb_role_mail_add,
+                        self.ln_role_alias_add, self.ln_role_mail_add,
+                        self.cb_role_nom_add,
+                        self.pb_role_add_valide]
+            for widget in visible:
+                item[False].remove(widget)
+                item[True].append(widget)
 
-        def isValid(email):
-            return bool(re.fullmatch(self.regex_mail, email))
+        for etat in item:
+            for widget in item[etat]:
+                widget.setVisible(etat)
 
-        gid = self.ln_auteur_name_add.text()
-        alias = self.ln_auteur_alias_add.text()
-        mail = self.ln_auteur_mail_add.text()
+    def add_role(self, role):
 
-        erreur = []
-        if gid == "":
-            erreur.append("le GID ne peut pas étre vide")
-        if not isValid(mail):
-            erreur.append("adresse mail incorect")
+        def isValidMail(email):
+            regex_mail = re.compile(r'([A-Za-z0-9]+[.-_])*[A-Za-z0-9]+@[A-Za-z0-9-]+(\.[A-Z|a-z]{2,})+')
+            return bool(re.fullmatch(regex_mail, email))
 
-        if len(erreur) == 0:
-            with sqlite3.connect(self.bdd) as conn:
-                cursor = conn.cursor()
+        def editeur(self):
+            gid = self.cb_role_nom_add.currentText()
+            alias = self.ln_role_alias_add.text()
+            mail = self.ln_role_mail_add.text()
 
-                cursor.execute(f"""
-                                SELECT at_nom
-                                FROM t_auteur
-                                WHERE at_nom='{gid}';
-                                """)
-                row = cursor.fetchone()
-                if row is None:
+            erreur = []
+            if gid == "":
+                erreur.append("le GID ne peut pas étre vide")
+            if not isValidMail(mail):
+                erreur.append("adresse mail incorect")
+
+            if not erreur:
+                with sqlite3.connect(self.bdd) as conn:
+                    cursor = conn.cursor()
+
                     cursor.execute(f"""
-                                    INSERT INTO t_auteur(at_nom, at_mail)
-                                    VALUES ('{gid}', '{mail}');
-                                    """)
-
-                    cursor.execute(f"""
-                                    SELECT ad_id, ad_grade
-                                    FROM t_gr
-                                    WHERE ad_nom='{gid}';
+                                    SELECT at_nom
+                                    FROM t_auteur
+                                    WHERE at_nom='{gid}';
                                     """)
                     row = cursor.fetchone()
                     if row is None:
                         cursor.execute(f"""
-                                        INSERT INTO t_gr(ad_nom, ad_grade)
-                                        VALUES ('{gid}', 2);
+                                        INSERT INTO t_auteur(at_nom, at_mail)
+                                        VALUES ('{gid}', '{mail}');
                                         """)
-                    else:
-                        if row[1] > 2:
+
+                        cursor.execute(f"""
+                                        SELECT ad_id, ad_grade
+                                        FROM t_gr
+                                        WHERE ad_nom='{gid}';
+                                        """)
+                        row = cursor.fetchone()
+                        if row is None:
                             cursor.execute(f"""
-                                            UPDATE t_gr
-                                            SET ad_grade=2
-                                            WHERE ad_nom='{gid}';
+                                            INSERT INTO t_gr(ad_nom, ad_grade)
+                                            VALUES ('{gid}', 2);
                                             """)
-                    conn.commit()
-                    MsgBox().INFO(msg=f"Auteur \"{gid}\" ajouté dans la base")
-                else:
-                    MsgBox().INFO(msg=f"Auteur \"{gid}\" est déja present dans la base")
-        else:
-            MsgBox().ALERTE(msg=f"""
-            Une erreur à étais détecter :\n
-            {", ".join(erreur)}\n
-            Merci de corriger.""")
+                        elif row[1] > 2:
+                            cursor.execute(f"""
+                                                UPDATE t_gr
+                                                SET ad_grade=2
+                                                WHERE ad_nom='{gid}';
+                                                """)
+                        conn.commit()
+                        MsgBox().INFO(msg=f"Auteur \"{gid}\" ajouté dans la base")
+                    else:
+                        MsgBox().INFO(msg=f"Auteur \"{gid}\" est déja present dans la base")
+            else:
+                MsgBox().ALERTE(msg=f"""
+                Une erreur à étais détecter :\n
+                {", ".join(erreur)}\n
+                Merci de corriger.""")
+
+        role = role.lower()
+        print(role)
+        if role == "editeur":
+            editeur(self)
 
     def add_ver(self):
         app = self.line_ap_ver.text()
@@ -491,7 +531,7 @@ class main(Ui_main, QtWidgets.QWidget):
 
         if not erreur:
             msg = ResponseBox().INFO(title="Validation",
-                               msg="Voulez-vous vraiment mettre à jour la version de l'application ?")
+                                     msg="Voulez-vous vraiment mettre à jour la version de l'application ?")
             if msg:
                 with sqlite3.connect(self.bdd) as conn:
                     cursor = conn.cursor()
@@ -705,8 +745,8 @@ class main(Ui_main, QtWidgets.QWidget):
         if install:
             try:
                 os.makedirs("installateur", exist_ok=True)
-                #prog = shutil.copy(src=row[1], dst=fr"installateur/{row[0]}.msi")
-                #prog = os.path.abspath(prog)
+                # prog = shutil.copy(src=row[1], dst=fr"installateur/{row[0]}.msi")
+                # prog = os.path.abspath(prog)
                 # os.startfile(prog)
                 os.startfile(row[1])
             except Exception as e:
@@ -770,6 +810,7 @@ class main(Ui_main, QtWidgets.QWidget):
     def closeEvent(self, event):
         event.accept()
         app.quit()
+
 
 if __name__ == "__main__":
     Functions().GEN_SVG()

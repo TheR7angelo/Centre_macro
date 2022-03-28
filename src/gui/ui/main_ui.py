@@ -27,7 +27,7 @@ class Ui_main(object):
     def setupUi(self, main):
         if not main.objectName():
             main.setObjectName(u"main")
-        main.resize(852, 725)
+        main.resize(797, 725)
         self.vlay_main = QVBoxLayout(main)
         self.vlay_main.setSpacing(0)
         self.vlay_main.setObjectName(u"vlay_main")
@@ -131,7 +131,7 @@ class Ui_main(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 574, 665))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 519, 665))
         self.scrollAreaWidgetContents.setMaximumSize(QSize(16777215, 16777215))
         self.verticalLayout_3 = QVBoxLayout(self.scrollAreaWidgetContents)
         self.verticalLayout_3.setObjectName(u"verticalLayout_3")
@@ -511,65 +511,64 @@ class Ui_main(object):
         self.verticalLayout_8.addWidget(self.pb_new_ver_val)
 
         self.stackedWidget.addWidget(self.page_change_ver)
-        self.page_ajout_helper = QWidget()
-        self.page_ajout_helper.setObjectName(u"page_ajout_helper")
-        self.stackedWidget.addWidget(self.page_ajout_helper)
-        self.page_ajout_auteur = QWidget()
-        self.page_ajout_auteur.setObjectName(u"page_ajout_auteur")
-        self.verticalLayout_10 = QVBoxLayout(self.page_ajout_auteur)
+        self.page_ajout_role = QWidget()
+        self.page_ajout_role.setObjectName(u"page_ajout_role")
+        self.verticalLayout_10 = QVBoxLayout(self.page_ajout_role)
         self.verticalLayout_10.setObjectName(u"verticalLayout_10")
-        self.verticalLayout_9 = QVBoxLayout()
-        self.verticalLayout_9.setObjectName(u"verticalLayout_9")
-        self.lb_role_titre = QLabel(self.page_ajout_auteur)
+        self.lb_role_titre = QLabel(self.page_ajout_role)
         self.lb_role_titre.setObjectName(u"lb_role_titre")
 
-        self.verticalLayout_9.addWidget(self.lb_role_titre)
+        self.verticalLayout_10.addWidget(self.lb_role_titre)
 
+        self.cb_ajout_role = QComboBox(self.page_ajout_role)
+        self.cb_ajout_role.setObjectName(u"cb_ajout_role")
+
+        self.verticalLayout_10.addWidget(self.cb_ajout_role)
+
+        self.fr_role_add = QWidget(self.page_ajout_role)
+        self.fr_role_add.setObjectName(u"fr_role_add")
+        self.verticalLayout_9 = QVBoxLayout(self.fr_role_add)
+        self.verticalLayout_9.setObjectName(u"verticalLayout_9")
         self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
 
         self.verticalLayout_9.addItem(self.verticalSpacer)
 
-        self.cb_ajout_role = QComboBox(self.page_ajout_auteur)
-        self.cb_ajout_role.setObjectName(u"cb_ajout_role")
-
-        self.verticalLayout_9.addWidget(self.cb_ajout_role)
-
         self.formLayout = QFormLayout()
         self.formLayout.setObjectName(u"formLayout")
-        self.lb_role_name_add = QLabel(self.page_ajout_auteur)
+        self.lb_role_name_add = QLabel(self.fr_role_add)
         self.lb_role_name_add.setObjectName(u"lb_role_name_add")
 
         self.formLayout.setWidget(0, QFormLayout.LabelRole, self.lb_role_name_add)
 
-        self.ln_role_name_add = QLineEdit(self.page_ajout_auteur)
-        self.ln_role_name_add.setObjectName(u"ln_role_name_add")
-
-        self.formLayout.setWidget(0, QFormLayout.FieldRole, self.ln_role_name_add)
-
-        self.lb_role_alias_add = QLabel(self.page_ajout_auteur)
+        self.lb_role_alias_add = QLabel(self.fr_role_add)
         self.lb_role_alias_add.setObjectName(u"lb_role_alias_add")
 
         self.formLayout.setWidget(1, QFormLayout.LabelRole, self.lb_role_alias_add)
 
-        self.ln_role_alias_add = QLineEdit(self.page_ajout_auteur)
+        self.ln_role_alias_add = QLineEdit(self.fr_role_add)
         self.ln_role_alias_add.setObjectName(u"ln_role_alias_add")
 
         self.formLayout.setWidget(1, QFormLayout.FieldRole, self.ln_role_alias_add)
 
-        self.lb_role_mail_add = QLabel(self.page_ajout_auteur)
+        self.lb_role_mail_add = QLabel(self.fr_role_add)
         self.lb_role_mail_add.setObjectName(u"lb_role_mail_add")
 
         self.formLayout.setWidget(2, QFormLayout.LabelRole, self.lb_role_mail_add)
 
-        self.ln_role_mail_add = QLineEdit(self.page_ajout_auteur)
+        self.ln_role_mail_add = QLineEdit(self.fr_role_add)
         self.ln_role_mail_add.setObjectName(u"ln_role_mail_add")
 
         self.formLayout.setWidget(2, QFormLayout.FieldRole, self.ln_role_mail_add)
 
+        self.cb_role_nom_add = QComboBox(self.fr_role_add)
+        self.cb_role_nom_add.setObjectName(u"cb_role_nom_add")
+
+        self.formLayout.setWidget(0, QFormLayout.FieldRole, self.cb_role_nom_add)
+
 
         self.verticalLayout_9.addLayout(self.formLayout)
 
-        self.pb_role_add_valide = QPushButton(self.page_ajout_auteur)
+        self.pb_role_add_valide = QPushButton(self.fr_role_add)
         self.pb_role_add_valide.setObjectName(u"pb_role_add_valide")
 
         self.verticalLayout_9.addWidget(self.pb_role_add_valide)
@@ -579,9 +578,9 @@ class Ui_main(object):
         self.verticalLayout_9.addItem(self.verticalSpacer_5)
 
 
-        self.verticalLayout_10.addLayout(self.verticalLayout_9)
+        self.verticalLayout_10.addWidget(self.fr_role_add)
 
-        self.stackedWidget.addWidget(self.page_ajout_auteur)
+        self.stackedWidget.addWidget(self.page_ajout_role)
 
         self.horizontalLayout.addWidget(self.stackedWidget)
 
@@ -614,10 +613,13 @@ class Ui_main(object):
 
         self.vlay_main.addWidget(self.fr_main)
 
+#if QT_CONFIG(shortcut)
+        self.lb_mt_ico.setBuddy(self.fr_role_add)
+#endif // QT_CONFIG(shortcut)
 
         self.retranslateUi(main)
 
-        self.stackedWidget.setCurrentIndex(7)
+        self.stackedWidget.setCurrentIndex(0)
 
 
         QMetaObject.connectSlotsByName(main)
