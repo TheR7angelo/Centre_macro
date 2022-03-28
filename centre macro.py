@@ -109,21 +109,6 @@ class main(Ui_main, QtWidgets.QWidget):
 
     def IN_CLASSE(self):
 
-        ### QTextEdit ###
-        TextEdit.Base(self.text_desc, self.text_chang, self.text_old_chang, self.text_new_chang).th()
-        ### /QTextEdit ###
-
-        ### QComboBox ###
-        ComboBox.Base(self.cb_auteur, self.cb_stock, self.cb_list_app_ver).th()
-
-        ### /QComboBox ###
-
-        ### QLineEdit ###
-        LineEdit.Base(self.line_ap, self.line_ap_nom, self.line_ap_ver).th()
-
-        LineEdit.Base(self.ln_auteur_name_add, self.ln_auteur_alias_add, self.ln_auteur_mail_add).th()
-        ### /QLineEdit ###
-
         ### QFrame ###
         Frame.Menu(self.fr_menu_top).top()
         Frame.Cadre(self.fr_main).th2()
@@ -131,52 +116,60 @@ class main(Ui_main, QtWidgets.QWidget):
         Frame.Menu(self.fr_menu_bottom).bottom()
         ### /QFrame ###
 
-        ### QTreeWidget ###
-        ListWidget.Test(self.list_menu).th()
-        ### /QTreeWidget ###
-
-        ### QLabel ###
         Label.Base(self.lb_mt_ico).ico_main()
         Label.Base(self.lb_mt_nom, font_size=Font().h3()).tr()
         Label.Base(self.lb_mb_version).tr()
 
-        Label.Base(self.lb_nom_ap, self.lb_ver_ap, self.lb_auteur_ap, self.lb_stock, self.lb_desc_ap, self.lb_chang_ap,
-                   self.lb_list_app, self.lb_old_ver, self.lb_change_old_ver, self.lb_correct_old,
-                   self.lb_new_ver, self.lb_change_new_ver, self.lb_correct_new).th()
+        ### QTreeWidget ###
+        ListWidget.Test(self.list_menu).th()
+        ### /QTreeWidget ###
 
-        Label.Base(self.lb_auteur_titre, self.lb_auteur_name_add, self.lb_auteur_alias_add, self.lb_auteur_mail_add).th()
-        ### /QLabel ###
-
-        # ### QProgressBar ###
-        # ProgressBar.Base(self.pg_process).th()
-        # self.pg_process.setValue(0)
-        # ### /QProgressBar ###
-
-        ### SpinBox ###
-        SpinBox.PlusMinus(self.num_ver, self.num_old_ver, self.num_new_ver).th()
-        ### /SpinBox ###
-
-        ### QScrollArea ###
-        ScrollArea.Base(self.scrollArea).th()
-        ### /QScrollArea ###
-
-        ### QPushButton ###
         PushButton.menu_top(self.pb_mt_option).option()
         PushButton.menu_top(self.pb_mt_reduire).reduire()
         PushButton.menu_top(self.pb_mt_agrandir).agrandir()
         PushButton.menu_top(self.pb_mt_quitter).quitter()
 
-        PushButton.Base(self.pb_ico, self.pb_ap_selector, self.pb_ap_selector_ver).th()
-        PushButton.Base(self.pb_new_ap_val, self.pb_new_ver_val).th2()
+        # ## QRadioButton ###
+        TrayIcon.Main(self.tray_menu)
 
+        ######################################################################################################
+
+        ### Changer de version
+        Label.Base(self.lb_changeVer_titre).th()
+        TextEdit.Base(self.text_desc, self.text_chang, self.text_old_chang, self.text_new_chang).th()
+        LineEdit.Base(self.line_ap_ver).th()
+        Label.Base(self.lb_list_app, self.lb_old_ver, self.lb_change_old_ver, self.lb_correct_old,
+                   self.lb_new_ver, self.lb_change_new_ver, self.lb_correct_new).th()
+        SpinBox.PlusMinus(self.num_old_ver, self.num_new_ver).th()
+        PushButton.Base(self.pb_ap_selector_ver).th()
+        PushButton.Base(self.pb_new_ver_val).th2()
+        ### /Changer de version
+
+        ### Ajout application
+        Label.Base(self.lb_addApp_titre).th()
+        ComboBox.Base(self.cb_auteur, self.cb_stock, self.cb_list_app_ver).th()
+        LineEdit.Base(self.line_ap, self.line_ap_nom).th()
+        Label.Base(self.lb_nom_ap, self.lb_ver_ap, self.lb_auteur_ap,
+                   self.lb_stock, self.lb_desc_ap, self.lb_chang_ap).th()
+        SpinBox.PlusMinus(self.num_ver).th()
+        PushButton.Base(self.pb_ico, self.pb_ap_selector).th()
+        PushButton.Base(self.pb_new_ap_val).th2()
+        ### /Ajout application
+
+        ### Ajout auteur
+        Label.Base(self.lb_auteur_titre).th()
+        LineEdit.Base(self.ln_auteur_name_add, self.ln_auteur_alias_add, self.ln_auteur_mail_add).th()
+        Label.Base(self.lb_auteur_name_add, self.lb_auteur_alias_add, self.lb_auteur_mail_add).th()
         PushButton.Base(self.pb_auteur_add_valide).th2()
+        ### /Ajoput auteur
+
+        ### Page logiciel
+        ScrollArea.Base(self.scrollArea).th()
+        Label.Base(self.lb_logiciel_titre).th()
 
         ### Adding application ###
         for wid in [self.num_ver, self.num_old_ver, self.num_new_ver]:
             wid.setLocale(QtCore.QLocale("English"))
-
-        # ## QRadioButton ###
-        TrayIcon.Main(self.tray_menu)
 
         with sqlite3.connect(self.bdd) as conn:
             cursor = conn.cursor()
@@ -236,7 +229,7 @@ class main(Ui_main, QtWidgets.QWidget):
             self.lb_app.setScaledContents(True)
 
             # self.verticalLayout.addWidget(self.btn)
-            self.verticalLayout.addWidget(self.lb_app, 0, QtCore.Qt.AlignHCenter)
+            self.verticalLayout.addWidget(self.lb_app, 0, Align().center_horizontal())
 
             self.titre = QtWidgets.QLabel("Titre :")
             self.titre_value = QtWidgets.QLabel(dictio["nom"])
@@ -278,6 +271,8 @@ class main(Ui_main, QtWidgets.QWidget):
                 y_frame = 0
                 x_frame += 1
 
+        ### /Page logiciel
+
     def IN_WG(self):
 
         ### Base ###
@@ -294,7 +289,7 @@ class main(Ui_main, QtWidgets.QWidget):
         self.lb_mb_version.setText(f" Version : {self.cfg['infos']['version']}")
 
         ### Centrage des titre ###
-        for widget in [self.lb_auteur_titre]:
+        for widget in [self.lb_logiciel_titre, self.lb_addApp_titre, self.lb_changeVer_titre, self.lb_auteur_titre]:
             widget.setAlignment(Align().center_horizontal())
 
         ### size_grip ###
@@ -441,7 +436,27 @@ class main(Ui_main, QtWidgets.QWidget):
                                     INSERT INTO t_auteur(at_nom, at_mail)
                                     VALUES ('{gid}', '{mail}');
                                     """)
+
+                    cursor.execute(f"""
+                                    SELECT ad_id, ad_grade
+                                    FROM t_gr
+                                    WHERE ad_nom='{gid}';
+                                    """)
+                    row = cursor.fetchone()
+                    if row is None:
+                        cursor.execute(f"""
+                                        INSERT INTO t_gr(ad_nom, ad_grade)
+                                        VALUES ('{gid}', 2);
+                                        """)
+                    else:
+                        if row[1] > 2:
+                            cursor.execute(f"""
+                                            UPDATE t_gr
+                                            SET ad_grade=2
+                                            WHERE ad_nom='{gid}';
+                                            """)
                     conn.commit()
+                    MsgBox().INFO(msg=f"Auteur \"{gid}\" ajouté dans la base")
                 else:
                     MsgBox().INFO(msg=f"Auteur \"{gid}\" est déja present dans la base")
         else:
