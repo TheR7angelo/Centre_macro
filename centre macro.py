@@ -156,11 +156,12 @@ class main(Ui_main, QtWidgets.QWidget):
         PushButton.Base(self.pb_new_ap_val).th2()
         ### /Ajout application
 
-        ### Ajout auteur
-        Label.Base(self.lb_auteur_titre).th()
-        LineEdit.Base(self.ln_auteur_name_add, self.ln_auteur_alias_add, self.ln_auteur_mail_add).th()
-        Label.Base(self.lb_auteur_name_add, self.lb_auteur_alias_add, self.lb_auteur_mail_add).th()
-        PushButton.Base(self.pb_auteur_add_valide).th2()
+        ### Ajout role
+        Label.Base(self.lb_role_titre).th()
+        ComboBox.Base(self.cb_ajout_role).th()
+        LineEdit.Base(self.ln_role_name_add, self.ln_role_alias_add, self.ln_role_mail_add).th()
+        Label.Base(self.lb_role_name_add, self.lb_role_alias_add, self.lb_role_mail_add).th()
+        PushButton.Base(self.pb_role_add_valide).th2()
         ### /Ajoput auteur
 
         ### Page logiciel
@@ -289,7 +290,7 @@ class main(Ui_main, QtWidgets.QWidget):
         self.lb_mb_version.setText(f" Version : {self.cfg['infos']['version']}")
 
         ### Centrage des titre ###
-        for widget in [self.lb_logiciel_titre, self.lb_addApp_titre, self.lb_changeVer_titre, self.lb_auteur_titre]:
+        for widget in [self.lb_logiciel_titre, self.lb_addApp_titre, self.lb_changeVer_titre, self.lb_role_titre]:
             widget.setAlignment(Align().center_horizontal())
 
         ### size_grip ###
@@ -314,13 +315,19 @@ class main(Ui_main, QtWidgets.QWidget):
 
         if self.grade == 1:
             menu = ["Application", "Helper", "Editeur", "Admin"]
+            role_menu = ["Helper", "Editeur", "Proprietaire"]
         elif self.grade == 2:
             menu = ["Application", "Helper", "Editeur"]
+            role_menu = ["Helper"]
         elif self.grade == 3:
             menu = ["Application", "Helper"]
+            role_menu = []
         else:
+            role_menu = []
             menu = ["Application"]
 
+        self.cb_ajout_role.addItems(role_menu)
+        self.cb_ajout_role.setCurrentIndex(-1)
         self.list_menu.addItems(menu)
         self.list_menu.setCurrentRow(0)
 
@@ -347,11 +354,12 @@ class main(Ui_main, QtWidgets.QWidget):
         ### Menu Editeur
         self.pb_addApp_edit.clicked.connect(lambda: self.change_menu("ajout_app"))
         self.pb_addVer_edit.clicked.connect(lambda: self.change_menu("change_ver"))
+        self.pb_addRole_edit.clicked.connect(lambda: self.change_menu("change_role"))
 
         ### Menu Admin
         self.pb_addApp_admin.clicked.connect(lambda: self.change_menu("ajout_app"))
         self.pb_addVer_admin.clicked.connect(lambda: self.change_menu("change_ver"))
-        self.pb_addAuteur_admin.clicked.connect(lambda: self.change_menu("ajout_auteur"))
+        self.pb_addRole_admin.clicked.connect(lambda: self.change_menu("change_role"))
 
         ### Menu crée appli
         self.lb_icon_new.new_ico.connect(self.import_app_img)
@@ -365,8 +373,8 @@ class main(Ui_main, QtWidgets.QWidget):
         self.pb_ap_selector_ver.clicked.connect(lambda: self.import_app_file(self.pb_ap_selector_ver.objectName()))
         self.pb_new_ver_val.clicked.connect(self.add_ver)
 
-        ### Menu ajouté auteur
-        self.pb_auteur_add_valide.clicked.connect(self.add_auteur)
+        ### Menu ajouté role
+        self.pb_role_add_valide.clicked.connect(self.add_role)
 
     def IN_ACT(self):
 
@@ -406,7 +414,7 @@ class main(Ui_main, QtWidgets.QWidget):
         splash_screen.pg_chargement.setValue(100)
         time.sleep(2)
 
-    def add_auteur(self):
+    def add_role(self):
 
         def isValid(email):
             return bool(re.fullmatch(self.regex_mail, email))
@@ -465,7 +473,6 @@ class main(Ui_main, QtWidgets.QWidget):
             {", ".join(erreur)}\n
             Merci de corriger.""")
 
-
     def add_ver(self):
         app = self.line_ap_ver.text()
         ap_id = self.cb_list_app_ver.currentText()
@@ -508,8 +515,10 @@ class main(Ui_main, QtWidgets.QWidget):
                     lien = cursor.fetchone()
                     lien = lien[0]
                     dossier, _ = os.path.split(lien)
-                    os.makedirs(dossier, exist_ok=True)
-                    shutil.copy(src=app, dst=lien)
+                    conn.commit()
+                os.makedirs(dossier, exist_ok=True)
+                shutil.copy(src=app, dst=lien)
+                MsgBox().INFO(msg="Mise à jour effectuée")
         else:
             erreur = ", ".join(erreur)
             MsgBox().ALERTE(msg=f"Des erreurs ont étais détecter :\n{erreur}\nMerci de les corrigers")
@@ -566,73 +575,74 @@ class main(Ui_main, QtWidgets.QWidget):
         if in_maj == "":
             erreur.append("correctif")
 
-        if len(erreur) == 0:
-            if self.grade <= 2:
-                with open(ico, 'rb') as input_file:
-                    ap_img = base64.b64encode(input_file.read()).decode("utf-8")
+        if erreur:
+            erreur = ", ".join(erreur)
+            MsgBox().ALERTE(msg=f"Des erreurs ont étais détecter :\n{erreur}\nMerci de les corrigers")
 
-                with sqlite3.connect(self.bdd) as conn:
-                    cursor = conn.cursor()
+        elif self.grade <= 2:
+            with open(ico, 'rb') as input_file:
+                ap_img = base64.b64encode(input_file.read()).decode("utf-8")
 
-                    cursor.execute(f"""
+            with sqlite3.connect(self.bdd) as conn:
+                cursor = conn.cursor()
+
+                cursor.execute(f"""
                                     SELECT at_id
                                     FROM t_auteur
                                     WHERE at_nom = '{ap_auteur}'
                                     """)
-                    row = cursor.fetchone()
-                    if row is not None:
-                        ap_auteur = row[0]
-                    else:
-                        print("auteur non enregistrer\nMerci de le rajouter")
-                        at_mail = input()
-                        cursor.execute(f"""
+                row = cursor.fetchone()
+                if row is not None:
+                    ap_auteur = row[0]
+                else:
+                    print("auteur non enregistrer\nMerci de le rajouter")
+                    at_mail = input()
+                    cursor.execute(f"""
                                                 INSERT INTO t_auteur(at_nom, at_mail)
                                                 VALUES ('{ap_auteur}', '{at_mail}');
                                                 """)
-                        ap_auteur = cursor.lastrowid
+                    ap_auteur = cursor.lastrowid
 
-                    cursor.execute(f"""
+                cursor.execute(f"""
                                     SELECT ln_id
                                     FROM t_lien
                                     WHERE ln_lien = '{ap_li_id}'
                                     """)
-                    row = cursor.fetchone()
-                    if row is not None:
-                        ap_li_id = row[0]
-                    else:
-                        cursor.execute(f"""
+                row = cursor.fetchone()
+                if row is None:
+                    cursor.execute(f"""
                                         INSERT INTO t_lien(ln_lien)
                                         VALUES ('{ap_li_id}');
                                         """)
-                        ap_li_id = cursor.lastrowid
+                    ap_li_id = cursor.lastrowid
 
-                    cursor.execute(f"""
+                else:
+                    ap_li_id = row[0]
+                cursor.execute(f"""
                                     INSERT INTO t_app(ap_nom, ap_desc, ap_auteur, ap_img, ap_li_id)
                                     VALUES ('{ap_nom}', '{ap_desc}', {ap_auteur}, '{ap_img}', {ap_li_id});
                                     """)
 
-                    in_ap_id = cursor.lastrowid
+                in_ap_id = cursor.lastrowid
 
-                    cursor.execute(f"""
+                cursor.execute(f"""
                                     INSERT INTO t_ver(in_ap_id, in_ver, in_maj)
                                     VALUES ({in_ap_id}, {in_ver}, '{in_maj}');
                                     """)
-                    conn.commit()
+                conn.commit()
 
-                    cursor.execute(f"""
+                cursor.execute(f"""
                                     SELECT lien
                                     FROM v_logiciel
                                     WHERE id={in_ap_id} AND nom='{ap_nom}';
                                     """)
-                    lien = cursor.fetchone()
-                    lien = lien[0]
-                    os.makedirs(os.path.dirname(lien), exist_ok=True)
-                    shutil.copy(app, lien)
-            else:
-                print("Grade insuficent pour effectuée cette modification")
+                lien = cursor.fetchone()
+                lien = lien[0]
+                os.makedirs(os.path.dirname(lien), exist_ok=True)
+                shutil.copy(app, lien)
+                MsgBox().INFO(msg="Application ajouté")
         else:
-            erreur = ", ".join(erreur)
-            MsgBox().ALERTE(msg=f"Des erreurs ont étais détecter :\n{erreur}\nMerci de les corrigers")
+            print("Grade insuficent pour effectuée cette modification")
 
     def import_app_file(self, wid):
         dictio = {
@@ -645,7 +655,6 @@ class main(Ui_main, QtWidgets.QWidget):
 
         if app[0] != "":
             dictio[wid].setText(app[0])
-            #wid.setText(app[0])
 
     def import_app_img_file(self):
         img = QtWidgets.QFileDialog.getOpenFileName(self, "Merci de chosir une image", "",
@@ -659,7 +668,6 @@ class main(Ui_main, QtWidgets.QWidget):
             self.import_ico_app = e
         else:
             self.lb_icon_new.setPixmap(QtGui.QPixmap(f"{Img().img_vide()}bn1.svg"))
-        print(e)
 
     def change_menu(self, menu):
         menu = getattr(self, f"page_{menu}")
@@ -673,7 +681,6 @@ class main(Ui_main, QtWidgets.QWidget):
             "Helper": "page_helper",
             "Editeur": "page_editeur",
             "Admin": "page_admin"
-
         }
 
         page = getattr(self, dictionaire[item])

@@ -175,10 +175,10 @@ class Ui_main(object):
 
         self.gridLayout_5.addWidget(self.pb_addVer_edit, 0, 1, 1, 1)
 
-        self.pb_addHelp_edit = QPushButton(self.page_editeur)
-        self.pb_addHelp_edit.setObjectName(u"pb_addHelp_edit")
+        self.pb_addRole_edit = QPushButton(self.page_editeur)
+        self.pb_addRole_edit.setObjectName(u"pb_addRole_edit")
 
-        self.gridLayout_5.addWidget(self.pb_addHelp_edit, 0, 2, 1, 1)
+        self.gridLayout_5.addWidget(self.pb_addRole_edit, 0, 2, 1, 1)
 
 
         self.verticalLayout_7.addLayout(self.gridLayout_5)
@@ -198,10 +198,10 @@ class Ui_main(object):
 
         self.gridLayout_6 = QGridLayout()
         self.gridLayout_6.setObjectName(u"gridLayout_6")
-        self.pb_addAuteur_admin = QPushButton(self.page_admin)
-        self.pb_addAuteur_admin.setObjectName(u"pb_addAuteur_admin")
+        self.pb_addRole_admin = QPushButton(self.page_admin)
+        self.pb_addRole_admin.setObjectName(u"pb_addRole_admin")
 
-        self.gridLayout_6.addWidget(self.pb_addAuteur_admin, 0, 3, 1, 1)
+        self.gridLayout_6.addWidget(self.pb_addRole_admin, 0, 2, 1, 1)
 
         self.pb_addVer_admin = QPushButton(self.page_admin)
         self.pb_addVer_admin.setObjectName(u"pb_addVer_admin")
@@ -212,11 +212,6 @@ class Ui_main(object):
         self.pb_addApp_admin.setObjectName(u"pb_addApp_admin")
 
         self.gridLayout_6.addWidget(self.pb_addApp_admin, 0, 0, 1, 1)
-
-        self.pb_addHelper_admin = QPushButton(self.page_admin)
-        self.pb_addHelper_admin.setObjectName(u"pb_addHelper_admin")
-
-        self.gridLayout_6.addWidget(self.pb_addHelper_admin, 0, 2, 1, 1)
 
 
         self.verticalLayout_11.addLayout(self.gridLayout_6)
@@ -525,54 +520,59 @@ class Ui_main(object):
         self.verticalLayout_10.setObjectName(u"verticalLayout_10")
         self.verticalLayout_9 = QVBoxLayout()
         self.verticalLayout_9.setObjectName(u"verticalLayout_9")
-        self.lb_auteur_titre = QLabel(self.page_ajout_auteur)
-        self.lb_auteur_titre.setObjectName(u"lb_auteur_titre")
+        self.lb_role_titre = QLabel(self.page_ajout_auteur)
+        self.lb_role_titre.setObjectName(u"lb_role_titre")
 
-        self.verticalLayout_9.addWidget(self.lb_auteur_titre)
+        self.verticalLayout_9.addWidget(self.lb_role_titre)
 
         self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
 
         self.verticalLayout_9.addItem(self.verticalSpacer)
 
+        self.cb_ajout_role = QComboBox(self.page_ajout_auteur)
+        self.cb_ajout_role.setObjectName(u"cb_ajout_role")
+
+        self.verticalLayout_9.addWidget(self.cb_ajout_role)
+
         self.formLayout = QFormLayout()
         self.formLayout.setObjectName(u"formLayout")
-        self.lb_auteur_name_add = QLabel(self.page_ajout_auteur)
-        self.lb_auteur_name_add.setObjectName(u"lb_auteur_name_add")
+        self.lb_role_name_add = QLabel(self.page_ajout_auteur)
+        self.lb_role_name_add.setObjectName(u"lb_role_name_add")
 
-        self.formLayout.setWidget(0, QFormLayout.LabelRole, self.lb_auteur_name_add)
+        self.formLayout.setWidget(0, QFormLayout.LabelRole, self.lb_role_name_add)
 
-        self.ln_auteur_name_add = QLineEdit(self.page_ajout_auteur)
-        self.ln_auteur_name_add.setObjectName(u"ln_auteur_name_add")
+        self.ln_role_name_add = QLineEdit(self.page_ajout_auteur)
+        self.ln_role_name_add.setObjectName(u"ln_role_name_add")
 
-        self.formLayout.setWidget(0, QFormLayout.FieldRole, self.ln_auteur_name_add)
+        self.formLayout.setWidget(0, QFormLayout.FieldRole, self.ln_role_name_add)
 
-        self.lb_auteur_alias_add = QLabel(self.page_ajout_auteur)
-        self.lb_auteur_alias_add.setObjectName(u"lb_auteur_alias_add")
+        self.lb_role_alias_add = QLabel(self.page_ajout_auteur)
+        self.lb_role_alias_add.setObjectName(u"lb_role_alias_add")
 
-        self.formLayout.setWidget(1, QFormLayout.LabelRole, self.lb_auteur_alias_add)
+        self.formLayout.setWidget(1, QFormLayout.LabelRole, self.lb_role_alias_add)
 
-        self.ln_auteur_alias_add = QLineEdit(self.page_ajout_auteur)
-        self.ln_auteur_alias_add.setObjectName(u"ln_auteur_alias_add")
+        self.ln_role_alias_add = QLineEdit(self.page_ajout_auteur)
+        self.ln_role_alias_add.setObjectName(u"ln_role_alias_add")
 
-        self.formLayout.setWidget(1, QFormLayout.FieldRole, self.ln_auteur_alias_add)
+        self.formLayout.setWidget(1, QFormLayout.FieldRole, self.ln_role_alias_add)
 
-        self.lb_auteur_mail_add = QLabel(self.page_ajout_auteur)
-        self.lb_auteur_mail_add.setObjectName(u"lb_auteur_mail_add")
+        self.lb_role_mail_add = QLabel(self.page_ajout_auteur)
+        self.lb_role_mail_add.setObjectName(u"lb_role_mail_add")
 
-        self.formLayout.setWidget(2, QFormLayout.LabelRole, self.lb_auteur_mail_add)
+        self.formLayout.setWidget(2, QFormLayout.LabelRole, self.lb_role_mail_add)
 
-        self.ln_auteur_mail_add = QLineEdit(self.page_ajout_auteur)
-        self.ln_auteur_mail_add.setObjectName(u"ln_auteur_mail_add")
+        self.ln_role_mail_add = QLineEdit(self.page_ajout_auteur)
+        self.ln_role_mail_add.setObjectName(u"ln_role_mail_add")
 
-        self.formLayout.setWidget(2, QFormLayout.FieldRole, self.ln_auteur_mail_add)
+        self.formLayout.setWidget(2, QFormLayout.FieldRole, self.ln_role_mail_add)
 
 
         self.verticalLayout_9.addLayout(self.formLayout)
 
-        self.pb_auteur_add_valide = QPushButton(self.page_ajout_auteur)
-        self.pb_auteur_add_valide.setObjectName(u"pb_auteur_add_valide")
+        self.pb_role_add_valide = QPushButton(self.page_ajout_auteur)
+        self.pb_role_add_valide.setObjectName(u"pb_role_add_valide")
 
-        self.verticalLayout_9.addWidget(self.pb_auteur_add_valide)
+        self.verticalLayout_9.addWidget(self.pb_role_add_valide)
 
         self.verticalSpacer_5 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
 
@@ -617,7 +617,7 @@ class Ui_main(object):
 
         self.retranslateUi(main)
 
-        self.stackedWidget.setCurrentIndex(0)
+        self.stackedWidget.setCurrentIndex(7)
 
 
         QMetaObject.connectSlotsByName(main)
@@ -627,11 +627,10 @@ class Ui_main(object):
         self.lb_logiciel_titre.setText(QCoreApplication.translate("main", u"Macro", None))
         self.pb_addApp_edit.setText(QCoreApplication.translate("main", u"Ajouter une application", None))
         self.pb_addVer_edit.setText(QCoreApplication.translate("main", u"Ajouter une version", None))
-        self.pb_addHelp_edit.setText(QCoreApplication.translate("main", u"Ajouter un helper", None))
-        self.pb_addAuteur_admin.setText(QCoreApplication.translate("main", u"Ajouter un auteur", None))
+        self.pb_addRole_edit.setText(QCoreApplication.translate("main", u"Ajouter un role", None))
+        self.pb_addRole_admin.setText(QCoreApplication.translate("main", u"Ajouter un role", None))
         self.pb_addVer_admin.setText(QCoreApplication.translate("main", u"Ajouter une version", None))
         self.pb_addApp_admin.setText(QCoreApplication.translate("main", u"Ajouter une application", None))
-        self.pb_addHelper_admin.setText(QCoreApplication.translate("main", u"Ajouter un helper", None))
         self.lb_addApp_titre.setText(QCoreApplication.translate("main", u"Ajout d'une application", None))
         self.lb_icon_new.setText("")
         self.pb_ico.setText(QCoreApplication.translate("main", u"Icon", None))
@@ -661,11 +660,11 @@ class Ui_main(object):
         self.lb_change_new_ver.setText(QCoreApplication.translate("main", u"Version", None))
         self.pb_ap_selector_ver.setText(QCoreApplication.translate("main", u"Application", None))
         self.pb_new_ver_val.setText(QCoreApplication.translate("main", u"Valider", None))
-        self.lb_auteur_titre.setText(QCoreApplication.translate("main", u"Ajout d'un auteur", None))
-        self.lb_auteur_name_add.setText(QCoreApplication.translate("main", u"GID :", None))
-        self.lb_auteur_alias_add.setText(QCoreApplication.translate("main", u"Alias :", None))
-        self.lb_auteur_mail_add.setText(QCoreApplication.translate("main", u"Adresse mail :", None))
-        self.pb_auteur_add_valide.setText(QCoreApplication.translate("main", u"Ajouter", None))
+        self.lb_role_titre.setText(QCoreApplication.translate("main", u"Ajout d'un role", None))
+        self.lb_role_name_add.setText(QCoreApplication.translate("main", u"GID :", None))
+        self.lb_role_alias_add.setText(QCoreApplication.translate("main", u"Alias :", None))
+        self.lb_role_mail_add.setText(QCoreApplication.translate("main", u"Adresse mail :", None))
+        self.pb_role_add_valide.setText(QCoreApplication.translate("main", u"Ajouter", None))
         pass
     # retranslateUi
 
