@@ -7,11 +7,11 @@
         "compagnie": "ZP6177"
     },
     "config": {
-        "theme": "gunmetal",
+        "theme": "rich_black",
         "font": "Berlin Sans FB Demi",
         "widht": 1200,
         "height": 800,
-        "opacity": 0.96,
+        "opacity": 1.0,
         "cur": "test"
     },
     "var": {

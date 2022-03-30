@@ -436,6 +436,10 @@ class main(Ui_main, QtWidgets.QWidget):
             True: []
         }
         if role == "Editeur":
+            self.lb_role_name_add.setText("GID")
+            self.lb_role_alias_add.setText("Alias")
+            self.lb_role_mail_add.setText("Adresse mail")
+
             visible = [self.lb_role_name_add, self.lb_role_alias_add, self.lb_role_mail_add,
                         self.ln_role_alias_add, self.ln_role_mail_add,
                         self.cb_role_nom_add,
@@ -627,10 +631,10 @@ class main(Ui_main, QtWidgets.QWidget):
                 cursor = conn.cursor()
 
                 cursor.execute(f"""
-                                    SELECT at_id
-                                    FROM t_auteur
-                                    WHERE at_nom = '{ap_auteur}'
-                                    """)
+                                SELECT at_id
+                                FROM t_auteur
+                                WHERE at_nom = '{ap_auteur}'
+                                """)
                 row = cursor.fetchone()
                 if row is not None:
                     ap_auteur = row[0]
@@ -638,44 +642,44 @@ class main(Ui_main, QtWidgets.QWidget):
                     print("auteur non enregistrer\nMerci de le rajouter")
                     at_mail = input()
                     cursor.execute(f"""
-                                                INSERT INTO t_auteur(at_nom, at_mail)
-                                                VALUES ('{ap_auteur}', '{at_mail}');
-                                                """)
+                                    INSERT INTO t_auteur(at_nom, at_mail)
+                                    VALUES ('{ap_auteur}', '{at_mail}');
+                                    """)
                     ap_auteur = cursor.lastrowid
 
                 cursor.execute(f"""
-                                    SELECT ln_id
-                                    FROM t_lien
-                                    WHERE ln_lien = '{ap_li_id}'
-                                    """)
+                                SELECT ln_id
+                                FROM t_lien
+                                WHERE ln_lien = '{ap_li_id}'
+                                """)
                 row = cursor.fetchone()
                 if row is None:
                     cursor.execute(f"""
-                                        INSERT INTO t_lien(ln_lien)
-                                        VALUES ('{ap_li_id}');
-                                        """)
+                                    INSERT INTO t_lien(ln_lien)
+                                    VALUES ('{ap_li_id}');
+                                    """)
                     ap_li_id = cursor.lastrowid
 
                 else:
                     ap_li_id = row[0]
                 cursor.execute(f"""
-                                    INSERT INTO t_app(ap_nom, ap_desc, ap_auteur, ap_img, ap_li_id)
-                                    VALUES ('{ap_nom}', '{ap_desc}', {ap_auteur}, '{ap_img}', {ap_li_id});
-                                    """)
+                                INSERT INTO t_app(ap_nom, ap_desc, ap_auteur, ap_img, ap_li_id)
+                                VALUES ('{ap_nom}', '{ap_desc}', {ap_auteur}, '{ap_img}', {ap_li_id});
+                                """)
 
                 in_ap_id = cursor.lastrowid
 
                 cursor.execute(f"""
-                                    INSERT INTO t_ver(in_ap_id, in_ver, in_maj)
-                                    VALUES ({in_ap_id}, {in_ver}, '{in_maj}');
-                                    """)
+                                INSERT INTO t_ver(in_ap_id, in_ver, in_maj)
+                                VALUES ({in_ap_id}, {in_ver}, '{in_maj}');
+                                """)
                 conn.commit()
 
                 cursor.execute(f"""
-                                    SELECT lien
-                                    FROM v_logiciel
-                                    WHERE id={in_ap_id} AND nom='{ap_nom}';
-                                    """)
+                                SELECT lien
+                                FROM v_logiciel
+                                WHERE id={in_ap_id} AND nom='{ap_nom}';
+                                """)
                 lien = cursor.fetchone()
                 lien = lien[0]
                 os.makedirs(os.path.dirname(lien), exist_ok=True)

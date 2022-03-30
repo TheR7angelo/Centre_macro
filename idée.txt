@@ -1,0 +1,3 @@
+Bloquer nom idiot dans les app style ";/," ....
+Rajout une barre de recherche dans les app du store genre line edit signal editing into requete sql qui cherche puis affiche
+finir ajout role
