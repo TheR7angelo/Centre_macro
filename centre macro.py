@@ -324,13 +324,16 @@ class main(Ui_main, QtWidgets.QWidget):
         if reset:
             for child in self.fr_grid_macro.findChildren(Button_frame):
                 child.deleteLater()
+            for combo in [self.cb_role_nom_add, self.cb_auteur, self.cb_stock,
+                          self.cb_list_app_ver]:
+                combo.clear()
 
         with sqlite3.connect(self.bdd) as conn:
             cursor = conn.cursor()
 
             cursor.execute("""
                             SELECT ad_nom
-                            FROM t_gr
+                            FROM t_gr;
                             """)
             rows = cursor.fetchall()
             self.cb_role_nom_add.addItems([row[0] for row in rows])
@@ -338,7 +341,7 @@ class main(Ui_main, QtWidgets.QWidget):
 
             cursor.execute("""
                             SELECT at_nom
-                            FROM t_auteur
+                            FROM t_auteur;
                             """)
             rows = cursor.fetchall()
             for item in rows:
@@ -346,7 +349,7 @@ class main(Ui_main, QtWidgets.QWidget):
 
             cursor.execute("""
                             SELECT ln_lien
-                            FROM t_lien
+                            FROM t_lien;
                             """)
             rows = cursor.fetchall()
             for item in rows:
@@ -355,7 +358,7 @@ class main(Ui_main, QtWidgets.QWidget):
             cursor.execute("""
                             SELECT *
                             FROM v_centre_logiciel
-                            ORDER BY nom
+                            ORDER BY nom;
                             """)
             rows = cursor.fetchall()
             col = [item[0] for item in cursor.description]
@@ -390,28 +393,27 @@ class main(Ui_main, QtWidgets.QWidget):
             self.lb_app.setMaximumSize(128, 128)
             self.lb_app.setScaledContents(True)
 
-            # self.verticalLayout.addWidget(self.btn)
             self.verticalLayout.addWidget(self.lb_app, 0, Align().center_horizontal())
 
             self.titre = QtWidgets.QLabel("Titre :")
             self.titre_value = QtWidgets.QLabel(dictio["nom"])
             self.titre.setObjectName(f"lb_ct_tt_{dictio['id']}")
-            self.titre_value.setObjectName(f"fr_ct_tv_{dictio['id']}")
+            self.titre_value.setObjectName(f"lb_ct_tv_{dictio['id']}")
 
             self.version = QtWidgets.QLabel("Version :")
             self.version_value = QtWidgets.QLabel(str(dictio["ver"]))
             self.version.setObjectName(f"lb_ct_vs_{dictio['id']}")
-            self.version_value.setObjectName(f"fr_ct_vv_{dictio['id']}")
+            self.version_value.setObjectName(f"lb_ct_vv_{dictio['id']}")
 
             self.auteur = QtWidgets.QLabel("Auteur :")
             self.auteur_value = QtWidgets.QLabel(dictio["auteur"])
             self.auteur.setObjectName(f"lb_ct_at_{dictio['id']}")
-            self.auteur_value.setObjectName(f"fr_ct_av_{dictio['id']}")
+            self.auteur_value.setObjectName(f"lb_ct_av_{dictio['id']}")
 
             self.description = QtWidgets.QLabel("Description :")
             self.description_value = QtWidgets.QLabel(dictio["description"])
             self.description.setObjectName(f"lb_ct_dt_{dictio['id']}")
-            self.auteur_value.setObjectName(f"fr_ct_dv_{dictio['id']}")
+            self.auteur_value.setObjectName(f"lb_ct_dv_{dictio['id']}")
             self.description_value.setWordWrap(True)
 
             Label.Base(self.titre, self.titre_value,
@@ -549,22 +551,30 @@ class main(Ui_main, QtWidgets.QWidget):
                     cursor = conn.cursor()
 
                     cursor.execute(f"""
+                                    SELECT ap_id 
+                                    FROM t_app 
+                                    WHERE ap_nom='{ap_id}';
+                                    """)
+                    ap_id = cursor.fetchone()[0]
+
+                    child = self.fr_grid_macro.findChild(QtWidgets.QLabel, f"lb_ct_vv_{ap_id}")
+                    child.setText(f"{in_ver}")
+
+                    cursor.execute(f"""
                                     INSERT INTO t_ver(in_ap_id, in_ver, in_maj)
-                                    VALUES ((SELECT ap_id FROM t_app WHERE ap_nom='{ap_id}'), {in_ver}, "{in_maj}");
+                                    VALUES ({ap_id}, {in_ver}, "{in_maj}");
                                     """)
                     conn.commit()
                     cursor.execute(f"""
                                     SELECT lien
                                     FROM v_centre_logiciel
-                                    WHERE id=(SELECT ap_id FROM t_app WHERE ap_nom='{ap_id}');
+                                    WHERE id={ap_id};
                                     """)
-                    lien = cursor.fetchone()
-                    lien = lien[0]
-                    dossier, _ = os.path.split(lien)
-                    conn.commit()
+                    lien = cursor.fetchone()[0]
 
-                self.affichage_macro(True)
 
+
+                dossier, _ = os.path.split(lien)
                 os.makedirs(dossier, exist_ok=True)
                 shutil.copy(src=app, dst=lien)
                 MsgBox().INFO(msg="Mise à jour effectuée")
@@ -689,6 +699,9 @@ class main(Ui_main, QtWidgets.QWidget):
                 lien = lien[0]
                 os.makedirs(os.path.dirname(lien), exist_ok=True)
                 shutil.copy(app, lien)
+
+                self.affichage_macro(reset=True)
+
                 MsgBox().INFO(msg="Application ajouté")
         else:
             print("Grade insuficent pour effectuée cette modification")

@@ -7,19 +7,18 @@ If you like the plugin, please consider [rating it on the Marketplace](https://p
 ### Version
 
 > #### 0.2
->> - Actualisation du centre en direct après modification des version / ajout macro (fonction lente car reset de tout)
+>> - Actualisation du centre en direct après modification d'une version de macro
 
 > #### 0.1
 >> - Création du centre macro
->>
-> [comment]: <> (*Everything* is going according to **plan**.)
 > 
 > Date release : **18/03/2022**
 
 
 <!---
 en cours
-    Mettre à jour le centre quand on import une version / app
+    Mettre à jour le centre quand on import une app
+    Reset de la page ?
 
 en attente
     Bloquer nom idiot dans les app style ";/," ....
