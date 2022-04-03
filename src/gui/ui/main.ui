@@ -233,7 +233,9 @@
                     </widget>
                    </item>
                    <item>
-                    <layout class="QGridLayout" name="gridLayout"/>
+                    <widget class="QFrame" name="fr_grid_macro">
+                     <layout class="QGridLayout" name="gridLayout"/>
+                    </widget>
                    </item>
                   </layout>
                  </widget>

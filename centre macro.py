@@ -22,6 +22,8 @@ class main(Ui_main, QtWidgets.QWidget):
 
     if not os.path.exists(bdd):
         bdd = r"E:\Logiciels\Adobe\Creative Cloud Files\Programmation\Projets Python\Centre macro.db"
+        if not os.path.exists(bdd):
+            bdd = r"C:\Users\ZP6177\Creative Cloud Files\Programmation\Projets Python\Centre macro.db"
 
     import_ico_app = None
     grade = 4
@@ -54,6 +56,7 @@ class main(Ui_main, QtWidgets.QWidget):
             [self.IN_BASE, "Configuration des éléments principaux"],
             [self.IN_SETUP_UI, "Setup de l'interface graphique"],
             [self.IN_CLASSE, "Initialisation des Widgets"],
+            [self.affichage_macro, "Initialisation des macro"],
             [self.IN_WG, "Configuration de base des Widgets"],
             [self.IN_CONNECTIONS, "Ajout des connexions"],
             [self.IN_ACT, "Fonctions de base"],
@@ -162,125 +165,15 @@ class main(Ui_main, QtWidgets.QWidget):
         Label.Base(self.lb_role_name_add, self.lb_role_alias_add, self.lb_role_mail_add).th()
         PushButton.Base(self.pb_role_add_valide).th2()
 
-        self.affiche_parametre_role()
-
         ### Page logiciel
         ScrollArea.Base(self.scrollArea).th()
         Label.Base(self.lb_logiciel_titre).th()
+        ### /Page logiciel
 
-        ### Adding application ###
         for wid in [self.num_ver, self.num_old_ver, self.num_new_ver]:
             wid.setLocale(QtCore.QLocale("English"))
 
-        with sqlite3.connect(self.bdd) as conn:
-            cursor = conn.cursor()
-
-            cursor.execute("""
-                            SELECT ad_nom
-                            FROM t_gr
-                            """)
-            rows = cursor.fetchall()
-            self.cb_role_nom_add.addItems([row[0] for row in rows])
-            self.cb_role_nom_add.setCurrentIndex(-1)
-
-            cursor.execute("""
-                            SELECT at_nom
-                            FROM t_auteur
-                            """)
-            rows = cursor.fetchall()
-            for item in rows:
-                self.cb_auteur.addItem(item[0])
-
-            cursor.execute("""
-                            SELECT ln_lien
-                            FROM t_lien
-                            """)
-            rows = cursor.fetchall()
-            for item in rows:
-                self.cb_stock.addItem(item[0])
-
-            cursor.execute("""
-                            SELECT *
-                            FROM v_centre_logiciel
-                            """)
-            rows = cursor.fetchall()
-            col = [item[0] for item in cursor.description]
-
-        x_frame, y_frame = 0, 0
-        for row in rows:
-            dictio = dict(zip(col, row))
-
-            if self.grade == 1 or (self.grade == 2 and GUID == dictio["auteur"]):
-                self.cb_list_app_ver.addItem(dictio["nom"])
-
-            app_id = f"{dictio['id']}"
-
-            self.frame = Button_frame(self.scrollArea)
-            self.frame.setContentsMargins(2, 2, 2, 2)
-
-            self.frame.setObjectName(f"fr_ct_{dictio['id']}")
-            self.frame.setMaximumHeight(232)
-            # Frame.button(self.frame).th()
-
-            self.frame.clicked.connect(lambda text=app_id: self.install_app(text))
-
-            self.verticalLayout = QtWidgets.QVBoxLayout(self.frame)
-            self.verticalLayout.setContentsMargins(0, 0, 0, 0)
-
-            img = QtGui.QPixmap()
-            img.loadFromData(base64.b64decode(dictio["image"]))
-
-            self.lb_app = QtWidgets.QLabel(self.frame)
-            self.lb_app.setObjectName(f"lb_ct_{dictio['id']}")
-            self.lb_app.setPixmap(img)
-            self.lb_app.setMaximumSize(128, 128)
-            self.lb_app.setScaledContents(True)
-
-            # self.verticalLayout.addWidget(self.btn)
-            self.verticalLayout.addWidget(self.lb_app, 0, Align().center_horizontal())
-
-            self.titre = QtWidgets.QLabel("Titre :")
-            self.titre_value = QtWidgets.QLabel(dictio["nom"])
-            self.titre.setObjectName(f"lb_ct_tt_{dictio['id']}")
-            self.titre_value.setObjectName(f"fr_ct_tv_{dictio['id']}")
-
-            self.version = QtWidgets.QLabel("Version :")
-            self.version_value = QtWidgets.QLabel(str(dictio["ver"]))
-            self.version.setObjectName(f"lb_ct_vs_{dictio['id']}")
-            self.version_value.setObjectName(f"fr_ct_vv_{dictio['id']}")
-
-            self.auteur = QtWidgets.QLabel("Auteur :")
-            self.auteur_value = QtWidgets.QLabel(dictio["auteur"])
-            self.auteur.setObjectName(f"lb_ct_at_{dictio['id']}")
-            self.auteur_value.setObjectName(f"fr_ct_av_{dictio['id']}")
-
-            self.description = QtWidgets.QLabel("Description :")
-            self.description_value = QtWidgets.QLabel(dictio["description"])
-            self.description.setObjectName(f"lb_ct_dt_{dictio['id']}")
-            self.auteur_value.setObjectName(f"fr_ct_dv_{dictio['id']}")
-            self.description_value.setWordWrap(True)
-
-            Label.Base(self.titre, self.titre_value,
-                       self.version, self.version_value,
-                       self.auteur, self.auteur_value,
-                       self.description, self.description_value).app_menu()
-
-            self.formLayout = QtWidgets.QFormLayout(self.frame)
-            tmp = [[self.titre, self.titre_value], [self.version, self.version_value], [self.auteur, self.auteur_value],
-                   [self.description, self.description_value]]
-            for x in range(len(tmp)):
-                for i, role in enumerate([QtWidgets.QFormLayout.LabelRole, QtWidgets.QFormLayout.FieldRole]):
-                    self.formLayout.setWidget(x, role, tmp[x][i])
-
-            self.verticalLayout.addLayout(self.formLayout)
-
-            self.gridLayout.addWidget(self.frame, x_frame, y_frame)
-            y_frame = y_frame + 1
-            if y_frame == 3:
-                y_frame = 0
-                x_frame += 1
-
-        ### /Page logiciel
+        self.affiche_parametre_role()
 
     def IN_WG(self):
 
@@ -426,6 +319,121 @@ class main(Ui_main, QtWidgets.QWidget):
         splash_screen.pg_chargement.setValue(100)
         time.sleep(2)
 
+    def affichage_macro(self, reset=False):
+
+        if reset:
+            for child in self.fr_grid_macro.findChildren(Button_frame):
+                child.deleteLater()
+
+        with sqlite3.connect(self.bdd) as conn:
+            cursor = conn.cursor()
+
+            cursor.execute("""
+                            SELECT ad_nom
+                            FROM t_gr
+                            """)
+            rows = cursor.fetchall()
+            self.cb_role_nom_add.addItems([row[0] for row in rows])
+            self.cb_role_nom_add.setCurrentIndex(-1)
+
+            cursor.execute("""
+                            SELECT at_nom
+                            FROM t_auteur
+                            """)
+            rows = cursor.fetchall()
+            for item in rows:
+                self.cb_auteur.addItem(item[0])
+
+            cursor.execute("""
+                            SELECT ln_lien
+                            FROM t_lien
+                            """)
+            rows = cursor.fetchall()
+            for item in rows:
+                self.cb_stock.addItem(item[0])
+
+            cursor.execute("""
+                            SELECT *
+                            FROM v_centre_logiciel
+                            ORDER BY nom
+                            """)
+            rows = cursor.fetchall()
+            col = [item[0] for item in cursor.description]
+
+        x_frame, y_frame = 0, 0
+        for row in rows:
+            dictio = dict(zip(col, row))
+
+            if self.grade == 1 or (self.grade == 2 and GUID == dictio["auteur"]):
+                self.cb_list_app_ver.addItem(dictio["nom"])
+
+            app_id = f"{dictio['id']}"
+
+            self.frame = Button_frame(self.scrollArea)
+            self.frame.setContentsMargins(2, 2, 2, 2)
+
+            self.frame.setObjectName(f"fr_ct_{dictio['id']}")
+            self.frame.setMaximumHeight(232)
+            # Frame.button(self.frame).th()
+
+            self.frame.clicked.connect(lambda text=app_id: self.install_app(text))
+
+            self.verticalLayout = QtWidgets.QVBoxLayout(self.frame)
+            self.verticalLayout.setContentsMargins(0, 0, 0, 0)
+
+            img = QtGui.QPixmap()
+            img.loadFromData(base64.b64decode(dictio["image"]))
+
+            self.lb_app = QtWidgets.QLabel(self.frame)
+            self.lb_app.setObjectName(f"lb_ct_{dictio['id']}")
+            self.lb_app.setPixmap(img)
+            self.lb_app.setMaximumSize(128, 128)
+            self.lb_app.setScaledContents(True)
+
+            # self.verticalLayout.addWidget(self.btn)
+            self.verticalLayout.addWidget(self.lb_app, 0, Align().center_horizontal())
+
+            self.titre = QtWidgets.QLabel("Titre :")
+            self.titre_value = QtWidgets.QLabel(dictio["nom"])
+            self.titre.setObjectName(f"lb_ct_tt_{dictio['id']}")
+            self.titre_value.setObjectName(f"fr_ct_tv_{dictio['id']}")
+
+            self.version = QtWidgets.QLabel("Version :")
+            self.version_value = QtWidgets.QLabel(str(dictio["ver"]))
+            self.version.setObjectName(f"lb_ct_vs_{dictio['id']}")
+            self.version_value.setObjectName(f"fr_ct_vv_{dictio['id']}")
+
+            self.auteur = QtWidgets.QLabel("Auteur :")
+            self.auteur_value = QtWidgets.QLabel(dictio["auteur"])
+            self.auteur.setObjectName(f"lb_ct_at_{dictio['id']}")
+            self.auteur_value.setObjectName(f"fr_ct_av_{dictio['id']}")
+
+            self.description = QtWidgets.QLabel("Description :")
+            self.description_value = QtWidgets.QLabel(dictio["description"])
+            self.description.setObjectName(f"lb_ct_dt_{dictio['id']}")
+            self.auteur_value.setObjectName(f"fr_ct_dv_{dictio['id']}")
+            self.description_value.setWordWrap(True)
+
+            Label.Base(self.titre, self.titre_value,
+                       self.version, self.version_value,
+                       self.auteur, self.auteur_value,
+                       self.description, self.description_value).app_menu()
+
+            self.formLayout = QtWidgets.QFormLayout(self.frame)
+            tmp = [[self.titre, self.titre_value], [self.version, self.version_value], [self.auteur, self.auteur_value],
+                   [self.description, self.description_value]]
+            for x in range(len(tmp)):
+                for i, role in enumerate([QtWidgets.QFormLayout.LabelRole, QtWidgets.QFormLayout.FieldRole]):
+                    self.formLayout.setWidget(x, role, tmp[x][i])
+
+            self.verticalLayout.addLayout(self.formLayout)
+
+            self.gridLayout.addWidget(self.frame, x_frame, y_frame)
+            y_frame = y_frame + 1
+            if y_frame == 3:
+                y_frame = 0
+                x_frame += 1
+
     def affiche_parametre_role(self, role=None):
         self.cb_role_nom_add.setCurrentIndex(-1)
         item = {
@@ -539,27 +547,24 @@ class main(Ui_main, QtWidgets.QWidget):
             if msg:
                 with sqlite3.connect(self.bdd) as conn:
                     cursor = conn.cursor()
-                    cursor.execute(f"""
-                                    SELECT ap_id
-                                    FROM t_app
-                                    WHERE ap_nom='{ap_id}';
-                                    """)
-                    ap_id = cursor.fetchone()
-                    ap_id = ap_id[0]
+
                     cursor.execute(f"""
                                     INSERT INTO t_ver(in_ap_id, in_ver, in_maj)
-                                    VALUES ({ap_id}, {in_ver}, "{in_maj}");
+                                    VALUES ((SELECT ap_id FROM t_app WHERE ap_nom='{ap_id}'), {in_ver}, "{in_maj}");
                                     """)
                     conn.commit()
                     cursor.execute(f"""
                                     SELECT lien
                                     FROM v_centre_logiciel
-                                    WHERE id={ap_id};
+                                    WHERE id=(SELECT ap_id FROM t_app WHERE ap_nom='{ap_id}');
                                     """)
                     lien = cursor.fetchone()
                     lien = lien[0]
                     dossier, _ = os.path.split(lien)
                     conn.commit()
+
+                self.affichage_macro(True)
+
                 os.makedirs(dossier, exist_ok=True)
                 shutil.copy(src=app, dst=lien)
                 MsgBox().INFO(msg="Mise à jour effectuée")
@@ -580,16 +585,16 @@ class main(Ui_main, QtWidgets.QWidget):
 
             dictio = dict(zip(col, row))
 
-            img = QtGui.QPixmap()
-            img.loadFromData(base64.b64decode(dictio["image"]))
-            self.lb_app_ver_add.setPixmap(img)
+        img = QtGui.QPixmap()
+        img.loadFromData(base64.b64decode(dictio["image"]))
+        self.lb_app_ver_add.setPixmap(img)
 
-            self.num_old_ver.setValue(dictio["ver"])
-            min = dictio["ver"] + 0.1
-            self.num_new_ver.setMinimum(min)
-            self.num_new_ver.setValue(min)
+        self.num_old_ver.setValue(dictio["ver"])
+        min = dictio["ver"] + 0.1
+        self.num_new_ver.setMinimum(min)
+        self.num_new_ver.setValue(min)
 
-            self.text_old_chang.setText(dictio["correctif"])
+        self.text_old_chang.setText(dictio["correctif"])
 
     def import_app(self):
         ico = self.import_ico_app

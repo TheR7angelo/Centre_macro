@@ -142,10 +142,12 @@ class Ui_main(object):
 
         self.verticalLayout_3.addWidget(self.lb_logiciel_titre)
 
-        self.gridLayout = QGridLayout()
+        self.fr_grid_macro = QFrame(self.scrollAreaWidgetContents)
+        self.fr_grid_macro.setObjectName(u"fr_grid_macro")
+        self.gridLayout = QGridLayout(self.fr_grid_macro)
         self.gridLayout.setObjectName(u"gridLayout")
 
-        self.verticalLayout_3.addLayout(self.gridLayout)
+        self.verticalLayout_3.addWidget(self.fr_grid_macro)
 
         self.scrollArea.setWidget(self.scrollAreaWidgetContents)
 

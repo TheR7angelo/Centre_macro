@@ -15,8 +15,8 @@ class PlusMinus:
             *self.wgs,
             bg=Rgb().th2(),
             fg=Rgb().th3(),
-            value_min=0.01,
-            value_step=0.01,
+            value_min=0.1,
+            value_step=0.1,
 
             border=(StyleBase().border(),)*4,
             border_hover=(2,) * 4,
