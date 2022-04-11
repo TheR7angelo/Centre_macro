@@ -531,7 +531,7 @@ class main(Ui_main, QtWidgets.QWidget):
         app = self.line_ap_ver.text()
         ap_id = self.cb_list_app_ver.currentText()
         in_ver = self.num_new_ver.value()
-        in_maj = self.text_new_chang.toPlainText()
+        in_maj = self.text_new_chang.toPlainText().replace('"', '""')
 
         erreur = []
         if app == "":
@@ -586,7 +586,7 @@ class main(Ui_main, QtWidgets.QWidget):
         with sqlite3.connect(self.bdd) as conn:
             cursor = conn.cursor()
             cursor.execute(f"""
-                            SELECT ver, correctif, image
+                            SELECT ver, image
                             FROM v_centre_logiciel
                             WHERE nom='{item}'
                             """)
@@ -604,7 +604,7 @@ class main(Ui_main, QtWidgets.QWidget):
         self.num_new_ver.setMinimum(min)
         self.num_new_ver.setValue(min)
 
-        self.text_old_chang.setText(dictio["correctif"])
+        # self.text_old_chang.setText(dictio["correctif"])
 
     def import_app(self):
         ico = self.import_ico_app
@@ -678,7 +678,7 @@ class main(Ui_main, QtWidgets.QWidget):
                 else:
                     ap_li_id = row[0]
                 cursor.execute(f"""
-                                INSERT INTO t_app(ap_nom, ap_desc, ap_auteur, ap_img, ap_li_id)
+                                INSERT INTO t_app(ap_nom, ap_desc, ap_at_id, ap_img, ap_ln_id)
                                 VALUES ('{ap_nom}', '{ap_desc}', {ap_auteur}, '{ap_img}', {ap_li_id});
                                 """)
 
