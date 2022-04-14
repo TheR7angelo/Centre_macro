@@ -543,44 +543,40 @@ class main(Ui_main, QtWidgets.QWidget):
         if in_maj == "":
             erreur.append("correctif")
 
-        if not erreur:
-            msg = ResponseBox().INFO(title="Validation",
-                                     msg="Voulez-vous vraiment mettre à jour la version de l'application ?")
-            if msg:
-                with sqlite3.connect(self.bdd) as conn:
-                    cursor = conn.cursor()
+        if erreur:
+            erreur = ", ".join(erreur)
+            MsgBox().ALERTE(msg=f"Des erreurs ont étais détecter :\n{erreur}\nMerci de les corrigers")
 
-                    cursor.execute(f"""
+        elif ResponseBox().INFO(title="Validation", msg="Voulez-vous vraiment mettre à jour la version de l'application ?"):
+            with sqlite3.connect(self.bdd) as conn:
+                cursor = conn.cursor()
+
+                cursor.execute(f"""
                                     SELECT ap_id 
                                     FROM t_app 
                                     WHERE ap_nom='{ap_id}';
                                     """)
-                    ap_id = cursor.fetchone()[0]
+                ap_id = cursor.fetchone()[0]
 
-                    child = self.fr_grid_macro.findChild(QtWidgets.QLabel, f"lb_ct_vv_{ap_id}")
-                    child.setText(f"{in_ver}")
+                child = self.fr_grid_macro.findChild(QtWidgets.QLabel, f"lb_ct_vv_{ap_id}")
+                child.setText(f"{in_ver}")
 
-                    cursor.execute(f"""
+                cursor.execute(f"""
                                     INSERT INTO t_ver(in_ap_id, in_ver, in_maj)
                                     VALUES ({ap_id}, {in_ver}, "{in_maj}");
                                     """)
-                    conn.commit()
-                    cursor.execute(f"""
+                conn.commit()
+                cursor.execute(f"""
                                     SELECT lien
                                     FROM v_centre_logiciel
                                     WHERE id={ap_id};
                                     """)
-                    lien = cursor.fetchone()[0]
+                lien = cursor.fetchone()[0]
 
-
-
-                dossier, _ = os.path.split(lien)
-                os.makedirs(dossier, exist_ok=True)
-                shutil.copy(src=app, dst=lien)
-                MsgBox().INFO(msg="Mise à jour effectuée")
-        else:
-            erreur = ", ".join(erreur)
-            MsgBox().ALERTE(msg=f"Des erreurs ont étais détecter :\n{erreur}\nMerci de les corrigers")
+            dossier, _ = os.path.split(lien)
+            os.makedirs(dossier, exist_ok=True)
+            shutil.copy(src=app, dst=lien)
+            MsgBox().INFO(msg="Mise à jour effectuée")
 
     def add_ver_new(self, item):
         with sqlite3.connect(self.bdd) as conn:
