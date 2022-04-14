@@ -609,7 +609,7 @@ class main(Ui_main, QtWidgets.QWidget):
         ap_li_id = self.cb_stock.currentText()
         in_ver = self.num_ver.value()
         ap_auteur = self.cb_auteur.currentText()
-        ap_desc = self.text_desc.toPlainText()
+        ap_desc = self.text_desc.toPlainText().replace('"', '""')
         in_maj = self.text_chang.toPlainText()
 
         erreur = []
