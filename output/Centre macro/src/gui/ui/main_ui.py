@@ -3,7 +3,7 @@
 ################################################################################
 ## Form generated from reading UI file 'main.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.2.3
+## Created by: Qt User Interface Compiler version 6.2.4
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -15,11 +15,11 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QComboBox, QDoubleSpinBox, QFrame,
-    QGridLayout, QHBoxLayout, QLabel, QLineEdit,
-    QListWidget, QListWidgetItem, QPushButton, QScrollArea,
-    QSizePolicy, QSpacerItem, QStackedWidget, QTextEdit,
-    QVBoxLayout, QWidget)
+from PySide6.QtWidgets import (QApplication, QComboBox, QDoubleSpinBox, QFormLayout,
+    QFrame, QGridLayout, QHBoxLayout, QLabel,
+    QLineEdit, QListWidget, QListWidgetItem, QPushButton,
+    QScrollArea, QSizePolicy, QSpacerItem, QStackedWidget,
+    QTextEdit, QVBoxLayout, QWidget)
 
 from src.widget_custom.Label_cust import DropLabel
 
@@ -27,7 +27,7 @@ class Ui_main(object):
     def setupUi(self, main):
         if not main.objectName():
             main.setObjectName(u"main")
-        main.resize(852, 725)
+        main.resize(797, 725)
         self.vlay_main = QVBoxLayout(main)
         self.vlay_main.setSpacing(0)
         self.vlay_main.setObjectName(u"vlay_main")
@@ -105,23 +105,9 @@ class Ui_main(object):
         self.verticalLayout.setSpacing(0)
         self.verticalLayout.setObjectName(u"verticalLayout")
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)
-        self.fr_menu_titre = QFrame(self.fr_body)
-        self.fr_menu_titre.setObjectName(u"fr_menu_titre")
-        self.fr_menu_titre.setFrameShape(QFrame.StyledPanel)
-        self.fr_menu_titre.setFrameShadow(QFrame.Raised)
-        self.horizontalLayout_2 = QHBoxLayout(self.fr_menu_titre)
-        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
-        self.lb_title = QLabel(self.fr_menu_titre)
-        self.lb_title.setObjectName(u"lb_title")
-
-        self.horizontalLayout_2.addWidget(self.lb_title)
-
-
-        self.verticalLayout.addWidget(self.fr_menu_titre)
-
         self.horizontalLayout = QHBoxLayout()
         self.horizontalLayout.setObjectName(u"horizontalLayout")
-        self.horizontalLayout.setContentsMargins(5, -1, 5, -1)
+        self.horizontalLayout.setContentsMargins(5, 5, 5, 5)
         self.list_menu = QListWidget(self.fr_body)
         self.list_menu.setObjectName(u"list_menu")
         sizePolicy1 = QSizePolicy(QSizePolicy.Maximum, QSizePolicy.Expanding)
@@ -145,14 +131,23 @@ class Ui_main(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 574, 637))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 519, 665))
         self.scrollAreaWidgetContents.setMaximumSize(QSize(16777215, 16777215))
         self.verticalLayout_3 = QVBoxLayout(self.scrollAreaWidgetContents)
         self.verticalLayout_3.setObjectName(u"verticalLayout_3")
-        self.gridLayout = QGridLayout()
+        self.lb_logiciel_titre = QLabel(self.scrollAreaWidgetContents)
+        self.lb_logiciel_titre.setObjectName(u"lb_logiciel_titre")
+        sizePolicy.setHeightForWidth(self.lb_logiciel_titre.sizePolicy().hasHeightForWidth())
+        self.lb_logiciel_titre.setSizePolicy(sizePolicy)
+
+        self.verticalLayout_3.addWidget(self.lb_logiciel_titre)
+
+        self.fr_grid_macro = QFrame(self.scrollAreaWidgetContents)
+        self.fr_grid_macro.setObjectName(u"fr_grid_macro")
+        self.gridLayout = QGridLayout(self.fr_grid_macro)
         self.gridLayout.setObjectName(u"gridLayout")
 
-        self.verticalLayout_3.addLayout(self.gridLayout)
+        self.verticalLayout_3.addWidget(self.fr_grid_macro)
 
         self.scrollArea.setWidget(self.scrollAreaWidgetContents)
 
@@ -164,15 +159,69 @@ class Ui_main(object):
         self.stackedWidget.addWidget(self.page_helper)
         self.page_editeur = QWidget()
         self.page_editeur.setObjectName(u"page_editeur")
+        self.verticalLayout_7 = QVBoxLayout(self.page_editeur)
+        self.verticalLayout_7.setObjectName(u"verticalLayout_7")
+        self.verticalSpacer_4 = QSpacerItem(20, 303, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        self.verticalLayout_7.addItem(self.verticalSpacer_4)
+
+        self.gridLayout_5 = QGridLayout()
+        self.gridLayout_5.setObjectName(u"gridLayout_5")
         self.pb_addApp_edit = QPushButton(self.page_editeur)
         self.pb_addApp_edit.setObjectName(u"pb_addApp_edit")
-        self.pb_addApp_edit.setGeometry(QRect(170, 210, 101, 51))
+
+        self.gridLayout_5.addWidget(self.pb_addApp_edit, 0, 0, 1, 1)
+
+        self.pb_addVer_edit = QPushButton(self.page_editeur)
+        self.pb_addVer_edit.setObjectName(u"pb_addVer_edit")
+
+        self.gridLayout_5.addWidget(self.pb_addVer_edit, 0, 1, 1, 1)
+
+        self.pb_addRole_edit = QPushButton(self.page_editeur)
+        self.pb_addRole_edit.setObjectName(u"pb_addRole_edit")
+
+        self.gridLayout_5.addWidget(self.pb_addRole_edit, 0, 2, 1, 1)
+
+
+        self.verticalLayout_7.addLayout(self.gridLayout_5)
+
+        self.verticalSpacer_2 = QSpacerItem(20, 302, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        self.verticalLayout_7.addItem(self.verticalSpacer_2)
+
         self.stackedWidget.addWidget(self.page_editeur)
         self.page_admin = QWidget()
         self.page_admin.setObjectName(u"page_admin")
+        self.verticalLayout_11 = QVBoxLayout(self.page_admin)
+        self.verticalLayout_11.setObjectName(u"verticalLayout_11")
+        self.verticalSpacer_6 = QSpacerItem(20, 303, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        self.verticalLayout_11.addItem(self.verticalSpacer_6)
+
+        self.gridLayout_6 = QGridLayout()
+        self.gridLayout_6.setObjectName(u"gridLayout_6")
+        self.pb_addRole_admin = QPushButton(self.page_admin)
+        self.pb_addRole_admin.setObjectName(u"pb_addRole_admin")
+
+        self.gridLayout_6.addWidget(self.pb_addRole_admin, 0, 2, 1, 1)
+
+        self.pb_addVer_admin = QPushButton(self.page_admin)
+        self.pb_addVer_admin.setObjectName(u"pb_addVer_admin")
+
+        self.gridLayout_6.addWidget(self.pb_addVer_admin, 0, 1, 1, 1)
+
         self.pb_addApp_admin = QPushButton(self.page_admin)
         self.pb_addApp_admin.setObjectName(u"pb_addApp_admin")
-        self.pb_addApp_admin.setGeometry(QRect(230, 230, 101, 51))
+
+        self.gridLayout_6.addWidget(self.pb_addApp_admin, 0, 0, 1, 1)
+
+
+        self.verticalLayout_11.addLayout(self.gridLayout_6)
+
+        self.verticalSpacer_7 = QSpacerItem(20, 302, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        self.verticalLayout_11.addItem(self.verticalSpacer_7)
+
         self.stackedWidget.addWidget(self.page_admin)
         self.page_ajout_app = QWidget()
         self.page_ajout_app.setObjectName(u"page_ajout_app")
@@ -186,8 +235,13 @@ class Ui_main(object):
         self.frame.setFrameShadow(QFrame.Raised)
         self.verticalLayout_6 = QVBoxLayout(self.frame)
         self.verticalLayout_6.setObjectName(u"verticalLayout_6")
-        self.verticalLayout_4 = QVBoxLayout()
-        self.verticalLayout_4.setObjectName(u"verticalLayout_4")
+        self.lb_addApp_titre = QLabel(self.frame)
+        self.lb_addApp_titre.setObjectName(u"lb_addApp_titre")
+
+        self.verticalLayout_6.addWidget(self.lb_addApp_titre)
+
+        self.verticalLayout_1 = QVBoxLayout()
+        self.verticalLayout_1.setObjectName(u"verticalLayout_1")
         self.lb_icon_new = DropLabel(self.frame)
         self.lb_icon_new.setObjectName(u"lb_icon_new")
         sizePolicy2 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Preferred)
@@ -201,7 +255,7 @@ class Ui_main(object):
 "background-color: rgb(85, 255, 0);\n"
 "}")
 
-        self.verticalLayout_4.addWidget(self.lb_icon_new, 0, Qt.AlignHCenter)
+        self.verticalLayout_1.addWidget(self.lb_icon_new, 0, Qt.AlignHCenter)
 
         self.horizontalLayout_3 = QHBoxLayout()
         self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
@@ -219,10 +273,10 @@ class Ui_main(object):
         self.horizontalLayout_3.addItem(self.horizontalSpacer_3)
 
 
-        self.verticalLayout_4.addLayout(self.horizontalLayout_3)
+        self.verticalLayout_1.addLayout(self.horizontalLayout_3)
 
 
-        self.verticalLayout_6.addLayout(self.verticalLayout_4)
+        self.verticalLayout_6.addLayout(self.verticalLayout_1)
 
         self.gridLayout_2 = QGridLayout()
         self.gridLayout_2.setObjectName(u"gridLayout_2")
@@ -248,7 +302,8 @@ class Ui_main(object):
 
         self.num_ver = QDoubleSpinBox(self.frame)
         self.num_ver.setObjectName(u"num_ver")
-        self.num_ver.setMinimum(0.010000000000000)
+        self.num_ver.setDecimals(1)
+        self.num_ver.setMinimum(0.100000000000000)
         self.num_ver.setMaximum(99999999.000000000000000)
         self.num_ver.setSingleStep(0.010000000000000)
 
@@ -321,6 +376,213 @@ class Ui_main(object):
         self.verticalLayout_5.addWidget(self.frame)
 
         self.stackedWidget.addWidget(self.page_ajout_app)
+        self.page_change_ver = QWidget()
+        self.page_change_ver.setObjectName(u"page_change_ver")
+        self.verticalLayout_8 = QVBoxLayout(self.page_change_ver)
+        self.verticalLayout_8.setObjectName(u"verticalLayout_8")
+        self.lb_changeVer_titre = QLabel(self.page_change_ver)
+        self.lb_changeVer_titre.setObjectName(u"lb_changeVer_titre")
+
+        self.verticalLayout_8.addWidget(self.lb_changeVer_titre)
+
+        self.verticalLayout_4 = QVBoxLayout()
+        self.verticalLayout_4.setObjectName(u"verticalLayout_4")
+        self.lb_list_app = QLabel(self.page_change_ver)
+        self.lb_list_app.setObjectName(u"lb_list_app")
+
+        self.verticalLayout_4.addWidget(self.lb_list_app)
+
+        self.cb_list_app_ver = QComboBox(self.page_change_ver)
+        self.cb_list_app_ver.setObjectName(u"cb_list_app_ver")
+
+        self.verticalLayout_4.addWidget(self.cb_list_app_ver)
+
+
+        self.verticalLayout_8.addLayout(self.verticalLayout_4)
+
+        self.horizontalLayout_4 = QHBoxLayout()
+        self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
+        self.horizontalSpacer_9 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_4.addItem(self.horizontalSpacer_9)
+
+        self.lb_app_ver_add = QLabel(self.page_change_ver)
+        self.lb_app_ver_add.setObjectName(u"lb_app_ver_add")
+        self.lb_app_ver_add.setMinimumSize(QSize(232, 232))
+        self.lb_app_ver_add.setMaximumSize(QSize(232, 232))
+        self.lb_app_ver_add.setFrameShape(QFrame.Box)
+
+        self.horizontalLayout_4.addWidget(self.lb_app_ver_add)
+
+        self.horizontalSpacer_10 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_4.addItem(self.horizontalSpacer_10)
+
+
+        self.verticalLayout_8.addLayout(self.horizontalLayout_4)
+
+        self.gridLayout_3 = QGridLayout()
+        self.gridLayout_3.setObjectName(u"gridLayout_3")
+        self.lb_old_ver = QLabel(self.page_change_ver)
+        self.lb_old_ver.setObjectName(u"lb_old_ver")
+
+        self.gridLayout_3.addWidget(self.lb_old_ver, 0, 0, 2, 3)
+
+        self.lb_change_old_ver = QLabel(self.page_change_ver)
+        self.lb_change_old_ver.setObjectName(u"lb_change_old_ver")
+
+        self.gridLayout_3.addWidget(self.lb_change_old_ver, 2, 0, 1, 1)
+
+        self.text_old_chang = QTextEdit(self.page_change_ver)
+        self.text_old_chang.setObjectName(u"text_old_chang")
+
+        self.gridLayout_3.addWidget(self.text_old_chang, 3, 1, 1, 2)
+
+        self.lb_correct_old = QLabel(self.page_change_ver)
+        self.lb_correct_old.setObjectName(u"lb_correct_old")
+
+        self.gridLayout_3.addWidget(self.lb_correct_old, 3, 0, 1, 1)
+
+        self.num_old_ver = QDoubleSpinBox(self.page_change_ver)
+        self.num_old_ver.setObjectName(u"num_old_ver")
+        self.num_old_ver.setDecimals(1)
+        self.num_old_ver.setMinimum(0.100000000000000)
+        self.num_old_ver.setMaximum(99999999.000000000000000)
+        self.num_old_ver.setSingleStep(0.010000000000000)
+
+        self.gridLayout_3.addWidget(self.num_old_ver, 2, 1, 1, 1)
+
+        self.horizontalSpacer_7 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.gridLayout_3.addItem(self.horizontalSpacer_7, 2, 2, 1, 1)
+
+
+        self.verticalLayout_8.addLayout(self.gridLayout_3)
+
+        self.gridLayout_4 = QGridLayout()
+        self.gridLayout_4.setObjectName(u"gridLayout_4")
+        self.lb_correct_new = QLabel(self.page_change_ver)
+        self.lb_correct_new.setObjectName(u"lb_correct_new")
+
+        self.gridLayout_4.addWidget(self.lb_correct_new, 4, 0, 1, 1)
+
+        self.lb_new_ver = QLabel(self.page_change_ver)
+        self.lb_new_ver.setObjectName(u"lb_new_ver")
+
+        self.gridLayout_4.addWidget(self.lb_new_ver, 0, 0, 2, 3)
+
+        self.num_new_ver = QDoubleSpinBox(self.page_change_ver)
+        self.num_new_ver.setObjectName(u"num_new_ver")
+        self.num_new_ver.setDecimals(1)
+        self.num_new_ver.setMinimum(0.100000000000000)
+        self.num_new_ver.setMaximum(99999999.000000000000000)
+        self.num_new_ver.setSingleStep(0.010000000000000)
+
+        self.gridLayout_4.addWidget(self.num_new_ver, 3, 1, 1, 1)
+
+        self.text_new_chang = QTextEdit(self.page_change_ver)
+        self.text_new_chang.setObjectName(u"text_new_chang")
+
+        self.gridLayout_4.addWidget(self.text_new_chang, 4, 1, 1, 2)
+
+        self.lb_change_new_ver = QLabel(self.page_change_ver)
+        self.lb_change_new_ver.setObjectName(u"lb_change_new_ver")
+
+        self.gridLayout_4.addWidget(self.lb_change_new_ver, 3, 0, 1, 1)
+
+        self.horizontalSpacer_8 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.gridLayout_4.addItem(self.horizontalSpacer_8, 3, 2, 1, 1)
+
+        self.pb_ap_selector_ver = QPushButton(self.page_change_ver)
+        self.pb_ap_selector_ver.setObjectName(u"pb_ap_selector_ver")
+
+        self.gridLayout_4.addWidget(self.pb_ap_selector_ver, 2, 0, 1, 1)
+
+        self.line_ap_ver = QLineEdit(self.page_change_ver)
+        self.line_ap_ver.setObjectName(u"line_ap_ver")
+
+        self.gridLayout_4.addWidget(self.line_ap_ver, 2, 1, 1, 2)
+
+
+        self.verticalLayout_8.addLayout(self.gridLayout_4)
+
+        self.pb_new_ver_val = QPushButton(self.page_change_ver)
+        self.pb_new_ver_val.setObjectName(u"pb_new_ver_val")
+
+        self.verticalLayout_8.addWidget(self.pb_new_ver_val)
+
+        self.stackedWidget.addWidget(self.page_change_ver)
+        self.page_ajout_role = QWidget()
+        self.page_ajout_role.setObjectName(u"page_ajout_role")
+        self.verticalLayout_10 = QVBoxLayout(self.page_ajout_role)
+        self.verticalLayout_10.setObjectName(u"verticalLayout_10")
+        self.lb_role_titre = QLabel(self.page_ajout_role)
+        self.lb_role_titre.setObjectName(u"lb_role_titre")
+
+        self.verticalLayout_10.addWidget(self.lb_role_titre)
+
+        self.cb_ajout_role = QComboBox(self.page_ajout_role)
+        self.cb_ajout_role.setObjectName(u"cb_ajout_role")
+
+        self.verticalLayout_10.addWidget(self.cb_ajout_role)
+
+        self.fr_role_add = QWidget(self.page_ajout_role)
+        self.fr_role_add.setObjectName(u"fr_role_add")
+        self.verticalLayout_9 = QVBoxLayout(self.fr_role_add)
+        self.verticalLayout_9.setObjectName(u"verticalLayout_9")
+        self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        self.verticalLayout_9.addItem(self.verticalSpacer)
+
+        self.formLayout = QFormLayout()
+        self.formLayout.setObjectName(u"formLayout")
+        self.lb_role_name_add = QLabel(self.fr_role_add)
+        self.lb_role_name_add.setObjectName(u"lb_role_name_add")
+
+        self.formLayout.setWidget(0, QFormLayout.LabelRole, self.lb_role_name_add)
+
+        self.lb_role_alias_add = QLabel(self.fr_role_add)
+        self.lb_role_alias_add.setObjectName(u"lb_role_alias_add")
+
+        self.formLayout.setWidget(1, QFormLayout.LabelRole, self.lb_role_alias_add)
+
+        self.ln_role_alias_add = QLineEdit(self.fr_role_add)
+        self.ln_role_alias_add.setObjectName(u"ln_role_alias_add")
+
+        self.formLayout.setWidget(1, QFormLayout.FieldRole, self.ln_role_alias_add)
+
+        self.lb_role_mail_add = QLabel(self.fr_role_add)
+        self.lb_role_mail_add.setObjectName(u"lb_role_mail_add")
+
+        self.formLayout.setWidget(2, QFormLayout.LabelRole, self.lb_role_mail_add)
+
+        self.ln_role_mail_add = QLineEdit(self.fr_role_add)
+        self.ln_role_mail_add.setObjectName(u"ln_role_mail_add")
+
+        self.formLayout.setWidget(2, QFormLayout.FieldRole, self.ln_role_mail_add)
+
+        self.cb_role_nom_add = QComboBox(self.fr_role_add)
+        self.cb_role_nom_add.setObjectName(u"cb_role_nom_add")
+
+        self.formLayout.setWidget(0, QFormLayout.FieldRole, self.cb_role_nom_add)
+
+
+        self.verticalLayout_9.addLayout(self.formLayout)
+
+        self.pb_role_add_valide = QPushButton(self.fr_role_add)
+        self.pb_role_add_valide.setObjectName(u"pb_role_add_valide")
+
+        self.verticalLayout_9.addWidget(self.pb_role_add_valide)
+
+        self.verticalSpacer_5 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        self.verticalLayout_9.addItem(self.verticalSpacer_5)
+
+
+        self.verticalLayout_10.addWidget(self.fr_role_add)
+
+        self.stackedWidget.addWidget(self.page_ajout_role)
 
         self.horizontalLayout.addWidget(self.stackedWidget)
 
@@ -353,6 +615,9 @@ class Ui_main(object):
 
         self.vlay_main.addWidget(self.fr_main)
 
+#if QT_CONFIG(shortcut)
+        self.lb_mt_ico.setBuddy(self.fr_role_add)
+#endif // QT_CONFIG(shortcut)
 
         self.retranslateUi(main)
 
@@ -363,9 +628,14 @@ class Ui_main(object):
     # setupUi
 
     def retranslateUi(self, main):
-        self.lb_title.setText(QCoreApplication.translate("main", u"TextLabel", None))
-        self.pb_addApp_edit.setText(QCoreApplication.translate("main", u"Ajout_app", None))
-        self.pb_addApp_admin.setText(QCoreApplication.translate("main", u"Ajout_app", None))
+        self.lb_logiciel_titre.setText(QCoreApplication.translate("main", u"Macro", None))
+        self.pb_addApp_edit.setText(QCoreApplication.translate("main", u"Ajouter une application", None))
+        self.pb_addVer_edit.setText(QCoreApplication.translate("main", u"Ajouter une version", None))
+        self.pb_addRole_edit.setText(QCoreApplication.translate("main", u"Ajouter un role", None))
+        self.pb_addRole_admin.setText(QCoreApplication.translate("main", u"Ajouter un role", None))
+        self.pb_addVer_admin.setText(QCoreApplication.translate("main", u"Ajouter une version", None))
+        self.pb_addApp_admin.setText(QCoreApplication.translate("main", u"Ajouter une application", None))
+        self.lb_addApp_titre.setText(QCoreApplication.translate("main", u"Ajout d'une application", None))
         self.lb_icon_new.setText("")
         self.pb_ico.setText(QCoreApplication.translate("main", u"Icon", None))
         self.pb_new_ap_val.setText(QCoreApplication.translate("main", u"Enregistrer", None))
@@ -383,6 +653,22 @@ class Ui_main(object):
         self.pb_ap_selector.setText(QCoreApplication.translate("main", u"Application", None))
         self.lb_nom_ap.setText(QCoreApplication.translate("main", u"Nom", None))
         self.lb_stock.setText(QCoreApplication.translate("main", u"Stokage", None))
+        self.lb_changeVer_titre.setText(QCoreApplication.translate("main", u"Changer la version d'une application", None))
+        self.lb_list_app.setText(QCoreApplication.translate("main", u"Liste d'application", None))
+        self.lb_app_ver_add.setText(QCoreApplication.translate("main", u"TextLabel", None))
+        self.lb_old_ver.setText(QCoreApplication.translate("main", u"Ancienne version", None))
+        self.lb_change_old_ver.setText(QCoreApplication.translate("main", u"Version", None))
+        self.lb_correct_old.setText(QCoreApplication.translate("main", u"Correctif", None))
+        self.lb_correct_new.setText(QCoreApplication.translate("main", u"Correctif", None))
+        self.lb_new_ver.setText(QCoreApplication.translate("main", u"Nouvelle version", None))
+        self.lb_change_new_ver.setText(QCoreApplication.translate("main", u"Version", None))
+        self.pb_ap_selector_ver.setText(QCoreApplication.translate("main", u"Application", None))
+        self.pb_new_ver_val.setText(QCoreApplication.translate("main", u"Valider", None))
+        self.lb_role_titre.setText(QCoreApplication.translate("main", u"Ajout d'un role", None))
+        self.lb_role_name_add.setText(QCoreApplication.translate("main", u"GID :", None))
+        self.lb_role_alias_add.setText(QCoreApplication.translate("main", u"Alias :", None))
+        self.lb_role_mail_add.setText(QCoreApplication.translate("main", u"Adresse mail :", None))
+        self.pb_role_add_valide.setText(QCoreApplication.translate("main", u"Ajouter", None))
         pass
     # retranslateUi
 

@@ -1,4 +1,5 @@
 import base64
+import glob
 import os
 import re
 import shutil
@@ -6,24 +7,33 @@ import sqlite3
 import sys
 import time
 from pprint import pprint
+from threading import Thread
 
-from PySide6 import QtCore, QtWidgets, QtGui
+from PySide6 import QtCore, QtWidgets, QtGui, QtSql
 
 from src import *
 from src.gui import *
 from src.lib.globals.v_gb import GUID
+
+from src.build.mods.thread_db import sqlite3_change, postgres_change
 
 
 class main(Ui_main, QtWidgets.QWidget):
     dragPos: QtCore.QPoint
 
     cfg = Configue().cfg
-    bdd = r"T:\- 4 Suivi Appuis\18-Partage\BARRENTO ANTUNES Raphael\6_Programme python\Centre macro.db"
 
+    bdd = r"T:\- 4 Suivi Appuis\18-Partage\BARRENTO ANTUNES Raphael\6_Programme python\Centre macro.db"
     if not os.path.exists(bdd):
         bdd = r"E:\Logiciels\Adobe\Creative Cloud Files\Programmation\Projets Python\Centre macro.db"
         if not os.path.exists(bdd):
             bdd = r"C:\Users\ZP6177\Creative Cloud Files\Programmation\Projets Python\Centre macro.db"
+
+    db = QtSql.QSqlDatabase("QSQLITE")
+    db.setDatabaseName(bdd)
+    db.open()
+
+    old_db = {}
 
     import_ico_app = None
     grade = 4
@@ -100,6 +110,9 @@ class main(Ui_main, QtWidgets.QWidget):
         self.setGraphicsEffect(Shadow().ombre_portee(self))
 
         self.e_resize_screen()
+
+        self.threadpool = QtCore.QThreadPool()
+        self.timer_db = QtCore.QTimer()
 
     def IN_SETUP_UI(self):
         self.setWindowFlags(QtCore.Qt.FramelessWindowHint)
@@ -242,6 +255,21 @@ class main(Ui_main, QtWidgets.QWidget):
 
         self.lb_app_ver_add.setScaledContents(True)
 
+    def test_timer(self):
+
+        def threading_function():
+            self.old_db, change = sqlite3_change(bdd=self.bdd, old_db=self.old_db)
+            # self.old_db, change = postgres_change(database="RIP_FTTH_33", user="postgres", password="INEO_Infracom_33", host="BORDEAUX04", table_schema="genie_civil", table_name="v_appui")
+            if change is not None:
+                pprint(change)
+                for key in change:
+                    match key:
+                        case "t_bug":
+                            self.table_bug_attente.select()
+
+        func = Thread(target=threading_function)
+        func.start()
+
     def IN_CONNECTIONS(self):
 
         ### Menu_top ###
@@ -250,8 +278,17 @@ class main(Ui_main, QtWidgets.QWidget):
         self.pb_mt_agrandir.clicked.connect(lambda: self.evt.e_agrandir())
         self.pb_mt_quitter.clicked.connect(lambda: self.evt.e_cacher())
 
+        ### mise à jour des tables
+        self.timer_db.timeout.connect(self.test_timer)
+        self.timer_db.start(1000)
+
         ### Menu application
         self.list_menu.itemClicked.connect(self.change_mode)
+
+        ### Menu Helper
+        self.pb_bugatt_help.clicked.connect(lambda: self.change_menu("bug_attente"))
+        self.pb_bugtrait_help.clicked.connect(lambda: self.change_menu("bug_en_cours"))
+        self.pb_bugter_help.clicked.connect(lambda: self.change_menu("bug_terminer"))
 
         ### Menu Editeur
         self.pb_addApp_edit.clicked.connect(lambda: self.change_menu("ajout_app"))
@@ -264,7 +301,7 @@ class main(Ui_main, QtWidgets.QWidget):
         self.pb_addRole_admin.clicked.connect(lambda: self.change_menu("ajout_role"))
 
         ### Menu crée appli
-        self.lb_icon_new.new_ico.connect(self.import_app_img)
+        self.lb_icon_new.new_ico.connect(self.import_app)
         self.lb_icon_new.clicked.connect(self.import_app_img_file)
         self.pb_ico.clicked.connect(self.import_app_img_file)
         self.pb_ap_selector.clicked.connect(lambda: self.import_app_file(self.pb_ap_selector.objectName()))
@@ -283,7 +320,55 @@ class main(Ui_main, QtWidgets.QWidget):
 
     def IN_ACT(self):
 
-        self.threadpool = QtCore.QThreadPool()
+        # self.table_bug_attente = QtSql.QSqlRelationalTableModel()
+        # self.t_bug_attente.setModel(self.table_bug_attente)
+        #
+        # query = QtSql.QSqlQuery(db=self.db)
+        # query.prepare("SELECT bu_id, bu_sender, bu_contact, bu_ap_id, bu_ap_ver, bu_desc, bu_date FROM t_bug")
+        # query.exec()
+        # self.table_bug_attente.setQuery(query)
+        #
+        # self.table_bug_attente.setRelation(3, QtSql.QSqlRelation("t_app", "ap_id", "ap_nom"))
+        # delegate = QtSql.QSqlRelationalDelegate(self.t_bug_attente)
+        # self.t_bug_attente.setItemDelegate(delegate)
+        # #self.table_bug_attente.select()
+
+        self.table_bug_attente = QtSql.QSqlRelationalTableModel(db=self.db)
+        self.t_bug_attente.setModel(self.table_bug_attente)
+        self.table_bug_attente.setTable("t_bug")
+        # self.table_bug_attente.setFilter("bl_etat='1'")
+        self.table_bug_attente.setRelation(3, QtSql.QSqlRelation("t_app", "ap_id", "ap_nom"))
+        delegate = QtSql.QSqlRelationalDelegate(self.t_bug_attente)
+        self.t_bug_attente.setItemDelegate(delegate)
+        self.table_bug_attente.select()
+
+
+        for index, name in enumerate(["ID", "Nom", "Contact", "Appli", "Version", "Description", "Date", "Etat"]):
+            self.table_bug_attente.setHeaderData(index, QtCore.Qt.Horizontal, name)
+
+        # self.view_bug_attente = QtSql.QSqlTableModel(db=self.db)
+        # self.t_bug_attente.setModel(self.view_bug_attente)
+        # self.view_bug_attente.setTable("t_bug")
+        # self.view_bug_attente.select()
+
+        # self.view_bug_attente = QtSql.QSqlTableModel(db=self.db)
+        # self.t_bug_attente.setModel(self.view_bug_attente)
+        # self.view_bug_attente.setTable("v_bug_en_attente")
+        # self.view_bug_attente.select()
+
+        self.view_bug_en_cours = QtSql.QSqlTableModel(db=self.db)
+        self.t_bug_en_cours.setModel(self.view_bug_en_cours)
+        self.view_bug_en_cours.setTable("v_bug_en_cours")
+        self.view_bug_en_cours.select()
+
+        self.view_bug_terminer = QtSql.QSqlTableModel(db=self.db)
+        self.t_bug_terminer.setModel(self.view_bug_terminer)
+        self.view_bug_terminer.setTable("v_bug_terminer")
+        self.view_bug_terminer.select()
+
+        # for model in [self.view_bug_attente, self.view_bug_en_cours, self.view_bug_terminer]:
+        #     model.set
+        # update table when data change
 
     def IN_WG_BASE(self):
         for wid in [self.num_old_ver, self.text_old_chang]:
@@ -755,18 +840,21 @@ class main(Ui_main, QtWidgets.QWidget):
                     """)
             row = cursor.fetchone()
 
-        install = ResponseBox().INFO(title=f"Instalation de {row[0]}",
+        if ResponseBox().INFO(title=f"Instalation de {row[0]}",
                                      msg=f"Voulez-vous installer {row[0]}",
                                      txt_ok="Oui",
                                      txt_cancel="Non",
-                                     )
-        if install:
+                                     ):
             try:
-                os.makedirs("installateur", exist_ok=True)
+                # os.makedirs("installateur", exist_ok=True)
                 # prog = shutil.copy(src=row[1], dst=fr"installateur/{row[0]}.msi")
                 # prog = os.path.abspath(prog)
                 # os.startfile(prog)
-                os.startfile(row[1])
+                dossier, fichier = os.path.split(row[1])
+                fichier = fichier.split(".")[0]
+                fichier = glob.glob(f"{dossier}/{fichier}*")[0]
+                os.startfile(fichier)
+                print(fichier)
             except Exception as e:
                 print(e)
                 ResponseBox().ALERTE(title="Erreur",
@@ -831,7 +919,7 @@ class main(Ui_main, QtWidgets.QWidget):
 
 
 if __name__ == "__main__":
-    Functions().GEN_SVG()
+    # Functions().GEN_SVG()
 
     app = QtWidgets.QApplication(sys.argv)
     splash_screen = SplashScreen()

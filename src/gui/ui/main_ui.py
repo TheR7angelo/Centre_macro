@@ -3,7 +3,7 @@
 ################################################################################
 ## Form generated from reading UI file 'main.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.2.4
+## Created by: Qt User Interface Compiler version 6.3.0
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -16,10 +16,11 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QComboBox, QDoubleSpinBox, QFormLayout,
-    QFrame, QGridLayout, QHBoxLayout, QLabel,
-    QLineEdit, QListWidget, QListWidgetItem, QPushButton,
-    QScrollArea, QSizePolicy, QSpacerItem, QStackedWidget,
-    QTextEdit, QVBoxLayout, QWidget)
+    QFrame, QGridLayout, QHBoxLayout, QHeaderView,
+    QLabel, QLineEdit, QListWidget, QListWidgetItem,
+    QPushButton, QScrollArea, QSizePolicy, QSpacerItem,
+    QStackedWidget, QTableView, QTextEdit, QVBoxLayout,
+    QWidget)
 
 from src.widget_custom.Label_cust import DropLabel
 
@@ -28,10 +29,10 @@ class Ui_main(object):
         if not main.objectName():
             main.setObjectName(u"main")
         main.resize(797, 725)
-        self.vlay_main = QVBoxLayout(main)
-        self.vlay_main.setSpacing(0)
-        self.vlay_main.setObjectName(u"vlay_main")
-        self.vlay_main.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_14 = QVBoxLayout(main)
+        self.verticalLayout_14.setSpacing(0)
+        self.verticalLayout_14.setObjectName(u"verticalLayout_14")
+        self.verticalLayout_14.setContentsMargins(0, 0, 0, 0)
         self.fr_main = QFrame(main)
         self.fr_main.setObjectName(u"fr_main")
         self.fr_main.setFrameShape(QFrame.StyledPanel)
@@ -105,9 +106,9 @@ class Ui_main(object):
         self.verticalLayout.setSpacing(0)
         self.verticalLayout.setObjectName(u"verticalLayout")
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)
-        self.horizontalLayout = QHBoxLayout()
-        self.horizontalLayout.setObjectName(u"horizontalLayout")
-        self.horizontalLayout.setContentsMargins(5, 5, 5, 5)
+        self.vlay_main = QHBoxLayout()
+        self.vlay_main.setObjectName(u"vlay_main")
+        self.vlay_main.setContentsMargins(5, 5, 5, 5)
         self.list_menu = QListWidget(self.fr_body)
         self.list_menu.setObjectName(u"list_menu")
         sizePolicy1 = QSizePolicy(QSizePolicy.Maximum, QSizePolicy.Expanding)
@@ -116,7 +117,7 @@ class Ui_main(object):
         sizePolicy1.setHeightForWidth(self.list_menu.sizePolicy().hasHeightForWidth())
         self.list_menu.setSizePolicy(sizePolicy1)
 
-        self.horizontalLayout.addWidget(self.list_menu)
+        self.vlay_main.addWidget(self.list_menu)
 
         self.stackedWidget = QStackedWidget(self.fr_body)
         self.stackedWidget.setObjectName(u"stackedWidget")
@@ -156,7 +157,73 @@ class Ui_main(object):
         self.stackedWidget.addWidget(self.page_logiciel)
         self.page_helper = QWidget()
         self.page_helper.setObjectName(u"page_helper")
+        self.verticalLayout_12 = QVBoxLayout(self.page_helper)
+        self.verticalLayout_12.setObjectName(u"verticalLayout_12")
+        self.verticalSpacer_3 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        self.verticalLayout_12.addItem(self.verticalSpacer_3)
+
+        self.gridLayout_7 = QGridLayout()
+        self.gridLayout_7.setObjectName(u"gridLayout_7")
+        self.pb_bugatt_help = QPushButton(self.page_helper)
+        self.pb_bugatt_help.setObjectName(u"pb_bugatt_help")
+
+        self.gridLayout_7.addWidget(self.pb_bugatt_help, 0, 0, 1, 1)
+
+        self.pb_bugtrait_help = QPushButton(self.page_helper)
+        self.pb_bugtrait_help.setObjectName(u"pb_bugtrait_help")
+
+        self.gridLayout_7.addWidget(self.pb_bugtrait_help, 0, 1, 1, 1)
+
+        self.pb_bugter_help = QPushButton(self.page_helper)
+        self.pb_bugter_help.setObjectName(u"pb_bugter_help")
+
+        self.gridLayout_7.addWidget(self.pb_bugter_help, 0, 2, 1, 1)
+
+
+        self.verticalLayout_12.addLayout(self.gridLayout_7)
+
+        self.verticalSpacer_8 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        self.verticalLayout_12.addItem(self.verticalSpacer_8)
+
         self.stackedWidget.addWidget(self.page_helper)
+        self.page_bug_attente = QWidget()
+        self.page_bug_attente.setObjectName(u"page_bug_attente")
+        self.verticalLayout_13 = QVBoxLayout(self.page_bug_attente)
+        self.verticalLayout_13.setSpacing(0)
+        self.verticalLayout_13.setObjectName(u"verticalLayout_13")
+        self.verticalLayout_13.setContentsMargins(-1, 0, -1, 0)
+        self.t_bug_attente = QTableView(self.page_bug_attente)
+        self.t_bug_attente.setObjectName(u"t_bug_attente")
+
+        self.verticalLayout_13.addWidget(self.t_bug_attente)
+
+        self.stackedWidget.addWidget(self.page_bug_attente)
+        self.page_bug_en_cours = QWidget()
+        self.page_bug_en_cours.setObjectName(u"page_bug_en_cours")
+        self.verticalLayout_15 = QVBoxLayout(self.page_bug_en_cours)
+        self.verticalLayout_15.setSpacing(0)
+        self.verticalLayout_15.setObjectName(u"verticalLayout_15")
+        self.verticalLayout_15.setContentsMargins(-1, 0, -1, 0)
+        self.t_bug_en_cours = QTableView(self.page_bug_en_cours)
+        self.t_bug_en_cours.setObjectName(u"t_bug_en_cours")
+
+        self.verticalLayout_15.addWidget(self.t_bug_en_cours)
+
+        self.stackedWidget.addWidget(self.page_bug_en_cours)
+        self.page_bug_terminer = QWidget()
+        self.page_bug_terminer.setObjectName(u"page_bug_terminer")
+        self.verticalLayout_16 = QVBoxLayout(self.page_bug_terminer)
+        self.verticalLayout_16.setSpacing(0)
+        self.verticalLayout_16.setObjectName(u"verticalLayout_16")
+        self.verticalLayout_16.setContentsMargins(-1, 0, -1, 0)
+        self.t_bug_terminer = QTableView(self.page_bug_terminer)
+        self.t_bug_terminer.setObjectName(u"t_bug_terminer")
+
+        self.verticalLayout_16.addWidget(self.t_bug_terminer)
+
+        self.stackedWidget.addWidget(self.page_bug_terminer)
         self.page_editeur = QWidget()
         self.page_editeur.setObjectName(u"page_editeur")
         self.verticalLayout_7 = QVBoxLayout(self.page_editeur)
@@ -584,10 +651,10 @@ class Ui_main(object):
 
         self.stackedWidget.addWidget(self.page_ajout_role)
 
-        self.horizontalLayout.addWidget(self.stackedWidget)
+        self.vlay_main.addWidget(self.stackedWidget)
 
 
-        self.verticalLayout.addLayout(self.horizontalLayout)
+        self.verticalLayout.addLayout(self.vlay_main)
 
 
         self.vlay_fr_main.addWidget(self.fr_body)
@@ -613,7 +680,7 @@ class Ui_main(object):
         self.vlay_fr_main.addWidget(self.fr_menu_bottom)
 
 
-        self.vlay_main.addWidget(self.fr_main)
+        self.verticalLayout_14.addWidget(self.fr_main)
 
 #if QT_CONFIG(shortcut)
         self.lb_mt_ico.setBuddy(self.fr_role_add)
@@ -621,7 +688,7 @@ class Ui_main(object):
 
         self.retranslateUi(main)
 
-        self.stackedWidget.setCurrentIndex(0)
+        self.stackedWidget.setCurrentIndex(2)
 
 
         QMetaObject.connectSlotsByName(main)
@@ -629,6 +696,9 @@ class Ui_main(object):
 
     def retranslateUi(self, main):
         self.lb_logiciel_titre.setText(QCoreApplication.translate("main", u"Macro", None))
+        self.pb_bugatt_help.setText(QCoreApplication.translate("main", u"bug attente", None))
+        self.pb_bugtrait_help.setText(QCoreApplication.translate("main", u"bug traitement", None))
+        self.pb_bugter_help.setText(QCoreApplication.translate("main", u"bug terminer", None))
         self.pb_addApp_edit.setText(QCoreApplication.translate("main", u"Ajouter une application", None))
         self.pb_addVer_edit.setText(QCoreApplication.translate("main", u"Ajouter une version", None))
         self.pb_addRole_edit.setText(QCoreApplication.translate("main", u"Ajouter un role", None))

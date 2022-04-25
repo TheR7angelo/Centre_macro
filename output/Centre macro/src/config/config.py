@@ -9,13 +9,13 @@ class Configue:
             self.cfg = {
                 "infos": {
                     "nom": "Centre macro",
-                    "description": "Ce logiciel trie les dossiers cap ft et génére un listing d'appuis à remplace / implanter par étude BT ou FT.",
-                    "version": "0.1",
+                    "description": "Centre regroupant plein de macro, et permattant la gestion de leurs mise à jour.",
+                    "version": "0.2",
                     "auteur": "ZP6177",
                     "compagnie": "ZP6177"
                 },
                 "config": {
-                    "theme": "columbia_blue",
+                    "theme": "gunmetal",
                     "font": "Berlin Sans FB Demi",
                     "widht": 1200,
                     "height": 800,

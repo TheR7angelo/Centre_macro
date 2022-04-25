@@ -2,7 +2,7 @@ from PySide6.QtCore import Signal
 from PySide6.QtWidgets import QFrame
 from src.widgets.Frame import Frame
 
-from src import Rgb
+
 
 
 class Button_frame(QFrame):
