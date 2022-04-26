@@ -191,9 +191,35 @@ class Ui_main(object):
         self.page_bug_attente = QWidget()
         self.page_bug_attente.setObjectName(u"page_bug_attente")
         self.verticalLayout_13 = QVBoxLayout(self.page_bug_attente)
-        self.verticalLayout_13.setSpacing(0)
         self.verticalLayout_13.setObjectName(u"verticalLayout_13")
-        self.verticalLayout_13.setContentsMargins(-1, 0, -1, 0)
+        self.horizontalLayout = QHBoxLayout()
+        self.horizontalLayout.setObjectName(u"horizontalLayout")
+        self.horizontalSpacer_11 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout.addItem(self.horizontalSpacer_11)
+
+        self.pb__t_bug_attente__add = QPushButton(self.page_bug_attente)
+        self.pb__t_bug_attente__add.setObjectName(u"pb__t_bug_attente__add")
+
+        self.horizontalLayout.addWidget(self.pb__t_bug_attente__add)
+
+        self.pb__t_bug_attente__remove = QPushButton(self.page_bug_attente)
+        self.pb__t_bug_attente__remove.setObjectName(u"pb__t_bug_attente__remove")
+
+        self.horizontalLayout.addWidget(self.pb__t_bug_attente__remove)
+
+        self.pb__t_bug_attente__submit = QPushButton(self.page_bug_attente)
+        self.pb__t_bug_attente__submit.setObjectName(u"pb__t_bug_attente__submit")
+
+        self.horizontalLayout.addWidget(self.pb__t_bug_attente__submit)
+
+        self.horizontalSpacer_12 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout.addItem(self.horizontalSpacer_12)
+
+
+        self.verticalLayout_13.addLayout(self.horizontalLayout)
+
         self.t_bug_attente = QTableView(self.page_bug_attente)
         self.t_bug_attente.setObjectName(u"t_bug_attente")
 
@@ -203,9 +229,35 @@ class Ui_main(object):
         self.page_bug_en_cours = QWidget()
         self.page_bug_en_cours.setObjectName(u"page_bug_en_cours")
         self.verticalLayout_15 = QVBoxLayout(self.page_bug_en_cours)
-        self.verticalLayout_15.setSpacing(0)
         self.verticalLayout_15.setObjectName(u"verticalLayout_15")
-        self.verticalLayout_15.setContentsMargins(-1, 0, -1, 0)
+        self.horizontalLayout_2 = QHBoxLayout()
+        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
+        self.horizontalSpacer_13 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_2.addItem(self.horizontalSpacer_13)
+
+        self.pb__t_bug_en_cours__add = QPushButton(self.page_bug_en_cours)
+        self.pb__t_bug_en_cours__add.setObjectName(u"pb__t_bug_en_cours__add")
+
+        self.horizontalLayout_2.addWidget(self.pb__t_bug_en_cours__add)
+
+        self.pb__t_bug_en_cours__remove = QPushButton(self.page_bug_en_cours)
+        self.pb__t_bug_en_cours__remove.setObjectName(u"pb__t_bug_en_cours__remove")
+
+        self.horizontalLayout_2.addWidget(self.pb__t_bug_en_cours__remove)
+
+        self.pb__t_bug_en_cours__submit = QPushButton(self.page_bug_en_cours)
+        self.pb__t_bug_en_cours__submit.setObjectName(u"pb__t_bug_en_cours__submit")
+
+        self.horizontalLayout_2.addWidget(self.pb__t_bug_en_cours__submit)
+
+        self.horizontalSpacer_14 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_2.addItem(self.horizontalSpacer_14)
+
+
+        self.verticalLayout_15.addLayout(self.horizontalLayout_2)
+
         self.t_bug_en_cours = QTableView(self.page_bug_en_cours)
         self.t_bug_en_cours.setObjectName(u"t_bug_en_cours")
 
@@ -215,9 +267,35 @@ class Ui_main(object):
         self.page_bug_terminer = QWidget()
         self.page_bug_terminer.setObjectName(u"page_bug_terminer")
         self.verticalLayout_16 = QVBoxLayout(self.page_bug_terminer)
-        self.verticalLayout_16.setSpacing(0)
         self.verticalLayout_16.setObjectName(u"verticalLayout_16")
-        self.verticalLayout_16.setContentsMargins(-1, 0, -1, 0)
+        self.horizontalLayout_5 = QHBoxLayout()
+        self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
+        self.horizontalSpacer_15 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_5.addItem(self.horizontalSpacer_15)
+
+        self.pb__t_bug_terminer__add = QPushButton(self.page_bug_terminer)
+        self.pb__t_bug_terminer__add.setObjectName(u"pb__t_bug_terminer__add")
+
+        self.horizontalLayout_5.addWidget(self.pb__t_bug_terminer__add)
+
+        self.pb__t_bug_terminer__remove = QPushButton(self.page_bug_terminer)
+        self.pb__t_bug_terminer__remove.setObjectName(u"pb__t_bug_terminer__remove")
+
+        self.horizontalLayout_5.addWidget(self.pb__t_bug_terminer__remove)
+
+        self.pb__t_bug_terminer__submit = QPushButton(self.page_bug_terminer)
+        self.pb__t_bug_terminer__submit.setObjectName(u"pb__t_bug_terminer__submit")
+
+        self.horizontalLayout_5.addWidget(self.pb__t_bug_terminer__submit)
+
+        self.horizontalSpacer_16 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_5.addItem(self.horizontalSpacer_16)
+
+
+        self.verticalLayout_16.addLayout(self.horizontalLayout_5)
+
         self.t_bug_terminer = QTableView(self.page_bug_terminer)
         self.t_bug_terminer.setObjectName(u"t_bug_terminer")
 
@@ -688,7 +766,7 @@ class Ui_main(object):
 
         self.retranslateUi(main)
 
-        self.stackedWidget.setCurrentIndex(2)
+        self.stackedWidget.setCurrentIndex(0)
 
 
         QMetaObject.connectSlotsByName(main)
@@ -699,6 +777,15 @@ class Ui_main(object):
         self.pb_bugatt_help.setText(QCoreApplication.translate("main", u"bug attente", None))
         self.pb_bugtrait_help.setText(QCoreApplication.translate("main", u"bug traitement", None))
         self.pb_bugter_help.setText(QCoreApplication.translate("main", u"bug terminer", None))
+        self.pb__t_bug_attente__add.setText("")
+        self.pb__t_bug_attente__remove.setText("")
+        self.pb__t_bug_attente__submit.setText("")
+        self.pb__t_bug_en_cours__add.setText("")
+        self.pb__t_bug_en_cours__remove.setText("")
+        self.pb__t_bug_en_cours__submit.setText("")
+        self.pb__t_bug_terminer__add.setText("")
+        self.pb__t_bug_terminer__remove.setText("")
+        self.pb__t_bug_terminer__submit.setText("")
         self.pb_addApp_edit.setText(QCoreApplication.translate("main", u"Ajouter une application", None))
         self.pb_addVer_edit.setText(QCoreApplication.translate("main", u"Ajouter une version", None))
         self.pb_addRole_edit.setText(QCoreApplication.translate("main", u"Ajouter un role", None))

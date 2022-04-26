@@ -18,6 +18,12 @@ from src.lib.globals.v_gb import GUID
 from src.build.mods.thread_db import sqlite3_change, postgres_change
 
 
+class MyDelegate(QtWidgets.QItemDelegate):
+
+    def createEditor(self, *args):
+        return None
+
+
 class main(Ui_main, QtWidgets.QWidget):
     dragPos: QtCore.QPoint
 
@@ -149,6 +155,22 @@ class main(Ui_main, QtWidgets.QWidget):
 
         ######################################################################################################
 
+        ### Gestion des bugs
+        # TableWidget.Base(self.t_bug_attente, self.t_bug_en_cours, self.t_bug_terminer).th()
+        # for table in [self.t_bug_attente, self.t_bug_en_cours, self.t_bug_terminer]:
+        #     table.horizontalHeader().setSectionResizeMode(QtWidgets.QHeaderView.ResizeToContents)
+
+        PushButton.SQL(self.pb__t_bug_attente__remove, self.pb__t_bug_en_cours__remove,
+                       self.pb__t_bug_terminer__remove).remove()
+        PushButton.SQL(self.pb__t_bug_attente__add, self.pb__t_bug_en_cours__add,
+                       self.pb__t_bug_terminer__add).add()
+        PushButton.SQL(self.pb__t_bug_attente__submit, self.pb__t_bug_en_cours__submit,
+                       self.pb__t_bug_terminer__submit).submit()
+
+        for table in [self.t_bug_attente, self.t_bug_en_cours, self.t_bug_terminer]:
+            table.setLocale(QtCore.QLocale("English"))
+        ### \Gestion des bugs
+
         ### Changer de version
         Label.Base(self.lb_changeVer_titre).th()
         TextEdit.Base(self.text_desc, self.text_chang, self.text_old_chang, self.text_new_chang).th()
@@ -255,21 +277,6 @@ class main(Ui_main, QtWidgets.QWidget):
 
         self.lb_app_ver_add.setScaledContents(True)
 
-    def test_timer(self):
-
-        def threading_function():
-            self.old_db, change = sqlite3_change(bdd=self.bdd, old_db=self.old_db)
-            # self.old_db, change = postgres_change(database="RIP_FTTH_33", user="postgres", password="INEO_Infracom_33", host="BORDEAUX04", table_schema="genie_civil", table_name="v_appui")
-            if change is not None:
-                pprint(change)
-                for key in change:
-                    match key:
-                        case "t_bug":
-                            self.table_bug_attente.select()
-
-        func = Thread(target=threading_function)
-        func.start()
-
     def IN_CONNECTIONS(self):
 
         ### Menu_top ###
@@ -279,7 +286,7 @@ class main(Ui_main, QtWidgets.QWidget):
         self.pb_mt_quitter.clicked.connect(lambda: self.evt.e_cacher())
 
         ### mise à jour des tables
-        self.timer_db.timeout.connect(self.test_timer)
+        self.timer_db.timeout.connect(self.maj_table)
         self.timer_db.start(1000)
 
         ### Menu application
@@ -289,6 +296,18 @@ class main(Ui_main, QtWidgets.QWidget):
         self.pb_bugatt_help.clicked.connect(lambda: self.change_menu("bug_attente"))
         self.pb_bugtrait_help.clicked.connect(lambda: self.change_menu("bug_en_cours"))
         self.pb_bugter_help.clicked.connect(lambda: self.change_menu("bug_terminer"))
+
+        self.pb__t_bug_attente__remove.clicked.connect(lambda: self.maj_table_bug(key="remove", table=self.table_bug_attente))
+        self.pb__t_bug_en_cours__remove.clicked.connect(lambda: self.maj_table_bug(key="remove", table=self.table_bug_en_cours))
+        self.pb__t_bug_terminer__remove.clicked.connect(lambda: self.maj_table_bug(key="remove", table=self.table_bug_terminer))
+
+        self.pb__t_bug_attente__add.clicked.connect(lambda: self.maj_table_bug(key="add", table=self.table_bug_attente))
+        self.pb__t_bug_en_cours__add.clicked.connect(lambda: self.maj_table_bug(key="add", table=self.table_bug_en_cours))
+        self.pb__t_bug_terminer__add.clicked.connect(lambda: self.maj_table_bug(key="add", table=self.table_bug_terminer))
+
+        self.pb__t_bug_attente__submit.clicked.connect(lambda: self.maj_table_bug(key="submit", table=self.table_bug_attente))
+        self.pb__t_bug_en_cours__submit.clicked.connect(lambda: self.maj_table_bug(key="submit", table=self.table_bug_en_cours))
+        self.pb__t_bug_terminer__submit.clicked.connect(lambda: self.maj_table_bug(key="submit", table=self.table_bug_terminer))
 
         ### Menu Editeur
         self.pb_addApp_edit.clicked.connect(lambda: self.change_menu("ajout_app"))
@@ -320,55 +339,62 @@ class main(Ui_main, QtWidgets.QWidget):
 
     def IN_ACT(self):
 
-        # self.table_bug_attente = QtSql.QSqlRelationalTableModel()
-        # self.t_bug_attente.setModel(self.table_bug_attente)
-        #
-        # query = QtSql.QSqlQuery(db=self.db)
-        # query.prepare("SELECT bu_id, bu_sender, bu_contact, bu_ap_id, bu_ap_ver, bu_desc, bu_date FROM t_bug")
-        # query.exec()
-        # self.table_bug_attente.setQuery(query)
-        #
-        # self.table_bug_attente.setRelation(3, QtSql.QSqlRelation("t_app", "ap_id", "ap_nom"))
-        # delegate = QtSql.QSqlRelationalDelegate(self.t_bug_attente)
-        # self.t_bug_attente.setItemDelegate(delegate)
-        # #self.table_bug_attente.select()
+        def renomme_colonne(table, modele, nommage: list):
+            for col in range(modele.columnCount()):
+                try:
+                    if nommage[col] is None:
+                        table.setColumnHidden(col, True)
+                    else:
+                        modele.setHeaderData(col, QtCore.Qt.Horizontal, nommage[col])
+                except Exception:
+                    table.setColumnHidden(col, True)
 
         self.table_bug_attente = QtSql.QSqlRelationalTableModel(db=self.db)
         self.t_bug_attente.setModel(self.table_bug_attente)
         self.table_bug_attente.setTable("t_bug")
-        # self.table_bug_attente.setFilter("bl_etat='1'")
+        self.table_bug_attente.setFilter("bu_etat_id=1")
         self.table_bug_attente.setRelation(3, QtSql.QSqlRelation("t_app", "ap_id", "ap_nom"))
+        self.table_bug_attente.setRelation(7, QtSql.QSqlRelation("t_buetalist", "bl_id", "bl_etat"))
         delegate = QtSql.QSqlRelationalDelegate(self.t_bug_attente)
         self.t_bug_attente.setItemDelegate(delegate)
         self.table_bug_attente.select()
 
+        renomme_colonne(table=self.t_bug_attente, modele=self.table_bug_attente,
+                        nommage=[None, "Nom", "Contact", "Appli", "Version", "Description", "Date", "Etat"],
+                        )
 
-        for index, name in enumerate(["ID", "Nom", "Contact", "Appli", "Version", "Description", "Date", "Etat"]):
-            self.table_bug_attente.setHeaderData(index, QtCore.Qt.Horizontal, name)
+        self.table_bug_en_cours = QtSql.QSqlRelationalTableModel(db=self.db)
+        self.t_bug_en_cours.setModel(self.table_bug_en_cours)
+        self.table_bug_en_cours.setTable("t_bug")
+        self.table_bug_en_cours.setFilter("bu_etat_id=2")
+        self.table_bug_en_cours.setRelation(3, QtSql.QSqlRelation("t_app", "ap_id", "ap_nom"))
+        self.table_bug_en_cours.setRelation(7, QtSql.QSqlRelation("t_buetalist", "bl_id", "bl_etat"))
+        self.table_bug_en_cours.setRelation(9, QtSql.QSqlRelation("t_helper", "hp_id", "hp_nom"))
+        delegate = QtSql.QSqlRelationalDelegate(self.t_bug_en_cours)
+        self.t_bug_en_cours.setItemDelegate(delegate)
+        self.table_bug_en_cours.select()
 
-        # self.view_bug_attente = QtSql.QSqlTableModel(db=self.db)
-        # self.t_bug_attente.setModel(self.view_bug_attente)
-        # self.view_bug_attente.setTable("t_bug")
-        # self.view_bug_attente.select()
+        renomme_colonne(table=self.t_bug_en_cours, modele=self.table_bug_en_cours,
+                        nommage=[None, "Nom", "Contact", "Appli", "Version", "Description", "Date", "Etat", "Pris en charge", "Helper", "Note"],
+                        )
 
-        # self.view_bug_attente = QtSql.QSqlTableModel(db=self.db)
-        # self.t_bug_attente.setModel(self.view_bug_attente)
-        # self.view_bug_attente.setTable("v_bug_en_attente")
-        # self.view_bug_attente.select()
+        self.table_bug_terminer = QtSql.QSqlRelationalTableModel(db=self.db)
+        self.t_bug_terminer.setModel(self.table_bug_terminer)
+        self.table_bug_terminer.setTable("t_bug")
+        self.table_bug_terminer.setFilter("bu_etat_id=3")
+        self.table_bug_terminer.setRelation(3, QtSql.QSqlRelation("t_app", "ap_id", "ap_nom"))
+        self.table_bug_terminer.setRelation(7, QtSql.QSqlRelation("t_buetalist", "bl_id", "bl_etat"))
+        self.table_bug_terminer.setRelation(9, QtSql.QSqlRelation("t_helper", "hp_id", "hp_nom"))
+        delegate = QtSql.QSqlRelationalDelegate(self.t_bug_terminer)
+        self.t_bug_terminer.setItemDelegate(delegate)
+        self.table_bug_terminer.select()
 
-        self.view_bug_en_cours = QtSql.QSqlTableModel(db=self.db)
-        self.t_bug_en_cours.setModel(self.view_bug_en_cours)
-        self.view_bug_en_cours.setTable("v_bug_en_cours")
-        self.view_bug_en_cours.select()
+        renomme_colonne(table=self.t_bug_terminer, modele=self.table_bug_terminer,
+                        nommage=[None, "Nom", "Contact", "Appli", "Version", "Description", "Date", "Etat", "Pris en charge", "Helper", "Note", "Date résolut"],
+                        )
 
-        self.view_bug_terminer = QtSql.QSqlTableModel(db=self.db)
-        self.t_bug_terminer.setModel(self.view_bug_terminer)
-        self.view_bug_terminer.setTable("v_bug_terminer")
-        self.view_bug_terminer.select()
-
-        # for model in [self.view_bug_attente, self.view_bug_en_cours, self.view_bug_terminer]:
-        #     model.set
-        # update table when data change
+        for table in [self.table_bug_attente, self.table_bug_en_cours, self.table_bug_terminer]:
+            table.setEditStrategy(QtSql.QSqlTableModel.OnManualSubmit)
 
     def IN_WG_BASE(self):
         for wid in [self.num_old_ver, self.text_old_chang]:
@@ -403,6 +429,36 @@ class main(Ui_main, QtWidgets.QWidget):
         splash_screen.lb_chargement.setText("Lancement de l'application")
         splash_screen.pg_chargement.setValue(100)
         time.sleep(2)
+
+    def maj_table_bug(self, key, table):
+
+        def threading_function(key, table):
+            match key:
+                case "add":
+                    pass
+                case "remove":
+                    pass
+                case "submit":
+                    table.submitAll()
+                    print("commit")
+
+        Thread(target=threading_function(key=key, table=table)).start()
+
+    def maj_table(self):
+
+        def threading_function():
+            self.old_db, change = sqlite3_change(bdd=self.bdd, old_db=self.old_db)
+            # self.old_db, change = postgres_change(database="RIP_FTTH_33", user="postgres", password="INEO_Infracom_33", host="BORDEAUX04", table_schema="genie_civil", table_name="v_appui")
+            if change is not None:
+                pprint(change)
+                for key in change:
+                    match key:
+                        case "t_bug":
+                            self.table_bug_attente.select()
+                            self.table_bug_en_cours.select()
+                            self.table_bug_terminer.select()
+
+        Thread(target=threading_function).start()
 
     def affichage_macro(self, reset=False):
 
