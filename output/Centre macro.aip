@@ -61,45 +61,6 @@
     <ROW Directory="ToolBox_Dir" Directory_Parent="widgets_Dir" DefaultDir="ToolBox"/>
     <ROW Directory="TrayIcon_Dir" Directory_Parent="widgets_Dir" DefaultDir="TrayIcon"/>
     <ROW Directory="TreeWidget_Dir" Directory_Parent="widgets_Dir" DefaultDir="TREEWI~1|TreeWidget"/>
-    <ROW Directory="__pycache___10_Dir" Directory_Parent="dlg_Dir" DefaultDir="__PYCA~1|__pycache__"/>
-    <ROW Directory="__pycache___11_Dir" Directory_Parent="events_Dir" DefaultDir="__PYCA~1|__pycache__"/>
-    <ROW Directory="__pycache___12_Dir" Directory_Parent="ui_1_Dir" DefaultDir="__PYCA~1|__pycache__"/>
-    <ROW Directory="__pycache___13_Dir" Directory_Parent="gui_Dir" DefaultDir="__PYCA~1|__pycache__"/>
-    <ROW Directory="__pycache___14_Dir" Directory_Parent="globals_Dir" DefaultDir="__PYCA~1|__pycache__"/>
-    <ROW Directory="__pycache___15_Dir" Directory_Parent="palettes_Dir" DefaultDir="__PYCA~1|__pycache__"/>
-    <ROW Directory="__pycache___16_Dir" Directory_Parent="lib_Dir" DefaultDir="__PYCA~1|__pycache__"/>
-    <ROW Directory="__pycache___17_Dir" Directory_Parent="CheckBox_Dir" DefaultDir="__PYCA~1|__pycache__"/>
-    <ROW Directory="__pycache___18_Dir" Directory_Parent="ComboBox_Dir" DefaultDir="__PYCA~1|__pycache__"/>
-    <ROW Directory="__pycache___19_Dir" Directory_Parent="DateEdit_Dir" DefaultDir="__PYCA~1|__pycache__"/>
-    <ROW Directory="__pycache___1_Dir" Directory_Parent="build_Dir" DefaultDir="__PYCA~1|__pycache__"/>
-    <ROW Directory="__pycache___20_Dir" Directory_Parent="Frame_Dir" DefaultDir="__PYCA~1|__pycache__"/>
-    <ROW Directory="__pycache___21_Dir" Directory_Parent="Label_Dir" DefaultDir="__PYCA~1|__pycache__"/>
-    <ROW Directory="__pycache___22_Dir" Directory_Parent="LineEdit_Dir" DefaultDir="__PYCA~1|__pycache__"/>
-    <ROW Directory="__pycache___23_Dir" Directory_Parent="ListWidget_Dir" DefaultDir="__PYCA~1|__pycache__"/>
-    <ROW Directory="__pycache___24_Dir" Directory_Parent="PlainTextEdit_Dir" DefaultDir="__PYCA~1|__pycache__"/>
-    <ROW Directory="__pycache___25_Dir" Directory_Parent="ProgressBar_Dir" DefaultDir="__PYCA~1|__pycache__"/>
-    <ROW Directory="__pycache___26_Dir" Directory_Parent="PushButton_Dir" DefaultDir="__PYCA~1|__pycache__"/>
-    <ROW Directory="__pycache___27_Dir" Directory_Parent="RadioButton_Dir" DefaultDir="__PYCA~1|__pycache__"/>
-    <ROW Directory="__pycache___28_Dir" Directory_Parent="ScrollArea_Dir" DefaultDir="__PYCA~1|__pycache__"/>
-    <ROW Directory="__pycache___29_Dir" Directory_Parent="Slider_Dir" DefaultDir="__PYCA~1|__pycache__"/>
-    <ROW Directory="__pycache___2_Dir" Directory_Parent="config_Dir" DefaultDir="__PYCA~1|__pycache__"/>
-    <ROW Directory="__pycache___30_Dir" Directory_Parent="SpinBox_Dir" DefaultDir="__PYCA~1|__pycache__"/>
-    <ROW Directory="__pycache___31_Dir" Directory_Parent="TableWidget_Dir" DefaultDir="__PYCA~1|__pycache__"/>
-    <ROW Directory="__pycache___32_Dir" Directory_Parent="TextEdit_Dir" DefaultDir="__PYCA~1|__pycache__"/>
-    <ROW Directory="__pycache___33_Dir" Directory_Parent="ToolBox_Dir" DefaultDir="__PYCA~1|__pycache__"/>
-    <ROW Directory="__pycache___34_Dir" Directory_Parent="TrayIcon_Dir" DefaultDir="__PYCA~1|__pycache__"/>
-    <ROW Directory="__pycache___35_Dir" Directory_Parent="TreeWidget_Dir" DefaultDir="__PYCA~1|__pycache__"/>
-    <ROW Directory="__pycache___36_Dir" Directory_Parent="widgets_Dir" DefaultDir="__PYCA~1|__pycache__"/>
-    <ROW Directory="__pycache___37_Dir" Directory_Parent="widget_custom_Dir" DefaultDir="__PYCA~1|__pycache__"/>
-    <ROW Directory="__pycache___38_Dir" Directory_Parent="src_Dir" DefaultDir="__PYCA~1|__pycache__"/>
-    <ROW Directory="__pycache___3_Dir" Directory_Parent="InputBox_Dir" DefaultDir="__PYCA~1|__pycache__"/>
-    <ROW Directory="__pycache___4_Dir" Directory_Parent="MsgBox_Dir" DefaultDir="__PYCA~1|__pycache__"/>
-    <ROW Directory="__pycache___5_Dir" Directory_Parent="OptionBox_Dir" DefaultDir="__PYCA~1|__pycache__"/>
-    <ROW Directory="__pycache___6_Dir" Directory_Parent="ResponseBox_Dir" DefaultDir="__PYCA~1|__pycache__"/>
-    <ROW Directory="__pycache___7_Dir" Directory_Parent="RgbBox_Dir" DefaultDir="__PYCA~1|__pycache__"/>
-    <ROW Directory="__pycache___8_Dir" Directory_Parent="SplashScreen_Dir" DefaultDir="__PYCA~1|__pycache__"/>
-    <ROW Directory="__pycache___9_Dir" Directory_Parent="ToolBoxUi_Dir" DefaultDir="__PYCA~1|__pycache__"/>
-    <ROW Directory="__pycache___Dir" Directory_Parent="mods_Dir" DefaultDir="__PYCA~1|__pycache__"/>
     <ROW Directory="assets_Dir" Directory_Parent="src_Dir" DefaultDir="assets"/>
     <ROW Directory="build_Dir" Directory_Parent="src_Dir" DefaultDir="build"/>
     <ROW Directory="config_Dir" Directory_Parent="src_Dir" DefaultDir="config"/>
@@ -108,6 +69,7 @@
     <ROW Directory="dlg_Dir" Directory_Parent="gui_Dir" DefaultDir="dlg"/>
     <ROW Directory="events_Dir" Directory_Parent="gui_Dir" DefaultDir="events"/>
     <ROW Directory="globals_Dir" Directory_Parent="lib_Dir" DefaultDir="globals"/>
+    <ROW Directory="grade_Dir" Directory_Parent="build_Dir" DefaultDir="grade"/>
     <ROW Directory="gui_Dir" Directory_Parent="src_Dir" DefaultDir="gui"/>
     <ROW Directory="iconengines_Dir" Directory_Parent="plugins_Dir" DefaultDir="ICONEN~1|iconengines"/>
     <ROW Directory="imageformats_Dir" Directory_Parent="plugins_Dir" DefaultDir="IMAGEF~1|imageformats"/>
@@ -121,11 +83,13 @@
     <ROW Directory="platforminputcontexts_Dir" Directory_Parent="plugins_Dir" DefaultDir="PLATFO~1|platforminputcontexts"/>
     <ROW Directory="platforms_Dir" Directory_Parent="plugins_Dir" DefaultDir="PLATFO~2|platforms"/>
     <ROW Directory="plugins_Dir" Directory_Parent="PySide6_Dir" DefaultDir="plugins"/>
+    <ROW Directory="psycopg2_Dir" Directory_Parent="APPDIR" DefaultDir="psycopg2"/>
     <ROW Directory="rgb_1_Dir" Directory_Parent="main_Dir" DefaultDir="rgb"/>
     <ROW Directory="rgb_2_Dir" Directory_Parent="ui_Dir" DefaultDir="rgb"/>
     <ROW Directory="rgb_Dir" Directory_Parent="divers_Dir" DefaultDir="rgb"/>
     <ROW Directory="scripts_Dir" Directory_Parent="src_Dir" DefaultDir="scripts"/>
     <ROW Directory="shiboken6_Dir" Directory_Parent="APPDIR" DefaultDir="SHIBOK~1|shiboken6"/>
+    <ROW Directory="sqldrivers_Dir" Directory_Parent="plugins_Dir" DefaultDir="SQLDRI~1|sqldrivers"/>
     <ROW Directory="src_Dir" Directory_Parent="APPDIR" DefaultDir="src"/>
     <ROW Directory="styles_Dir" Directory_Parent="plugins_Dir" DefaultDir="styles"/>
     <ROW Directory="test_Dir" Directory_Parent="cursor_Dir" DefaultDir="test"/>
@@ -140,62 +104,39 @@
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
     <ROW Component="APPDIR" ComponentId="{84C42457-EB25-4CAF-A223-BD99E560D819}" Directory_="APPDIR" Attributes="0"/>
-    <ROW Component="Align.cpython310.pyc" ComponentId="{180AEF7D-D1AA-4D96-86AF-CD2A37D668EB}" Directory_="__pycache___15_Dir" Attributes="0" KeyPath="Align.cpython310.pyc" Type="0"/>
-    <ROW Component="Align.py" ComponentId="{3505A4C0-1A2F-4222-8E90-487B48B0A2C1}" Directory_="palettes_Dir" Attributes="0" KeyPath="Align.py" Type="0"/>
-    <ROW Component="Build.cpython310.pyc" ComponentId="{D01AF97F-0212-4F9E-9FBC-A53135E3147C}" Directory_="__pycache___17_Dir" Attributes="0" KeyPath="Build.cpython310.pyc" Type="0"/>
-    <ROW Component="Build.cpython310.pyc_1" ComponentId="{7E990DF5-BABC-442B-A9A5-8E7FDEA335D9}" Directory_="__pycache___18_Dir" Attributes="0" KeyPath="Build.cpython310.pyc_1" Type="0"/>
-    <ROW Component="Build.cpython310.pyc_10" ComponentId="{D90582F4-EA80-4EB5-8C5B-F8A8CBD0BFFC}" Directory_="__pycache___27_Dir" Attributes="0" KeyPath="Build.cpython310.pyc_10" Type="0"/>
-    <ROW Component="Build.cpython310.pyc_11" ComponentId="{F10D373E-CBD3-4887-9400-6D0F41317DE8}" Directory_="__pycache___28_Dir" Attributes="0" KeyPath="Build.cpython310.pyc_11" Type="0"/>
-    <ROW Component="Build.cpython310.pyc_12" ComponentId="{AA0573D5-B6D9-42AD-B8C3-9632140E1384}" Directory_="__pycache___29_Dir" Attributes="0" KeyPath="Build.cpython310.pyc_12" Type="0"/>
-    <ROW Component="Build.cpython310.pyc_13" ComponentId="{7FD93B43-5A90-4ABF-B241-F857A562EF4A}" Directory_="__pycache___30_Dir" Attributes="0" KeyPath="Build.cpython310.pyc_13" Type="0"/>
-    <ROW Component="Build.cpython310.pyc_14" ComponentId="{78FDD3A5-2C71-4606-A61A-335F1EA3AD5C}" Directory_="__pycache___31_Dir" Attributes="0" KeyPath="Build.cpython310.pyc_14" Type="0"/>
-    <ROW Component="Build.cpython310.pyc_15" ComponentId="{362615FA-980C-4296-8C1D-C5AE9AC39CFD}" Directory_="__pycache___32_Dir" Attributes="0" KeyPath="Build.cpython310.pyc_15" Type="0"/>
-    <ROW Component="Build.cpython310.pyc_16" ComponentId="{486A5069-77DA-4AF3-8C85-90E3FC287745}" Directory_="__pycache___33_Dir" Attributes="0" KeyPath="Build.cpython310.pyc_16" Type="0"/>
-    <ROW Component="Build.cpython310.pyc_17" ComponentId="{36E62D37-EFBF-4B97-AE7A-EBEA6C810428}" Directory_="__pycache___34_Dir" Attributes="0" KeyPath="Build.cpython310.pyc_17" Type="0"/>
-    <ROW Component="Build.cpython310.pyc_18" ComponentId="{E829F915-1C74-4DA4-A026-C1D427F2DCBA}" Directory_="__pycache___35_Dir" Attributes="0" KeyPath="Build.cpython310.pyc_18" Type="0"/>
-    <ROW Component="Build.cpython310.pyc_2" ComponentId="{07D7A2AB-CF3F-4682-8A62-1E578852F2BC}" Directory_="__pycache___19_Dir" Attributes="0" KeyPath="Build.cpython310.pyc_2" Type="0"/>
-    <ROW Component="Build.cpython310.pyc_3" ComponentId="{1CB2CAD6-745C-47DE-A83B-E9D6CB0717D1}" Directory_="__pycache___20_Dir" Attributes="0" KeyPath="Build.cpython310.pyc_3" Type="0"/>
-    <ROW Component="Build.cpython310.pyc_4" ComponentId="{0783CE33-EF37-42BB-B3F5-775152657B5A}" Directory_="__pycache___21_Dir" Attributes="0" KeyPath="Build.cpython310.pyc_4" Type="0"/>
-    <ROW Component="Build.cpython310.pyc_5" ComponentId="{D66B5148-B203-4C09-AD54-BC0471320742}" Directory_="__pycache___22_Dir" Attributes="0" KeyPath="Build.cpython310.pyc_5" Type="0"/>
-    <ROW Component="Build.cpython310.pyc_6" ComponentId="{899AF92F-87E2-494E-B13D-43A3EC2B8CE2}" Directory_="__pycache___23_Dir" Attributes="0" KeyPath="Build.cpython310.pyc_6" Type="0"/>
-    <ROW Component="Build.cpython310.pyc_7" ComponentId="{BFDE4A5D-2F27-4DE2-8366-78C562EFD5FF}" Directory_="__pycache___24_Dir" Attributes="0" KeyPath="Build.cpython310.pyc_7" Type="0"/>
-    <ROW Component="Build.cpython310.pyc_8" ComponentId="{FA9EC59C-4F59-49F0-A784-40B8E55CB01C}" Directory_="__pycache___25_Dir" Attributes="0" KeyPath="Build.cpython310.pyc_8" Type="0"/>
-    <ROW Component="Build.cpython310.pyc_9" ComponentId="{E77C5F10-5BFA-4DE5-9DE9-B614F04BC9E1}" Directory_="__pycache___26_Dir" Attributes="0" KeyPath="Build.cpython310.pyc_9" Type="0"/>
-    <ROW Component="Build.py" ComponentId="{66AC5E14-5310-4AD9-9762-667C88EF13B7}" Directory_="CheckBox_Dir" Attributes="0" KeyPath="Build.py" Type="0"/>
-    <ROW Component="Build.py_1" ComponentId="{FF85B297-AED9-4064-9395-C00590325E5F}" Directory_="ComboBox_Dir" Attributes="0" KeyPath="Build.py_1" Type="0"/>
-    <ROW Component="Build.py_10" ComponentId="{7663980C-DAC2-4F4F-BB3C-6EFDEE2DF7D3}" Directory_="RadioButton_Dir" Attributes="0" KeyPath="Build.py_10" Type="0"/>
-    <ROW Component="Build.py_11" ComponentId="{0B6A5406-2798-4C72-9381-CEFE77EF9041}" Directory_="ScrollArea_Dir" Attributes="0" KeyPath="Build.py_11" Type="0"/>
-    <ROW Component="Build.py_12" ComponentId="{8A419042-EC80-4A7B-8879-D8F7CC23B4AF}" Directory_="Slider_Dir" Attributes="0" KeyPath="Build.py_12" Type="0"/>
-    <ROW Component="Build.py_13" ComponentId="{E1CE0D7D-5501-41D3-B6DB-F666A32A3DBE}" Directory_="SpinBox_Dir" Attributes="0" KeyPath="Build.py_13" Type="0"/>
-    <ROW Component="Build.py_14" ComponentId="{F154FB52-E423-486A-B47A-CA5FB12258E7}" Directory_="TableWidget_Dir" Attributes="0" KeyPath="Build.py_14" Type="0"/>
-    <ROW Component="Build.py_15" ComponentId="{CE228FBA-C586-4A9D-A251-023BCD5BC61F}" Directory_="TextEdit_Dir" Attributes="0" KeyPath="Build.py_15" Type="0"/>
-    <ROW Component="Build.py_16" ComponentId="{2CA9838F-74D3-436C-A650-915E4C4195D9}" Directory_="ToolBox_Dir" Attributes="0" KeyPath="Build.py_16" Type="0"/>
-    <ROW Component="Build.py_17" ComponentId="{8ECEEF88-ACF6-4AC2-B164-7B5652176455}" Directory_="TrayIcon_Dir" Attributes="0" KeyPath="Build.py_17" Type="0"/>
-    <ROW Component="Build.py_18" ComponentId="{445B8AF9-DEB9-469A-88CF-3708661D8F39}" Directory_="TreeWidget_Dir" Attributes="0" KeyPath="Build.py_18" Type="0"/>
-    <ROW Component="Build.py_2" ComponentId="{29AB7060-868D-4FB7-942B-A3C5D50A35A5}" Directory_="DateEdit_Dir" Attributes="0" KeyPath="Build.py_2" Type="0"/>
-    <ROW Component="Build.py_3" ComponentId="{8282F11B-8D2E-4842-9E8A-C12171C9D6EF}" Directory_="Frame_Dir" Attributes="0" KeyPath="Build.py_3" Type="0"/>
-    <ROW Component="Build.py_4" ComponentId="{AA58F29D-BF67-4599-92BD-4D6641A48816}" Directory_="Label_Dir" Attributes="0" KeyPath="Build.py_4" Type="0"/>
-    <ROW Component="Build.py_5" ComponentId="{B082E02B-FB93-4765-A535-E487BA405570}" Directory_="LineEdit_Dir" Attributes="0" KeyPath="Build.py_5" Type="0"/>
-    <ROW Component="Build.py_6" ComponentId="{08AB6D71-93FD-4C73-88E7-7D6F67FD3CE4}" Directory_="ListWidget_Dir" Attributes="0" KeyPath="Build.py_6" Type="0"/>
-    <ROW Component="Build.py_7" ComponentId="{DE8CA3A9-D6A4-4BDC-99BF-C6B11E119D31}" Directory_="PlainTextEdit_Dir" Attributes="0" KeyPath="Build.py_7" Type="0"/>
-    <ROW Component="Build.py_8" ComponentId="{27D074C0-64A4-471F-844F-91EBB98EC60B}" Directory_="ProgressBar_Dir" Attributes="0" KeyPath="Build.py_8" Type="0"/>
-    <ROW Component="Build.py_9" ComponentId="{FE9EE7ED-D5DF-4CA8-806B-5A5A2784C4F5}" Directory_="PushButton_Dir" Attributes="0" KeyPath="Build.py_9" Type="0"/>
+    <ROW Component="Admin.py" ComponentId="{369F5D13-2AB8-4835-9D97-4F3EE72F914C}" Directory_="grade_Dir" Attributes="0" KeyPath="Admin.py" Type="0"/>
+    <ROW Component="Align.py" ComponentId="{9C885C7B-9889-48BF-B8AA-3240AC824DBF}" Directory_="palettes_Dir" Attributes="0" KeyPath="Align.py" Type="0"/>
+    <ROW Component="Build.py" ComponentId="{C57DE2DB-568A-4EA2-B09D-BD9281F3C5AA}" Directory_="CheckBox_Dir" Attributes="0" KeyPath="Build.py" Type="0"/>
+    <ROW Component="Build.py_1" ComponentId="{5E76B7F3-8352-4C41-B3E8-B364944ED8FF}" Directory_="ComboBox_Dir" Attributes="0" KeyPath="Build.py_1" Type="0"/>
+    <ROW Component="Build.py_10" ComponentId="{0280E747-75E4-4976-BE5A-F5126D1ABF90}" Directory_="RadioButton_Dir" Attributes="0" KeyPath="Build.py_10" Type="0"/>
+    <ROW Component="Build.py_11" ComponentId="{A5E099F8-1A7E-43BD-B500-1C0C50B1DFD4}" Directory_="ScrollArea_Dir" Attributes="0" KeyPath="Build.py_11" Type="0"/>
+    <ROW Component="Build.py_12" ComponentId="{E6B2D4ED-6294-4726-B5CA-2C58D10FB3A2}" Directory_="Slider_Dir" Attributes="0" KeyPath="Build.py_12" Type="0"/>
+    <ROW Component="Build.py_13" ComponentId="{55364639-650C-4780-BEB9-8062D9361D98}" Directory_="SpinBox_Dir" Attributes="0" KeyPath="Build.py_13" Type="0"/>
+    <ROW Component="Build.py_14" ComponentId="{06F85AF6-9C9E-4A56-B2E4-A2F0A15DBF68}" Directory_="TableWidget_Dir" Attributes="0" KeyPath="Build.py_14" Type="0"/>
+    <ROW Component="Build.py_15" ComponentId="{1A88435B-B1D2-489A-AE3F-868C0726D263}" Directory_="TextEdit_Dir" Attributes="0" KeyPath="Build.py_15" Type="0"/>
+    <ROW Component="Build.py_16" ComponentId="{4872CFCE-749D-4E6D-8E3D-C4304D94B28A}" Directory_="ToolBox_Dir" Attributes="0" KeyPath="Build.py_16" Type="0"/>
+    <ROW Component="Build.py_17" ComponentId="{C86150A6-D259-4FBD-AEDB-0DB033BC53D9}" Directory_="TrayIcon_Dir" Attributes="0" KeyPath="Build.py_17" Type="0"/>
+    <ROW Component="Build.py_18" ComponentId="{9E943EFF-0150-488F-A34A-D9CD4BC683A4}" Directory_="TreeWidget_Dir" Attributes="0" KeyPath="Build.py_18" Type="0"/>
+    <ROW Component="Build.py_2" ComponentId="{873776AD-6862-4409-AF16-17E51ACA4523}" Directory_="DateEdit_Dir" Attributes="0" KeyPath="Build.py_2" Type="0"/>
+    <ROW Component="Build.py_3" ComponentId="{8A48D3E4-A092-4777-ABDC-DF88ADB7B76B}" Directory_="Frame_Dir" Attributes="0" KeyPath="Build.py_3" Type="0"/>
+    <ROW Component="Build.py_4" ComponentId="{04D02FA6-E4E3-4C69-B418-FC05B75EECB0}" Directory_="Label_Dir" Attributes="0" KeyPath="Build.py_4" Type="0"/>
+    <ROW Component="Build.py_5" ComponentId="{49C70358-72D1-4BD3-A39A-D1906E5F455B}" Directory_="LineEdit_Dir" Attributes="0" KeyPath="Build.py_5" Type="0"/>
+    <ROW Component="Build.py_6" ComponentId="{85B22FED-A9C9-47DF-9744-703A4C336C61}" Directory_="ListWidget_Dir" Attributes="0" KeyPath="Build.py_6" Type="0"/>
+    <ROW Component="Build.py_7" ComponentId="{9FFA5C44-85BA-4961-B986-F02BB2AC4FA8}" Directory_="PlainTextEdit_Dir" Attributes="0" KeyPath="Build.py_7" Type="0"/>
+    <ROW Component="Build.py_8" ComponentId="{9B9D4ECB-F534-4108-934D-97C12B33D82B}" Directory_="ProgressBar_Dir" Attributes="0" KeyPath="Build.py_8" Type="0"/>
+    <ROW Component="Build.py_9" ComponentId="{A00DCB79-91EE-4A09-B878-DED81225E9F3}" Directory_="PushButton_Dir" Attributes="0" KeyPath="Build.py_9" Type="0"/>
     <ROW Component="Centremacro.exe" ComponentId="{C0FB76A9-B6C6-4D81-9590-49FE2949039A}" Directory_="APPDIR" Attributes="256" KeyPath="Centremacro.exe"/>
-    <ROW Component="Event.cpython310.pyc" ComponentId="{0C7BEC4F-34C5-4366-BF62-865A96E4F3EF}" Directory_="__pycache___11_Dir" Attributes="0" KeyPath="Event.cpython310.pyc" Type="0"/>
-    <ROW Component="Event.py" ComponentId="{C2A1BBB1-602B-4A7E-9CDF-A83514361B6A}" Directory_="events_Dir" Attributes="0" KeyPath="Event.py" Type="0"/>
-    <ROW Component="Frame_cust.cpython310.pyc" ComponentId="{3CE75F93-BA61-46EB-BB92-51E1FBE267F6}" Directory_="__pycache___37_Dir" Attributes="0" KeyPath="Frame_cust.cpython310.pyc" Type="0"/>
-    <ROW Component="Frame_cust.py" ComponentId="{A46D3555-2D77-40E3-AD1D-F411F05BE9CD}" Directory_="widget_custom_Dir" Attributes="0" KeyPath="Frame_cust.py" Type="0"/>
-    <ROW Component="Functions.cpython310.pyc" ComponentId="{5DBDEAD8-585D-4D62-A12D-9A158CB68A80}" Directory_="__pycache___Dir" Attributes="0" KeyPath="Functions.cpython310.pyc" Type="0"/>
-    <ROW Component="Functions.py" ComponentId="{07EECF11-E4B8-4F6D-9E07-AA1A71920540}" Directory_="mods_Dir" Attributes="0" KeyPath="Functions.py" Type="0"/>
-    <ROW Component="InputBox.cpython310.pyc" ComponentId="{0385DC52-918A-4149-B20B-16A90AA5E187}" Directory_="__pycache___3_Dir" Attributes="0" KeyPath="InputBox.cpython310.pyc" Type="0"/>
-    <ROW Component="InputBox.py" ComponentId="{D08E8EC7-42A9-444D-921C-82C716B5187F}" Directory_="InputBox_Dir" Attributes="0" KeyPath="InputBox.py" Type="0"/>
+    <ROW Component="Event.py" ComponentId="{570126F6-5BC8-4324-81FC-F393B0528CC3}" Directory_="events_Dir" Attributes="0" KeyPath="Event.py" Type="0"/>
+    <ROW Component="Frame_cust.py" ComponentId="{E69E18CE-CCBE-4907-8183-C98CDBE9FE9B}" Directory_="widget_custom_Dir" Attributes="0" KeyPath="Frame_cust.py" Type="0"/>
+    <ROW Component="Functions.py" ComponentId="{017BF6B1-A1E9-474F-B328-067A38292B30}" Directory_="mods_Dir" Attributes="0" KeyPath="Functions.py" Type="0"/>
+    <ROW Component="InputBox.py" ComponentId="{18044706-3283-43E8-96B2-5640F84439F3}" Directory_="InputBox_Dir" Attributes="0" KeyPath="InputBox.py" Type="0"/>
+    <ROW Component="LIBPQ.dll" ComponentId="{B93202C6-CA50-40C0-B52F-A9121B8B24BD}" Directory_="APPDIR" Attributes="256" KeyPath="LIBPQ.dll"/>
     <ROW Component="MSVCP140.dll" ComponentId="{9985FD20-5BF9-49C1-A03C-9D34E31179A8}" Directory_="APPDIR" Attributes="256" KeyPath="MSVCP140.dll"/>
     <ROW Component="MSVCP140_1.dll" ComponentId="{EDD9F5BE-0DE1-4C9E-A0BD-46D261BB945E}" Directory_="APPDIR" Attributes="256" KeyPath="MSVCP140_1.dll"/>
     <ROW Component="MSVCP140_2.dll" ComponentId="{8FF1793A-2568-4DB8-B24C-DF5463CC6CF0}" Directory_="APPDIR" Attributes="256" KeyPath="MSVCP140_2.dll"/>
-    <ROW Component="MsgBox.cpython310.pyc" ComponentId="{005EB2E3-080F-4FE8-BC00-C241E40B1B1F}" Directory_="__pycache___4_Dir" Attributes="0" KeyPath="MsgBox.cpython310.pyc" Type="0"/>
-    <ROW Component="MsgBox.py" ComponentId="{CE8A5D74-18F4-4C85-B7E2-2F41EAF25D0B}" Directory_="MsgBox_Dir" Attributes="0" KeyPath="MsgBox.py" Type="0"/>
-    <ROW Component="OptionBox.cpython310.pyc" ComponentId="{3E1557F4-74B4-465F-B069-12F962F27B49}" Directory_="__pycache___5_Dir" Attributes="0" KeyPath="OptionBox.cpython310.pyc" Type="0"/>
-    <ROW Component="OptionBox.py" ComponentId="{AEBC7516-A64D-4841-B343-87A893ED812E}" Directory_="OptionBox_Dir" Attributes="0" KeyPath="OptionBox.py" Type="0"/>
+    <ROW Component="MSVCR120.dll" ComponentId="{3085A385-1FDB-4110-9791-B3C1865E6071}" Directory_="APPDIR" Attributes="256" KeyPath="MSVCR120.dll"/>
+    <ROW Component="MsgBox.py" ComponentId="{BD38F0D2-90E6-4FF2-A8FA-2002E3195F4E}" Directory_="MsgBox_Dir" Attributes="0" KeyPath="MsgBox.py" Type="0"/>
+    <ROW Component="OptionBox.py" ComponentId="{C98953AB-F8A2-49DD-9007-DCB4A180FB74}" Directory_="OptionBox_Dir" Attributes="0" KeyPath="OptionBox.py" Type="0"/>
     <ROW Component="ProductInformation" ComponentId="{5023E6E4-6BC5-4954-A40A-DFD000ED2033}" Directory_="APPDIR" Attributes="260" KeyPath="Version"/>
     <ROW Component="Qt6Core.dll" ComponentId="{2E5BBA4F-E748-4D8E-B0B1-27EE375FD939}" Directory_="APPDIR" Attributes="256" KeyPath="Qt6Core.dll"/>
     <ROW Component="Qt6Gui.dll" ComponentId="{E8184D6C-E3CA-4029-A7FD-0945C81CB2FC}" Directory_="APPDIR" Attributes="256" KeyPath="Qt6Gui.dll"/>
@@ -204,85 +145,81 @@
     <ROW Component="Qt6Qml.dll" ComponentId="{E25900F0-E209-4A71-921C-85081A2F5A54}" Directory_="APPDIR" Attributes="256" KeyPath="Qt6Qml.dll"/>
     <ROW Component="Qt6QmlModels.dll" ComponentId="{DE55D431-BBC0-404D-BB7E-427292098E8A}" Directory_="APPDIR" Attributes="256" KeyPath="Qt6QmlModels.dll"/>
     <ROW Component="Qt6Quick.dll" ComponentId="{99EE51EE-49AA-4C1A-9D3B-B7BF19149E92}" Directory_="APPDIR" Attributes="256" KeyPath="Qt6Quick.dll"/>
+    <ROW Component="Qt6Sql.dll" ComponentId="{9D72A857-91D7-46B3-AECE-506906B85954}" Directory_="APPDIR" Attributes="256" KeyPath="Qt6Sql.dll"/>
     <ROW Component="Qt6Svg.dll" ComponentId="{CF696D85-C4AA-409A-8F5E-1A851269DBF7}" Directory_="APPDIR" Attributes="256" KeyPath="Qt6Svg.dll"/>
     <ROW Component="Qt6VirtualKeyboard.dll" ComponentId="{CEC03FEC-44D8-4368-8B04-FC8BE854B70C}" Directory_="APPDIR" Attributes="256" KeyPath="Qt6VirtualKeyboard.dll"/>
     <ROW Component="Qt6Widgets.dll" ComponentId="{38B07AFE-804F-41B4-8E64-412511DB24B6}" Directory_="APPDIR" Attributes="256" KeyPath="Qt6Widgets.dll"/>
-    <ROW Component="QtCore.pyd" ComponentId="{2C4F7DC4-12FB-41C7-999D-C83979E25D7D}" Directory_="PySide6_Dir" Attributes="256" KeyPath="QtCore.pyd" Type="0"/>
-    <ROW Component="ResponseBox.cpython310.pyc" ComponentId="{B39EF9F1-6FB9-486D-8359-15799E8B226C}" Directory_="__pycache___6_Dir" Attributes="0" KeyPath="ResponseBox.cpython310.pyc" Type="0"/>
-    <ROW Component="ResponseBox.py" ComponentId="{DA8C277A-7985-4CF0-BD8A-A3B5DDB780D5}" Directory_="ResponseBox_Dir" Attributes="0" KeyPath="ResponseBox.py" Type="0"/>
-    <ROW Component="RgbBox.cpython310.pyc" ComponentId="{31255D10-27E4-4011-9A71-BF0C2F708F04}" Directory_="__pycache___7_Dir" Attributes="0" KeyPath="RgbBox.cpython310.pyc" Type="0"/>
-    <ROW Component="RgbBox.py" ComponentId="{1E95FBDA-124C-4B68-8A97-F00F74E63F80}" Directory_="RgbBox_Dir" Attributes="0" KeyPath="RgbBox.py" Type="0"/>
+    <ROW Component="QtCore.pyd" ComponentId="{F31C8545-B2D9-4773-BE25-1751BE5262F7}" Directory_="PySide6_Dir" Attributes="256" KeyPath="QtCore.pyd" Type="0"/>
+    <ROW Component="ResponseBox.py" ComponentId="{4E6D97F0-715F-4F7C-ACF0-DACFF5F5EB18}" Directory_="ResponseBox_Dir" Attributes="0" KeyPath="ResponseBox.py" Type="0"/>
+    <ROW Component="RgbBox.py" ComponentId="{11084BCF-6A03-4C5A-A5EB-EE0719AACE89}" Directory_="RgbBox_Dir" Attributes="0" KeyPath="RgbBox.py" Type="0"/>
     <ROW Component="SHORTCUTDIR" ComponentId="{D8C42DBF-68FA-4127-9898-4BAB5FB879A9}" Directory_="SHORTCUTDIR" Attributes="0"/>
-    <ROW Component="Shiboken.pyd" ComponentId="{6EC7D0C1-9B1E-4AF1-9F8C-1AB0F92F3C93}" Directory_="shiboken6_Dir" Attributes="256" KeyPath="Shiboken.pyd" Type="0"/>
-    <ROW Component="SplashScreen.cpython310.pyc" ComponentId="{01952256-CB4C-459B-83AB-81EFC02D2DF5}" Directory_="__pycache___8_Dir" Attributes="0" KeyPath="SplashScreen.cpython310.pyc" Type="0"/>
-    <ROW Component="SplashScreen.py" ComponentId="{DA3056D8-A54A-42AD-9468-AD6E1E7D1F2B}" Directory_="SplashScreen_Dir" Attributes="0" KeyPath="SplashScreen.py" Type="0"/>
-    <ROW Component="ToolBoxUi.cpython310.pyc" ComponentId="{33A30D46-9CD3-4582-809D-6E818E3CBE9B}" Directory_="__pycache___9_Dir" Attributes="0" KeyPath="ToolBoxUi.cpython310.pyc" Type="0"/>
-    <ROW Component="ToolBoxUi.py" ComponentId="{54DDF06F-82D7-4D45-A2A6-03A04CB4C463}" Directory_="ToolBoxUi_Dir" Attributes="0" KeyPath="ToolBoxUi.py" Type="0"/>
+    <ROW Component="Shiboken.pyd" ComponentId="{B0A15742-9191-4C6B-8FD5-589311717BBF}" Directory_="shiboken6_Dir" Attributes="256" KeyPath="Shiboken.pyd" Type="0"/>
+    <ROW Component="SplashScreen.py" ComponentId="{B2CEE1CA-E4FB-4F07-A0B0-96BDDE34A8C4}" Directory_="SplashScreen_Dir" Attributes="0" KeyPath="SplashScreen.py" Type="0"/>
+    <ROW Component="ToolBoxUi.py" ComponentId="{DC5DF0F1-2A8A-483F-9352-8C57277F1DBB}" Directory_="ToolBoxUi_Dir" Attributes="0" KeyPath="ToolBoxUi.py" Type="0"/>
     <ROW Component="VCRUNTIME140.dll" ComponentId="{71F85AD9-366B-4599-B51F-A9E48E90BC8E}" Directory_="APPDIR" Attributes="256" KeyPath="VCRUNTIME140.dll"/>
     <ROW Component="VCRUNTIME140_1.dll" ComponentId="{C217489F-B89A-4562-85BA-643E103E4307}" Directory_="APPDIR" Attributes="256" KeyPath="VCRUNTIME140_1.dll"/>
-    <ROW Component="__init__.cpython310.pyc" ComponentId="{6BEFA264-EA76-4071-8BBA-6D3999A7B143}" Directory_="__pycache___1_Dir" Attributes="0" KeyPath="__init__.cpython310.pyc_1" Type="0"/>
-    <ROW Component="__init__.cpython310.pyc_1" ComponentId="{0B550039-29DA-43EF-B450-CC4CACD35479}" Directory_="__pycache___10_Dir" Attributes="0" KeyPath="__init__.cpython310.pyc_3" Type="0"/>
-    <ROW Component="__init__.cpython310.pyc_2" ComponentId="{85FA8EC6-9767-4821-BCF6-2F636B418CF9}" Directory_="__pycache___13_Dir" Attributes="0" KeyPath="__init__.cpython310.pyc_6" Type="0"/>
-    <ROW Component="__init__.cpython310.pyc_3" ComponentId="{F4625F6E-2120-4D20-87E5-3C0921BBB890}" Directory_="__pycache___16_Dir" Attributes="0" KeyPath="__init__.cpython310.pyc_9" Type="0"/>
-    <ROW Component="__init__.cpython310.pyc_4" ComponentId="{2C609E8D-113D-410C-A485-27DFB6DF349C}" Directory_="__pycache___38_Dir" Attributes="0" KeyPath="__init__.cpython310.pyc_12" Type="0"/>
-    <ROW Component="__init__.py" ComponentId="{164C3A61-29B7-470A-AE7C-A00E39FF55D7}" Directory_="build_Dir" Attributes="0" KeyPath="__init__.py_1" Type="0"/>
-    <ROW Component="__init__.py_1" ComponentId="{06ADBFAE-905B-410C-B303-2343A4377B28}" Directory_="dlg_Dir" Attributes="0" KeyPath="__init__.py_3" Type="0"/>
-    <ROW Component="__init__.py_2" ComponentId="{4253703B-E5BE-477E-A460-B1232B75B000}" Directory_="gui_Dir" Attributes="0" KeyPath="__init__.py_6" Type="0"/>
-    <ROW Component="__init__.py_3" ComponentId="{7182BB50-FBF0-4F03-BE3F-254798A7087E}" Directory_="lib_Dir" Attributes="0" KeyPath="__init__.py_9" Type="0"/>
-    <ROW Component="__init__.py_4" ComponentId="{E0815CA1-B97E-450F-9F6B-0ACE2571B3E4}" Directory_="src_Dir" Attributes="0" KeyPath="__init__.py_12" Type="0"/>
+    <ROW Component="__init__.py" ComponentId="{1A4C8EE6-0176-4721-BD94-9B3A43119CCC}" Directory_="build_Dir" Attributes="0" KeyPath="__init__.py_15" Type="0"/>
+    <ROW Component="__init__.py_1" ComponentId="{CEEC6880-FE36-4E97-A8F1-0BE60B368A56}" Directory_="dlg_Dir" Attributes="0" KeyPath="__init__.py_17" Type="0"/>
+    <ROW Component="__init__.py_2" ComponentId="{1D173C39-5544-409D-BB83-3C215E5C8CBC}" Directory_="gui_Dir" Attributes="0" KeyPath="__init__.py_20" Type="0"/>
+    <ROW Component="__init__.py_3" ComponentId="{D10050BB-B87E-474C-85A1-72D8071BB500}" Directory_="lib_Dir" Attributes="0" KeyPath="__init__.py_23" Type="0"/>
+    <ROW Component="__init__.py_4" ComponentId="{ADD76404-6DFF-4ED8-B6DA-6F1D367D9977}" Directory_="src_Dir" Attributes="0" KeyPath="__init__.py_26" Type="0"/>
     <ROW Component="_multiprocessing.pyd" ComponentId="{B9C623AA-E5E3-4573-8424-9F8FEEED8599}" Directory_="APPDIR" Attributes="256" KeyPath="_multiprocessing.pyd" Type="0"/>
-    <ROW Component="_speedups.cp310win_amd64.pyd" ComponentId="{8A19BAAB-0504-4AD1-8A02-20959E2CCA1F}" Directory_="markupsafe_Dir" Attributes="256" KeyPath="_speedups.cp310win_amd64.pyd" Type="0"/>
-    <ROW Component="_yaml.cp310win_amd64.pyd" ComponentId="{07E52418-47D5-4272-8A54-FBC6CD4F8EC6}" Directory_="yaml_Dir" Attributes="256" KeyPath="_yaml.cp310win_amd64.pyd" Type="0"/>
-    <ROW Component="add_app.svg" ComponentId="{4337CBFC-FE0A-43B2-8D8D-60BD361D80F8}" Directory_="ui_Dir" Attributes="0" KeyPath="add_app.svg" Type="0"/>
-    <ROW Component="add_appbn1.svg" ComponentId="{C16F8088-A3AF-4C3D-BFA1-C33286309448}" Directory_="rgb_2_Dir" Attributes="0" KeyPath="add_appbn1.svg" Type="0"/>
-    <ROW Component="agrandir.cur" ComponentId="{00228A65-E5DA-4DEA-B80D-2BE7F60C2372}" Directory_="LaM0uette_Dir" Attributes="0" KeyPath="agrandir.cur" Type="0"/>
-    <ROW Component="agrandir.cur_1" ComponentId="{57254F40-7430-4E70-A704-55371E575DEF}" Directory_="MyApp_Dir" Attributes="0" KeyPath="agrandir.cur_1" Type="0"/>
-    <ROW Component="agrandir.cur_2" ComponentId="{55114600-7278-4166-B5EC-EBC968803CE7}" Directory_="test_Dir" Attributes="0" KeyPath="agrandir.cur_2" Type="0"/>
-    <ROW Component="alice_blue.json" ComponentId="{5FC08FDB-09FB-438A-B460-B03F3821603D}" Directory_="theme_Dir" Attributes="0" KeyPath="alice_blue.json" Type="0"/>
-    <ROW Component="calendrier.svg" ComponentId="{862FB361-FEB0-4418-9D96-A05156A2DD69}" Directory_="rgb_Dir" Attributes="0" KeyPath="calendrier.svg" Type="0"/>
-    <ROW Component="calendrier_thc.svg" ComponentId="{6E67B4C4-1796-4267-B577-2D43D2C19BC1}" Directory_="divers_Dir" Attributes="0" KeyPath="calendrier_thc.svg" Type="0"/>
-    <ROW Component="config.cpython310.pyc" ComponentId="{EE09E9CA-B4FF-47B0-AACD-ED6F8757BB57}" Directory_="__pycache___2_Dir" Attributes="0" KeyPath="config.cpython310.pyc" Type="0"/>
-    <ROW Component="config.json" ComponentId="{BCB8F056-DB9F-48A9-933D-0C5196919102}" Directory_="config_Dir" Attributes="0" KeyPath="config.json" Type="0"/>
-    <ROW Component="convert_ui.bat" ComponentId="{932FD33A-5762-44C2-BC13-DDCC092AE48C}" Directory_="scripts_Dir" Attributes="0" KeyPath="convert_ui.bat" Type="0"/>
-    <ROW Component="inari.svg" ComponentId="{92B10413-F2D8-4EE9-80DC-EDEF6B2B4F30}" Directory_="rgb_1_Dir" Attributes="0" KeyPath="inari.svg" Type="0"/>
-    <ROW Component="inari_thc.svg" ComponentId="{328C28A2-A444-497B-B5BF-A25BA7DC7B57}" Directory_="main_Dir" Attributes="0" KeyPath="inari_thc.svg" Type="0"/>
-    <ROW Component="input.ui" ComponentId="{18CF3CBF-811F-4308-92DC-6CC049BA356E}" Directory_="ui_1_Dir" Attributes="0" KeyPath="input.ui" Type="0"/>
-    <ROW Component="input_ui.cpython310.pyc" ComponentId="{E7955D07-6061-4DA6-98D6-E9A575A862BC}" Directory_="__pycache___12_Dir" Attributes="0" KeyPath="input_ui.cpython310.pyc" Type="0"/>
+    <ROW Component="_psycopg.cp310win_amd64.pyd" ComponentId="{DEC9542B-944A-4955-A630-6019528A5250}" Directory_="psycopg2_Dir" Attributes="256" KeyPath="_psycopg.cp310win_amd64.pyd" Type="0"/>
+    <ROW Component="_speedups.cp310win_amd64.pyd" ComponentId="{2D25CE54-E971-4883-97B8-981C76F23D82}" Directory_="markupsafe_Dir" Attributes="256" KeyPath="_speedups.cp310win_amd64.pyd" Type="0"/>
+    <ROW Component="_yaml.cp310win_amd64.pyd" ComponentId="{D80C203B-0B99-4F98-8892-37D15C2E1605}" Directory_="yaml_Dir" Attributes="256" KeyPath="_yaml.cp310win_amd64.pyd" Type="0"/>
+    <ROW Component="add_app.svg" ComponentId="{1381CC94-633D-41B7-B9D0-6003B4C28E60}" Directory_="ui_Dir" Attributes="0" KeyPath="add_app.svg" Type="0"/>
+    <ROW Component="add_appbn1.svg" ComponentId="{6375A09A-0BDB-42C6-8105-8C8CD546EA10}" Directory_="rgb_2_Dir" Attributes="0" KeyPath="add_appbn1.svg" Type="0"/>
+    <ROW Component="agrandir.cur" ComponentId="{4B5FF76A-7CD1-4682-A726-9525E3C4F241}" Directory_="LaM0uette_Dir" Attributes="0" KeyPath="agrandir.cur" Type="0"/>
+    <ROW Component="agrandir.cur_1" ComponentId="{29D9A960-44E9-442F-8F42-3E320861BA6A}" Directory_="MyApp_Dir" Attributes="0" KeyPath="agrandir.cur_1" Type="0"/>
+    <ROW Component="agrandir.cur_2" ComponentId="{2DC22709-1DC9-4601-9A20-36CDA19FB4D0}" Directory_="test_Dir" Attributes="0" KeyPath="agrandir.cur_2" Type="0"/>
+    <ROW Component="alice_blue.json" ComponentId="{F0F6350E-6921-4944-B05B-262EED61455F}" Directory_="theme_Dir" Attributes="0" KeyPath="alice_blue.json" Type="0"/>
+    <ROW Component="calendrier.svg" ComponentId="{D8E95D79-08E3-482B-BE18-5686C1E1000E}" Directory_="rgb_Dir" Attributes="0" KeyPath="calendrier.svg" Type="0"/>
+    <ROW Component="calendrier_thc.svg" ComponentId="{116F7AFF-0BC2-41B3-9934-23117A3E5136}" Directory_="divers_Dir" Attributes="0" KeyPath="calendrier_thc.svg" Type="0"/>
+    <ROW Component="config.json" ComponentId="{38692BF5-9C60-482D-AC90-07736D765938}" Directory_="config_Dir" Attributes="0" KeyPath="config.json" Type="0"/>
+    <ROW Component="convert_ui.bat" ComponentId="{ABA1F307-BDC5-4278-B828-AFEF80233DE1}" Directory_="scripts_Dir" Attributes="0" KeyPath="convert_ui.bat" Type="0"/>
+    <ROW Component="inari.svg" ComponentId="{1D5FBE12-96CE-4DD0-8D15-4932716512D9}" Directory_="rgb_1_Dir" Attributes="0" KeyPath="inari.svg" Type="0"/>
+    <ROW Component="inari_thc.svg" ComponentId="{61EAE834-9174-4EB0-81C3-D7B7A5731F65}" Directory_="main_Dir" Attributes="0" KeyPath="inari_thc.svg" Type="0"/>
+    <ROW Component="input.ui" ComponentId="{DE395725-CE80-4AED-B70E-DD55A8383AA5}" Directory_="ui_1_Dir" Attributes="0" KeyPath="input.ui" Type="0"/>
     <ROW Component="libcrypto1_1.dll" ComponentId="{306ADB2B-B61F-4984-A18A-FA746FA5012B}" Directory_="APPDIR" Attributes="256" KeyPath="libcrypto1_1.dll"/>
+    <ROW Component="libcrypto1_1x64.dll" ComponentId="{86B7EB96-5149-49DC-9F69-B5F4D2392312}" Directory_="APPDIR" Attributes="256" KeyPath="libcrypto1_1x64.dll"/>
     <ROW Component="libffi7.dll" ComponentId="{C85F0838-E914-4B21-9F79-8BD8BFB3721D}" Directory_="APPDIR" Attributes="256" KeyPath="libffi7.dll"/>
+    <ROW Component="libiconv2.dll" ComponentId="{14A4CF81-9316-43DF-AD27-626A7B720198}" Directory_="APPDIR" Attributes="256" KeyPath="libiconv2.dll"/>
+    <ROW Component="libintl8.dll" ComponentId="{00730D7F-0940-4392-9FA8-520D8F114EC4}" Directory_="APPDIR" Attributes="256" KeyPath="libintl8.dll"/>
     <ROW Component="libssl1_1.dll" ComponentId="{7CF7387B-62F7-4C1A-85EB-2CA739492BF5}" Directory_="APPDIR" Attributes="256" KeyPath="libssl1_1.dll"/>
+    <ROW Component="libssl1_1x64.dll" ComponentId="{00568067-F4FC-410C-A3FF-120190B3D73B}" Directory_="APPDIR" Attributes="256" KeyPath="libssl1_1x64.dll"/>
     <ROW Component="opengl32sw.dll" ComponentId="{76102308-686E-48C2-948F-D6DF30960EC4}" Directory_="APPDIR" Attributes="256" KeyPath="opengl32sw.dll"/>
     <ROW Component="pyside6.abi3.dll" ComponentId="{1D6BB168-F46E-4253-9B22-2C024F7DADB8}" Directory_="APPDIR" Attributes="256" KeyPath="pyside6.abi3.dll"/>
     <ROW Component="python3.dll" ComponentId="{A7D69DEA-E8A7-4919-B52A-D42F3EC47EF1}" Directory_="APPDIR" Attributes="256" KeyPath="python3.dll"/>
     <ROW Component="python310.dll" ComponentId="{A2EAC868-D4B4-4A63-BE49-7CFA29193FD3}" Directory_="APPDIR" Attributes="256" KeyPath="python310.dll"/>
-    <ROW Component="qcertonlybackend.dll" ComponentId="{87D505B0-7767-4B59-BEDA-CB7E19655B40}" Directory_="tls_Dir" Attributes="256" KeyPath="qcertonlybackend.dll"/>
-    <ROW Component="qdirect2d.dll" ComponentId="{5AD71174-C732-4462-98A3-10E5C191EFDB}" Directory_="platforms_Dir" Attributes="256" KeyPath="qdirect2d.dll"/>
-    <ROW Component="qgif.dll" ComponentId="{6EFE9EDC-DFD7-46A8-B99B-79ECA4314979}" Directory_="imageformats_Dir" Attributes="256" KeyPath="qgif.dll"/>
-    <ROW Component="qicns.dll" ComponentId="{B3D0C2DA-4BF9-4118-90FC-9E2DC6D6A07C}" Directory_="imageformats_Dir" Attributes="256" KeyPath="qicns.dll"/>
-    <ROW Component="qico.dll" ComponentId="{930E1EC6-933F-4541-8C6B-06614FB88B9E}" Directory_="imageformats_Dir" Attributes="256" KeyPath="qico.dll"/>
-    <ROW Component="qjpeg.dll" ComponentId="{70A6A47F-213F-417C-A6E9-71DCC3F39EB4}" Directory_="imageformats_Dir" Attributes="256" KeyPath="qjpeg.dll"/>
-    <ROW Component="qminimal.dll" ComponentId="{D39118D7-66EA-4899-B0FA-BDC400769E7A}" Directory_="platforms_Dir" Attributes="256" KeyPath="qminimal.dll"/>
-    <ROW Component="qnetworklistmanager.dll" ComponentId="{35D2ADB4-745F-4171-9BEB-C012B1528640}" Directory_="networkinformation_Dir" Attributes="256" KeyPath="qnetworklistmanager.dll"/>
-    <ROW Component="qoffscreen.dll" ComponentId="{5326FFE8-3CA6-4FB2-8448-C26C48808A66}" Directory_="platforms_Dir" Attributes="256" KeyPath="qoffscreen.dll"/>
-    <ROW Component="qopensslbackend.dll" ComponentId="{94094D8D-8D84-4D0F-BC49-C9AB5C2BC5A0}" Directory_="tls_Dir" Attributes="256" KeyPath="qopensslbackend.dll"/>
-    <ROW Component="qpdf.dll" ComponentId="{AF4D1EBF-517D-4EC5-8806-A8B94CACCCA3}" Directory_="imageformats_Dir" Attributes="256" KeyPath="qpdf.dll"/>
-    <ROW Component="qschannelbackend.dll" ComponentId="{82DF3670-B48C-4FFC-BB89-02C698DB8E8A}" Directory_="tls_Dir" Attributes="256" KeyPath="qschannelbackend.dll"/>
-    <ROW Component="qsvg.dll" ComponentId="{5DAFF881-5341-4DA1-A21F-4A99CA772C1A}" Directory_="imageformats_Dir" Attributes="256" KeyPath="qsvg.dll"/>
-    <ROW Component="qsvgicon.dll" ComponentId="{BF7D488A-372D-44C6-B359-1AE9B75EFBCF}" Directory_="iconengines_Dir" Attributes="256" KeyPath="qsvgicon.dll"/>
-    <ROW Component="qtbase_ar.qm" ComponentId="{021127B1-C0D4-4BB3-9320-ECE927A42C50}" Directory_="translations_Dir" Attributes="0" KeyPath="qtbase_ar.qm" Type="0"/>
-    <ROW Component="qtga.dll" ComponentId="{5BC39D20-6BC4-43B7-AF81-36C8525D0AF1}" Directory_="imageformats_Dir" Attributes="256" KeyPath="qtga.dll"/>
-    <ROW Component="qtiff.dll" ComponentId="{CD9B5A5B-4E53-4B24-8A5D-F7BB700D77EB}" Directory_="imageformats_Dir" Attributes="256" KeyPath="qtiff.dll"/>
-    <ROW Component="qtvirtualkeyboardplugin.dll" ComponentId="{ED0DA153-F232-435C-A0A4-9160312CB0AF}" Directory_="platforminputcontexts_Dir" Attributes="256" KeyPath="qtvirtualkeyboardplugin.dll"/>
-    <ROW Component="qwbmp.dll" ComponentId="{E5F87856-CF26-4FC2-AC4A-B406D9DE8AD2}" Directory_="imageformats_Dir" Attributes="256" KeyPath="qwbmp.dll"/>
-    <ROW Component="qwebp.dll" ComponentId="{CA0D0268-80D1-4FCC-AF94-614D5F5B96C5}" Directory_="imageformats_Dir" Attributes="256" KeyPath="qwebp.dll"/>
-    <ROW Component="qwindows.dll" ComponentId="{14AF9AD8-2CF7-40F4-B568-EC0345540A4B}" Directory_="platforms_Dir" Attributes="256" KeyPath="qwindows.dll"/>
-    <ROW Component="qwindowsvistastyle.dll" ComponentId="{2F666BC3-7986-47EE-9E04-8AB853C9BCB3}" Directory_="styles_Dir" Attributes="256" KeyPath="qwindowsvistastyle.dll"/>
+    <ROW Component="qcertonlybackend.dll" ComponentId="{A2EEDD82-50D4-4525-AE98-24A4FDC81BB2}" Directory_="tls_Dir" Attributes="256" KeyPath="qcertonlybackend.dll"/>
+    <ROW Component="qdirect2d.dll" ComponentId="{2C75DF4D-A1C2-4AC4-9916-5E29D15A6F30}" Directory_="platforms_Dir" Attributes="256" KeyPath="qdirect2d.dll"/>
+    <ROW Component="qgif.dll" ComponentId="{EC5BF572-28B9-4771-BBEE-BA0B968C29E3}" Directory_="imageformats_Dir" Attributes="256" KeyPath="qgif.dll"/>
+    <ROW Component="qicns.dll" ComponentId="{9DEFE9E7-01A7-4A77-B4BB-2638A99BC337}" Directory_="imageformats_Dir" Attributes="256" KeyPath="qicns.dll"/>
+    <ROW Component="qico.dll" ComponentId="{7A6FF998-9594-47BE-BF6A-B814B3A67473}" Directory_="imageformats_Dir" Attributes="256" KeyPath="qico.dll"/>
+    <ROW Component="qjpeg.dll" ComponentId="{25DEAA8F-F1D8-4F6F-8F93-0118BCF92C2B}" Directory_="imageformats_Dir" Attributes="256" KeyPath="qjpeg.dll"/>
+    <ROW Component="qminimal.dll" ComponentId="{92A0987A-9531-4D82-AFC2-11B2D94C914F}" Directory_="platforms_Dir" Attributes="256" KeyPath="qminimal.dll"/>
+    <ROW Component="qnetworklistmanager.dll" ComponentId="{71B01E14-8354-4EC7-9103-D5B98C58396E}" Directory_="networkinformation_Dir" Attributes="256" KeyPath="qnetworklistmanager.dll"/>
+    <ROW Component="qoffscreen.dll" ComponentId="{9F7306D2-8495-4ACA-A5E9-738006E2ADFF}" Directory_="platforms_Dir" Attributes="256" KeyPath="qoffscreen.dll"/>
+    <ROW Component="qopensslbackend.dll" ComponentId="{2A9C9219-1BAD-429C-AF5A-D38506CD6A4E}" Directory_="tls_Dir" Attributes="256" KeyPath="qopensslbackend.dll"/>
+    <ROW Component="qpdf.dll" ComponentId="{A2213A85-4F7E-4183-9C35-A746584A69CB}" Directory_="imageformats_Dir" Attributes="256" KeyPath="qpdf.dll"/>
+    <ROW Component="qschannelbackend.dll" ComponentId="{240AF40B-3D11-413D-B23D-6C012110A7D0}" Directory_="tls_Dir" Attributes="256" KeyPath="qschannelbackend.dll"/>
+    <ROW Component="qsqlite.dll" ComponentId="{268F7655-8FED-4B14-85F5-AB204618C266}" Directory_="sqldrivers_Dir" Attributes="256" KeyPath="qsqlite.dll"/>
+    <ROW Component="qsqlodbc.dll" ComponentId="{2084BC90-D338-4ED9-8C72-3C31390E137B}" Directory_="sqldrivers_Dir" Attributes="256" KeyPath="qsqlodbc.dll"/>
+    <ROW Component="qsqlpsql.dll" ComponentId="{7FDD4DA7-3D1C-434B-B22B-BBB7914371D6}" Directory_="sqldrivers_Dir" Attributes="256" KeyPath="qsqlpsql.dll"/>
+    <ROW Component="qsvg.dll" ComponentId="{B43F89B6-616B-49D1-9C1B-61EB3AC35F79}" Directory_="imageformats_Dir" Attributes="256" KeyPath="qsvg.dll"/>
+    <ROW Component="qsvgicon.dll" ComponentId="{C1BC1A2E-1E47-4FAE-B873-E2A3D56EA94C}" Directory_="iconengines_Dir" Attributes="256" KeyPath="qsvgicon.dll"/>
+    <ROW Component="qtbase_ar.qm" ComponentId="{4C4C69FC-0292-49C8-A98A-4227B1C737B5}" Directory_="translations_Dir" Attributes="0" KeyPath="qtbase_ar.qm" Type="0"/>
+    <ROW Component="qtga.dll" ComponentId="{AB60A5CF-1816-4210-953B-E857A685C9BA}" Directory_="imageformats_Dir" Attributes="256" KeyPath="qtga.dll"/>
+    <ROW Component="qtiff.dll" ComponentId="{6A937E97-05B0-4E15-BDC7-917476F5B0A0}" Directory_="imageformats_Dir" Attributes="256" KeyPath="qtiff.dll"/>
+    <ROW Component="qtvirtualkeyboardplugin.dll" ComponentId="{D0D0E009-DA21-42D9-A6B7-785246D2C7E8}" Directory_="platforminputcontexts_Dir" Attributes="256" KeyPath="qtvirtualkeyboardplugin.dll"/>
+    <ROW Component="qwbmp.dll" ComponentId="{16DEC626-726B-4A59-A1DC-6C35276DFC07}" Directory_="imageformats_Dir" Attributes="256" KeyPath="qwbmp.dll"/>
+    <ROW Component="qwebp.dll" ComponentId="{0589B751-99C2-4696-9BA6-23E8B3E41D65}" Directory_="imageformats_Dir" Attributes="256" KeyPath="qwebp.dll"/>
+    <ROW Component="qwindows.dll" ComponentId="{1671F777-BD70-4CBD-8D94-672F36F8E927}" Directory_="platforms_Dir" Attributes="256" KeyPath="qwindows.dll"/>
+    <ROW Component="qwindowsvistastyle.dll" ComponentId="{96C435CC-1BA6-4744-A690-85BE08223B41}" Directory_="styles_Dir" Attributes="256" KeyPath="qwindowsvistastyle.dll"/>
     <ROW Component="shiboken6.abi3.dll" ComponentId="{C959BE33-289D-431E-9061-8FB6957051CC}" Directory_="APPDIR" Attributes="256" KeyPath="shiboken6.abi3.dll"/>
     <ROW Component="sqlite3.dll" ComponentId="{8587779B-5621-436F-BAFA-65933BCD7F7C}" Directory_="APPDIR" Attributes="256" KeyPath="sqlite3.dll"/>
-    <ROW Component="v_gb.cpython310.pyc" ComponentId="{61531FDA-2A2C-48AA-868A-108D5AD4A0DE}" Directory_="__pycache___14_Dir" Attributes="0" KeyPath="v_gb.cpython310.pyc" Type="0"/>
-    <ROW Component="v_gb.py" ComponentId="{47F8E48B-DA7C-44C6-95EA-936B4ACCECB3}" Directory_="globals_Dir" Attributes="0" KeyPath="v_gb.py" Type="0"/>
-    <ROW Component="vb_app.cpython310.pyc" ComponentId="{8C3907CD-3EB2-4F42-AACD-AB636B9C2BD6}" Directory_="__pycache___36_Dir" Attributes="0" KeyPath="vb_app.cpython310.pyc" Type="0"/>
-    <ROW Component="vb_app.py" ComponentId="{FC70CA6B-6599-49AB-AD02-C35D975AACCB}" Directory_="widgets_Dir" Attributes="0" KeyPath="vb_app.py" Type="0"/>
+    <ROW Component="v_gb.py" ComponentId="{E38D8483-F741-48DF-861E-3D31479B0B90}" Directory_="globals_Dir" Attributes="0" KeyPath="v_gb.py" Type="0"/>
+    <ROW Component="vb_app.py" ComponentId="{B089BB0B-5E94-4711-9630-55D08CB28515}" Directory_="widgets_Dir" Attributes="0" KeyPath="vb_app.py" Type="0"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
     <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
@@ -324,62 +261,20 @@
     <ROW File="unicodedata.pyd" Component_="_multiprocessing.pyd" FileName="UNICOD~1.PYD|unicodedata.pyd" Attributes="0" SourcePath="Centre macro\unicodedata.pyd" SelfReg="false"/>
     <ROW File="VCRUNTIME140.dll" Component_="VCRUNTIME140.dll" FileName="VCRUNT~1.DLL|VCRUNTIME140.dll" Attributes="0" SourcePath="Centre macro\VCRUNTIME140.dll" SelfReg="false"/>
     <ROW File="VCRUNTIME140_1.dll" Component_="VCRUNTIME140_1.dll" FileName="VCRUNT~2.DLL|VCRUNTIME140_1.dll" Attributes="0" SourcePath="Centre macro\VCRUNTIME140_1.dll" SelfReg="false"/>
-    <ROW File="_speedups.cp310win_amd64.pyd" Component_="_speedups.cp310win_amd64.pyd" FileName="_SPEED~1.PYD|_speedups.cp310-win_amd64.pyd" Attributes="0" SourcePath="Centre macro\markupsafe\_speedups.cp310-win_amd64.pyd" SelfReg="false"/>
-    <ROW File="qsvgicon.dll" Component_="qsvgicon.dll" FileName="qsvgicon.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\iconengines\qsvgicon.dll" SelfReg="false"/>
-    <ROW File="qgif.dll" Component_="qgif.dll" FileName="qgif.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\imageformats\qgif.dll" SelfReg="false"/>
-    <ROW File="qicns.dll" Component_="qicns.dll" FileName="qicns.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\imageformats\qicns.dll" SelfReg="false"/>
-    <ROW File="qico.dll" Component_="qico.dll" FileName="qico.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\imageformats\qico.dll" SelfReg="false"/>
-    <ROW File="qjpeg.dll" Component_="qjpeg.dll" FileName="qjpeg.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\imageformats\qjpeg.dll" SelfReg="false"/>
-    <ROW File="qpdf.dll" Component_="qpdf.dll" FileName="qpdf.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\imageformats\qpdf.dll" SelfReg="false"/>
-    <ROW File="qsvg.dll" Component_="qsvg.dll" FileName="qsvg.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\imageformats\qsvg.dll" SelfReg="false"/>
-    <ROW File="qtga.dll" Component_="qtga.dll" FileName="qtga.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\imageformats\qtga.dll" SelfReg="false"/>
-    <ROW File="qtiff.dll" Component_="qtiff.dll" FileName="qtiff.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\imageformats\qtiff.dll" SelfReg="false"/>
-    <ROW File="qwbmp.dll" Component_="qwbmp.dll" FileName="qwbmp.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\imageformats\qwbmp.dll" SelfReg="false"/>
-    <ROW File="qwebp.dll" Component_="qwebp.dll" FileName="qwebp.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\imageformats\qwebp.dll" SelfReg="false"/>
-    <ROW File="qnetworklistmanager.dll" Component_="qnetworklistmanager.dll" FileName="QNETWO~1.DLL|qnetworklistmanager.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\networkinformation\qnetworklistmanager.dll" SelfReg="false"/>
-    <ROW File="qtvirtualkeyboardplugin.dll" Component_="qtvirtualkeyboardplugin.dll" FileName="QTVIRT~1.DLL|qtvirtualkeyboardplugin.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\platforminputcontexts\qtvirtualkeyboardplugin.dll" SelfReg="false"/>
-    <ROW File="qdirect2d.dll" Component_="qdirect2d.dll" FileName="QDIREC~1.DLL|qdirect2d.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\platforms\qdirect2d.dll" SelfReg="false"/>
-    <ROW File="qminimal.dll" Component_="qminimal.dll" FileName="qminimal.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\platforms\qminimal.dll" SelfReg="false"/>
-    <ROW File="qoffscreen.dll" Component_="qoffscreen.dll" FileName="QOFFSC~1.DLL|qoffscreen.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\platforms\qoffscreen.dll" SelfReg="false"/>
-    <ROW File="qwindows.dll" Component_="qwindows.dll" FileName="qwindows.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\platforms\qwindows.dll" SelfReg="false"/>
-    <ROW File="qwindowsvistastyle.dll" Component_="qwindowsvistastyle.dll" FileName="QWINDO~1.DLL|qwindowsvistastyle.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\styles\qwindowsvistastyle.dll" SelfReg="false"/>
-    <ROW File="qcertonlybackend.dll" Component_="qcertonlybackend.dll" FileName="QCERTO~1.DLL|qcertonlybackend.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\tls\qcertonlybackend.dll" SelfReg="false"/>
-    <ROW File="qopensslbackend.dll" Component_="qopensslbackend.dll" FileName="QOPENS~1.DLL|qopensslbackend.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\tls\qopensslbackend.dll" SelfReg="false"/>
-    <ROW File="qschannelbackend.dll" Component_="qschannelbackend.dll" FileName="QSCHAN~1.DLL|qschannelbackend.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\tls\qschannelbackend.dll" SelfReg="false"/>
-    <ROW File="QtCore.pyd" Component_="QtCore.pyd" FileName="QtCore.pyd" Attributes="0" SourcePath="Centre macro\PySide6\QtCore.pyd" SelfReg="false"/>
-    <ROW File="QtGui.pyd" Component_="QtCore.pyd" FileName="QtGui.pyd" Attributes="0" SourcePath="Centre macro\PySide6\QtGui.pyd" SelfReg="false"/>
-    <ROW File="QtNetwork.pyd" Component_="QtCore.pyd" FileName="QTNETW~1.PYD|QtNetwork.pyd" Attributes="0" SourcePath="Centre macro\PySide6\QtNetwork.pyd" SelfReg="false"/>
-    <ROW File="QtWidgets.pyd" Component_="QtCore.pyd" FileName="QTWIDG~1.PYD|QtWidgets.pyd" Attributes="0" SourcePath="Centre macro\PySide6\QtWidgets.pyd" SelfReg="false"/>
-    <ROW File="qtbase_ar.qm" Component_="qtbase_ar.qm" FileName="QTBASE~1.QM|qtbase_ar.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_ar.qm" SelfReg="false"/>
-    <ROW File="qtbase_bg.qm" Component_="qtbase_ar.qm" FileName="QTBASE~2.QM|qtbase_bg.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_bg.qm" SelfReg="false"/>
-    <ROW File="qtbase_ca.qm" Component_="qtbase_ar.qm" FileName="QTBASE~3.QM|qtbase_ca.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_ca.qm" SelfReg="false"/>
-    <ROW File="qtbase_cs.qm" Component_="qtbase_ar.qm" FileName="QTBASE~4.QM|qtbase_cs.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_cs.qm" SelfReg="false"/>
-    <ROW File="qtbase_da.qm" Component_="qtbase_ar.qm" FileName="QTBASE~5.QM|qtbase_da.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_da.qm" SelfReg="false"/>
-    <ROW File="qtbase_de.qm" Component_="qtbase_ar.qm" FileName="QTBASE~6.QM|qtbase_de.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_de.qm" SelfReg="false"/>
-    <ROW File="qtbase_en.qm" Component_="qtbase_ar.qm" FileName="QTBASE~7.QM|qtbase_en.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_en.qm" SelfReg="false"/>
-    <ROW File="qtbase_es.qm" Component_="qtbase_ar.qm" FileName="QTBASE~8.QM|qtbase_es.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_es.qm" SelfReg="false"/>
-    <ROW File="qtbase_fa.qm" Component_="qtbase_ar.qm" FileName="QTBASE~9.QM|qtbase_fa.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_fa.qm" SelfReg="false"/>
-    <ROW File="qtbase_fi.qm" Component_="qtbase_ar.qm" FileName="QTBAS~10.QM|qtbase_fi.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_fi.qm" SelfReg="false"/>
-    <ROW File="qtbase_fr.qm" Component_="qtbase_ar.qm" FileName="QTBAS~11.QM|qtbase_fr.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_fr.qm" SelfReg="false"/>
-    <ROW File="qtbase_gd.qm" Component_="qtbase_ar.qm" FileName="QTBAS~12.QM|qtbase_gd.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_gd.qm" SelfReg="false"/>
-    <ROW File="qtbase_he.qm" Component_="qtbase_ar.qm" FileName="QTBAS~13.QM|qtbase_he.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_he.qm" SelfReg="false"/>
-    <ROW File="qtbase_hr.qm" Component_="qtbase_ar.qm" FileName="QTBAS~14.QM|qtbase_hr.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_hr.qm" SelfReg="false"/>
-    <ROW File="qtbase_hu.qm" Component_="qtbase_ar.qm" FileName="QTBAS~15.QM|qtbase_hu.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_hu.qm" SelfReg="false"/>
-    <ROW File="qtbase_it.qm" Component_="qtbase_ar.qm" FileName="QTBAS~16.QM|qtbase_it.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_it.qm" SelfReg="false"/>
-    <ROW File="qtbase_ja.qm" Component_="qtbase_ar.qm" FileName="QTBAS~17.QM|qtbase_ja.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_ja.qm" SelfReg="false"/>
-    <ROW File="qtbase_ko.qm" Component_="qtbase_ar.qm" FileName="QTBAS~18.QM|qtbase_ko.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_ko.qm" SelfReg="false"/>
-    <ROW File="qtbase_lv.qm" Component_="qtbase_ar.qm" FileName="QTBAS~19.QM|qtbase_lv.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_lv.qm" SelfReg="false"/>
-    <ROW File="qtbase_nl.qm" Component_="qtbase_ar.qm" FileName="QTBAS~20.QM|qtbase_nl.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_nl.qm" SelfReg="false"/>
-    <ROW File="qtbase_nn.qm" Component_="qtbase_ar.qm" FileName="QTBAS~21.QM|qtbase_nn.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_nn.qm" SelfReg="false"/>
-    <ROW File="qtbase_pl.qm" Component_="qtbase_ar.qm" FileName="QTBAS~22.QM|qtbase_pl.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_pl.qm" SelfReg="false"/>
-    <ROW File="qtbase_pt_BR.qm" Component_="qtbase_ar.qm" FileName="QTBAS~23.QM|qtbase_pt_BR.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_pt_BR.qm" SelfReg="false"/>
-    <ROW File="qtbase_ru.qm" Component_="qtbase_ar.qm" FileName="QTBAS~24.QM|qtbase_ru.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_ru.qm" SelfReg="false"/>
-    <ROW File="qtbase_sk.qm" Component_="qtbase_ar.qm" FileName="QTBAS~25.QM|qtbase_sk.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_sk.qm" SelfReg="false"/>
-    <ROW File="qtbase_tr.qm" Component_="qtbase_ar.qm" FileName="QTBAS~26.QM|qtbase_tr.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_tr.qm" SelfReg="false"/>
-    <ROW File="qtbase_uk.qm" Component_="qtbase_ar.qm" FileName="QTBAS~27.QM|qtbase_uk.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_uk.qm" SelfReg="false"/>
-    <ROW File="qtbase_zh_CN.qm" Component_="qtbase_ar.qm" FileName="QTBAS~28.QM|qtbase_zh_CN.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_zh_CN.qm" SelfReg="false"/>
-    <ROW File="qtbase_zh_TW.qm" Component_="qtbase_ar.qm" FileName="QTBAS~29.QM|qtbase_zh_TW.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_zh_TW.qm" SelfReg="false"/>
-    <ROW File="Shiboken.pyd" Component_="Shiboken.pyd" FileName="Shiboken.pyd" Attributes="0" SourcePath="Centre macro\shiboken6\Shiboken.pyd" SelfReg="false"/>
+    <ROW File="_asyncio.pyd" Component_="_multiprocessing.pyd" FileName="_asyncio.pyd" Attributes="0" SourcePath="Centre macro\_asyncio.pyd" SelfReg="false"/>
+    <ROW File="_bz2.pyd" Component_="_multiprocessing.pyd" FileName="_bz2.pyd" Attributes="0" SourcePath="Centre macro\_bz2.pyd" SelfReg="false"/>
+    <ROW File="_ctypes.pyd" Component_="_multiprocessing.pyd" FileName="_ctypes.pyd" Attributes="0" SourcePath="Centre macro\_ctypes.pyd" SelfReg="false"/>
+    <ROW File="_decimal.pyd" Component_="_multiprocessing.pyd" FileName="_decimal.pyd" Attributes="0" SourcePath="Centre macro\_decimal.pyd" SelfReg="false"/>
+    <ROW File="_hashlib.pyd" Component_="_multiprocessing.pyd" FileName="_hashlib.pyd" Attributes="0" SourcePath="Centre macro\_hashlib.pyd" SelfReg="false"/>
+    <ROW File="_lzma.pyd" Component_="_multiprocessing.pyd" FileName="_lzma.pyd" Attributes="0" SourcePath="Centre macro\_lzma.pyd" SelfReg="false"/>
+    <ROW File="_uuid.pyd" Component_="_multiprocessing.pyd" FileName="_uuid.pyd" Attributes="0" SourcePath="Centre macro\_uuid.pyd" SelfReg="false"/>
+    <ROW File="libcrypto1_1x64.dll" Component_="libcrypto1_1x64.dll" FileName="LIBCRY~2.DLL|libcrypto-1_1-x64.dll" Attributes="0" SourcePath="Centre macro\libcrypto-1_1-x64.dll" SelfReg="false"/>
+    <ROW File="libiconv2.dll" Component_="libiconv2.dll" FileName="LIBICO~1.DLL|libiconv-2.dll" Attributes="0" SourcePath="Centre macro\libiconv-2.dll" SelfReg="false"/>
+    <ROW File="libintl8.dll" Component_="libintl8.dll" FileName="LIBINT~1.DLL|libintl-8.dll" Attributes="0" SourcePath="Centre macro\libintl-8.dll" SelfReg="false"/>
+    <ROW File="LIBPQ.dll" Component_="LIBPQ.dll" FileName="LIBPQ.dll" Attributes="0" SourcePath="Centre macro\LIBPQ.dll" SelfReg="false"/>
+    <ROW File="libssl1_1x64.dll" Component_="libssl1_1x64.dll" FileName="LIBSSL~2.DLL|libssl-1_1-x64.dll" Attributes="0" SourcePath="Centre macro\libssl-1_1-x64.dll" SelfReg="false"/>
+    <ROW File="MSVCR120.dll" Component_="MSVCR120.dll" FileName="MSVCR120.dll" Attributes="0" SourcePath="Centre macro\MSVCR120.dll" SelfReg="false"/>
+    <ROW File="Qt6Sql.dll" Component_="Qt6Sql.dll" FileName="Qt6Sql.dll" Attributes="0" SourcePath="Centre macro\Qt6Sql.dll" SelfReg="false"/>
     <ROW File="agrandir.cur" Component_="agrandir.cur" FileName="agrandir.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\LaM0uette\agrandir.cur" SelfReg="false"/>
     <ROW File="copier.cur" Component_="agrandir.cur" FileName="copier.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\LaM0uette\copier.cur" SelfReg="false"/>
     <ROW File="crayon.cur" Component_="agrandir.cur" FileName="crayon.cur" Attributes="0" SourcePath="Centre macro\src\assets\cursor\LaM0uette\crayon.cur" SelfReg="false"/>
@@ -618,77 +513,37 @@
     <ROW File="unlockth2.svg" Component_="add_appbn1.svg" FileName="UNLOCK~4.SVG|unlockth2.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\unlockth2.svg" SelfReg="false"/>
     <ROW File="unlockth3.svg" Component_="add_appbn1.svg" FileName="UNLOCK~5.SVG|unlockth3.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\rgb\unlockth3.svg" SelfReg="false"/>
     <ROW File="unlock.svg" Component_="add_app.svg" FileName="unlock.svg" Attributes="0" SourcePath="Centre macro\src\assets\img\ui\unlock.svg" SelfReg="false"/>
+    <ROW File="Admin.py" Component_="Admin.py" FileName="Admin.py" Attributes="0" SourcePath="Centre macro\src\build\grade\Admin.py" SelfReg="false"/>
+    <ROW File="Editeur.py" Component_="Admin.py" FileName="Editeur.py" Attributes="0" SourcePath="Centre macro\src\build\grade\Editeur.py" SelfReg="false"/>
+    <ROW File="Helper.py" Component_="Admin.py" FileName="Helper.py" Attributes="0" SourcePath="Centre macro\src\build\grade\Helper.py" SelfReg="false"/>
+    <ROW File="Proprietaire.py" Component_="Admin.py" FileName="PROPRI~1.PY|Proprietaire.py" Attributes="0" SourcePath="Centre macro\src\build\grade\Proprietaire.py" SelfReg="false"/>
+    <ROW File="__init__.py" Component_="Admin.py" FileName="__init__.py" Attributes="0" SourcePath="Centre macro\src\build\grade\__init__.py" SelfReg="false"/>
     <ROW File="Functions.py" Component_="Functions.py" FileName="FUNCTI~1.PY|Functions.py" Attributes="0" SourcePath="Centre macro\src\build\mods\Functions.py" SelfReg="false"/>
     <ROW File="Json.py" Component_="Functions.py" FileName="Json.py" Attributes="0" SourcePath="Centre macro\src\build\mods\Json.py" SelfReg="false"/>
     <ROW File="Maj.py" Component_="Functions.py" FileName="Maj.py" Attributes="0" SourcePath="Centre macro\src\build\mods\Maj.py" SelfReg="false"/>
+    <ROW File="thread_db.py" Component_="Functions.py" FileName="THREAD~1.PY|thread_db.py" Attributes="0" SourcePath="Centre macro\src\build\mods\thread_db.py" SelfReg="false"/>
     <ROW File="worker.py" Component_="Functions.py" FileName="worker.py" Attributes="0" SourcePath="Centre macro\src\build\mods\worker.py" SelfReg="false"/>
-    <ROW File="__init__.py" Component_="Functions.py" FileName="__init__.py" Attributes="0" SourcePath="Centre macro\src\build\mods\__init__.py" SelfReg="false"/>
-    <ROW File="Functions.cpython310.pyc" Component_="Functions.cpython310.pyc" FileName="FUNCTI~1.PYC|Functions.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\build\mods\__pycache__\Functions.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="Functions.cpython39.pyc" Component_="Functions.cpython310.pyc" FileName="FUNCTI~2.PYC|Functions.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\build\mods\__pycache__\Functions.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="Json.cpython310.pyc" Component_="Functions.cpython310.pyc" FileName="JSONCP~1.PYC|Json.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\build\mods\__pycache__\Json.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="Json.cpython39.pyc" Component_="Functions.cpython310.pyc" FileName="JSONCP~2.PYC|Json.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\build\mods\__pycache__\Json.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="Maj.cpython310.pyc" Component_="Functions.cpython310.pyc" FileName="MAJCPY~1.PYC|Maj.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\build\mods\__pycache__\Maj.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="Maj.cpython39.pyc" Component_="Functions.cpython310.pyc" FileName="MAJCPY~2.PYC|Maj.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\build\mods\__pycache__\Maj.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="worker.cpython310.pyc" Component_="Functions.cpython310.pyc" FileName="WORKER~1.PYC|worker.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\build\mods\__pycache__\worker.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="worker.cpython39.pyc" Component_="Functions.cpython310.pyc" FileName="WORKER~2.PYC|worker.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\build\mods\__pycache__\worker.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="__init__.cpython310.pyc" Component_="Functions.cpython310.pyc" FileName="__INIT~1.PYC|__init__.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\build\mods\__pycache__\__init__.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="__init__.cpython39.pyc" Component_="Functions.cpython310.pyc" FileName="__INIT~2.PYC|__init__.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\build\mods\__pycache__\__init__.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="__init__.py_1" Component_="__init__.py" FileName="__init__.py" Attributes="0" SourcePath="Centre macro\src\build\__init__.py" SelfReg="false"/>
-    <ROW File="__init__.cpython310.pyc_1" Component_="__init__.cpython310.pyc" FileName="__INIT~1.PYC|__init__.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\build\__pycache__\__init__.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="__init__.cpython39.pyc_1" Component_="__init__.cpython310.pyc" FileName="__INIT~2.PYC|__init__.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\build\__pycache__\__init__.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="__init__.py_14" Component_="Functions.py" FileName="__init__.py" Attributes="0" SourcePath="Centre macro\src\build\mods\__init__.py" SelfReg="false"/>
+    <ROW File="__init__.py_15" Component_="__init__.py" FileName="__init__.py" Attributes="0" SourcePath="Centre macro\src\build\__init__.py" SelfReg="false"/>
     <ROW File="config.json" Component_="config.json" FileName="CONFIG~1.JSO|config.json" Attributes="0" SourcePath="Centre macro\src\config\config.json" SelfReg="false"/>
     <ROW File="config.py" Component_="config.json" FileName="config.py" Attributes="0" SourcePath="Centre macro\src\config\config.py" SelfReg="false"/>
     <ROW File="version_file.txt" Component_="config.json" FileName="VERSIO~1.TXT|version_file.txt" Attributes="0" SourcePath="Centre macro\src\config\version_file.txt" SelfReg="false"/>
-    <ROW File="__init__.py_2" Component_="config.json" FileName="__init__.py" Attributes="0" SourcePath="Centre macro\src\config\__init__.py" SelfReg="false"/>
-    <ROW File="config.cpython310.pyc" Component_="config.cpython310.pyc" FileName="CONFIG~1.PYC|config.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\config\__pycache__\config.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="config.cpython39.pyc" Component_="config.cpython310.pyc" FileName="CONFIG~2.PYC|config.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\config\__pycache__\config.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="__init__.cpython310.pyc_2" Component_="config.cpython310.pyc" FileName="__INIT~1.PYC|__init__.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\config\__pycache__\__init__.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="__init__.cpython39.pyc_2" Component_="config.cpython310.pyc" FileName="__INIT~2.PYC|__init__.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\config\__pycache__\__init__.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="__init__.py_16" Component_="config.json" FileName="__init__.py" Attributes="0" SourcePath="Centre macro\src\config\__init__.py" SelfReg="false"/>
     <ROW File="InputBox.py" Component_="InputBox.py" FileName="InputBox.py" Attributes="0" SourcePath="Centre macro\src\gui\dlg\InputBox\InputBox.py" SelfReg="false"/>
     <ROW File="InputDlg.py" Component_="InputBox.py" FileName="InputDlg.py" Attributes="0" SourcePath="Centre macro\src\gui\dlg\InputBox\InputDlg.py" SelfReg="false"/>
-    <ROW File="InputBox.cpython310.pyc" Component_="InputBox.cpython310.pyc" FileName="INPUTB~1.PYC|InputBox.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\gui\dlg\InputBox\__pycache__\InputBox.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="InputBox.cpython39.pyc" Component_="InputBox.cpython310.pyc" FileName="INPUTB~2.PYC|InputBox.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\dlg\InputBox\__pycache__\InputBox.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="InputDlg.cpython310.pyc" Component_="InputBox.cpython310.pyc" FileName="INPUTD~1.PYC|InputDlg.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\gui\dlg\InputBox\__pycache__\InputDlg.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="InputDlg.cpython39.pyc" Component_="InputBox.cpython310.pyc" FileName="INPUTD~2.PYC|InputDlg.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\dlg\InputBox\__pycache__\InputDlg.cpython-39.pyc" SelfReg="false"/>
     <ROW File="MsgBox.py" Component_="MsgBox.py" FileName="MsgBox.py" Attributes="0" SourcePath="Centre macro\src\gui\dlg\MsgBox\MsgBox.py" SelfReg="false"/>
     <ROW File="MsgDlg.py" Component_="MsgBox.py" FileName="MsgDlg.py" Attributes="0" SourcePath="Centre macro\src\gui\dlg\MsgBox\MsgDlg.py" SelfReg="false"/>
-    <ROW File="MsgBox.cpython310.pyc" Component_="MsgBox.cpython310.pyc" FileName="MSGBOX~1.PYC|MsgBox.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\gui\dlg\MsgBox\__pycache__\MsgBox.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="MsgBox.cpython39.pyc" Component_="MsgBox.cpython310.pyc" FileName="MSGBOX~2.PYC|MsgBox.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\dlg\MsgBox\__pycache__\MsgBox.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="MsgDlg.cpython310.pyc" Component_="MsgBox.cpython310.pyc" FileName="MSGDLG~1.PYC|MsgDlg.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\gui\dlg\MsgBox\__pycache__\MsgDlg.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="MsgDlg.cpython39.pyc" Component_="MsgBox.cpython310.pyc" FileName="MSGDLG~2.PYC|MsgDlg.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\dlg\MsgBox\__pycache__\MsgDlg.cpython-39.pyc" SelfReg="false"/>
     <ROW File="OptionBox.py" Component_="OptionBox.py" FileName="OPTION~1.PY|OptionBox.py" Attributes="0" SourcePath="Centre macro\src\gui\dlg\OptionBox\OptionBox.py" SelfReg="false"/>
     <ROW File="OptionDlg.py" Component_="OptionBox.py" FileName="OPTION~2.PY|OptionDlg.py" Attributes="0" SourcePath="Centre macro\src\gui\dlg\OptionBox\OptionDlg.py" SelfReg="false"/>
-    <ROW File="OptionBox.cpython310.pyc" Component_="OptionBox.cpython310.pyc" FileName="OPTION~1.PYC|OptionBox.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\gui\dlg\OptionBox\__pycache__\OptionBox.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="OptionBox.cpython39.pyc" Component_="OptionBox.cpython310.pyc" FileName="OPTION~2.PYC|OptionBox.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\dlg\OptionBox\__pycache__\OptionBox.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="OptionDlg.cpython310.pyc" Component_="OptionBox.cpython310.pyc" FileName="OPTION~3.PYC|OptionDlg.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\gui\dlg\OptionBox\__pycache__\OptionDlg.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="OptionDlg.cpython39.pyc" Component_="OptionBox.cpython310.pyc" FileName="OPTION~4.PYC|OptionDlg.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\dlg\OptionBox\__pycache__\OptionDlg.cpython-39.pyc" SelfReg="false"/>
     <ROW File="ResponseBox.py" Component_="ResponseBox.py" FileName="RESPON~1.PY|ResponseBox.py" Attributes="0" SourcePath="Centre macro\src\gui\dlg\ResponseBox\ResponseBox.py" SelfReg="false"/>
     <ROW File="ResponseDlg.py" Component_="ResponseBox.py" FileName="RESPON~2.PY|ResponseDlg.py" Attributes="0" SourcePath="Centre macro\src\gui\dlg\ResponseBox\ResponseDlg.py" SelfReg="false"/>
-    <ROW File="ResponseBox.cpython310.pyc" Component_="ResponseBox.cpython310.pyc" FileName="RESPON~1.PYC|ResponseBox.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\gui\dlg\ResponseBox\__pycache__\ResponseBox.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="ResponseBox.cpython39.pyc" Component_="ResponseBox.cpython310.pyc" FileName="RESPON~2.PYC|ResponseBox.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\dlg\ResponseBox\__pycache__\ResponseBox.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="ResponseDlg.cpython310.pyc" Component_="ResponseBox.cpython310.pyc" FileName="RESPON~3.PYC|ResponseDlg.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\gui\dlg\ResponseBox\__pycache__\ResponseDlg.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="ResponseDlg.cpython39.pyc" Component_="ResponseBox.cpython310.pyc" FileName="RESPON~4.PYC|ResponseDlg.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\dlg\ResponseBox\__pycache__\ResponseDlg.cpython-39.pyc" SelfReg="false"/>
     <ROW File="RgbBox.py" Component_="RgbBox.py" FileName="RgbBox.py" Attributes="0" SourcePath="Centre macro\src\gui\dlg\RgbBox\RgbBox.py" SelfReg="false"/>
     <ROW File="RgbDlg.py" Component_="RgbBox.py" FileName="RgbDlg.py" Attributes="0" SourcePath="Centre macro\src\gui\dlg\RgbBox\RgbDlg.py" SelfReg="false"/>
-    <ROW File="RgbBox.cpython310.pyc" Component_="RgbBox.cpython310.pyc" FileName="RGBBOX~1.PYC|RgbBox.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\gui\dlg\RgbBox\__pycache__\RgbBox.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="RgbBox.cpython39.pyc" Component_="RgbBox.cpython310.pyc" FileName="RGBBOX~2.PYC|RgbBox.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\dlg\RgbBox\__pycache__\RgbBox.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="RgbDlg.cpython310.pyc" Component_="RgbBox.cpython310.pyc" FileName="RGBDLG~1.PYC|RgbDlg.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\gui\dlg\RgbBox\__pycache__\RgbDlg.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="RgbDlg.cpython39.pyc" Component_="RgbBox.cpython310.pyc" FileName="RGBDLG~2.PYC|RgbDlg.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\dlg\RgbBox\__pycache__\RgbDlg.cpython-39.pyc" SelfReg="false"/>
     <ROW File="SplashScreen.py" Component_="SplashScreen.py" FileName="SPLASH~1.PY|SplashScreen.py" Attributes="0" SourcePath="Centre macro\src\gui\dlg\SplashScreen\SplashScreen.py" SelfReg="false"/>
-    <ROW File="SplashScreen.cpython310.pyc" Component_="SplashScreen.cpython310.pyc" FileName="SPLASH~1.PYC|SplashScreen.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\gui\dlg\SplashScreen\__pycache__\SplashScreen.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="SplashScreen.cpython39.pyc" Component_="SplashScreen.cpython310.pyc" FileName="SPLASH~2.PYC|SplashScreen.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\dlg\SplashScreen\__pycache__\SplashScreen.cpython-39.pyc" SelfReg="false"/>
     <ROW File="ToolBoxUi.py" Component_="ToolBoxUi.py" FileName="TOOLBO~1.PY|ToolBoxUi.py" Attributes="0" SourcePath="Centre macro\src\gui\dlg\ToolBoxUi\ToolBoxUi.py" SelfReg="false"/>
-    <ROW File="ToolBoxUi.cpython310.pyc" Component_="ToolBoxUi.cpython310.pyc" FileName="TOOLBO~1.PYC|ToolBoxUi.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\gui\dlg\ToolBoxUi\__pycache__\ToolBoxUi.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="ToolBoxUi.cpython39.pyc" Component_="ToolBoxUi.cpython310.pyc" FileName="TOOLBO~2.PYC|ToolBoxUi.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\dlg\ToolBoxUi\__pycache__\ToolBoxUi.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="__init__.py_3" Component_="__init__.py_1" FileName="__init__.py" Attributes="0" SourcePath="Centre macro\src\gui\dlg\__init__.py" SelfReg="false"/>
-    <ROW File="__init__.cpython310.pyc_3" Component_="__init__.cpython310.pyc_1" FileName="__INIT~1.PYC|__init__.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\gui\dlg\__pycache__\__init__.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="__init__.cpython39.pyc_3" Component_="__init__.cpython310.pyc_1" FileName="__INIT~2.PYC|__init__.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\dlg\__pycache__\__init__.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="__init__.py_17" Component_="__init__.py_1" FileName="__init__.py" Attributes="0" SourcePath="Centre macro\src\gui\dlg\__init__.py" SelfReg="false"/>
     <ROW File="Event.py" Component_="Event.py" FileName="Event.py" Attributes="0" SourcePath="Centre macro\src\gui\events\Event.py" SelfReg="false"/>
-    <ROW File="__init__.py_4" Component_="Event.py" FileName="__init__.py" Attributes="0" SourcePath="Centre macro\src\gui\events\__init__.py" SelfReg="false"/>
-    <ROW File="Event.cpython310.pyc" Component_="Event.cpython310.pyc" FileName="EVENTC~1.PYC|Event.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\gui\events\__pycache__\Event.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="Event.cpython39.pyc" Component_="Event.cpython310.pyc" FileName="EVENTC~2.PYC|Event.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\events\__pycache__\Event.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="__init__.cpython310.pyc_4" Component_="Event.cpython310.pyc" FileName="__INIT~1.PYC|__init__.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\gui\events\__pycache__\__init__.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="__init__.cpython39.pyc_4" Component_="Event.cpython310.pyc" FileName="__INIT~2.PYC|__init__.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\events\__pycache__\__init__.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="__init__.py_18" Component_="Event.py" FileName="__init__.py" Attributes="0" SourcePath="Centre macro\src\gui\events\__init__.py" SelfReg="false"/>
     <ROW File="input.ui" Component_="input.ui" FileName="input.ui" Attributes="0" SourcePath="Centre macro\src\gui\ui\input.ui" SelfReg="false"/>
     <ROW File="input_ui.py" Component_="input.ui" FileName="input_ui.py" Attributes="0" SourcePath="Centre macro\src\gui\ui\input_ui.py" SelfReg="false"/>
     <ROW File="main.ui" Component_="input.ui" FileName="main.ui" Attributes="0" SourcePath="Centre macro\src\gui\ui\main.ui" SelfReg="false"/>
@@ -705,34 +560,10 @@
     <ROW File="splash_screen_ui.py" Component_="input.ui" FileName="SPLASH~1.PY|splash_screen_ui.py" Attributes="0" SourcePath="Centre macro\src\gui\ui\splash_screen_ui.py" SelfReg="false"/>
     <ROW File="toolbox.ui" Component_="input.ui" FileName="toolbox.ui" Attributes="0" SourcePath="Centre macro\src\gui\ui\toolbox.ui" SelfReg="false"/>
     <ROW File="toolbox_ui.py" Component_="input.ui" FileName="TOOLBO~1.PY|toolbox_ui.py" Attributes="0" SourcePath="Centre macro\src\gui\ui\toolbox_ui.py" SelfReg="false"/>
-    <ROW File="__init__.py_5" Component_="input.ui" FileName="__init__.py" Attributes="0" SourcePath="Centre macro\src\gui\ui\__init__.py" SelfReg="false"/>
-    <ROW File="input_ui.cpython310.pyc" Component_="input_ui.cpython310.pyc" FileName="INPUT_~1.PYC|input_ui.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\gui\ui\__pycache__\input_ui.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="input_ui.cpython39.pyc" Component_="input_ui.cpython310.pyc" FileName="INPUT_~2.PYC|input_ui.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\ui\__pycache__\input_ui.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="main_ui.cpython310.pyc" Component_="input_ui.cpython310.pyc" FileName="MAIN_U~1.PYC|main_ui.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\gui\ui\__pycache__\main_ui.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="main_ui.cpython39.pyc" Component_="input_ui.cpython310.pyc" FileName="MAIN_U~2.PYC|main_ui.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\ui\__pycache__\main_ui.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="msg_ui.cpython310.pyc" Component_="input_ui.cpython310.pyc" FileName="MSG_UI~1.PYC|msg_ui.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\gui\ui\__pycache__\msg_ui.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="msg_ui.cpython39.pyc" Component_="input_ui.cpython310.pyc" FileName="MSG_UI~2.PYC|msg_ui.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\ui\__pycache__\msg_ui.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="option_ui.cpython310.pyc" Component_="input_ui.cpython310.pyc" FileName="OPTION~1.PYC|option_ui.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\gui\ui\__pycache__\option_ui.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="option_ui.cpython39.pyc" Component_="input_ui.cpython310.pyc" FileName="OPTION~2.PYC|option_ui.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\ui\__pycache__\option_ui.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="rep_ui.cpython310.pyc" Component_="input_ui.cpython310.pyc" FileName="REP_UI~1.PYC|rep_ui.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\gui\ui\__pycache__\rep_ui.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="rep_ui.cpython39.pyc" Component_="input_ui.cpython310.pyc" FileName="REP_UI~2.PYC|rep_ui.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\ui\__pycache__\rep_ui.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="rgb_ui.cpython310.pyc" Component_="input_ui.cpython310.pyc" FileName="RGB_UI~1.PYC|rgb_ui.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\gui\ui\__pycache__\rgb_ui.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="rgb_ui.cpython39.pyc" Component_="input_ui.cpython310.pyc" FileName="RGB_UI~2.PYC|rgb_ui.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\ui\__pycache__\rgb_ui.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="splash_screen_ui.cpython310.pyc" Component_="input_ui.cpython310.pyc" FileName="SPLASH~1.PYC|splash_screen_ui.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\gui\ui\__pycache__\splash_screen_ui.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="splash_screen_ui.cpython39.pyc" Component_="input_ui.cpython310.pyc" FileName="SPLASH~2.PYC|splash_screen_ui.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\ui\__pycache__\splash_screen_ui.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="toolbox_ui.cpython310.pyc" Component_="input_ui.cpython310.pyc" FileName="TOOLBO~1.PYC|toolbox_ui.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\gui\ui\__pycache__\toolbox_ui.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="toolbox_ui.cpython39.pyc" Component_="input_ui.cpython310.pyc" FileName="TOOLBO~2.PYC|toolbox_ui.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\ui\__pycache__\toolbox_ui.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="__init__.cpython310.pyc_5" Component_="input_ui.cpython310.pyc" FileName="__INIT~1.PYC|__init__.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\gui\ui\__pycache__\__init__.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="__init__.cpython39.pyc_5" Component_="input_ui.cpython310.pyc" FileName="__INIT~2.PYC|__init__.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\ui\__pycache__\__init__.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="__init__.py_6" Component_="__init__.py_2" FileName="__init__.py" Attributes="0" SourcePath="Centre macro\src\gui\__init__.py" SelfReg="false"/>
-    <ROW File="__init__.cpython310.pyc_6" Component_="__init__.cpython310.pyc_2" FileName="__INIT~1.PYC|__init__.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\gui\__pycache__\__init__.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="__init__.cpython39.pyc_6" Component_="__init__.cpython310.pyc_2" FileName="__INIT~2.PYC|__init__.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\gui\__pycache__\__init__.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="__init__.py_19" Component_="input.ui" FileName="__init__.py" Attributes="0" SourcePath="Centre macro\src\gui\ui\__init__.py" SelfReg="false"/>
+    <ROW File="__init__.py_20" Component_="__init__.py_2" FileName="__init__.py" Attributes="0" SourcePath="Centre macro\src\gui\__init__.py" SelfReg="false"/>
     <ROW File="v_gb.py" Component_="v_gb.py" FileName="v_gb.py" Attributes="0" SourcePath="Centre macro\src\lib\globals\v_gb.py" SelfReg="false"/>
-    <ROW File="__init__.py_7" Component_="v_gb.py" FileName="__init__.py" Attributes="0" SourcePath="Centre macro\src\lib\globals\__init__.py" SelfReg="false"/>
-    <ROW File="v_gb.cpython310.pyc" Component_="v_gb.cpython310.pyc" FileName="V_GBCP~1.PYC|v_gb.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\lib\globals\__pycache__\v_gb.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="v_gb.cpython39.pyc" Component_="v_gb.cpython310.pyc" FileName="V_GBCP~2.PYC|v_gb.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\globals\__pycache__\v_gb.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="__init__.cpython310.pyc_7" Component_="v_gb.cpython310.pyc" FileName="__INIT~1.PYC|__init__.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\lib\globals\__pycache__\__init__.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="__init__.cpython39.pyc_7" Component_="v_gb.cpython310.pyc" FileName="__INIT~2.PYC|__init__.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\globals\__pycache__\__init__.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="__init__.py_21" Component_="v_gb.py" FileName="__init__.py" Attributes="0" SourcePath="Centre macro\src\lib\globals\__init__.py" SelfReg="false"/>
     <ROW File="Align.py" Component_="Align.py" FileName="Align.py" Attributes="0" SourcePath="Centre macro\src\lib\palettes\Align.py" SelfReg="false"/>
     <ROW File="AutoFormating.py" Component_="Align.py" FileName="AUTOFO~1.PY|AutoFormating.py" Attributes="0" SourcePath="Centre macro\src\lib\palettes\AutoFormating.py" SelfReg="false"/>
     <ROW File="ButtonSymbols.py" Component_="Align.py" FileName="BUTTON~1.PY|ButtonSymbols.py" Attributes="0" SourcePath="Centre macro\src\lib\palettes\ButtonSymbols.py" SelfReg="false"/>
@@ -757,66 +588,11 @@
     <ROW File="SelectionMode.py" Component_="Align.py" FileName="SELECT~2.PY|SelectionMode.py" Attributes="0" SourcePath="Centre macro\src\lib\palettes\SelectionMode.py" SelfReg="false"/>
     <ROW File="Shadow.py" Component_="Align.py" FileName="Shadow.py" Attributes="0" SourcePath="Centre macro\src\lib\palettes\Shadow.py" SelfReg="false"/>
     <ROW File="StyleBase.py" Component_="Align.py" FileName="STYLEB~1.PY|StyleBase.py" Attributes="0" SourcePath="Centre macro\src\lib\palettes\StyleBase.py" SelfReg="false"/>
+    <ROW File="StyleItemDelegate.py" Component_="Align.py" FileName="STYLEI~1.PY|StyleItemDelegate.py" Attributes="0" SourcePath="Centre macro\src\lib\palettes\StyleItemDelegate.py" SelfReg="false"/>
     <ROW File="TextFormat.py" Component_="Align.py" FileName="TEXTFO~1.PY|TextFormat.py" Attributes="0" SourcePath="Centre macro\src\lib\palettes\TextFormat.py" SelfReg="false"/>
     <ROW File="TickPosition.py" Component_="Align.py" FileName="TICKPO~1.PY|TickPosition.py" Attributes="0" SourcePath="Centre macro\src\lib\palettes\TickPosition.py" SelfReg="false"/>
-    <ROW File="__init__.py_8" Component_="Align.py" FileName="__init__.py" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__init__.py" SelfReg="false"/>
-    <ROW File="Align.cpython310.pyc" Component_="Align.cpython310.pyc" FileName="ALIGNC~1.PYC|Align.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\Align.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="Align.cpython39.pyc" Component_="Align.cpython310.pyc" FileName="ALIGNC~2.PYC|Align.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\Align.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="AutoFormating.cpython310.pyc" Component_="Align.cpython310.pyc" FileName="AUTOFO~1.PYC|AutoFormating.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\AutoFormating.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="AutoFormating.cpython39.pyc" Component_="Align.cpython310.pyc" FileName="AUTOFO~2.PYC|AutoFormating.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\AutoFormating.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="ButtonSymbols.cpython310.pyc" Component_="Align.cpython310.pyc" FileName="BUTTON~1.PYC|ButtonSymbols.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\ButtonSymbols.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="ButtonSymbols.cpython39.pyc" Component_="Align.cpython310.pyc" FileName="BUTTON~2.PYC|ButtonSymbols.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\ButtonSymbols.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="Cur.cpython310.pyc" Component_="Align.cpython310.pyc" FileName="CURCPY~1.PYC|Cur.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\Cur.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="Cur.cpython39.pyc" Component_="Align.cpython310.pyc" FileName="CURCPY~2.PYC|Cur.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\Cur.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="Dim.cpython310.pyc" Component_="Align.cpython310.pyc" FileName="DIMCPY~1.PYC|Dim.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\Dim.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="Dim.cpython39.pyc" Component_="Align.cpython310.pyc" FileName="DIMCPY~2.PYC|Dim.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\Dim.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="DragDropMode.cpython310.pyc" Component_="Align.cpython310.pyc" FileName="DRAGDR~1.PYC|DragDropMode.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\DragDropMode.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="DragDropMode.cpython39.pyc" Component_="Align.cpython310.pyc" FileName="DRAGDR~2.PYC|DragDropMode.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\DragDropMode.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="DropAction.cpython310.pyc" Component_="Align.cpython310.pyc" FileName="DROPAC~1.PYC|DropAction.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\DropAction.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="DropAction.cpython39.pyc" Component_="Align.cpython310.pyc" FileName="DROPAC~2.PYC|DropAction.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\DropAction.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="EchoMode.cpython310.pyc" Component_="Align.cpython310.pyc" FileName="ECHOMO~1.PYC|EchoMode.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\EchoMode.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="EchoMode.cpython39.pyc" Component_="Align.cpython310.pyc" FileName="ECHOMO~2.PYC|EchoMode.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\EchoMode.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="Flow.cpython310.pyc" Component_="Align.cpython310.pyc" FileName="FLOWCP~1.PYC|Flow.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\Flow.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="Flow.cpython39.pyc" Component_="Align.cpython310.pyc" FileName="FLOWCP~2.PYC|Flow.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\Flow.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="FocusPolicy.cpython310.pyc" Component_="Align.cpython310.pyc" FileName="FOCUSP~1.PYC|FocusPolicy.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\FocusPolicy.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="FocusPolicy.cpython39.pyc" Component_="Align.cpython310.pyc" FileName="FOCUSP~2.PYC|FocusPolicy.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\FocusPolicy.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="Font.cpython310.pyc" Component_="Align.cpython310.pyc" FileName="FONTCP~1.PYC|Font.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\Font.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="Font.cpython39.pyc" Component_="Align.cpython310.pyc" FileName="FONTCP~2.PYC|Font.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\Font.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="FrameShadow.cpython310.pyc" Component_="Align.cpython310.pyc" FileName="FRAMES~1.PYC|FrameShadow.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\FrameShadow.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="FrameShadow.cpython39.pyc" Component_="Align.cpython310.pyc" FileName="FRAMES~2.PYC|FrameShadow.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\FrameShadow.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="FrameShape.cpython310.pyc" Component_="Align.cpython310.pyc" FileName="FRAMES~3.PYC|FrameShape.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\FrameShape.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="FrameShape.cpython39.pyc" Component_="Align.cpython310.pyc" FileName="FRAMES~4.PYC|FrameShape.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\FrameShape.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="Img.cpython310.pyc" Component_="Align.cpython310.pyc" FileName="IMGCPY~1.PYC|Img.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\Img.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="Img.cpython39.pyc" Component_="Align.cpython310.pyc" FileName="IMGCPY~2.PYC|Img.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\Img.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="InputMask.cpython310.pyc" Component_="Align.cpython310.pyc" FileName="INPUTM~1.PYC|InputMask.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\InputMask.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="InputMask.cpython39.pyc" Component_="Align.cpython310.pyc" FileName="INPUTM~2.PYC|InputMask.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\InputMask.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="InsertPolicy.cpython310.pyc" Component_="Align.cpython310.pyc" FileName="INSERT~1.PYC|InsertPolicy.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\InsertPolicy.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="InsertPolicy.cpython39.pyc" Component_="Align.cpython310.pyc" FileName="INSERT~2.PYC|InsertPolicy.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\InsertPolicy.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="Keys.cpython310.pyc" Component_="Align.cpython310.pyc" FileName="KEYSCP~1.PYC|Keys.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\Keys.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="Keys.cpython39.pyc" Component_="Align.cpython310.pyc" FileName="KEYSCP~2.PYC|Keys.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\Keys.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="ProgressFormat.cpython310.pyc" Component_="Align.cpython310.pyc" FileName="PROGRE~1.PYC|ProgressFormat.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\ProgressFormat.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="ProgressFormat.cpython39.pyc" Component_="Align.cpython310.pyc" FileName="PROGRE~2.PYC|ProgressFormat.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\ProgressFormat.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="Rgb.cpython310.pyc" Component_="Align.cpython310.pyc" FileName="RGBCPY~1.PYC|Rgb.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\Rgb.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="Rgb.cpython39.pyc" Component_="Align.cpython310.pyc" FileName="RGBCPY~2.PYC|Rgb.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\Rgb.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="Scroll.cpython310.pyc" Component_="Align.cpython310.pyc" FileName="SCROLL~1.PYC|Scroll.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\Scroll.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="Scroll.cpython39.pyc" Component_="Align.cpython310.pyc" FileName="SCROLL~2.PYC|Scroll.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\Scroll.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="SelectionBehavior.cpython310.pyc" Component_="Align.cpython310.pyc" FileName="SELECT~1.PYC|SelectionBehavior.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\SelectionBehavior.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="SelectionBehavior.cpython39.pyc" Component_="Align.cpython310.pyc" FileName="SELECT~2.PYC|SelectionBehavior.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\SelectionBehavior.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="SelectionMode.cpython310.pyc" Component_="Align.cpython310.pyc" FileName="SELECT~3.PYC|SelectionMode.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\SelectionMode.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="SelectionMode.cpython39.pyc" Component_="Align.cpython310.pyc" FileName="SELECT~4.PYC|SelectionMode.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\SelectionMode.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="Shadow.cpython310.pyc" Component_="Align.cpython310.pyc" FileName="SHADOW~1.PYC|Shadow.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\Shadow.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="Shadow.cpython39.pyc" Component_="Align.cpython310.pyc" FileName="SHADOW~2.PYC|Shadow.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\Shadow.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="StyleBase.cpython310.pyc" Component_="Align.cpython310.pyc" FileName="STYLEB~1.PYC|StyleBase.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\StyleBase.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="StyleBase.cpython39.pyc" Component_="Align.cpython310.pyc" FileName="STYLEB~2.PYC|StyleBase.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\StyleBase.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="TextFormat.cpython310.pyc" Component_="Align.cpython310.pyc" FileName="TEXTFO~1.PYC|TextFormat.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\TextFormat.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="TextFormat.cpython39.pyc" Component_="Align.cpython310.pyc" FileName="TEXTFO~2.PYC|TextFormat.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\TextFormat.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="TickPosition.cpython310.pyc" Component_="Align.cpython310.pyc" FileName="TICKPO~1.PYC|TickPosition.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\TickPosition.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="TickPosition.cpython39.pyc" Component_="Align.cpython310.pyc" FileName="TICKPO~2.PYC|TickPosition.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\TickPosition.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="__init__.cpython310.pyc_8" Component_="Align.cpython310.pyc" FileName="__INIT~1.PYC|__init__.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\__init__.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="__init__.cpython39.pyc_8" Component_="Align.cpython310.pyc" FileName="__INIT~2.PYC|__init__.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__pycache__\__init__.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="__init__.py_9" Component_="__init__.py_3" FileName="__init__.py" Attributes="0" SourcePath="Centre macro\src\lib\__init__.py" SelfReg="false"/>
-    <ROW File="__init__.cpython310.pyc_9" Component_="__init__.cpython310.pyc_3" FileName="__INIT~1.PYC|__init__.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\lib\__pycache__\__init__.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="__init__.cpython39.pyc_9" Component_="__init__.cpython310.pyc_3" FileName="__INIT~2.PYC|__init__.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\lib\__pycache__\__init__.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="__init__.py_22" Component_="Align.py" FileName="__init__.py" Attributes="0" SourcePath="Centre macro\src\lib\palettes\__init__.py" SelfReg="false"/>
+    <ROW File="__init__.py_23" Component_="__init__.py_3" FileName="__init__.py" Attributes="0" SourcePath="Centre macro\src\lib\__init__.py" SelfReg="false"/>
     <ROW File="convert_ui.bat" Component_="convert_ui.bat" FileName="CONVER~1.BAT|convert_ui.bat" Attributes="0" SourcePath="Centre macro\src\scripts\convert_ui.bat" SelfReg="false"/>
     <ROW File="alice_blue.json" Component_="alice_blue.json" FileName="ALICE_~1.JSO|alice_blue.json" Attributes="0" SourcePath="Centre macro\src\theme\alice_blue.json" SelfReg="false"/>
     <ROW File="claire.json" Component_="alice_blue.json" FileName="CLAIRE~1.JSO|claire.json" Attributes="0" SourcePath="Centre macro\src\theme\claire.json" SelfReg="false"/>
@@ -831,149 +607,112 @@
     <ROW File="xanadu.json" Component_="alice_blue.json" FileName="XANADU~1.JSO|xanadu.json" Attributes="0" SourcePath="Centre macro\src\theme\xanadu.json" SelfReg="false"/>
     <ROW File="Build.py" Component_="Build.py" FileName="Build.py" Attributes="0" SourcePath="Centre macro\src\widgets\CheckBox\Build.py" SelfReg="false"/>
     <ROW File="CheckBox.py" Component_="Build.py" FileName="CheckBox.py" Attributes="0" SourcePath="Centre macro\src\widgets\CheckBox\CheckBox.py" SelfReg="false"/>
-    <ROW File="Build.cpython310.pyc" Component_="Build.cpython310.pyc" FileName="BUILDC~1.PYC|Build.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\CheckBox\__pycache__\Build.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="Build.cpython39.pyc" Component_="Build.cpython310.pyc" FileName="BUILDC~2.PYC|Build.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\CheckBox\__pycache__\Build.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="CheckBox.cpython310.pyc" Component_="Build.cpython310.pyc" FileName="CHECKB~1.PYC|CheckBox.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\CheckBox\__pycache__\CheckBox.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="CheckBox.cpython39.pyc" Component_="Build.cpython310.pyc" FileName="CHECKB~2.PYC|CheckBox.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\CheckBox\__pycache__\CheckBox.cpython-39.pyc" SelfReg="false"/>
     <ROW File="Build.py_1" Component_="Build.py_1" FileName="Build.py" Attributes="0" SourcePath="Centre macro\src\widgets\ComboBox\Build.py" SelfReg="false"/>
     <ROW File="ComboBox.py" Component_="Build.py_1" FileName="ComboBox.py" Attributes="0" SourcePath="Centre macro\src\widgets\ComboBox\ComboBox.py" SelfReg="false"/>
-    <ROW File="Build.cpython310.pyc_1" Component_="Build.cpython310.pyc_1" FileName="BUILDC~1.PYC|Build.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\ComboBox\__pycache__\Build.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="Build.cpython39.pyc_1" Component_="Build.cpython310.pyc_1" FileName="BUILDC~2.PYC|Build.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\ComboBox\__pycache__\Build.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="ComboBox.cpython310.pyc" Component_="Build.cpython310.pyc_1" FileName="COMBOB~1.PYC|ComboBox.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\ComboBox\__pycache__\ComboBox.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="ComboBox.cpython39.pyc" Component_="Build.cpython310.pyc_1" FileName="COMBOB~2.PYC|ComboBox.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\ComboBox\__pycache__\ComboBox.cpython-39.pyc" SelfReg="false"/>
     <ROW File="Build.py_2" Component_="Build.py_2" FileName="Build.py" Attributes="0" SourcePath="Centre macro\src\widgets\DateEdit\Build.py" SelfReg="false"/>
     <ROW File="DateEdit.py" Component_="Build.py_2" FileName="DateEdit.py" Attributes="0" SourcePath="Centre macro\src\widgets\DateEdit\DateEdit.py" SelfReg="false"/>
-    <ROW File="Build.cpython310.pyc_2" Component_="Build.cpython310.pyc_2" FileName="BUILDC~1.PYC|Build.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\DateEdit\__pycache__\Build.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="Build.cpython39.pyc_2" Component_="Build.cpython310.pyc_2" FileName="BUILDC~2.PYC|Build.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\DateEdit\__pycache__\Build.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="DateEdit.cpython310.pyc" Component_="Build.cpython310.pyc_2" FileName="DATEED~1.PYC|DateEdit.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\DateEdit\__pycache__\DateEdit.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="DateEdit.cpython39.pyc" Component_="Build.cpython310.pyc_2" FileName="DATEED~2.PYC|DateEdit.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\DateEdit\__pycache__\DateEdit.cpython-39.pyc" SelfReg="false"/>
     <ROW File="Build.py_3" Component_="Build.py_3" FileName="Build.py" Attributes="0" SourcePath="Centre macro\src\widgets\Frame\Build.py" SelfReg="false"/>
     <ROW File="Frame.py" Component_="Build.py_3" FileName="Frame.py" Attributes="0" SourcePath="Centre macro\src\widgets\Frame\Frame.py" SelfReg="false"/>
-    <ROW File="Build.cpython310.pyc_3" Component_="Build.cpython310.pyc_3" FileName="BUILDC~1.PYC|Build.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\Frame\__pycache__\Build.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="Build.cpython39.pyc_3" Component_="Build.cpython310.pyc_3" FileName="BUILDC~2.PYC|Build.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\Frame\__pycache__\Build.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="Frame.cpython310.pyc" Component_="Build.cpython310.pyc_3" FileName="FRAMEC~1.PYC|Frame.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\Frame\__pycache__\Frame.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="Frame.cpython39.pyc" Component_="Build.cpython310.pyc_3" FileName="FRAMEC~2.PYC|Frame.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\Frame\__pycache__\Frame.cpython-39.pyc" SelfReg="false"/>
     <ROW File="Build.py_4" Component_="Build.py_4" FileName="Build.py" Attributes="0" SourcePath="Centre macro\src\widgets\Label\Build.py" SelfReg="false"/>
     <ROW File="Label.py" Component_="Build.py_4" FileName="Label.py" Attributes="0" SourcePath="Centre macro\src\widgets\Label\Label.py" SelfReg="false"/>
-    <ROW File="Build.cpython310.pyc_4" Component_="Build.cpython310.pyc_4" FileName="BUILDC~1.PYC|Build.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\Label\__pycache__\Build.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="Build.cpython39.pyc_4" Component_="Build.cpython310.pyc_4" FileName="BUILDC~2.PYC|Build.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\Label\__pycache__\Build.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="Label.cpython310.pyc" Component_="Build.cpython310.pyc_4" FileName="LABELC~1.PYC|Label.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\Label\__pycache__\Label.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="Label.cpython39.pyc" Component_="Build.cpython310.pyc_4" FileName="LABELC~2.PYC|Label.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\Label\__pycache__\Label.cpython-39.pyc" SelfReg="false"/>
     <ROW File="Build.py_5" Component_="Build.py_5" FileName="Build.py" Attributes="0" SourcePath="Centre macro\src\widgets\LineEdit\Build.py" SelfReg="false"/>
     <ROW File="LineEdit.py" Component_="Build.py_5" FileName="LineEdit.py" Attributes="0" SourcePath="Centre macro\src\widgets\LineEdit\LineEdit.py" SelfReg="false"/>
-    <ROW File="Build.cpython310.pyc_5" Component_="Build.cpython310.pyc_5" FileName="BUILDC~1.PYC|Build.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\LineEdit\__pycache__\Build.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="Build.cpython39.pyc_5" Component_="Build.cpython310.pyc_5" FileName="BUILDC~2.PYC|Build.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\LineEdit\__pycache__\Build.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="LineEdit.cpython310.pyc" Component_="Build.cpython310.pyc_5" FileName="LINEED~1.PYC|LineEdit.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\LineEdit\__pycache__\LineEdit.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="LineEdit.cpython39.pyc" Component_="Build.cpython310.pyc_5" FileName="LINEED~2.PYC|LineEdit.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\LineEdit\__pycache__\LineEdit.cpython-39.pyc" SelfReg="false"/>
     <ROW File="Build.py_6" Component_="Build.py_6" FileName="Build.py" Attributes="0" SourcePath="Centre macro\src\widgets\ListWidget\Build.py" SelfReg="false"/>
     <ROW File="ListWidget.py" Component_="Build.py_6" FileName="LISTWI~1.PY|ListWidget.py" Attributes="0" SourcePath="Centre macro\src\widgets\ListWidget\ListWidget.py" SelfReg="false"/>
-    <ROW File="Build.cpython310.pyc_6" Component_="Build.cpython310.pyc_6" FileName="BUILDC~1.PYC|Build.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\ListWidget\__pycache__\Build.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="Build.cpython39.pyc_6" Component_="Build.cpython310.pyc_6" FileName="BUILDC~2.PYC|Build.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\ListWidget\__pycache__\Build.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="ListWidget.cpython310.pyc" Component_="Build.cpython310.pyc_6" FileName="LISTWI~1.PYC|ListWidget.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\ListWidget\__pycache__\ListWidget.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="ListWidget.cpython39.pyc" Component_="Build.cpython310.pyc_6" FileName="LISTWI~2.PYC|ListWidget.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\ListWidget\__pycache__\ListWidget.cpython-39.pyc" SelfReg="false"/>
     <ROW File="Build.py_7" Component_="Build.py_7" FileName="Build.py" Attributes="0" SourcePath="Centre macro\src\widgets\PlainTextEdit\Build.py" SelfReg="false"/>
     <ROW File="PlainTextEdit.py" Component_="Build.py_7" FileName="PLAINT~1.PY|PlainTextEdit.py" Attributes="0" SourcePath="Centre macro\src\widgets\PlainTextEdit\PlainTextEdit.py" SelfReg="false"/>
-    <ROW File="Build.cpython310.pyc_7" Component_="Build.cpython310.pyc_7" FileName="BUILDC~1.PYC|Build.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\PlainTextEdit\__pycache__\Build.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="Build.cpython39.pyc_7" Component_="Build.cpython310.pyc_7" FileName="BUILDC~2.PYC|Build.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\PlainTextEdit\__pycache__\Build.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="PlainTextEdit.cpython310.pyc" Component_="Build.cpython310.pyc_7" FileName="PLAINT~1.PYC|PlainTextEdit.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\PlainTextEdit\__pycache__\PlainTextEdit.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="PlainTextEdit.cpython39.pyc" Component_="Build.cpython310.pyc_7" FileName="PLAINT~2.PYC|PlainTextEdit.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\PlainTextEdit\__pycache__\PlainTextEdit.cpython-39.pyc" SelfReg="false"/>
     <ROW File="Build.py_8" Component_="Build.py_8" FileName="Build.py" Attributes="0" SourcePath="Centre macro\src\widgets\ProgressBar\Build.py" SelfReg="false"/>
     <ROW File="ProgressBar.py" Component_="Build.py_8" FileName="PROGRE~1.PY|ProgressBar.py" Attributes="0" SourcePath="Centre macro\src\widgets\ProgressBar\ProgressBar.py" SelfReg="false"/>
-    <ROW File="Build.cpython310.pyc_8" Component_="Build.cpython310.pyc_8" FileName="BUILDC~1.PYC|Build.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\ProgressBar\__pycache__\Build.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="Build.cpython39.pyc_8" Component_="Build.cpython310.pyc_8" FileName="BUILDC~2.PYC|Build.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\ProgressBar\__pycache__\Build.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="ProgressBar.cpython310.pyc" Component_="Build.cpython310.pyc_8" FileName="PROGRE~1.PYC|ProgressBar.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\ProgressBar\__pycache__\ProgressBar.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="ProgressBar.cpython39.pyc" Component_="Build.cpython310.pyc_8" FileName="PROGRE~2.PYC|ProgressBar.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\ProgressBar\__pycache__\ProgressBar.cpython-39.pyc" SelfReg="false"/>
     <ROW File="Build.py_9" Component_="Build.py_9" FileName="Build.py" Attributes="0" SourcePath="Centre macro\src\widgets\PushButton\Build.py" SelfReg="false"/>
     <ROW File="ClassePb.py" Component_="Build.py_9" FileName="ClassePb.py" Attributes="0" SourcePath="Centre macro\src\widgets\PushButton\ClassePb.py" SelfReg="false"/>
     <ROW File="PushButton.py" Component_="Build.py_9" FileName="PUSHBU~1.PY|PushButton.py" Attributes="0" SourcePath="Centre macro\src\widgets\PushButton\PushButton.py" SelfReg="false"/>
-    <ROW File="Build.cpython310.pyc_9" Component_="Build.cpython310.pyc_9" FileName="BUILDC~1.PYC|Build.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\PushButton\__pycache__\Build.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="Build.cpython39.pyc_9" Component_="Build.cpython310.pyc_9" FileName="BUILDC~2.PYC|Build.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\PushButton\__pycache__\Build.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="ClassePb.cpython310.pyc" Component_="Build.cpython310.pyc_9" FileName="CLASSE~1.PYC|ClassePb.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\PushButton\__pycache__\ClassePb.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="ClassePb.cpython39.pyc" Component_="Build.cpython310.pyc_9" FileName="CLASSE~2.PYC|ClassePb.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\PushButton\__pycache__\ClassePb.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="PushButton.cpython310.pyc" Component_="Build.cpython310.pyc_9" FileName="PUSHBU~1.PYC|PushButton.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\PushButton\__pycache__\PushButton.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="PushButton.cpython39.pyc" Component_="Build.cpython310.pyc_9" FileName="PUSHBU~2.PYC|PushButton.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\PushButton\__pycache__\PushButton.cpython-39.pyc" SelfReg="false"/>
     <ROW File="Build.py_10" Component_="Build.py_10" FileName="Build.py" Attributes="0" SourcePath="Centre macro\src\widgets\RadioButton\Build.py" SelfReg="false"/>
     <ROW File="RadioButton.py" Component_="Build.py_10" FileName="RADIOB~1.PY|RadioButton.py" Attributes="0" SourcePath="Centre macro\src\widgets\RadioButton\RadioButton.py" SelfReg="false"/>
-    <ROW File="Build.cpython310.pyc_10" Component_="Build.cpython310.pyc_10" FileName="BUILDC~1.PYC|Build.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\RadioButton\__pycache__\Build.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="Build.cpython39.pyc_10" Component_="Build.cpython310.pyc_10" FileName="BUILDC~2.PYC|Build.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\RadioButton\__pycache__\Build.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="RadioButton.cpython310.pyc" Component_="Build.cpython310.pyc_10" FileName="RADIOB~1.PYC|RadioButton.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\RadioButton\__pycache__\RadioButton.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="RadioButton.cpython39.pyc" Component_="Build.cpython310.pyc_10" FileName="RADIOB~2.PYC|RadioButton.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\RadioButton\__pycache__\RadioButton.cpython-39.pyc" SelfReg="false"/>
     <ROW File="Build.py_11" Component_="Build.py_11" FileName="Build.py" Attributes="0" SourcePath="Centre macro\src\widgets\ScrollArea\Build.py" SelfReg="false"/>
     <ROW File="ScrollArea.py" Component_="Build.py_11" FileName="SCROLL~1.PY|ScrollArea.py" Attributes="0" SourcePath="Centre macro\src\widgets\ScrollArea\ScrollArea.py" SelfReg="false"/>
-    <ROW File="Build.cpython310.pyc_11" Component_="Build.cpython310.pyc_11" FileName="BUILDC~1.PYC|Build.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\ScrollArea\__pycache__\Build.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="Build.cpython39.pyc_11" Component_="Build.cpython310.pyc_11" FileName="BUILDC~2.PYC|Build.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\ScrollArea\__pycache__\Build.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="ScrollArea.cpython310.pyc" Component_="Build.cpython310.pyc_11" FileName="SCROLL~1.PYC|ScrollArea.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\ScrollArea\__pycache__\ScrollArea.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="ScrollArea.cpython39.pyc" Component_="Build.cpython310.pyc_11" FileName="SCROLL~2.PYC|ScrollArea.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\ScrollArea\__pycache__\ScrollArea.cpython-39.pyc" SelfReg="false"/>
     <ROW File="Build.py_12" Component_="Build.py_12" FileName="Build.py" Attributes="0" SourcePath="Centre macro\src\widgets\Slider\Build.py" SelfReg="false"/>
     <ROW File="Slider.py" Component_="Build.py_12" FileName="Slider.py" Attributes="0" SourcePath="Centre macro\src\widgets\Slider\Slider.py" SelfReg="false"/>
-    <ROW File="Build.cpython310.pyc_12" Component_="Build.cpython310.pyc_12" FileName="BUILDC~1.PYC|Build.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\Slider\__pycache__\Build.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="Build.cpython39.pyc_12" Component_="Build.cpython310.pyc_12" FileName="BUILDC~2.PYC|Build.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\Slider\__pycache__\Build.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="Slider.cpython310.pyc" Component_="Build.cpython310.pyc_12" FileName="SLIDER~1.PYC|Slider.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\Slider\__pycache__\Slider.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="Slider.cpython39.pyc" Component_="Build.cpython310.pyc_12" FileName="SLIDER~2.PYC|Slider.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\Slider\__pycache__\Slider.cpython-39.pyc" SelfReg="false"/>
     <ROW File="Build.py_13" Component_="Build.py_13" FileName="Build.py" Attributes="0" SourcePath="Centre macro\src\widgets\SpinBox\Build.py" SelfReg="false"/>
     <ROW File="SpinBox.py" Component_="Build.py_13" FileName="SpinBox.py" Attributes="0" SourcePath="Centre macro\src\widgets\SpinBox\SpinBox.py" SelfReg="false"/>
-    <ROW File="Build.cpython310.pyc_13" Component_="Build.cpython310.pyc_13" FileName="BUILDC~1.PYC|Build.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\SpinBox\__pycache__\Build.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="Build.cpython39.pyc_13" Component_="Build.cpython310.pyc_13" FileName="BUILDC~2.PYC|Build.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\SpinBox\__pycache__\Build.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="SpinBox.cpython310.pyc" Component_="Build.cpython310.pyc_13" FileName="SPINBO~1.PYC|SpinBox.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\SpinBox\__pycache__\SpinBox.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="SpinBox.cpython39.pyc" Component_="Build.cpython310.pyc_13" FileName="SPINBO~2.PYC|SpinBox.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\SpinBox\__pycache__\SpinBox.cpython-39.pyc" SelfReg="false"/>
     <ROW File="Build.py_14" Component_="Build.py_14" FileName="Build.py" Attributes="0" SourcePath="Centre macro\src\widgets\TableWidget\Build.py" SelfReg="false"/>
     <ROW File="TableWidget.py" Component_="Build.py_14" FileName="TABLEW~1.PY|TableWidget.py" Attributes="0" SourcePath="Centre macro\src\widgets\TableWidget\TableWidget.py" SelfReg="false"/>
-    <ROW File="Build.cpython310.pyc_14" Component_="Build.cpython310.pyc_14" FileName="BUILDC~1.PYC|Build.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\TableWidget\__pycache__\Build.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="Build.cpython39.pyc_14" Component_="Build.cpython310.pyc_14" FileName="BUILDC~2.PYC|Build.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\TableWidget\__pycache__\Build.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="TableWidget.cpython310.pyc" Component_="Build.cpython310.pyc_14" FileName="TABLEW~1.PYC|TableWidget.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\TableWidget\__pycache__\TableWidget.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="TableWidget.cpython39.pyc" Component_="Build.cpython310.pyc_14" FileName="TABLEW~2.PYC|TableWidget.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\TableWidget\__pycache__\TableWidget.cpython-39.pyc" SelfReg="false"/>
     <ROW File="Build.py_15" Component_="Build.py_15" FileName="Build.py" Attributes="0" SourcePath="Centre macro\src\widgets\TextEdit\Build.py" SelfReg="false"/>
     <ROW File="TextEdit.py" Component_="Build.py_15" FileName="TextEdit.py" Attributes="0" SourcePath="Centre macro\src\widgets\TextEdit\TextEdit.py" SelfReg="false"/>
-    <ROW File="Build.cpython310.pyc_15" Component_="Build.cpython310.pyc_15" FileName="BUILDC~1.PYC|Build.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\TextEdit\__pycache__\Build.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="Build.cpython39.pyc_15" Component_="Build.cpython310.pyc_15" FileName="BUILDC~2.PYC|Build.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\TextEdit\__pycache__\Build.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="TextEdit.cpython310.pyc" Component_="Build.cpython310.pyc_15" FileName="TEXTED~1.PYC|TextEdit.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\TextEdit\__pycache__\TextEdit.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="TextEdit.cpython39.pyc" Component_="Build.cpython310.pyc_15" FileName="TEXTED~2.PYC|TextEdit.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\TextEdit\__pycache__\TextEdit.cpython-39.pyc" SelfReg="false"/>
     <ROW File="Build.py_16" Component_="Build.py_16" FileName="Build.py" Attributes="0" SourcePath="Centre macro\src\widgets\ToolBox\Build.py" SelfReg="false"/>
     <ROW File="ToolBox.py" Component_="Build.py_16" FileName="ToolBox.py" Attributes="0" SourcePath="Centre macro\src\widgets\ToolBox\ToolBox.py" SelfReg="false"/>
-    <ROW File="Build.cpython310.pyc_16" Component_="Build.cpython310.pyc_16" FileName="BUILDC~1.PYC|Build.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\ToolBox\__pycache__\Build.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="Build.cpython39.pyc_16" Component_="Build.cpython310.pyc_16" FileName="BUILDC~2.PYC|Build.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\ToolBox\__pycache__\Build.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="ToolBox.cpython310.pyc" Component_="Build.cpython310.pyc_16" FileName="TOOLBO~1.PYC|ToolBox.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\ToolBox\__pycache__\ToolBox.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="ToolBox.cpython39.pyc" Component_="Build.cpython310.pyc_16" FileName="TOOLBO~2.PYC|ToolBox.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\ToolBox\__pycache__\ToolBox.cpython-39.pyc" SelfReg="false"/>
     <ROW File="Build.py_17" Component_="Build.py_17" FileName="Build.py" Attributes="0" SourcePath="Centre macro\src\widgets\TrayIcon\Build.py" SelfReg="false"/>
     <ROW File="TrayIcon.py" Component_="Build.py_17" FileName="TrayIcon.py" Attributes="0" SourcePath="Centre macro\src\widgets\TrayIcon\TrayIcon.py" SelfReg="false"/>
-    <ROW File="Build.cpython310.pyc_17" Component_="Build.cpython310.pyc_17" FileName="BUILDC~1.PYC|Build.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\TrayIcon\__pycache__\Build.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="Build.cpython39.pyc_17" Component_="Build.cpython310.pyc_17" FileName="BUILDC~2.PYC|Build.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\TrayIcon\__pycache__\Build.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="TrayIcon.cpython310.pyc" Component_="Build.cpython310.pyc_17" FileName="TRAYIC~1.PYC|TrayIcon.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\TrayIcon\__pycache__\TrayIcon.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="TrayIcon.cpython39.pyc" Component_="Build.cpython310.pyc_17" FileName="TRAYIC~2.PYC|TrayIcon.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\TrayIcon\__pycache__\TrayIcon.cpython-39.pyc" SelfReg="false"/>
     <ROW File="Build.py_18" Component_="Build.py_18" FileName="Build.py" Attributes="0" SourcePath="Centre macro\src\widgets\TreeWidget\Build.py" SelfReg="false"/>
     <ROW File="TreeWidget.py" Component_="Build.py_18" FileName="TREEWI~1.PY|TreeWidget.py" Attributes="0" SourcePath="Centre macro\src\widgets\TreeWidget\TreeWidget.py" SelfReg="false"/>
-    <ROW File="Build.cpython310.pyc_18" Component_="Build.cpython310.pyc_18" FileName="BUILDC~1.PYC|Build.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\TreeWidget\__pycache__\Build.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="Build.cpython39.pyc_18" Component_="Build.cpython310.pyc_18" FileName="BUILDC~2.PYC|Build.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\TreeWidget\__pycache__\Build.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="TreeWidget.cpython310.pyc" Component_="Build.cpython310.pyc_18" FileName="TREEWI~1.PYC|TreeWidget.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\TreeWidget\__pycache__\TreeWidget.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="TreeWidget.cpython39.pyc" Component_="Build.cpython310.pyc_18" FileName="TREEWI~2.PYC|TreeWidget.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\TreeWidget\__pycache__\TreeWidget.cpython-39.pyc" SelfReg="false"/>
     <ROW File="vb_app.py" Component_="vb_app.py" FileName="vb_app.py" Attributes="0" SourcePath="Centre macro\src\widgets\vb_app.py" SelfReg="false"/>
     <ROW File="vb_wg.py" Component_="vb_app.py" FileName="vb_wg.py" Attributes="0" SourcePath="Centre macro\src\widgets\vb_wg.py" SelfReg="false"/>
-    <ROW File="__init__.py_10" Component_="vb_app.py" FileName="__init__.py" Attributes="0" SourcePath="Centre macro\src\widgets\__init__.py" SelfReg="false"/>
-    <ROW File="vb_app.cpython310.pyc" Component_="vb_app.cpython310.pyc" FileName="VB_APP~1.PYC|vb_app.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\__pycache__\vb_app.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="vb_app.cpython39.pyc" Component_="vb_app.cpython310.pyc" FileName="VB_APP~2.PYC|vb_app.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\__pycache__\vb_app.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="vb_wg.cpython310.pyc" Component_="vb_app.cpython310.pyc" FileName="VB_WGC~1.PYC|vb_wg.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\__pycache__\vb_wg.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="vb_wg.cpython39.pyc" Component_="vb_app.cpython310.pyc" FileName="VB_WGC~2.PYC|vb_wg.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\__pycache__\vb_wg.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="__init__.cpython310.pyc_10" Component_="vb_app.cpython310.pyc" FileName="__INIT~1.PYC|__init__.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\__pycache__\__init__.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="__init__.cpython39.pyc_10" Component_="vb_app.cpython310.pyc" FileName="__INIT~2.PYC|__init__.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widgets\__pycache__\__init__.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="__init__.py_24" Component_="vb_app.py" FileName="__init__.py" Attributes="0" SourcePath="Centre macro\src\widgets\__init__.py" SelfReg="false"/>
     <ROW File="Frame_cust.py" Component_="Frame_cust.py" FileName="FRAME_~1.PY|Frame_cust.py" Attributes="0" SourcePath="Centre macro\src\widget_custom\Frame_cust.py" SelfReg="false"/>
     <ROW File="Label_cust.py" Component_="Frame_cust.py" FileName="LABEL_~1.PY|Label_cust.py" Attributes="0" SourcePath="Centre macro\src\widget_custom\Label_cust.py" SelfReg="false"/>
-    <ROW File="__init__.py_11" Component_="Frame_cust.py" FileName="__init__.py" Attributes="0" SourcePath="Centre macro\src\widget_custom\__init__.py" SelfReg="false"/>
-    <ROW File="Frame_cust.cpython310.pyc" Component_="Frame_cust.cpython310.pyc" FileName="FRAME_~1.PYC|Frame_cust.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\widget_custom\__pycache__\Frame_cust.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="Frame_cust.cpython39.pyc" Component_="Frame_cust.cpython310.pyc" FileName="FRAME_~2.PYC|Frame_cust.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widget_custom\__pycache__\Frame_cust.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="Label_cust.cpython310.pyc" Component_="Frame_cust.cpython310.pyc" FileName="LABEL_~1.PYC|Label_cust.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\widget_custom\__pycache__\Label_cust.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="Label_cust.cpython39.pyc" Component_="Frame_cust.cpython310.pyc" FileName="LABEL_~2.PYC|Label_cust.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widget_custom\__pycache__\Label_cust.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="__init__.cpython310.pyc_11" Component_="Frame_cust.cpython310.pyc" FileName="__INIT~1.PYC|__init__.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\widget_custom\__pycache__\__init__.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="__init__.cpython39.pyc_11" Component_="Frame_cust.cpython310.pyc" FileName="__INIT~2.PYC|__init__.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\widget_custom\__pycache__\__init__.cpython-39.pyc" SelfReg="false"/>
-    <ROW File="__init__.py_12" Component_="__init__.py_4" FileName="__init__.py" Attributes="0" SourcePath="Centre macro\src\__init__.py" SelfReg="false"/>
-    <ROW File="__init__.cpython310.pyc_12" Component_="__init__.cpython310.pyc_4" FileName="__INIT~1.PYC|__init__.cpython-310.pyc" Attributes="0" SourcePath="Centre macro\src\__pycache__\__init__.cpython-310.pyc" SelfReg="false"/>
-    <ROW File="__init__.cpython39.pyc_12" Component_="__init__.cpython310.pyc_4" FileName="__INIT~2.PYC|__init__.cpython-39.pyc" Attributes="0" SourcePath="Centre macro\src\__pycache__\__init__.cpython-39.pyc" SelfReg="false"/>
+    <ROW File="__init__.py_25" Component_="Frame_cust.py" FileName="__init__.py" Attributes="0" SourcePath="Centre macro\src\widget_custom\__init__.py" SelfReg="false"/>
+    <ROW File="__init__.py_26" Component_="__init__.py_4" FileName="__init__.py" Attributes="0" SourcePath="Centre macro\src\__init__.py" SelfReg="false"/>
     <ROW File="_yaml.cp310win_amd64.pyd" Component_="_yaml.cp310win_amd64.pyd" FileName="_YAMLC~1.PYD|_yaml.cp310-win_amd64.pyd" Attributes="0" SourcePath="Centre macro\yaml\_yaml.cp310-win_amd64.pyd" SelfReg="false"/>
-    <ROW File="_asyncio.pyd" Component_="_multiprocessing.pyd" FileName="_asyncio.pyd" Attributes="0" SourcePath="Centre macro\_asyncio.pyd" SelfReg="false"/>
-    <ROW File="_bz2.pyd" Component_="_multiprocessing.pyd" FileName="_bz2.pyd" Attributes="0" SourcePath="Centre macro\_bz2.pyd" SelfReg="false"/>
-    <ROW File="_ctypes.pyd" Component_="_multiprocessing.pyd" FileName="_ctypes.pyd" Attributes="0" SourcePath="Centre macro\_ctypes.pyd" SelfReg="false"/>
-    <ROW File="_decimal.pyd" Component_="_multiprocessing.pyd" FileName="_decimal.pyd" Attributes="0" SourcePath="Centre macro\_decimal.pyd" SelfReg="false"/>
-    <ROW File="_hashlib.pyd" Component_="_multiprocessing.pyd" FileName="_hashlib.pyd" Attributes="0" SourcePath="Centre macro\_hashlib.pyd" SelfReg="false"/>
-    <ROW File="_lzma.pyd" Component_="_multiprocessing.pyd" FileName="_lzma.pyd" Attributes="0" SourcePath="Centre macro\_lzma.pyd" SelfReg="false"/>
+    <ROW File="_speedups.cp310win_amd64.pyd" Component_="_speedups.cp310win_amd64.pyd" FileName="_SPEED~1.PYD|_speedups.cp310-win_amd64.pyd" Attributes="0" SourcePath="Centre macro\markupsafe\_speedups.cp310-win_amd64.pyd" SelfReg="false"/>
+    <ROW File="_psycopg.cp310win_amd64.pyd" Component_="_psycopg.cp310win_amd64.pyd" FileName="_PSYCO~1.PYD|_psycopg.cp310-win_amd64.pyd" Attributes="0" SourcePath="Centre macro\psycopg2\_psycopg.cp310-win_amd64.pyd" SelfReg="false"/>
+    <ROW File="qsvgicon.dll" Component_="qsvgicon.dll" FileName="qsvgicon.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\iconengines\qsvgicon.dll" SelfReg="false"/>
+    <ROW File="qgif.dll" Component_="qgif.dll" FileName="qgif.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\imageformats\qgif.dll" SelfReg="false"/>
+    <ROW File="qicns.dll" Component_="qicns.dll" FileName="qicns.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\imageformats\qicns.dll" SelfReg="false"/>
+    <ROW File="qico.dll" Component_="qico.dll" FileName="qico.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\imageformats\qico.dll" SelfReg="false"/>
+    <ROW File="qjpeg.dll" Component_="qjpeg.dll" FileName="qjpeg.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\imageformats\qjpeg.dll" SelfReg="false"/>
+    <ROW File="qpdf.dll" Component_="qpdf.dll" FileName="qpdf.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\imageformats\qpdf.dll" SelfReg="false"/>
+    <ROW File="qsvg.dll" Component_="qsvg.dll" FileName="qsvg.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\imageformats\qsvg.dll" SelfReg="false"/>
+    <ROW File="qtga.dll" Component_="qtga.dll" FileName="qtga.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\imageformats\qtga.dll" SelfReg="false"/>
+    <ROW File="qtiff.dll" Component_="qtiff.dll" FileName="qtiff.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\imageformats\qtiff.dll" SelfReg="false"/>
+    <ROW File="qwbmp.dll" Component_="qwbmp.dll" FileName="qwbmp.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\imageformats\qwbmp.dll" SelfReg="false"/>
+    <ROW File="qwebp.dll" Component_="qwebp.dll" FileName="qwebp.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\imageformats\qwebp.dll" SelfReg="false"/>
+    <ROW File="qnetworklistmanager.dll" Component_="qnetworklistmanager.dll" FileName="QNETWO~1.DLL|qnetworklistmanager.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\networkinformation\qnetworklistmanager.dll" SelfReg="false"/>
+    <ROW File="qtvirtualkeyboardplugin.dll" Component_="qtvirtualkeyboardplugin.dll" FileName="QTVIRT~1.DLL|qtvirtualkeyboardplugin.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\platforminputcontexts\qtvirtualkeyboardplugin.dll" SelfReg="false"/>
+    <ROW File="qdirect2d.dll" Component_="qdirect2d.dll" FileName="QDIREC~1.DLL|qdirect2d.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\platforms\qdirect2d.dll" SelfReg="false"/>
+    <ROW File="qminimal.dll" Component_="qminimal.dll" FileName="qminimal.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\platforms\qminimal.dll" SelfReg="false"/>
+    <ROW File="qoffscreen.dll" Component_="qoffscreen.dll" FileName="QOFFSC~1.DLL|qoffscreen.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\platforms\qoffscreen.dll" SelfReg="false"/>
+    <ROW File="qwindows.dll" Component_="qwindows.dll" FileName="qwindows.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\platforms\qwindows.dll" SelfReg="false"/>
+    <ROW File="qsqlite.dll" Component_="qsqlite.dll" FileName="qsqlite.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\sqldrivers\qsqlite.dll" SelfReg="false"/>
+    <ROW File="qsqlodbc.dll" Component_="qsqlodbc.dll" FileName="qsqlodbc.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\sqldrivers\qsqlodbc.dll" SelfReg="false"/>
+    <ROW File="qsqlpsql.dll" Component_="qsqlpsql.dll" FileName="qsqlpsql.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\sqldrivers\qsqlpsql.dll" SelfReg="false"/>
+    <ROW File="qwindowsvistastyle.dll" Component_="qwindowsvistastyle.dll" FileName="QWINDO~1.DLL|qwindowsvistastyle.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\styles\qwindowsvistastyle.dll" SelfReg="false"/>
+    <ROW File="qcertonlybackend.dll" Component_="qcertonlybackend.dll" FileName="QCERTO~1.DLL|qcertonlybackend.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\tls\qcertonlybackend.dll" SelfReg="false"/>
+    <ROW File="qopensslbackend.dll" Component_="qopensslbackend.dll" FileName="QOPENS~1.DLL|qopensslbackend.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\tls\qopensslbackend.dll" SelfReg="false"/>
+    <ROW File="qschannelbackend.dll" Component_="qschannelbackend.dll" FileName="QSCHAN~1.DLL|qschannelbackend.dll" Attributes="0" SourcePath="Centre macro\PySide6\plugins\tls\qschannelbackend.dll" SelfReg="false"/>
+    <ROW File="QtCore.pyd" Component_="QtCore.pyd" FileName="QtCore.pyd" Attributes="0" SourcePath="Centre macro\PySide6\QtCore.pyd" SelfReg="false"/>
+    <ROW File="QtGui.pyd" Component_="QtCore.pyd" FileName="QtGui.pyd" Attributes="0" SourcePath="Centre macro\PySide6\QtGui.pyd" SelfReg="false"/>
+    <ROW File="QtNetwork.pyd" Component_="QtCore.pyd" FileName="QTNETW~1.PYD|QtNetwork.pyd" Attributes="0" SourcePath="Centre macro\PySide6\QtNetwork.pyd" SelfReg="false"/>
+    <ROW File="QtSql.pyd" Component_="QtCore.pyd" FileName="QtSql.pyd" Attributes="0" SourcePath="Centre macro\PySide6\QtSql.pyd" SelfReg="false"/>
+    <ROW File="QtWidgets.pyd" Component_="QtCore.pyd" FileName="QTWIDG~1.PYD|QtWidgets.pyd" Attributes="0" SourcePath="Centre macro\PySide6\QtWidgets.pyd" SelfReg="false"/>
+    <ROW File="qtbase_ar.qm" Component_="qtbase_ar.qm" FileName="QTBASE~1.QM|qtbase_ar.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_ar.qm" SelfReg="false"/>
+    <ROW File="qtbase_bg.qm" Component_="qtbase_ar.qm" FileName="QTBASE~2.QM|qtbase_bg.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_bg.qm" SelfReg="false"/>
+    <ROW File="qtbase_ca.qm" Component_="qtbase_ar.qm" FileName="QTBASE~3.QM|qtbase_ca.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_ca.qm" SelfReg="false"/>
+    <ROW File="qtbase_cs.qm" Component_="qtbase_ar.qm" FileName="QTBASE~4.QM|qtbase_cs.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_cs.qm" SelfReg="false"/>
+    <ROW File="qtbase_da.qm" Component_="qtbase_ar.qm" FileName="QTBASE~5.QM|qtbase_da.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_da.qm" SelfReg="false"/>
+    <ROW File="qtbase_de.qm" Component_="qtbase_ar.qm" FileName="QTBASE~6.QM|qtbase_de.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_de.qm" SelfReg="false"/>
+    <ROW File="qtbase_en.qm" Component_="qtbase_ar.qm" FileName="QTBASE~7.QM|qtbase_en.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_en.qm" SelfReg="false"/>
+    <ROW File="qtbase_es.qm" Component_="qtbase_ar.qm" FileName="QTBASE~8.QM|qtbase_es.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_es.qm" SelfReg="false"/>
+    <ROW File="qtbase_fa.qm" Component_="qtbase_ar.qm" FileName="QTBASE~9.QM|qtbase_fa.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_fa.qm" SelfReg="false"/>
+    <ROW File="qtbase_fi.qm" Component_="qtbase_ar.qm" FileName="QTBAS~10.QM|qtbase_fi.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_fi.qm" SelfReg="false"/>
+    <ROW File="qtbase_fr.qm" Component_="qtbase_ar.qm" FileName="QTBAS~11.QM|qtbase_fr.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_fr.qm" SelfReg="false"/>
+    <ROW File="qtbase_gd.qm" Component_="qtbase_ar.qm" FileName="QTBAS~12.QM|qtbase_gd.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_gd.qm" SelfReg="false"/>
+    <ROW File="qtbase_he.qm" Component_="qtbase_ar.qm" FileName="QTBAS~13.QM|qtbase_he.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_he.qm" SelfReg="false"/>
+    <ROW File="qtbase_hr.qm" Component_="qtbase_ar.qm" FileName="QTBAS~14.QM|qtbase_hr.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_hr.qm" SelfReg="false"/>
+    <ROW File="qtbase_hu.qm" Component_="qtbase_ar.qm" FileName="QTBAS~15.QM|qtbase_hu.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_hu.qm" SelfReg="false"/>
+    <ROW File="qtbase_it.qm" Component_="qtbase_ar.qm" FileName="QTBAS~16.QM|qtbase_it.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_it.qm" SelfReg="false"/>
+    <ROW File="qtbase_ja.qm" Component_="qtbase_ar.qm" FileName="QTBAS~17.QM|qtbase_ja.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_ja.qm" SelfReg="false"/>
+    <ROW File="qtbase_ko.qm" Component_="qtbase_ar.qm" FileName="QTBAS~18.QM|qtbase_ko.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_ko.qm" SelfReg="false"/>
+    <ROW File="qtbase_lv.qm" Component_="qtbase_ar.qm" FileName="QTBAS~19.QM|qtbase_lv.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_lv.qm" SelfReg="false"/>
+    <ROW File="qtbase_nl.qm" Component_="qtbase_ar.qm" FileName="QTBAS~20.QM|qtbase_nl.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_nl.qm" SelfReg="false"/>
+    <ROW File="qtbase_nn.qm" Component_="qtbase_ar.qm" FileName="QTBAS~21.QM|qtbase_nn.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_nn.qm" SelfReg="false"/>
+    <ROW File="qtbase_pl.qm" Component_="qtbase_ar.qm" FileName="QTBAS~22.QM|qtbase_pl.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_pl.qm" SelfReg="false"/>
+    <ROW File="qtbase_pt_BR.qm" Component_="qtbase_ar.qm" FileName="QTBAS~23.QM|qtbase_pt_BR.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_pt_BR.qm" SelfReg="false"/>
+    <ROW File="qtbase_ru.qm" Component_="qtbase_ar.qm" FileName="QTBAS~24.QM|qtbase_ru.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_ru.qm" SelfReg="false"/>
+    <ROW File="qtbase_sk.qm" Component_="qtbase_ar.qm" FileName="QTBAS~25.QM|qtbase_sk.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_sk.qm" SelfReg="false"/>
+    <ROW File="qtbase_tr.qm" Component_="qtbase_ar.qm" FileName="QTBAS~26.QM|qtbase_tr.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_tr.qm" SelfReg="false"/>
+    <ROW File="qtbase_uk.qm" Component_="qtbase_ar.qm" FileName="QTBAS~27.QM|qtbase_uk.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_uk.qm" SelfReg="false"/>
+    <ROW File="qtbase_zh_CN.qm" Component_="qtbase_ar.qm" FileName="QTBAS~28.QM|qtbase_zh_CN.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_zh_CN.qm" SelfReg="false"/>
+    <ROW File="qtbase_zh_TW.qm" Component_="qtbase_ar.qm" FileName="QTBAS~29.QM|qtbase_zh_TW.qm" Attributes="0" SourcePath="Centre macro\PySide6\translations\qtbase_zh_TW.qm" SelfReg="false"/>
+    <ROW File="Shiboken.pyd" Component_="Shiboken.pyd" FileName="Shiboken.pyd" Attributes="0" SourcePath="Centre macro\shiboken6\Shiboken.pyd" SelfReg="false"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
     <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
@@ -1076,7 +815,60 @@
     <ROW Feature_="MainFeature" Component_="sqlite3.dll"/>
     <ROW Feature_="MainFeature" Component_="VCRUNTIME140.dll"/>
     <ROW Feature_="MainFeature" Component_="VCRUNTIME140_1.dll"/>
+    <ROW Feature_="MainFeature" Component_="agrandir.cur"/>
+    <ROW Feature_="MainFeature" Component_="agrandir.cur_1"/>
+    <ROW Feature_="MainFeature" Component_="agrandir.cur_2"/>
+    <ROW Feature_="MainFeature" Component_="calendrier_thc.svg"/>
+    <ROW Feature_="MainFeature" Component_="calendrier.svg"/>
+    <ROW Feature_="MainFeature" Component_="inari_thc.svg"/>
+    <ROW Feature_="MainFeature" Component_="inari.svg"/>
+    <ROW Feature_="MainFeature" Component_="add_app.svg"/>
+    <ROW Feature_="MainFeature" Component_="add_appbn1.svg"/>
+    <ROW Feature_="MainFeature" Component_="Admin.py"/>
+    <ROW Feature_="MainFeature" Component_="Functions.py"/>
+    <ROW Feature_="MainFeature" Component_="__init__.py"/>
+    <ROW Feature_="MainFeature" Component_="config.json"/>
+    <ROW Feature_="MainFeature" Component_="InputBox.py"/>
+    <ROW Feature_="MainFeature" Component_="MsgBox.py"/>
+    <ROW Feature_="MainFeature" Component_="OptionBox.py"/>
+    <ROW Feature_="MainFeature" Component_="ResponseBox.py"/>
+    <ROW Feature_="MainFeature" Component_="RgbBox.py"/>
+    <ROW Feature_="MainFeature" Component_="SplashScreen.py"/>
+    <ROW Feature_="MainFeature" Component_="ToolBoxUi.py"/>
+    <ROW Feature_="MainFeature" Component_="__init__.py_1"/>
+    <ROW Feature_="MainFeature" Component_="Event.py"/>
+    <ROW Feature_="MainFeature" Component_="input.ui"/>
+    <ROW Feature_="MainFeature" Component_="__init__.py_2"/>
+    <ROW Feature_="MainFeature" Component_="v_gb.py"/>
+    <ROW Feature_="MainFeature" Component_="Align.py"/>
+    <ROW Feature_="MainFeature" Component_="__init__.py_3"/>
+    <ROW Feature_="MainFeature" Component_="convert_ui.bat"/>
+    <ROW Feature_="MainFeature" Component_="alice_blue.json"/>
+    <ROW Feature_="MainFeature" Component_="Build.py"/>
+    <ROW Feature_="MainFeature" Component_="Build.py_1"/>
+    <ROW Feature_="MainFeature" Component_="Build.py_2"/>
+    <ROW Feature_="MainFeature" Component_="Build.py_3"/>
+    <ROW Feature_="MainFeature" Component_="Build.py_4"/>
+    <ROW Feature_="MainFeature" Component_="Build.py_5"/>
+    <ROW Feature_="MainFeature" Component_="Build.py_6"/>
+    <ROW Feature_="MainFeature" Component_="Build.py_7"/>
+    <ROW Feature_="MainFeature" Component_="Build.py_8"/>
+    <ROW Feature_="MainFeature" Component_="Build.py_9"/>
+    <ROW Feature_="MainFeature" Component_="Build.py_10"/>
+    <ROW Feature_="MainFeature" Component_="Build.py_11"/>
+    <ROW Feature_="MainFeature" Component_="Build.py_12"/>
+    <ROW Feature_="MainFeature" Component_="Build.py_13"/>
+    <ROW Feature_="MainFeature" Component_="Build.py_14"/>
+    <ROW Feature_="MainFeature" Component_="Build.py_15"/>
+    <ROW Feature_="MainFeature" Component_="Build.py_16"/>
+    <ROW Feature_="MainFeature" Component_="Build.py_17"/>
+    <ROW Feature_="MainFeature" Component_="Build.py_18"/>
+    <ROW Feature_="MainFeature" Component_="vb_app.py"/>
+    <ROW Feature_="MainFeature" Component_="Frame_cust.py"/>
+    <ROW Feature_="MainFeature" Component_="__init__.py_4"/>
+    <ROW Feature_="MainFeature" Component_="_yaml.cp310win_amd64.pyd"/>
     <ROW Feature_="MainFeature" Component_="_speedups.cp310win_amd64.pyd"/>
+    <ROW Feature_="MainFeature" Component_="_psycopg.cp310win_amd64.pyd"/>
     <ROW Feature_="MainFeature" Component_="qsvgicon.dll"/>
     <ROW Feature_="MainFeature" Component_="qgif.dll"/>
     <ROW Feature_="MainFeature" Component_="qicns.dll"/>
@@ -1094,6 +886,9 @@
     <ROW Feature_="MainFeature" Component_="qminimal.dll"/>
     <ROW Feature_="MainFeature" Component_="qoffscreen.dll"/>
     <ROW Feature_="MainFeature" Component_="qwindows.dll"/>
+    <ROW Feature_="MainFeature" Component_="qsqlite.dll"/>
+    <ROW Feature_="MainFeature" Component_="qsqlodbc.dll"/>
+    <ROW Feature_="MainFeature" Component_="qsqlpsql.dll"/>
     <ROW Feature_="MainFeature" Component_="qwindowsvistastyle.dll"/>
     <ROW Feature_="MainFeature" Component_="qcertonlybackend.dll"/>
     <ROW Feature_="MainFeature" Component_="qopensslbackend.dll"/>
@@ -1101,97 +896,14 @@
     <ROW Feature_="MainFeature" Component_="QtCore.pyd"/>
     <ROW Feature_="MainFeature" Component_="qtbase_ar.qm"/>
     <ROW Feature_="MainFeature" Component_="Shiboken.pyd"/>
-    <ROW Feature_="MainFeature" Component_="agrandir.cur"/>
-    <ROW Feature_="MainFeature" Component_="agrandir.cur_1"/>
-    <ROW Feature_="MainFeature" Component_="agrandir.cur_2"/>
-    <ROW Feature_="MainFeature" Component_="calendrier_thc.svg"/>
-    <ROW Feature_="MainFeature" Component_="calendrier.svg"/>
-    <ROW Feature_="MainFeature" Component_="inari_thc.svg"/>
-    <ROW Feature_="MainFeature" Component_="inari.svg"/>
-    <ROW Feature_="MainFeature" Component_="add_app.svg"/>
-    <ROW Feature_="MainFeature" Component_="add_appbn1.svg"/>
-    <ROW Feature_="MainFeature" Component_="Functions.py"/>
-    <ROW Feature_="MainFeature" Component_="Functions.cpython310.pyc"/>
-    <ROW Feature_="MainFeature" Component_="__init__.py"/>
-    <ROW Feature_="MainFeature" Component_="__init__.cpython310.pyc"/>
-    <ROW Feature_="MainFeature" Component_="config.json"/>
-    <ROW Feature_="MainFeature" Component_="config.cpython310.pyc"/>
-    <ROW Feature_="MainFeature" Component_="InputBox.py"/>
-    <ROW Feature_="MainFeature" Component_="InputBox.cpython310.pyc"/>
-    <ROW Feature_="MainFeature" Component_="MsgBox.py"/>
-    <ROW Feature_="MainFeature" Component_="MsgBox.cpython310.pyc"/>
-    <ROW Feature_="MainFeature" Component_="OptionBox.py"/>
-    <ROW Feature_="MainFeature" Component_="OptionBox.cpython310.pyc"/>
-    <ROW Feature_="MainFeature" Component_="ResponseBox.py"/>
-    <ROW Feature_="MainFeature" Component_="ResponseBox.cpython310.pyc"/>
-    <ROW Feature_="MainFeature" Component_="RgbBox.py"/>
-    <ROW Feature_="MainFeature" Component_="RgbBox.cpython310.pyc"/>
-    <ROW Feature_="MainFeature" Component_="SplashScreen.py"/>
-    <ROW Feature_="MainFeature" Component_="SplashScreen.cpython310.pyc"/>
-    <ROW Feature_="MainFeature" Component_="ToolBoxUi.py"/>
-    <ROW Feature_="MainFeature" Component_="ToolBoxUi.cpython310.pyc"/>
-    <ROW Feature_="MainFeature" Component_="__init__.py_1"/>
-    <ROW Feature_="MainFeature" Component_="__init__.cpython310.pyc_1"/>
-    <ROW Feature_="MainFeature" Component_="Event.py"/>
-    <ROW Feature_="MainFeature" Component_="Event.cpython310.pyc"/>
-    <ROW Feature_="MainFeature" Component_="input.ui"/>
-    <ROW Feature_="MainFeature" Component_="input_ui.cpython310.pyc"/>
-    <ROW Feature_="MainFeature" Component_="__init__.py_2"/>
-    <ROW Feature_="MainFeature" Component_="__init__.cpython310.pyc_2"/>
-    <ROW Feature_="MainFeature" Component_="v_gb.py"/>
-    <ROW Feature_="MainFeature" Component_="v_gb.cpython310.pyc"/>
-    <ROW Feature_="MainFeature" Component_="Align.py"/>
-    <ROW Feature_="MainFeature" Component_="Align.cpython310.pyc"/>
-    <ROW Feature_="MainFeature" Component_="__init__.py_3"/>
-    <ROW Feature_="MainFeature" Component_="__init__.cpython310.pyc_3"/>
-    <ROW Feature_="MainFeature" Component_="convert_ui.bat"/>
-    <ROW Feature_="MainFeature" Component_="alice_blue.json"/>
-    <ROW Feature_="MainFeature" Component_="Build.py"/>
-    <ROW Feature_="MainFeature" Component_="Build.cpython310.pyc"/>
-    <ROW Feature_="MainFeature" Component_="Build.py_1"/>
-    <ROW Feature_="MainFeature" Component_="Build.cpython310.pyc_1"/>
-    <ROW Feature_="MainFeature" Component_="Build.py_2"/>
-    <ROW Feature_="MainFeature" Component_="Build.cpython310.pyc_2"/>
-    <ROW Feature_="MainFeature" Component_="Build.py_3"/>
-    <ROW Feature_="MainFeature" Component_="Build.cpython310.pyc_3"/>
-    <ROW Feature_="MainFeature" Component_="Build.py_4"/>
-    <ROW Feature_="MainFeature" Component_="Build.cpython310.pyc_4"/>
-    <ROW Feature_="MainFeature" Component_="Build.py_5"/>
-    <ROW Feature_="MainFeature" Component_="Build.cpython310.pyc_5"/>
-    <ROW Feature_="MainFeature" Component_="Build.py_6"/>
-    <ROW Feature_="MainFeature" Component_="Build.cpython310.pyc_6"/>
-    <ROW Feature_="MainFeature" Component_="Build.py_7"/>
-    <ROW Feature_="MainFeature" Component_="Build.cpython310.pyc_7"/>
-    <ROW Feature_="MainFeature" Component_="Build.py_8"/>
-    <ROW Feature_="MainFeature" Component_="Build.cpython310.pyc_8"/>
-    <ROW Feature_="MainFeature" Component_="Build.py_9"/>
-    <ROW Feature_="MainFeature" Component_="Build.cpython310.pyc_9"/>
-    <ROW Feature_="MainFeature" Component_="Build.py_10"/>
-    <ROW Feature_="MainFeature" Component_="Build.cpython310.pyc_10"/>
-    <ROW Feature_="MainFeature" Component_="Build.py_11"/>
-    <ROW Feature_="MainFeature" Component_="Build.cpython310.pyc_11"/>
-    <ROW Feature_="MainFeature" Component_="Build.py_12"/>
-    <ROW Feature_="MainFeature" Component_="Build.cpython310.pyc_12"/>
-    <ROW Feature_="MainFeature" Component_="Build.py_13"/>
-    <ROW Feature_="MainFeature" Component_="Build.cpython310.pyc_13"/>
-    <ROW Feature_="MainFeature" Component_="Build.py_14"/>
-    <ROW Feature_="MainFeature" Component_="Build.cpython310.pyc_14"/>
-    <ROW Feature_="MainFeature" Component_="Build.py_15"/>
-    <ROW Feature_="MainFeature" Component_="Build.cpython310.pyc_15"/>
-    <ROW Feature_="MainFeature" Component_="Build.py_16"/>
-    <ROW Feature_="MainFeature" Component_="Build.cpython310.pyc_16"/>
-    <ROW Feature_="MainFeature" Component_="Build.py_17"/>
-    <ROW Feature_="MainFeature" Component_="Build.cpython310.pyc_17"/>
-    <ROW Feature_="MainFeature" Component_="Build.py_18"/>
-    <ROW Feature_="MainFeature" Component_="Build.cpython310.pyc_18"/>
-    <ROW Feature_="MainFeature" Component_="vb_app.py"/>
-    <ROW Feature_="MainFeature" Component_="vb_app.cpython310.pyc"/>
-    <ROW Feature_="MainFeature" Component_="Frame_cust.py"/>
-    <ROW Feature_="MainFeature" Component_="Frame_cust.cpython310.pyc"/>
-    <ROW Feature_="MainFeature" Component_="__init__.py_4"/>
-    <ROW Feature_="MainFeature" Component_="__init__.cpython310.pyc_4"/>
-    <ROW Feature_="MainFeature" Component_="_yaml.cp310win_amd64.pyd"/>
     <ROW Feature_="MainFeature" Component_="SHORTCUTDIR"/>
+    <ROW Feature_="MainFeature" Component_="libcrypto1_1x64.dll"/>
+    <ROW Feature_="MainFeature" Component_="libiconv2.dll"/>
+    <ROW Feature_="MainFeature" Component_="libintl8.dll"/>
+    <ROW Feature_="MainFeature" Component_="LIBPQ.dll"/>
+    <ROW Feature_="MainFeature" Component_="libssl1_1x64.dll"/>
+    <ROW Feature_="MainFeature" Component_="MSVCR120.dll"/>
+    <ROW Feature_="MainFeature" Component_="Qt6Sql.dll"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
     <ROW Name="Centremacro.exe" SourcePath="Centre macro\Centre macro.exe" Index="0"/>

@@ -24,3 +24,4 @@ from src.lib.palettes.Shadow import Shadow
 from src.lib.palettes.StyleBase import StyleBase
 from src.lib.palettes.TextFormat import TextFormat
 from src.lib.palettes.TickPosition import TickPosition
+from src.lib.palettes.StyleItemDelegate import DateDelegate, FloatDelegate, ReadOnlyDelegate

@@ -19,7 +19,7 @@
   },
   {
    "optionDest": "icon_file",
-   "value": "C:/Users/ZP6177/Creative Cloud Files/Programmation/Projets Python/INEO Infracom/Centre macro/inari.ico"
+   "value": "C:/Users/ZP6177/Creative Cloud Files/Programmation/Projets Python/INEO Infracom/Centre macro/src/assets/img/main/main.ico"
   },
   {
    "optionDest": "name",
@@ -67,6 +67,10 @@
   },
   {
    "optionDest": "bootloader_ignore_signals",
+   "value": false
+  },
+  {
+   "optionDest": "argv_emulation",
    "value": false
   },
   {

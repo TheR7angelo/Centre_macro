@@ -83,25 +83,25 @@ def differentiel(old, new):
             match key:
                 case "iterable_item_added":
                     for index, sub_key in enumerate(diff[key]):
-                        result = [item.replace("'", "") for item in re.split(r"(.*?)(\[|\])", sub_key)]
+                        result = [item for item in re.findall(r"(?:(?<=\[').*?(?=\']))|(?:(?<=\]\[).*?(?=\]\[))", sub_key)]
                         resultat[result[4]]["ADD"][index] = {
-                            "row": int(result[10])+1,
+                            "row": int(result[1])+1,
                             "value": diff[key][sub_key]
                         }
 
                 case "iterable_item_removed":
                     for index, sub_key in enumerate(diff[key]):
-                        result = [item.replace("'", "") for item in re.split(r"(.*?)(\[|\])", sub_key)]
-                        resultat[result[4]]["REMOVE"][index] = {
-                            "row": int(result[10])+1,
+                        result = [item for item in re.findall(r"(?:(?<=\[').*?(?=\']))|(?:(?<=\]\[).*?(?=\]\[))", sub_key)]
+                        resultat[result[0]]["REMOVE"][index] = {
+                            "row": int(result[1])+1,
                             "value": diff[key][sub_key]
                         }
                 case "values_changed":
                     for index, sub_key in enumerate(diff[key]):
-                        result = [item.replace("'", "") for item in re.split(r"(.*?)(\[|\])", sub_key)]
-                        resultat[result[4]]["SET"][index] = {
-                            "row": int(result[10])+1,
-                            "column": result[16],
+                        result = [item for item in re.findall(r"(?:(?<=\[').*?(?=\']))|(?:(?<=\]\[).*?(?=\]\[))", sub_key)]
+                        resultat[result[0]]["SET"][index] = {
+                            "row": int(result[1])+1,
+                            "column": result[2],
                             "value": {
                                 "old": diff[key][sub_key]["old_value"],
                                 "new": diff[key][sub_key]["new_value"]

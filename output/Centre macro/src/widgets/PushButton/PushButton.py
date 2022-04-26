@@ -327,3 +327,54 @@ class plein:
             bg_gen=Rgb().bn2(),
             fg_gen=Rgb().th3(),
         )
+
+
+##################
+##     BASE     ##
+##################
+class SQL:
+    def __init__(self, *wgs):
+        self.wgs = wgs
+
+    def rtn(self,
+            img=Img().main(),
+            img_rgb="bn1",
+            ):
+        Build(
+            *self.wgs,
+            pb_type="zoom",
+            width=Dim().h9() * 1.2,
+            cursor=Cur().souris_main(),
+
+            bg=Rgb().tr(),
+            bg_hover=Rgb().tr(),
+            bg_checked=Rgb().tr(),
+            bg_checked_hover=Rgb().tr(),
+            bg_pressed=Rgb().th1(),
+            fg_checked=Rgb().th3(),
+            img=img,
+            img_rgb=img_rgb,
+
+            border=(StyleBase().border(),) * 4,
+            border_rgb=Rgb().th2(),
+
+            border_hover=(2,) * 4,
+            border_hover_rgb=Rgb().th2(),
+
+        )
+
+    def remove(self):
+        self.rtn(
+            img=Img().moins()
+        )
+
+    def add(self):
+        self.rtn(
+            img=Img().plus()
+        )
+
+    def submit(self):
+        self.rtn(
+            img=Img().fleche_top()
+        )
+
