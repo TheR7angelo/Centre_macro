@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="de29bda4-1523-4008-a604-50a20bc66413" name="Changes" comment="maj version app">
+      <change afterPath="$PROJECT_DIR$/src/build/mods/Helper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centre macro.py" beforeDir="false" afterPath="$PROJECT_DIR$/centre macro.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro.aip" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro.aip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro.msi" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro.msi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/Centre macro.exe" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/Centre macro.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/MSVCP140_1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/MSVCP140_1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/MSVCP140_2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/MSVCP140_2.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/PySide6/QtCore.pyd" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/PySide6/QtCore.pyd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/PySide6/QtGui.pyd" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/PySide6/QtGui.pyd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/PySide6/QtNetwork.pyd" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/PySide6/QtNetwork.pyd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/PySide6/QtWidgets.pyd" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/PySide6/QtWidgets.pyd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/PySide6/plugins/iconengines/qsvgicon.dll" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/PySide6/plugins/iconengines/qsvgicon.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/PySide6/plugins/imageformats/qgif.dll" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/PySide6/plugins/imageformats/qgif.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/PySide6/plugins/imageformats/qicns.dll" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/PySide6/plugins/imageformats/qicns.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/PySide6/plugins/imageformats/qico.dll" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/PySide6/plugins/imageformats/qico.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/PySide6/plugins/imageformats/qjpeg.dll" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/PySide6/plugins/imageformats/qjpeg.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/PySide6/plugins/imageformats/qsvg.dll" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/PySide6/plugins/imageformats/qsvg.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/PySide6/plugins/imageformats/qtga.dll" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/PySide6/plugins/imageformats/qtga.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/PySide6/plugins/imageformats/qtiff.dll" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/PySide6/plugins/imageformats/qtiff.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/PySide6/plugins/imageformats/qwbmp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/PySide6/plugins/imageformats/qwbmp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/PySide6/plugins/imageformats/qwebp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/PySide6/plugins/imageformats/qwebp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/PySide6/plugins/networkinformation/qnetworklistmanager.dll" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/PySide6/plugins/networkinformation/qnetworklistmanager.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/PySide6/plugins/platforminputcontexts/qtvirtualkeyboardplugin.dll" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/PySide6/plugins/platforminputcontexts/qtvirtualkeyboardplugin.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/PySide6/plugins/platforms/qdirect2d.dll" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/PySide6/plugins/platforms/qdirect2d.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/PySide6/plugins/platforms/qminimal.dll" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/PySide6/plugins/platforms/qminimal.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/PySide6/plugins/platforms/qoffscreen.dll" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/PySide6/plugins/platforms/qoffscreen.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/PySide6/plugins/platforms/qwindows.dll" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/PySide6/plugins/platforms/qwindows.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/PySide6/plugins/styles/qwindowsvistastyle.dll" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/PySide6/plugins/styles/qwindowsvistastyle.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/PySide6/plugins/tls/qcertonlybackend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/PySide6/plugins/tls/qcertonlybackend.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/PySide6/plugins/tls/qopensslbackend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/PySide6/plugins/tls/qopensslbackend.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/PySide6/plugins/tls/qschannelbackend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/PySide6/plugins/tls/qschannelbackend.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/PySide6/qt.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/PySide6/translations/qtbase_de.qm" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/PySide6/translations/qtbase_de.qm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/Qt6Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/Qt6Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/Qt6Gui.dll" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/Qt6Gui.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/Qt6Network.dll" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/Qt6Network.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/Qt6OpenGL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/Qt6OpenGL.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/Qt6Qml.dll" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/Qt6Qml.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/Qt6QmlModels.dll" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/Qt6QmlModels.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/Qt6Quick.dll" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/Qt6Quick.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/Qt6Svg.dll" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/Qt6Svg.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/Qt6VirtualKeyboard.dll" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/Qt6VirtualKeyboard.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/Qt6Widgets.dll" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/Qt6Widgets.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/_asyncio.pyd" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/_asyncio.pyd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/_bz2.pyd" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/_bz2.pyd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/_ctypes.pyd" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/_ctypes.pyd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/_decimal.pyd" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/_decimal.pyd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/_hashlib.pyd" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/_hashlib.pyd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/_lzma.pyd" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/_lzma.pyd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/_multiprocessing.pyd" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/_multiprocessing.pyd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/_overlapped.pyd" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/_overlapped.pyd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/_queue.pyd" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/_queue.pyd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/_socket.pyd" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/_socket.pyd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/_sqlite3.pyd" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/_sqlite3.pyd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/_ssl.pyd" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/_ssl.pyd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/base_library.zip" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/base_library.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/libcrypto-1_1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/libcrypto-1_1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/libssl-1_1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/libssl-1_1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/markupsafe/_speedups.cp39-win_amd64.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/opengl32sw.dll" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/opengl32sw.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/pyexpat.pyd" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/pyexpat.pyd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/pyside6.abi3.dll" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/pyside6.abi3.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/python3.dll" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/python3.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/python39.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/select.pyd" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/select.pyd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/shiboken6.abi3.dll" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/shiboken6.abi3.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/shiboken6/Shiboken.pyd" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/shiboken6/Shiboken.pyd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/sqlite3.dll" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/sqlite3.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/main/main.ico" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/main/main.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/main/main.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/main/main.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/main/rgb/mainbn1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/main/rgb/mainbn1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/main/rgb/mainbn2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/main/rgb/mainbn2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/main/rgb/mainth1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/main/rgb/mainth1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/main/rgb/mainth2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/main/rgb/mainth2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/main/rgb/mainth3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/main/rgb/mainth3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/agrandirbn1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/agrandirbn1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/agrandirbn2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/agrandirbn2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/agrandirth1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/agrandirth1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/agrandirth2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/agrandirth2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/agrandirth3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/agrandirth3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/alertebn1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/alertebn1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/alertebn2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/alertebn2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/alerteth1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/alerteth1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/alerteth2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/alerteth2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/alerteth3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/alerteth3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check0_rondbn1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check0_rondbn1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check0_rondbn2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check0_rondbn2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check0_rondth1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check0_rondth1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check0_rondth2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check0_rondth2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check0_rondth3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check0_rondth3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check0bn1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check0bn1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check0bn2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check0bn2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check0th1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check0th1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check0th2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check0th2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check0th3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check0th3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check1_rondbn1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check1_rondbn1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check1_rondbn2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check1_rondbn2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check1_rondth1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check1_rondth1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check1_rondth2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check1_rondth2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check1_rondth3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check1_rondth3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check1bn1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check1bn1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check1bn2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check1bn2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check1th1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check1th1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check1th2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check1th2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check1th3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check1th3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check2_rondbn1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check2_rondbn1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check2_rondbn2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check2_rondbn2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check2_rondth1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check2_rondth1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check2_rondth2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check2_rondth2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check2_rondth3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check2_rondth3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check2bn1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check2bn1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check2bn2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check2bn2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check2th1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check2th1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check2th2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check2th2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check2th3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/check2th3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/copierbn1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/copierbn1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/copierbn2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/copierbn2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/copierth1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/copierth1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/copierth2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/copierth2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/copierth3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/copierth3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/fleche_bottombn1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/fleche_bottombn1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/fleche_bottombn2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/fleche_bottombn2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/fleche_bottomth1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/fleche_bottomth1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/fleche_bottomth2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/fleche_bottomth2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/fleche_bottomth3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/fleche_bottomth3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/fleche_droitebn1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/fleche_droitebn1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/fleche_droitebn2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/fleche_droitebn2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/fleche_droiteth1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/fleche_droiteth1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/fleche_droiteth2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/fleche_droiteth2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/fleche_droiteth3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/fleche_droiteth3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/fleche_gauchebn1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/fleche_gauchebn1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/fleche_gauchebn2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/fleche_gauchebn2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/fleche_gaucheth1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/fleche_gaucheth1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/fleche_gaucheth2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/fleche_gaucheth2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/fleche_gaucheth3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/fleche_gaucheth3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/fleche_topbn1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/fleche_topbn1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/fleche_topbn2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/fleche_topbn2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/fleche_topth1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/fleche_topth1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/fleche_topth2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/fleche_topth2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/fleche_topth3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/fleche_topth3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/infobn1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/infobn1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/infobn2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/infobn2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/infoth1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/infoth1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/infoth2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/infoth2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/infoth3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/infoth3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/lockbn1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/lockbn1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/lockbn2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/lockbn2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/lockth1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/lockth1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/lockth2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/lockth2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/lockth3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/lockth3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/moinsbn1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/moinsbn1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/moinsbn2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/moinsbn2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/moinsth1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/moinsth1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/moinsth2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/moinsth2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/moinsth3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/moinsth3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/optionbn1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/optionbn1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/optionbn2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/optionbn2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/optionth1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/optionth1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/optionth2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/optionth2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/optionth3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/optionth3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/plusbn1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/plusbn1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/plusbn2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/plusbn2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/plusth1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/plusth1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/plusth2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/plusth2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/plusth3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/plusth3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/quitterbn1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/quitterbn1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/quitterbn2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/quitterbn2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/quitterth1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/quitterth1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/quitterth2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/quitterth2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/quitterth3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/quitterth3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/reduirebn1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/reduirebn1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/reduirebn2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/reduirebn2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/reduireth1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/reduireth1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/reduireth2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/reduireth2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/reduireth3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/reduireth3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/resizebn1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/resizebn1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/resizebn2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/resizebn2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/resizeth1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/resizeth1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/resizeth2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/resizeth2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/resizeth3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/resizeth3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/unlockbn1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/unlockbn1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/unlockbn2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/unlockbn2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/unlockth1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/unlockth1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/unlockth2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/unlockth2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/unlockth3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/assets/img/ui/rgb/unlockth3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/build/mods/Maj.py" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/build/mods/Maj.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/config/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/config/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/config/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/config/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/config/version_file.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/config/version_file.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/gui/ui/input_ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/gui/ui/input_ui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/gui/ui/main.ui" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/gui/ui/main.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/gui/ui/main_ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/gui/ui/main_ui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/gui/ui/msg_ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/gui/ui/msg_ui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/gui/ui/option_ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/gui/ui/option_ui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/gui/ui/rep_ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/gui/ui/rep_ui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/gui/ui/rgb_ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/gui/ui/rgb_ui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/gui/ui/splash_screen_ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/gui/ui/splash_screen_ui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/gui/ui/toolbox_ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/gui/ui/toolbox_ui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/src/widgets/SpinBox/SpinBox.py" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/src/widgets/SpinBox/SpinBox.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/unicodedata.pyd" beforeDir="false" afterPath="$PROJECT_DIR$/output/Centre macro/unicodedata.pyd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Centre macro/yaml/_yaml.cp39-win_amd64.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/ui/input_ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/ui/input_ui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/ui/main.ui" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/ui/main.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/ui/main_ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/ui/main_ui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/ui/msg_ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/ui/msg_ui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/ui/option_ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/ui/option_ui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/ui/rep_ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/ui/rep_ui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/ui/rgb_ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/ui/rgb_ui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/ui/splash_screen_ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/ui/splash_screen_ui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/ui/toolbox_ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/ui/toolbox_ui.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="26RPcj6VtNctgVt6jhBp8265C57" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ZP6177/Creative Cloud Files/Programmation/Projets Python/INEO Infracom/APCOM v2&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ZP6177\Creative Cloud Files\Programmation\Projets Python\INEO Infracom\Centre macro\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.centre macro">
+    <configuration name="convert_ui" type="BatchConfigurationType" factoryName="Batch" temporary="true">
+      <module name="Centre macro" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="WORKING_DIRECTORY" value="./src/scripts" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="convert_ui.bat" />
+      <option name="PARAMETERS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="centre macro" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Centre macro" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/centre macro.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Centre macro" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Doctests in AlchemicalTableModel" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
+      <module name="Centre macro" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test2.py" />
+      <option name="CLASS_NAME" value="AlchemicalTableModel" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_CLASS" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Batch.convert_ui" />
+      <item itemvalue="Python.centre macro" />
+      <item itemvalue="Python.test2" />
+      <item itemvalue="Python tests.Doctests in AlchemicalTableModel" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.centre macro" />
+        <item itemvalue="Batch.convert_ui" />
+        <item itemvalue="Python.test2" />
+        <item itemvalue="Python tests.Doctests in AlchemicalTableModel" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="de29bda4-1523-4008-a604-50a20bc66413" name="Changes" comment="" />
+      <created>1647383509334</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1647383509334</updated>
+      <workItem from="1647383511807" duration="322000" />
+      <workItem from="1647409939152" duration="948000" />
+      <workItem from="1647414681760" duration="6611000" />
+      <workItem from="1647428150033" duration="7777000" />
+      <workItem from="1647452016433" duration="3916000" />
+      <workItem from="1647496890924" duration="818000" />
+      <workItem from="1647501084358" duration="15298000" />
+      <workItem from="1647520079730" duration="4000" />
+      <workItem from="1647520114627" duration="1000" />
+      <workItem from="1647520138604" duration="7000" />
+      <workItem from="1647532813638" duration="352000" />
+      <workItem from="1647544194771" duration="1451000" />
+      <workItem from="1647547886883" duration="991000" />
+      <workItem from="1647583630262" duration="38000" />
+      <workItem from="1647587666127" duration="11986000" />
+      <workItem from="1647698406888" duration="2292000" />
+      <workItem from="1647791286758" duration="887000" />
+      <workItem from="1647813600463" duration="1255000" />
+      <workItem from="1647856719121" duration="77000" />
+      <workItem from="1647856850854" duration="8448000" />
+      <workItem from="1647866504663" duration="314000" />
+      <workItem from="1648132225822" duration="2429000" />
+      <workItem from="1648205360093" duration="3136000" />
+      <workItem from="1648538252549" duration="688000" />
+      <workItem from="1648538960347" duration="1288000" />
+      <workItem from="1648621253466" duration="19000" />
+      <workItem from="1648621285758" duration="430000" />
+      <workItem from="1648624412431" duration="205000" />
+      <workItem from="1648627519571" duration="975000" />
+      <workItem from="1648633774041" duration="3134000" />
+      <workItem from="1648928772738" duration="1002000" />
+      <workItem from="1648978813880" duration="5473000" />
+      <workItem from="1649017913767" duration="466000" />
+      <workItem from="1649018399077" duration="3878000" />
+      <workItem from="1649052801466" duration="3919000" />
+      <workItem from="1649251790395" duration="695000" />
+      <workItem from="1649321345412" duration="3764000" />
+      <workItem from="1649341473430" duration="1195000" />
+      <workItem from="1649348373144" duration="25000" />
+      <workItem from="1649416170410" duration="6890000" />
+      <workItem from="1649774265013" duration="1954000" />
+      <workItem from="1649861036574" duration="589000" />
+      <workItem from="1649919459126" duration="576000" />
+      <workItem from="1649925513330" duration="327000" />
+      <workItem from="1649925877814" duration="595000" />
+      <workItem from="1649929137512" duration="2073000" />
+      <workItem from="1649936356740" duration="421000" />
+      <workItem from="1649940719401" duration="816000" />
+      <workItem from="1650018524403" duration="1192000" />
+      <workItem from="1650348972252" duration="14407000" />
+      <workItem from="1650540621098" duration="5000" />
+      <workItem from="1650540643385" duration="615000" />
+      <workItem from="1650542923145" duration="3795000" />
+      <workItem from="1650548786826" duration="1462000" />
+      <workItem from="1650608976334" duration="4170000" />
+      <workItem from="1650614474452" duration="247000" />
+      <workItem from="1650614759430" duration="16000" />
+      <workItem from="1650615007274" duration="12367000" />
+      <workItem from="1650630504320" duration="3659000" />
+    </task>
+    <task id="LOCAL-00001" summary="maj">
+      <created>1648628893414</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1648628893414</updated>
+    </task>
+    <task id="LOCAL-00002" summary="maj">
+      <created>1648984599942</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1648984599942</updated>
+    </task>
+    <task id="LOCAL-00003" summary="suppression">
+      <created>1648984671328</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1648984671328</updated>
+    </task>
+    <task id="LOCAL-00004" summary="maj version app">
+      <created>1649021853549</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1649021853549</updated>
+    </task>
+    <task id="LOCAL-00005" summary="maj version app">
+      <created>1649676884039</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1649676884039</updated>
+    </task>
+    <task id="LOCAL-00006" summary="maj version app">
+      <created>1649941808669</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1649941808669</updated>
+    </task>
+    <task id="LOCAL-00007" summary="maj version app">
+      <created>1649941950279</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1649941950279</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="maj" />
+    <MESSAGE value="suppression" />
+    <MESSAGE value="maj version app" />
+    <option name="LAST_COMMIT_MESSAGE" value="maj version app" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/centre macro.py</url>
+          <line>304</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/centre_macro_py$test.coverage" NAME="test Coverage Results" MODIFIED="1649327566132" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Centre_macro$centre_macro.coverage" NAME="centre macro Coverage Results" MODIFIED="1650638516912" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/centre_macro_py$centre_macro.coverage" NAME="centre macro Coverage Results" MODIFIED="1650627909953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Centre_macro$MyApp.coverage" NAME="MyApp Coverage Results" MODIFIED="1647496980105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MyApp_py$MyApp.coverage" NAME="MyApp Coverage Results" MODIFIED="1647519946565" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/centre_macro_py$MyApp.coverage" NAME="MyApp Coverage Results" MODIFIED="1647532821041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/centre_macro_py$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1650617102210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/centre_macro_py$azertyuiop.coverage" NAME="azertyuiop Coverage Results" MODIFIED="1647591032646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/centre_macro_py$Doctests_in_AlchemicalTableModel.coverage" NAME="Doctests in AlchemicalTableModel Coverage Results" MODIFIED="1650615524937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

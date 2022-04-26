@@ -2,6 +2,7 @@ import os
 import datetime
 import re
 import shutil
+import sys
 
 from PySide6.QtCore import QObject, Signal, QRunnable
 
@@ -33,14 +34,16 @@ class Worker(QRunnable):
             pass
 
         except Exception as error:
+            error = f"Ligne {sys.exc_info()[-1].tb_lineno} {error}"
             print(error)
 
             date = datetime.datetime.now().strftime('%d-%m-%Y %H-%M-%S')
             file = os.path.basename(__file__).replace('.py', '')
-            directory = fr"src/log/crash/{self.fonction}/"
+            directory = fr"log/crash/{self.fonction}/"
 
             os.makedirs(directory, exist_ok=True)
             with open(f'{directory}{file}_{date}.txt', 'w') as crash_report:
                 crash_report.write(str(error))
+            os.startfile(os.path.abspath(f'{directory}{file}_{date}.txt'))
 
         self.signals.start.emit(False)

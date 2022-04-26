@@ -6,6 +6,7 @@ import shutil
 import sqlite3
 import sys
 import time
+from datetime import datetime
 from pprint import pprint
 from threading import Thread
 
@@ -16,12 +17,6 @@ from src.gui import *
 from src.lib.globals.v_gb import GUID
 
 from src.build.mods.thread_db import sqlite3_change, postgres_change
-
-
-class MyDelegate(QtWidgets.QItemDelegate):
-
-    def createEditor(self, *args):
-        return None
 
 
 class main(Ui_main, QtWidgets.QWidget):
@@ -168,7 +163,7 @@ class main(Ui_main, QtWidgets.QWidget):
                        self.pb__t_bug_terminer__submit).submit()
 
         for table in [self.t_bug_attente, self.t_bug_en_cours, self.t_bug_terminer]:
-            table.setLocale(QtCore.QLocale("English"))
+            table.setSelectionBehavior(SelectionBehavior().row())
         ### \Gestion des bugs
 
         ### Changer de version
@@ -356,7 +351,11 @@ class main(Ui_main, QtWidgets.QWidget):
         self.table_bug_attente.setRelation(3, QtSql.QSqlRelation("t_app", "ap_id", "ap_nom"))
         self.table_bug_attente.setRelation(7, QtSql.QSqlRelation("t_buetalist", "bl_id", "bl_etat"))
         delegate = QtSql.QSqlRelationalDelegate(self.t_bug_attente)
+        date_delegate = DateDelegate(self.table_bug_attente)
+        float_delegate = FloatDelegate(self.table_bug_attente, decimal=1, step=0.1)
         self.t_bug_attente.setItemDelegate(delegate)
+        self.t_bug_attente.setItemDelegateForColumn(4, float_delegate)
+        self.t_bug_attente.setItemDelegateForColumn(6, date_delegate)
         self.table_bug_attente.select()
 
         renomme_colonne(table=self.t_bug_attente, modele=self.table_bug_attente,
@@ -371,7 +370,13 @@ class main(Ui_main, QtWidgets.QWidget):
         self.table_bug_en_cours.setRelation(7, QtSql.QSqlRelation("t_buetalist", "bl_id", "bl_etat"))
         self.table_bug_en_cours.setRelation(9, QtSql.QSqlRelation("t_helper", "hp_id", "hp_nom"))
         delegate = QtSql.QSqlRelationalDelegate(self.t_bug_en_cours)
+        date_delegate = DateDelegate(self.table_bug_en_cours)
+        float_delegate = FloatDelegate(self.table_bug_en_cours, decimal=1, step=0.1)
         self.t_bug_en_cours.setItemDelegate(delegate)
+        self.t_bug_en_cours.setItemDelegateForColumn(4, float_delegate)
+        for col in [6, 8]:
+            self.t_bug_en_cours.setItemDelegateForColumn(col, date_delegate)
+
         self.table_bug_en_cours.select()
 
         renomme_colonne(table=self.t_bug_en_cours, modele=self.table_bug_en_cours,
@@ -386,7 +391,12 @@ class main(Ui_main, QtWidgets.QWidget):
         self.table_bug_terminer.setRelation(7, QtSql.QSqlRelation("t_buetalist", "bl_id", "bl_etat"))
         self.table_bug_terminer.setRelation(9, QtSql.QSqlRelation("t_helper", "hp_id", "hp_nom"))
         delegate = QtSql.QSqlRelationalDelegate(self.t_bug_terminer)
+        date_delegate = DateDelegate(self.table_bug_terminer)
+        float_delegate = FloatDelegate(self.table_bug_terminer, decimal=1, step=0.1)
         self.t_bug_terminer.setItemDelegate(delegate)
+        self.t_bug_terminer.setItemDelegateForColumn(4, float_delegate)
+        for col in [6, 8, 11]:
+            self.t_bug_terminer.setItemDelegateForColumn(col, date_delegate)
         self.table_bug_terminer.select()
 
         renomme_colonne(table=self.t_bug_terminer, modele=self.table_bug_terminer,
@@ -432,15 +442,25 @@ class main(Ui_main, QtWidgets.QWidget):
 
     def maj_table_bug(self, key, table):
 
+
+        # fonction add (manque message d'erreur)
+
         def threading_function(key, table):
             match key:
                 case "add":
-                    pass
-                case "remove":
-                    pass
+                    table.insertRow(0)
                 case "submit":
                     table.submitAll()
-                    print("commit")
+                case "remove":
+                    vue = {
+                        self.table_bug_attente: self.t_bug_attente,
+                        self.table_bug_en_cours: self.t_bug_en_cours,
+                        self.table_bug_terminer: self.t_bug_terminer
+                    }
+                    for row in reversed(vue[table].selectionModel().selectedRows()):
+                        table.removeRow(row.row())
+                case "rollback":
+                    table.select()
 
         Thread(target=threading_function(key=key, table=table)).start()
 

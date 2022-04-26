@@ -83,15 +83,15 @@ def differentiel(old, new):
             match key:
                 case "iterable_item_added":
                     for index, sub_key in enumerate(diff[key]):
-                        result = [item for item in re.findall(r"(?:(?<=\[').*?(?=\']))|(?:(?<=\]\[).*?(?=\]\[))", sub_key)]
-                        resultat[result[4]]["ADD"][index] = {
+                        result = [item for item in re.findall(r"(?:(?<=\[').*?(?=\']))|(?:(?<=\]\[).*?(?=\]\[?))", sub_key)]
+                        resultat[result[0]]["ADD"][index] = {
                             "row": int(result[1])+1,
                             "value": diff[key][sub_key]
                         }
 
                 case "iterable_item_removed":
                     for index, sub_key in enumerate(diff[key]):
-                        result = [item for item in re.findall(r"(?:(?<=\[').*?(?=\']))|(?:(?<=\]\[).*?(?=\]\[))", sub_key)]
+                        result = [item for item in re.findall(r"(?:(?<=\[').*?(?=\']))|(?:(?<=\]\[).*?(?=\]\[?))", sub_key)]
                         resultat[result[0]]["REMOVE"][index] = {
                             "row": int(result[1])+1,
                             "value": diff[key][sub_key]

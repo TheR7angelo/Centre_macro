@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="de29bda4-1523-4008-a604-50a20bc66413" name="Changes" comment="maj helper" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="26RPcj6VtNctgVt6jhBp8265C57" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ZP6177/Creative Cloud Files/Programmation/Projets Python/INEO Infracom/APCOM v2&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Logiciels\Adobe\Creative Cloud Files\Programmation\Projets Python\INEO Infracom\Centre macro\src\build\grade" />
+      <recent name="E:\Logiciels\Adobe\Creative Cloud Files\Programmation\Projets Python\INEO Infracom\Centre macro\src\build" />
+      <recent name="C:\Users\ZP6177\Creative Cloud Files\Programmation\Projets Python\INEO Infracom\Centre macro\src" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="centre macro" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Centre macro" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/centre macro.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.centre macro" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="de29bda4-1523-4008-a604-50a20bc66413" name="Changes" comment="" />
+      <created>1647383509334</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1647383509334</updated>
+      <workItem from="1647383511807" duration="322000" />
+      <workItem from="1647409939152" duration="948000" />
+      <workItem from="1647414681760" duration="6611000" />
+      <workItem from="1647428150033" duration="7777000" />
+      <workItem from="1647452016433" duration="3916000" />
+      <workItem from="1647496890924" duration="818000" />
+      <workItem from="1647501084358" duration="15298000" />
+      <workItem from="1647520079730" duration="4000" />
+      <workItem from="1647520114627" duration="1000" />
+      <workItem from="1647520138604" duration="7000" />
+      <workItem from="1647532813638" duration="352000" />
+      <workItem from="1647544194771" duration="1451000" />
+      <workItem from="1647547886883" duration="991000" />
+      <workItem from="1647583630262" duration="38000" />
+      <workItem from="1647587666127" duration="11986000" />
+      <workItem from="1647698406888" duration="2292000" />
+      <workItem from="1647791286758" duration="887000" />
+      <workItem from="1647813600463" duration="1255000" />
+      <workItem from="1647856719121" duration="77000" />
+      <workItem from="1647856850854" duration="8448000" />
+      <workItem from="1647866504663" duration="314000" />
+      <workItem from="1648132225822" duration="2429000" />
+      <workItem from="1648205360093" duration="3136000" />
+      <workItem from="1648538252549" duration="688000" />
+      <workItem from="1648538960347" duration="1288000" />
+      <workItem from="1648621253466" duration="19000" />
+      <workItem from="1648621285758" duration="430000" />
+      <workItem from="1648624412431" duration="205000" />
+      <workItem from="1648627519571" duration="975000" />
+      <workItem from="1648633774041" duration="3134000" />
+      <workItem from="1648928772738" duration="1002000" />
+      <workItem from="1648978813880" duration="5473000" />
+      <workItem from="1649017913767" duration="466000" />
+      <workItem from="1649018399077" duration="3878000" />
+      <workItem from="1649052801466" duration="3919000" />
+      <workItem from="1649251790395" duration="695000" />
+      <workItem from="1649321345412" duration="3764000" />
+      <workItem from="1649341473430" duration="1195000" />
+      <workItem from="1649348373144" duration="25000" />
+      <workItem from="1649416170410" duration="6890000" />
+      <workItem from="1649774265013" duration="1954000" />
+      <workItem from="1649861036574" duration="589000" />
+      <workItem from="1649919459126" duration="576000" />
+      <workItem from="1649925513330" duration="327000" />
+      <workItem from="1649925877814" duration="595000" />
+      <workItem from="1649929137512" duration="2073000" />
+      <workItem from="1649936356740" duration="421000" />
+      <workItem from="1649940719401" duration="816000" />
+      <workItem from="1650018524403" duration="1192000" />
+      <workItem from="1650348972252" duration="14407000" />
+      <workItem from="1650540621098" duration="5000" />
+      <workItem from="1650540643385" duration="615000" />
+      <workItem from="1650542923145" duration="3795000" />
+      <workItem from="1650548786826" duration="1462000" />
+      <workItem from="1650608976334" duration="4170000" />
+      <workItem from="1650614474452" duration="247000" />
+      <workItem from="1650614759430" duration="16000" />
+      <workItem from="1650615007274" duration="12367000" />
+      <workItem from="1650630504320" duration="377000" />
+      <workItem from="1650808304040" duration="31000" />
+      <workItem from="1650808580047" duration="440000" />
+      <workItem from="1650809039794" duration="16898000" />
+      <workItem from="1650862836872" duration="278000" />
+      <workItem from="1650867963170" duration="10788000" />
+      <workItem from="1650896363418" duration="1023000" />
+      <workItem from="1650897419359" duration="2171000" />
+    </task>
+    <task id="LOCAL-00001" summary="maj">
+      <created>1648628893414</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1648628893414</updated>
+    </task>
+    <task id="LOCAL-00002" summary="maj">
+      <created>1648984599942</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1648984599942</updated>
+    </task>
+    <task id="LOCAL-00003" summary="suppression">
+      <created>1648984671328</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1648984671328</updated>
+    </task>
+    <task id="LOCAL-00004" summary="maj version app">
+      <created>1649021853549</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1649021853549</updated>
+    </task>
+    <task id="LOCAL-00005" summary="maj version app">
+      <created>1649676884039</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1649676884039</updated>
+    </task>
+    <task id="LOCAL-00006" summary="maj version app">
+      <created>1649941808669</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1649941808669</updated>
+    </task>
+    <task id="LOCAL-00007" summary="maj version app">
+      <created>1649941950279</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1649941950279</updated>
+    </task>
+    <task id="LOCAL-00008" summary="maj helper">
+      <created>1650898902072</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1650898902072</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="maj" />
+    <MESSAGE value="suppression" />
+    <MESSAGE value="maj version app" />
+    <MESSAGE value="maj helper" />
+    <option name="LAST_COMMIT_MESSAGE" value="maj helper" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/centre macro.py</url>
+          <line>335</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/centre_macro_py$test.coverage" NAME="test Coverage Results" MODIFIED="1649327566132" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Centre_macro$centre_macro.coverage" NAME="centre macro Coverage Results" MODIFIED="1650898788874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/centre_macro_py$centre_macro.coverage" NAME="centre macro Coverage Results" MODIFIED="1650627909953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Centre_macro$MyApp.coverage" NAME="MyApp Coverage Results" MODIFIED="1647496980105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MyApp_py$MyApp.coverage" NAME="MyApp Coverage Results" MODIFIED="1647519946565" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/centre_macro_py$MyApp.coverage" NAME="MyApp Coverage Results" MODIFIED="1647532821041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/centre_macro_py$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1650617102210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/centre_macro_py$azertyuiop.coverage" NAME="azertyuiop Coverage Results" MODIFIED="1647591032646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/centre_macro_py$Doctests_in_AlchemicalTableModel.coverage" NAME="Doctests in AlchemicalTableModel Coverage Results" MODIFIED="1650615524937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
